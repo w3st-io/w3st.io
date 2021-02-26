@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+	<link
+		rel="stylesheet"
+		href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+		crossorigin="anonymous"
+	>
+</head>
+
+<style>
+	body {
+		background: #f99e2d;
+		font-family: 'Montserrat', sans-serif;
+	}
+
+	a {
+		position: relative;
+		color: #000;
+		text-decoration: none;
+		transition: .3s;
+	}
+
+	a:hover {
+		margin-left: 10px;
+		color: white;
+		text-decoration: none;
+	}
+
+	a::before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		bottom: 0;
+		left: 0;
+		background-color: white;
+		visibility: hidden;
+		transform: scaleX(0);
+		transition: all 0.3s ease-in-out 0s;
+	}
+	
+	a:hover::before {
+		visibility: visible;
+		transform: scaleX(1);
+	}
+</style>
+
+<body class="container text-dark">
+	<h1 class="text-dark" style="font-size: 8em;">
+		W<span style="color: white;">3</span>ST<span style="color: white;">.</span>IO
+	</h1>
+
+	<h1 class="mb-5 text-white">Check out our sites</h1>
+	<ul class="list-unstyled">
+		<li class="mb-3">
+			<a href="http://24-7fireprotection.com" class="h1">24/7 Fire Protection</a>
+		</li>
+		<li class="mb-3">
+			<a href="http://mouth2mouth.herokuapp.com" class="h1">The Mouth2Mouth Beauty Bar</a>
+		</li>
+		<li class="mb-3">
+			<a href="http://blockbased.io" class="h1">blockbased.io</a>
+		</li>
+	</ul>
+</body>
+</html>
