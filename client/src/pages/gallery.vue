@@ -1,5 +1,5 @@
 <template>
-	<BContainer class="nav-spacer">
+	<BContainer class="my-3">
 		<BCard bg-variant="white" class="my-3">
 			<!-- [R1] -->
 			<BRow class="mb-3">

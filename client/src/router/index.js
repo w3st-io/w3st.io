@@ -6,14 +6,9 @@ import VueRouter from 'vue-router'
 // [IMPORT] Personal //
 import index from '../pages'
 import about from '../pages/about'
-import careers from '../pages/careers'
-import careers_apply from '../pages/careers/apply'
 import contactUs from '../pages/contact-us'
-import design from '../pages/design'
 import emailSent from '../pages/email-sent'
 import gallery from '../pages/gallery'
-import installs from '../pages/installs'
-import service from '../pages/service'
 import notFound from '../pages/404'
 
 
@@ -43,25 +38,6 @@ const router = new VueRouter({
 				title: 'About'
 			},
 		},
-		// Careers //
-		{
-			path: '/careers',
-			name: 'careers',
-			component: careers,
-			meta: {
-				auth: true,
-				title: 'Careers'
-			},
-		},
-		{
-			path: '/careers/apply',
-			name: 'careers_apply',
-			component: careers_apply,
-			meta: {
-				auth: true,
-				title: 'apply'
-			},
-		},
 		// Contact Us //
 		{
 			path: '/contact-us',
@@ -70,16 +46,6 @@ const router = new VueRouter({
 			meta: {
 				auth: true,
 				title: 'Contact Us'
-			},
-		},
-		// Design //
-		{
-			path: '/design',
-			name: 'design',
-			component: design,
-			meta: {
-				auth: true,
-				title: 'Design'
 			},
 		},
 		// Email //
@@ -100,26 +66,6 @@ const router = new VueRouter({
 			meta: {
 				auth: true,
 				title: 'Gallery'
-			},
-		},
-		// Installs //
-		{
-			path: '/installs',
-			name: 'installs',
-			component: installs,
-			meta: {
-				auth: true,
-				title: 'Installs'
-			},
-		},
-		// Service //
-		{
-			path: '/service',
-			name: 'service',
-			component: service,
-			meta: {
-				auth: true,
-				title: 'Service'
 			},
 		},
 		// [404] //

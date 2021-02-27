@@ -1,5 +1,5 @@
 <template>
-	<BContainer class="nav-spacer">
+	<BContainer class="my-3">
 		<BCard bg-variant="light" class="my-4 text-center">
 			<h1 class="text-center text-primary">404 Not Found</h1>
 			<p>Strange..</p>

@@ -3,9 +3,11 @@
 		<BContainer>
 			<BRow>
 				<BCol cols="12" class="text-center">
-					<h1 class="text-dark" style="font-size: 8em;">
-						W<span style="color: white;">3</span>ST<span style="color: white;">.</span>IO
-					</h1>
+					<RouterLink to="/" class="text-decoration-none">
+						<h1 class="text-dark" style="font-size: 8em;">
+							W<span style="color: white;">3</span>ST<span style="color: white;">.</span>IO
+						</h1>
+					</RouterLink>
 				</BCol>
 			</BRow>
 		</BContainer>

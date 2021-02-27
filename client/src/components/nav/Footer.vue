@@ -11,7 +11,7 @@
 					<hr>
 				</BCol>
 
-				<BCol cols="12" sm="3" class="text-center text-sm-left" data-aos="fade-up">
+				<BCol cols="12" sm="6" class="text-center text-sm-left" data-aos="fade-up">
 					<h4 class="text-light">Location</h4>
 					<a :href="companyInfo.googleMapsLink" class="mb-3">
 						<h5 class="mb-4">{{ companyInfo.address }}</h5>
@@ -30,29 +30,7 @@
 					<hr>
 				</BCol>
 
-				<BCol cols="12" sm="3" class="text-center" data-aos="fade-up">
-					<h4>Services</h4>
-					<ul class="list-unstyled text-small">
-						<li>
-							<RouterLink to="/Designs">
-								Design
-							</RouterLink>
-						</li>
-						<li>
-							<RouterLink to="/installs">
-								Installs
-							</RouterLink>
-						</li>
-						<li>
-							<RouterLink to="/service">
-								Service
-							</RouterLink>
-						</li>
-					</ul>
-					<hr>
-				</BCol>
-
-				<BCol cols="12" sm="3" class="text-center" data-aos="fade-up">
+				<BCol cols="12" sm="6" class="text-center" data-aos="fade-up">
 					<h4>Company</h4>
 					<ul class="list-unstyled text-small">
 						<li>
@@ -68,23 +46,6 @@
 						<li>
 							<RouterLink to="/gallery">
 								Gallery
-							</RouterLink>
-						</li>
-					</ul>
-					<hr>
-				</BCol>
-
-				<BCol cols="12" sm="3" class="text-center" data-aos="fade-up">
-					<h4>Careers</h4>
-					<ul class="list-unstyled text-small">
-						<li>
-							<RouterLink to="/careers">
-								Careers
-							</RouterLink>
-						</li>
-						<li>
-							<RouterLink to="/careers/apply">
-								Apply
 							</RouterLink>
 						</li>
 					</ul>

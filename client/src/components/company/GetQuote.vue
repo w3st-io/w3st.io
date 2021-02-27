@@ -2,7 +2,7 @@
 	<div>
 		<!-- Get a Quote -->
 		<form @submit.prevent="submit">
-			<h3 class="mb-3 text-center text-light">{{ title }}</h3>
+			<h3 class="mb-3 text-center text-primary">{{ title }}</h3>
 			<hr>
 
 			<!-- Email -->
@@ -38,7 +38,7 @@
 			></textarea>
 
 			<!-- Submit -->
-			<BButton :disabled="loading" variant="outline-light" type="submit" class="w-100 mt-3">
+			<BButton :disabled="loading" variant="primary" type="submit" class="w-100 mt-3">
 				Submit
 			</BButton>
 
