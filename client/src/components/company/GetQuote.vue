@@ -1,0 +1,100 @@
+<template>
+	<div>
+		<!-- Get a Quote -->
+		<form @submit.prevent="submit">
+			<h3 class="mb-3 text-center text-light">{{ title }}</h3>
+			<hr>
+
+			<!-- Email -->
+			<input
+				v-model="clientEmail"
+				type="email"
+				placeholder="Your email"
+				class="mt-3 form-control text-light bg-dark"
+			>
+
+			<!-- Name -->
+			<input
+				v-model="name"
+				type="text"
+				placeholder="Name"
+				class="mt-3 form-control text-light bg-dark"
+			>
+
+			<!-- Subject -->
+			<input
+				v-model="subject"
+				type="text"
+				placeholder="Subject"
+				class="mt-3 form-control text-light bg-dark"
+			>
+
+			<!-- Message -->
+			<textarea
+				v-model="message"
+				type="text"
+				placeholder="Message"
+				class="mt-3 form-control text-light bg-dark"
+			></textarea>
+
+			<!-- Submit -->
+			<BButton :disabled="loading" variant="light" type="submit" class="w-100 mt-3">
+				Submit
+			</BButton>
+
+			<h6 v-if="error" class="mt-2 text-danger">{{ error }}</h6>
+		</form>
+	</div>
+</template>
+
+<script>
+	import router from '@/router'
+	import MailService from '@/services/MailService'
+
+	export default {
+		props: {
+			title: {
+				type: String,
+				default: 'Get a Quote',
+			}
+		},
+
+		data() {
+			return {
+				subject: '',
+				clientEmail: '',
+				name: '',
+				message: '',
+				error: '',
+				loading: false,
+			}
+		},
+
+		methods: {
+			async submit() {
+					
+				if (!this.clientEmail || !this.name || !this.subject || !this.message) {
+					this.error = 'Error: Please fill out all fields'
+					return
+				}
+
+				this.loading = true
+
+				const mObj = await MailService.s_getQuote({
+					subject: this.subject,
+					clientEmail: this.clientEmail,
+					name: this.name,
+					message: this.message
+				})
+
+				// [LOG] //
+				console.log('MailService.s_getQuote:', mObj)
+
+				if (mObj.status) { router.push({ name: 'email-sent' }) }
+				else { this.error = mObj.message }
+
+				this.loading = false
+			}
+		},
+	}
+</script>
