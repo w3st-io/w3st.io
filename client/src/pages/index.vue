@@ -1,7 +1,7 @@
 <template>
-	<BContainer>
+	<BContainer class="my-5" style="height: 100vh;">
 		<BRow>
-			<BCol cols="12" lg="8" class="mb-3">
+			<BCol cols="12" class="text-center">
 				<h1 class="mb-5 text-white">Check out our sites</h1>
 				<ul class="list-unstyled">
 					<li class="mb-3">
@@ -22,25 +22,15 @@
 					</li>
 				</ul>
 			</BCol>
-
-			<BCol cols="12" lg="4" class="mb-3">
-				<!-- Get Quote -->
-				<GetQuote />
-			</BCol>
 		</BRow>
 	</BContainer>
 </template>
 
 <script>
 	// [IMPORT] Personal //
-	import GetQuote from '@/components/company/GetQuote'
 	import PageData from '@/defaults/pages'
 
 	export default {
-		components: {
-			GetQuote,
-		},
-
 		data() {
 			return {
 				PageData: PageData,

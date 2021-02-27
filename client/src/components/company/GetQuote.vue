@@ -10,7 +10,7 @@
 				v-model="clientEmail"
 				type="email"
 				placeholder="Your email"
-				class="mt-3 form-control text-light bg-dark"
+				class="mt-3 form-control"
 			>
 
 			<!-- Name -->
@@ -18,7 +18,7 @@
 				v-model="name"
 				type="text"
 				placeholder="Name"
-				class="mt-3 form-control text-light bg-dark"
+				class="mt-3 form-control"
 			>
 
 			<!-- Subject -->
@@ -26,7 +26,7 @@
 				v-model="subject"
 				type="text"
 				placeholder="Subject"
-				class="mt-3 form-control text-light bg-dark"
+				class="mt-3 form-control"
 			>
 
 			<!-- Message -->
@@ -34,11 +34,11 @@
 				v-model="message"
 				type="text"
 				placeholder="Message"
-				class="mt-3 form-control text-light bg-dark"
+				class="mt-3 form-control"
 			></textarea>
 
 			<!-- Submit -->
-			<BButton :disabled="loading" variant="light" type="submit" class="w-100 mt-3">
+			<BButton :disabled="loading" variant="outline-light" type="submit" class="w-100 mt-3">
 				Submit
 			</BButton>
 

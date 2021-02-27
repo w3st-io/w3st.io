@@ -2,7 +2,7 @@
 	<div class="w-100 py-3 text-dar nav">
 		<BContainer>
 			<BRow>
-				<BCol cols="12">
+				<BCol cols="12" class="text-center">
 					<h1 class="text-dark" style="font-size: 8em;">
 						W<span style="color: white;">3</span>ST<span style="color: white;">.</span>IO
 					</h1>
