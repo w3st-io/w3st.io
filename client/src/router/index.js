@@ -89,7 +89,7 @@ const router = new VueRouter({
 
 // [VUE-ROUTER] Set Title //
 router.beforeEach((to, from, next) => {
-	document.title = `${to.meta.title} - 24/7 Fire Protection Inc `
+	document.title = `${to.meta.title} - W3ST.IO`
 	next()
 })
 

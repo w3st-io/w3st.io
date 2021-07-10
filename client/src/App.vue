@@ -1,13 +1,15 @@
 <template>
-	<div id="app" :key="appKey" class="bg-primary">
-		<!-- Navbar -->
-		<NavBar />
+	<div>
+		<div id="app" :key="appKey" class="bg-primary">
+			<!-- Navbar -->
+			<NavBar />
 
-		<!-- Router -->
-		<RouterView :key="$route.name + ($route.params.id || '')" />
+			<!-- Router -->
+			<RouterView :key="$route.name + ($route.params.id || '')" />
 
-		<!-- Footer -->
-		<Footer />
+			<!-- Footer -->
+			<Footer />
+		</div>
 
 		<!-- Socket -->
 		<Socket />

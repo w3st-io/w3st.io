@@ -1,12 +1,12 @@
 <template>
-	<BContainer class="my-5" style="height: 100vh;">
+	<BContainer style="height: 100vh;">
 		<BRow>
 			<BCol cols="12" class="text-center">
-				<h1 class="mb-5 text-white">Check out our sites</h1>
+				<h1 class="mb-5 text-white">Check out our sites..</h1>
 				<ul class="list-unstyled">
 					<li class="mb-3">
-						<a href="http://24-7fireprotection.com" class="h1">
-							24/7 Fire Protection
+						<a href="http://theartofwings.com" class="h1">
+							Art of Wings
 						</a>
 					</li>
 
@@ -15,6 +15,13 @@
 							The Mouth2Mouth Beauty Bar
 						</a>
 					</li>
+
+					<li class="mb-3">
+						<a href="http://jj-shop.herokuapp.com" class="h1">
+							JJ Shop
+						</a>
+					</li>
+
 					<li class="mb-3">
 						<a href="http://blockbased.io" class="h1">
 							blockbased.io
@@ -43,7 +50,10 @@
 	@import '../assets/styles/bootstrap-override.scss';
 
 	.btn:hover {
-		@extend .btn-secondary, .shadow;
+		@extend
+			.btn-secondary,
+			.shadow
+		;
 	}
 
 	a {

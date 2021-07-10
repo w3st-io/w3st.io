@@ -4,9 +4,7 @@
 			<BRow>
 				<BCol cols="12" class="text-center">
 					<RouterLink to="/" class="text-decoration-none">
-						<h1 class="text-dark" style="font-size: 8em;">
-							W<span style="color: white;">3</span>ST<span style="color: white;">.</span>IO
-						</h1>
+						<Logo class="m-auto w-100" style="max-width: 500px;" />
 					</RouterLink>
 				</BCol>
 			</BRow>
@@ -25,12 +23,14 @@
 	import SideMenu from '@/components/nav/SideMenu'
 	import companyInfo from '@/defaults/companyInfo'
 	//import SocialMediaPlug from '@/components/SocialMediaPlug'
+	import Logo from '../../components/svg/logo.vue'
 
 	export default {
 		components: {
 			//SocialMediaPlug,
 			//MenuIcon,
 			SideMenu,
+			Logo,
 		},
 
 		data() {
