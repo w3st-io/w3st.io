@@ -11,10 +11,11 @@ import 'tiny-slider/src/tiny-slider.scss'
 import 'viewerjs/dist/viewer.css'
 
 // [IMPORT] Personal //
-import App from './App.vue'
-import router from './router'
-import './assets/styles/bootstrap-override.scss'
-import './assets/styles/style.scss'
+import App from '@/App.vue'
+import router from '@/router'
+import store from '@/store'
+import '@/assets/styles/bootstrap-override.scss'
+import '@/assets/styles/style.scss'
 
 
 // [USE] //
@@ -34,6 +35,7 @@ export const EventBus = new Vue()
 Vue.config.productionTip = false
 new Vue({
   router,
+  store,
   created() { aos.init() },
   render: h => h(App)
 }).$mount('#app')

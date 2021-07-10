@@ -48,6 +48,9 @@
 								Gallery
 							</RouterLink>
 						</li>
+						<li>
+							<a href="https://icons8.com/icon/82749/menu">Menu icon by Icons8</a>
+						</li>
 					</ul>
 					<hr>
 				</BCol>

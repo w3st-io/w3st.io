@@ -1,17 +1,31 @@
 <template>
-	<div class="w-100 py-3 text-dar nav">
+	<div class="w-100 pb-3 text-dark border-bottom border-dark nav">
 		<BContainer>
 			<BRow>
 				<BCol cols="12" class="text-center">
 					<RouterLink to="/" class="text-decoration-none">
-						<Logo class="m-auto w-100" style="max-width: 500px;" />
+						<Logo class="m-auto w-100" style="max-width: 450px;" />
 					</RouterLink>
+				</BCol>
+
+				<BCol cols="12" class="d-none d-md-block text-center">
+					<RouterLink to="/" class="mr-5 h4 menu-item">Home</RouterLink>
+					<RouterLink to="/" class="mr-5 h4 menu-item">Services</RouterLink>
+					<RouterLink to="/" class="h4 menu-item">Contact</RouterLink>
+				</BCol>
+
+				<BCol cols="12" class="d-block d-md-none text-center">
+					<BButton variant="outline-dark" class="w-100 text-center m" @click="toggle()">
+						<div class="ml"></div>
+						<div class="ml"></div>
+						<div class="ml"></div>
+					</BButton>
 				</BCol>
 			</BRow>
 		</BContainer>
 
 		<!-- Hidden Side Menu -->
-		<SideMenu :sideMenuOpen="sideMenuOpen" @closeMenu="toggle()" />
+		<SideMenu class="menu-item" />
 	</div>
 </template>
 
@@ -38,12 +52,11 @@
 				companyInfo: companyInfo,
 				loggedIn: false,
 				decoded: {},
-				sideMenuOpen: false
 			}
 		},
 
 		methods: {
-			toggle() { this.sideMenuOpen = !this.sideMenuOpen },
+			toggle() { this.$store.state.showMenu = !this.$store.state.showMenu },
 		},
 	}
 </script>
@@ -53,5 +66,48 @@
 		top: 0;
 		z-index: 10;
 		background-color: rgba(0, 0, 0, 0) !important;
+	}
+
+	a {
+		position: relative;
+		color: #000;
+		text-decoration: none;
+		transition: .3s;
+	}
+
+	a:hover {
+		color: white;
+		text-decoration: none;
+	}
+
+	a::before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		bottom: 0;
+		left: 0;
+		background-color: white;
+		visibility: hidden;
+		transform: scaleX(0);
+		transition: all 0.3s ease-in-out 0s;
+	}
+	
+	a:hover::before {
+		visibility: visible;
+		transform: scaleX(1);
+	}
+
+	.m:hover {
+		.ml {
+			background-color: rgb(218, 143, 32);
+		}
+	}
+
+	.ml {
+		width: 35px;
+		height: 5px;
+		background-color: black;
+		margin: 6px auto;
 	}
 </style>
