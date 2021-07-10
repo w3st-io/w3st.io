@@ -1,5 +1,5 @@
 <template>
-	<BContainer class="my-5" style="height: 60vh;">
+	<BContainer class="my-5" style="height: 80vh;">
 		<BCard bg-variant="dark" text-variant="light" class="m-auto text-light" style="max-width: 600px;">
 			<h1 class="text-center text-primary">Services We Provide</h1>
 			<ul>
