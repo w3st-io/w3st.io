@@ -21,51 +21,22 @@
 			v-show="$store.state.showMenu"
 			variant="outline-seconadry"
 			class="w-100 p-2 text-primary"
-			@click="about()"
-		><span aria-hidden="true" style="font-size: 1.5em;">About</span></BButton>
-
-		<BButton
-			v-show="$store.state.showMenu"
-			variant="outline-seconadry"
-			class="w-100 p-2 text-primary"
-			@click="design()"
-		><span aria-hidden="true" style="font-size: 1.5em;">Design</span></BButton>
-
-		<BButton
-			v-show="$store.state.showMenu"
-			variant="outline-seconadry"
-			class="w-100 p-2 text-primary"
-			@click="installs()"
-		><span aria-hidden="true" style="font-size: 1.5em;">Installs</span></BButton>
-
-		<BButton
-			v-show="$store.state.showMenu"
-			variant="outline-seconadry"
-			class="w-100 p-2 text-primary"
 			@click="service()"
-		><span aria-hidden="true" style="font-size: 1.5em;">Service</span></BButton>
-
-		<BButton
-			v-show="$store.state.showMenu"
-			variant="outline-seconadry"
-			class="w-100 p-2 text-primary"
-			@click="careers()"
-		><span aria-hidden="true" style="font-size: 1.5em;">Careers</span></BButton>
-
-		<BButton
-			v-show="$store.state.showMenu"
-			variant="outline-seconadry"
-			class="w-100 p-2 text-primary"
-			@click="gallery()"
-		><span aria-hidden="true" style="font-size: 1.5em;">Gallery</span></BButton>
+		><span aria-hidden="true" style="font-size: 1.5em;">Services</span></BButton>
 
 		<BButton
 			v-show="$store.state.showMenu"
 			variant="outline-seconadry"
 			class="w-100 p-2 text-primary"
 			@click="contactUs()"
-		><span aria-hidden="true" style="font-size: 1.5em;">Contact Us</span></BButton>
-		
+		><span aria-hidden="true" style="font-size: 1.5em;">Contact</span></BButton>
+
+		<BButton
+			v-show="$store.state.showMenu"
+			variant="outline-seconadry"
+			class="w-100 p-2 text-primary"
+			@click="about()"
+		><span aria-hidden="true" style="font-size: 1.5em;">About</span></BButton>
 
 		<SocialMediaPlug v-show="$store.state.showMenu" size="48" class="my-3" />
 	</nav>
@@ -76,7 +47,7 @@
 	import { XIcon } from 'vue-feather-icons'
 
 	// [IMPORT] Personal //
-	import router from '../../router'
+	import router from '@/router'
 	import SocialMediaPlug from '../SocialMediaPlug'
 
 	// [EXPORT] //
@@ -133,7 +104,7 @@
 			},
 
 			contactUs() {
-				router.push({ name: 'contact-us' })
+				router.push({ name: 'contact' })
 				this.closeMenu()
 			},
 		}

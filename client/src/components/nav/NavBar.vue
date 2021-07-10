@@ -1,6 +1,6 @@
 <template>
-	<div class="w-100 pb-3 text-dark border-bottom border-dark nav">
-		<BContainer>
+	<div class="w-100 text-dark nav">
+		<BContainer class="pb-3">
 			<BRow>
 				<BCol cols="12" class="text-center">
 					<RouterLink to="/" class="text-decoration-none">
@@ -10,8 +10,9 @@
 
 				<BCol cols="12" class="d-none d-md-block text-center">
 					<RouterLink to="/" class="mr-5 h4 menu-item">Home</RouterLink>
-					<RouterLink to="/" class="mr-5 h4 menu-item">Services</RouterLink>
-					<RouterLink to="/" class="h4 menu-item">Contact</RouterLink>
+					<RouterLink to="/services" class="mr-5 h4 menu-item">Services</RouterLink>
+					<RouterLink to="/contact" class="mr-5 h4 menu-item">Contact</RouterLink>
+					<RouterLink to="/about" class="mr-0 h4 menu-item">About</RouterLink>
 				</BCol>
 
 				<BCol cols="12" class="d-block d-md-none text-center">
@@ -23,6 +24,8 @@
 				</BCol>
 			</BRow>
 		</BContainer>
+
+		<div class="d-none d-md-block w-100 border-bottom border-dark"></div>
 
 		<!-- Hidden Side Menu -->
 		<SideMenu class="menu-item" />

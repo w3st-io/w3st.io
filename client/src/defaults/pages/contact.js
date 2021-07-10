@@ -6,13 +6,13 @@ const pageTitle = 'Contact Us!'
 
 // [EXPORT] //
 module.exports = {
-	parallaxImg: require('../../assets/images/pages/contact-us/parallax.png'),
+	parallaxImg: require('../../assets/images/pages/contact/parallax.png'),
 
 	cnt1: {
 		// Header //
 		r1: {
 			c1: { title: pageTitle, },
-			c2: { image: require('../../assets/images/pages/contact-us/c.png'), }
+			c2: { image: require('../../assets/images/pages/contact/c.png'), }
 		},
 	
 		r2: {
