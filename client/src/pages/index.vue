@@ -1,5 +1,5 @@
 <template>
-	<BContainer style="height: 80vh;">
+	<BContainer style="height: 60vh;">
 		<BRow class="mt-5">
 			<BCol cols="12" class="text-center">
 				<h1 class="mb-5 text-white">Our Sites</h1>

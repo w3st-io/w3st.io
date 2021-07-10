@@ -21,14 +21,14 @@
 			v-show="$store.state.showMenu"
 			variant="outline-seconadry"
 			class="w-100 p-2 text-primary"
-			@click="service()"
+			@click="services()"
 		><span aria-hidden="true" style="font-size: 1.5em;">Services</span></BButton>
 
 		<BButton
 			v-show="$store.state.showMenu"
 			variant="outline-seconadry"
 			class="w-100 p-2 text-primary"
-			@click="contactUs()"
+			@click="contact()"
 		><span aria-hidden="true" style="font-size: 1.5em;">Contact</span></BButton>
 
 		<BButton
@@ -78,32 +78,13 @@
 				this.closeMenu()
 			},
 
-			design() {
-				router.push({ name: 'design' })
+			
+			services() {
+				router.push({ name: 'services' })
 				this.closeMenu()
 			},
 
-			installs() {
-				router.push({ name: 'installs' })
-				this.closeMenu()
-			},
-
-			service() {
-				router.push({ name: 'service' })
-				this.closeMenu()
-			},
-
-			careers() {
-				router.push({ name: 'careers' })
-				this.closeMenu()
-			},
-
-			gallery() {
-				router.push({ name: 'gallery' })
-				this.closeMenu()
-			},
-
-			contactUs() {
+			contact() {
 				router.push({ name: 'contact' })
 				this.closeMenu()
 			},

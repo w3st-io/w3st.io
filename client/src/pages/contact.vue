@@ -1,6 +1,6 @@
 <template>
 	<!-- Content -->
-	<BContainer>
+	<BContainer style="height: 60vh;">
 		<BCard bg-variant="dark" class="mx-auto my-5" style="max-width: 600px;">
 			<!-- [R1] -->
 			<BRow class="">
