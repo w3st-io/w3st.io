@@ -6,10 +6,11 @@ import VueRouter from 'vue-router'
 // [IMPORT] Personal //
 import index from '../pages'
 import about from '../pages/about'
-import contactUs from '../pages/contact-us'
+import contact from '../pages/contact'
 import emailSent from '../pages/email-sent'
 import gallery from '../pages/gallery'
 import notFound from '../pages/404'
+import services from '../pages/services'
 
 
 Vue.use(VueRouter)
@@ -40,12 +41,12 @@ const router = new VueRouter({
 		},
 		// Contact Us //
 		{
-			path: '/contact-us',
-			name: 'contact-us',
-			component: contactUs,
+			path: '/contact',
+			name: 'contact',
+			component: contact,
 			meta: {
 				auth: true,
-				title: 'Contact Us'
+				title: 'Contact'
 			},
 		},
 		// Email //
@@ -66,6 +67,16 @@ const router = new VueRouter({
 			meta: {
 				auth: true,
 				title: 'Gallery'
+			},
+		},
+		// [SERVICES] //
+		{
+			path: '/services',
+			name: 'services',
+			component: services,
+			meta: {
+				auth: true,
+				title: 'Services'
 			},
 		},
 		// [404] //

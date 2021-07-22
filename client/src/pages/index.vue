@@ -1,8 +1,8 @@
 <template>
-	<BContainer style="height: 100vh;">
-		<BRow>
+	<BContainer style="height: 80vh;">
+		<BRow class="mt-5">
 			<BCol cols="12" class="text-center">
-				<h1 class="mb-5 text-white">Check out our sites..</h1>
+				<h1 class="mb-5 text-white">Our Sites</h1>
 				<ul class="list-unstyled">
 					<li class="mb-3">
 						<a href="http://mouth2mouth.herokuapp.com" class="h1">

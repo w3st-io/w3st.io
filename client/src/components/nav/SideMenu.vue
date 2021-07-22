@@ -1,73 +1,44 @@
 <template>
 	<nav
 		class="bg-dark shadow nav-drawer-menu"
-		:class="{ isOpen: sideMenuOpen }"
+		:class="{ isOpen: $store.state.showMenu }"
 	>
 		<BButton
-			v-show="sideMenuOpen"
+			v-show="$store.state.showMenu"
 			variant="primary"
 			class="w-100 mb-3 p-4 text-light"
 			@click="closeMenu"
 		><XIcon size="36" /></BButton>
 
 		<BButton
-			v-show="sideMenuOpen"
+			v-show="$store.state.showMenu"
 			variant="outline-seconadry"
 			class="w-100 p-2 text-primary"
 			@click="home()"
 		><span aria-hidden="true" style="font-size: 1.5em;">Home</span></BButton>
 
 		<BButton
-			v-show="sideMenuOpen"
+			v-show="$store.state.showMenu"
+			variant="outline-seconadry"
+			class="w-100 p-2 text-primary"
+			@click="services()"
+		><span aria-hidden="true" style="font-size: 1.5em;">Services</span></BButton>
+
+		<BButton
+			v-show="$store.state.showMenu"
+			variant="outline-seconadry"
+			class="w-100 p-2 text-primary"
+			@click="contact()"
+		><span aria-hidden="true" style="font-size: 1.5em;">Contact</span></BButton>
+
+		<BButton
+			v-show="$store.state.showMenu"
 			variant="outline-seconadry"
 			class="w-100 p-2 text-primary"
 			@click="about()"
 		><span aria-hidden="true" style="font-size: 1.5em;">About</span></BButton>
 
-		<BButton
-			v-show="sideMenuOpen"
-			variant="outline-seconadry"
-			class="w-100 p-2 text-primary"
-			@click="design()"
-		><span aria-hidden="true" style="font-size: 1.5em;">Design</span></BButton>
-
-		<BButton
-			v-show="sideMenuOpen"
-			variant="outline-seconadry"
-			class="w-100 p-2 text-primary"
-			@click="installs()"
-		><span aria-hidden="true" style="font-size: 1.5em;">Installs</span></BButton>
-
-		<BButton
-			v-show="sideMenuOpen"
-			variant="outline-seconadry"
-			class="w-100 p-2 text-primary"
-			@click="service()"
-		><span aria-hidden="true" style="font-size: 1.5em;">Service</span></BButton>
-
-		<BButton
-			v-show="sideMenuOpen"
-			variant="outline-seconadry"
-			class="w-100 p-2 text-primary"
-			@click="careers()"
-		><span aria-hidden="true" style="font-size: 1.5em;">Careers</span></BButton>
-
-		<BButton
-			v-show="sideMenuOpen"
-			variant="outline-seconadry"
-			class="w-100 p-2 text-primary"
-			@click="gallery()"
-		><span aria-hidden="true" style="font-size: 1.5em;">Gallery</span></BButton>
-
-		<BButton
-			v-show="sideMenuOpen"
-			variant="outline-seconadry"
-			class="w-100 p-2 text-primary"
-			@click="contactUs()"
-		><span aria-hidden="true" style="font-size: 1.5em;">Contact Us</span></BButton>
-		
-
-		<SocialMediaPlug v-show="sideMenuOpen" size="48" class="my-3" />
+		<SocialMediaPlug v-show="$store.state.showMenu" size="48" class="my-3" />
 	</nav>
 </template>
 
@@ -76,18 +47,11 @@
 	import { XIcon } from 'vue-feather-icons'
 
 	// [IMPORT] Personal //
-	import router from '../../router'
+	import router from '@/router'
 	import SocialMediaPlug from '../SocialMediaPlug'
 
 	// [EXPORT] //
 	export default {
-		props: {
-			sideMenuOpen: {
-				type: Boolean,
-				required: true,
-			}
-		},
-
 		components: {
 			XIcon,
 			SocialMediaPlug,
@@ -101,8 +65,7 @@
 
 		methods: {
 			closeMenu() {
-				this.sideMenuOpen = !this.sideMenuOpen
-				this.$emit('closeMenu')
+				this.$store.state.showMenu = !this.$store.state.showMenu
 			},
 
 			home() {
@@ -115,33 +78,14 @@
 				this.closeMenu()
 			},
 
-			design() {
-				router.push({ name: 'design' })
+			
+			services() {
+				router.push({ name: 'services' })
 				this.closeMenu()
 			},
 
-			installs() {
-				router.push({ name: 'installs' })
-				this.closeMenu()
-			},
-
-			service() {
-				router.push({ name: 'service' })
-				this.closeMenu()
-			},
-
-			careers() {
-				router.push({ name: 'careers' })
-				this.closeMenu()
-			},
-
-			gallery() {
-				router.push({ name: 'gallery' })
-				this.closeMenu()
-			},
-
-			contactUs() {
-				router.push({ name: 'contact-us' })
+			contact() {
+				router.push({ name: 'contact' })
 				this.closeMenu()
 			},
 		}

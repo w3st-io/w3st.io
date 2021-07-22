@@ -34,7 +34,7 @@
 					<h4>Company</h4>
 					<ul class="list-unstyled text-small">
 						<li>
-							<RouterLink to="/contact-us">
+							<RouterLink to="/contact">
 								Contact Us
 							</RouterLink>
 						</li>
@@ -47,6 +47,9 @@
 							<RouterLink to="/gallery">
 								Gallery
 							</RouterLink>
+						</li>
+						<li>
+							<a href="https://icons8.com/icon/82749/menu">Menu icon by Icons8</a>
 						</li>
 					</ul>
 					<hr>
