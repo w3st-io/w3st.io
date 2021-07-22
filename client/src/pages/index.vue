@@ -5,14 +5,14 @@
 				<h1 class="mb-5 text-white">Check out our sites..</h1>
 				<ul class="list-unstyled">
 					<li class="mb-3">
-						<a href="http://theartofwings.com" class="h1">
-							Art of Wings
+						<a href="http://mouth2mouth.herokuapp.com" class="h1">
+							The Mouth2Mouth Beauty Bar
 						</a>
 					</li>
 
 					<li class="mb-3">
-						<a href="http://mouth2mouth.herokuapp.com" class="h1">
-							The Mouth2Mouth Beauty Bar
+						<a href="http://chickenwings-example.herokuapp.com" class="h1">
+							Art of Wings
 						</a>
 					</li>
 

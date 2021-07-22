@@ -23,7 +23,7 @@
 	import SideMenu from '@/components/nav/SideMenu'
 	import companyInfo from '@/defaults/companyInfo'
 	//import SocialMediaPlug from '@/components/SocialMediaPlug'
-	import Logo from '../../components/svg/logo.vue'
+	import Logo from '../../components/svg/logo'
 
 	export default {
 		components: {
