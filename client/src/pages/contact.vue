@@ -25,17 +25,3 @@
 		</BCard>
 	</BContainer>
 </template>
-
-
-<script>
-	// [IMPORT] Personal //
-	import defaultData from '@/defaults/pages/contact'
-
-	export default {
-		data() {
-			return {
-				defaultData: defaultData,
-			}
-		},
-	}
-</script>

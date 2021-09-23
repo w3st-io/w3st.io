@@ -33,19 +33,6 @@
 	</BContainer>
 </template>
 
-<script>
-	// [IMPORT] Personal //
-	import PageData from '@/defaults/pages'
-
-	export default {
-		data() {
-			return {
-				PageData: PageData,
-			}
-		},
-	}
-</script>
-
 <style lang="scss" scoped>
 	@import '../assets/styles/bootstrap-override.scss';
 

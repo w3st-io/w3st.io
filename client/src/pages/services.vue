@@ -12,18 +12,3 @@
 		</BCard>
 	</BContainer>
 </template>
-
-
-<script>
-	// [IMPORT] Personal //
-	import defaultData from '@/defaults/pages/about'
-
-
-	export default {
-		data() {
-			return {
-				defaultData: defaultData,
-			}
-		},
-	}
-</script>
