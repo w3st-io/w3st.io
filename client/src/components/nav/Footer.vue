@@ -35,7 +35,17 @@
 					<ul class="list-unstyled text-small">
 						<li>
 							<RouterLink to="/contact">
-								Contact Us
+								Home
+							</RouterLink>
+						</li>
+						<li>
+							<RouterLink to="/services">
+								Services
+							</RouterLink>
+						</li>
+						<li>
+							<RouterLink to="/contact">
+								Contact
 							</RouterLink>
 						</li>
 						<li>
@@ -48,16 +58,21 @@
 								Gallery
 							</RouterLink>
 						</li>
-						<li>
-							<a href="https://icons8.com/icon/82749/menu">Menu icon by Icons8</a>
-						</li>
+						
 					</ul>
 					<hr>
 				</BCol>
 
 				<BCol cols="12" class="my-3 text-center text-secondary">
 					<h6>© w3st.io {{ new Date().getFullYear() }}</h6>
+
+					<!-- [CREDIATION] -->
+					<a href="https://icons8.com/icon/82749/menu">
+						Menu icon by Icons8
+					</a>
 				</BCol>
+
+				
 			</BRow>
 		</BContainer>
 	</div>

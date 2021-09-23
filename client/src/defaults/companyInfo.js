@@ -6,7 +6,7 @@ module.exports = {
 
 	address: '724 cedar lane, Teaneck NJ',
 	googleMapsLink: '',
-	googleMapsImage: require('../assets/images/google-maps-image.png'),
+	googleMapsImage: '',
 	
 	hoursOfOperation: [
 		{
