@@ -12,7 +12,8 @@
 					<RouterLink to="/" class="mr-5 h4 menu-item">Home</RouterLink>
 					<RouterLink to="/services" class="mr-5 h4 menu-item">Services</RouterLink>
 					<RouterLink to="/contact" class="mr-5 h4 menu-item">Contact</RouterLink>
-					<RouterLink to="/about" class="mr-0 h4 menu-item">About</RouterLink>
+					<RouterLink to="/about" class="mr-5 h4 menu-item">About</RouterLink>
+					<RouterLink to="/gallery" class="mr-0 h4 menu-item">Gallery</RouterLink>
 				</BCol>
 
 				<BCol cols="12" class="d-block d-md-none text-center">
