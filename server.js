@@ -3,7 +3,6 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 const express = require('express')
 const http = require('http')
-const mongoose = require('mongoose')
 const path = require('path')
 const socketIO = require('socket.io')
 
@@ -14,10 +13,6 @@ const s_socket = require('./s-socket')
 const rateLimiter = require('./s-rate-limiters')
 
 const a_ = require('./s-routes/api')
-
-
-// [INIT] Const //
-const port = config.PORT
 
 
 // [EXPRESS + SERVER] //
@@ -54,4 +49,4 @@ if (config.NODE_ENV == 'production') {
 
 
 // [LISTEN] //
-server.listen(port, () => { console.log(`server started on port: ${port}`) })
+server.listen(config.port, () => { console.log(`server started on port: ${config.port}`) })
