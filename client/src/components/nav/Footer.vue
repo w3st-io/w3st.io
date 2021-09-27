@@ -4,9 +4,9 @@
 			<BRow class="pt-4">
 				<BCol cols="12" class="text-center text-light" data-aos="fade">
 					<h5>
-						{{ companyInfo.companyName }} {{ new Date().getFullYear() }}
+						{{ companyInfo.name }} {{ new Date().getFullYear() }}
 					</h5>
-					<h6 v-html="companyInfo.companyCaption" class="text-primary">
+					<h6 v-html="companyInfo.caption" class="text-primary">
 					</h6>
 					<hr>
 				</BCol>

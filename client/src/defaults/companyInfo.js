@@ -1,12 +1,11 @@
 // [EXPORT] //
 module.exports = {
-	companyLogo: require('../assets/images/logo.svg'),
-	companyName: 'w3st.io',
-	companyCaption: 'Web Dev',
+	logo: require('../assets/images/logo.svg'),
+	name: 'w3st.io',
+	caption: 'Web Dev',
 
 	address: '724 cedar lane, Teaneck NJ',
 	googleMapsLink: '',
-	googleMapsImage: '',
 	
 	hoursOfOperation: [
 		{
@@ -36,5 +35,39 @@ module.exports = {
 		instagramLink: '',
 		twitterLink: '',
 		youtubeLink: '',
-	}
+	},
+
+	services: [
+		{
+			id: 'website-development',
+			name: 'Web Site Development',
+			tiers: [
+				{
+					name: 'Basic',
+					requires: ['website-hosting-basic'],
+					cost: '$1000 - $2000',
+					features: [
+						{
+							name: 'SEO',
+							description: '',
+							list: []
+						},
+					],
+				},
+			],
+		},
+		{
+			id: 'website-hosting',
+			name: 'Hosting',
+			tiers: [
+				{
+					name: '',
+
+				}
+			],
+			requires: [
+
+			]
+		}
+	],
 }
