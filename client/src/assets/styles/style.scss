@@ -1,5 +1,10 @@
-.nav-spacer { padding-top: 147px; }
+.nav-spacer {
+	padding-top: 147px;
 
-@media only screen and (max-width: 991px) { .nav-spacer { padding-top: 243px; } }
+	@media only screen and (max-width: 991px) { padding-top: 243px; }
+	@media only screen and (max-width: 768px) { padding-top: 185px; }
+}
 
-@media only screen and (max-width: 768px) { .nav-spacer { padding-top: 185px; } }
+.bg-shade {
+	background-color: rgba(0, 0, 0, 0.55) !important;
+}

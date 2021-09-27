@@ -28,8 +28,8 @@
 					>
 				
 					<a :href="col.link" target="blank">
-						<h4 class="text-center mt-4 text-dark">
-							{{ col.description }}
+						<h4 class="text-center my-4 text-dark">
+							{{ col.title }}
 						</h4>
 
 						<BButton

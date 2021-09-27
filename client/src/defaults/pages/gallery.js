@@ -1,3 +1,7 @@
+// [REQUIRE] Personal //
+const clientProjects = require('../client-projects')
+
+
 // [EXPORT] //
 module.exports = {
 	r1: {
@@ -13,28 +17,7 @@ module.exports = {
 	},
 
 	r3: {
-		cx: [
-			{
-				image: 'https://images2.imgbox.com/f8/3f/4VIlG5Um_o.png',
-				description: 'JJ Shop',
-				link: 'https://www.jjinthemaking.com' 
-			},
-			{
-				image: 'https://images2.imgbox.com/dc/b1/X2zhrG2c_o.png',
-				description: '24-7 Fire Protection',
-				link: 'https://www.24-7fireprotection.com' 
-			},
-			{
-				image: 'https://images2.imgbox.com/9d/9f/wCLwHAKF_o.png',
-				description: 'Balance Within',
-				link: 'https://www.balancewithpamela.com' 
-			},
-			{
-				image: 'https://images2.imgbox.com/f3/8f/iWDuBgBF_o.png',
-				description: 'The Art of Wings',
-				link: 'https://www.theartofwings.com' 
-			},
-		],
+		cx: clientProjects,
 	},
 
 	r4: {
