@@ -19,13 +19,22 @@ module.exports = {
 		},
 	],
 
-	phoneNumber: '(201) 362-6859',
-	phoneNumberLink: 'tel:201-362-6859',
-	faxNumber: '(123) 456-7890',
-	faxNumberLink: 'tel:123-345-7890',
+	contact: {
+		cell: {
+			number: '(201) 362-6859',
+			link: 'tel:201-362-6859'
+		},
+	
+		fax: {
+			number: '(123) 456-7890',
+			link: 'tel:123-345-7890',
+		},
+	},
 
-	facebookLink: '',
-	instagramLink: '',
-	twitterLink: '',
-	youtubeLink: '',
+	socialMedia: {
+		facebookLink: '',
+		instagramLink: '',
+		twitterLink: '',
+		youtubeLink: '',
+	}
 }

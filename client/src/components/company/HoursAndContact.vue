@@ -28,9 +28,9 @@
 		<!-- Phone # -->
 		<p class="h4 mt-3 text-primary">Phone Number</p>
 		<a
-			:href="companyInfo.phoneNumberLink"
+			:href="companyInfo.contact.cell.number"
 			class="text-light"
-		>{{ companyInfo.phoneNumber }}</a>
+		>{{ companyInfo.contact.cell.link }}</a>
 
 		<!-- Fax # -->
 		<p class="h4 mt-3 text-primary">Fax Number:</p>
