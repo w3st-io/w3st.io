@@ -9,4 +9,9 @@ module.exports = {
 
 	// [PORT] //
 	port: process.env.PORT || 5000,
+
+	// [API] //
+	api: {
+		rptidePrivateKey: process.env.API__RPTIDE_PRIVATE_KEY || ''
+	}
 }
