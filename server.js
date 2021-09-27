@@ -14,7 +14,6 @@ const s_socket = require('./s-socket')
 const rateLimiter = require('./s-rate-limiters')
 
 const a_ = require('./s-routes/api')
-const a_mail = require('./s-routes/api/mail')
 
 
 // [INIT] Const //
@@ -57,7 +56,6 @@ app.use(rateLimiter.limiter)
 
 // [USE] Personal // API // Pages //
 app.use('/api', a_)
-app.use('/api/mail', a_mail)
 
 
 // [HEROKU] Set Static Folder for Heroku //

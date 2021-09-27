@@ -36,38 +36,4 @@ module.exports = {
 		twitterLink: '',
 		youtubeLink: '',
 	},
-
-	services: [
-		{
-			id: 'website-development',
-			name: 'Web Site Development',
-			tiers: [
-				{
-					name: 'Basic',
-					requires: ['website-hosting-basic'],
-					cost: '$1000 - $2000',
-					features: [
-						{
-							name: 'SEO',
-							description: '',
-							list: []
-						},
-					],
-				},
-			],
-		},
-		{
-			id: 'website-hosting',
-			name: 'Hosting',
-			tiers: [
-				{
-					name: '',
-
-				}
-			],
-			requires: [
-
-			]
-		}
-	],
 }
