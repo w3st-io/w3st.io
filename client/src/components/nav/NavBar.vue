@@ -17,7 +17,11 @@
 				</BCol>
 
 				<BCol cols="12" class="d-block d-md-none text-center">
-					<BButton variant="outline-dark" class="w-100 text-center m" @click="toggle()">
+					<BButton
+						variant="outline-dark"
+						class="w-100 text-center m"
+						@click="toggle()"
+					>
 						<div class="ml"></div>
 						<div class="ml"></div>
 						<div class="ml"></div>
@@ -66,6 +70,9 @@
 </script>
 
 <style lang="scss" scoped>
+	// [IMPORT] Personal //
+	@import 'src/assets/styles/bootstrap-override.scss';
+
 	.nav {
 		top: 0;
 		z-index: 10;
@@ -102,16 +109,19 @@
 		transform: scaleX(1);
 	}
 
-	.m:hover {
-		.ml {
-			background-color: rgb(218, 143, 32);
+	.m {
+		border-width: 2px !important;
+
+		&:hover {
+			.ml { @extend .bg-primary; }
 		}
 	}
 
 	.ml {
+		@extend .bg-dark;
+
 		width: 35px;
-		height: 5px;
-		background-color: black;
+		height: 2px;
 		margin: 6px auto;
 	}
 </style>

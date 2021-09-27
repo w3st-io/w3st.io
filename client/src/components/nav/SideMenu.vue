@@ -1,45 +1,55 @@
 <template>
-	<nav
-		class="bg-dark shadow nav-drawer-menu"
-		:class="{ isOpen: $store.state.showMenu }"
-	>
-		<BButton
-			v-show="$store.state.showMenu"
-			variant="primary"
-			class="w-100 mb-3 p-4 text-light"
-			@click="closeMenu"
-		><XIcon size="36" /></BButton>
+	<div class="">
+		<nav
+			class="bg-dark shadow nav-drawer-menu"
+			:class="{ isOpen: $store.state.showMenu }"
+		>
+			<BButton
+				v-show="$store.state.showMenu"
+				variant="primary"
+				class="w-100 mb-3 p-4 text-light rounded-0"
+				@click="closeMenu"
+			><XIcon size="36" /></BButton>
 
-		<BButton
-			v-show="$store.state.showMenu"
-			variant="outline-seconadry"
-			class="w-100 p-2 text-primary"
-			@click="home()"
-		><span aria-hidden="true" style="font-size: 1.5em;">Home</span></BButton>
+			<BButton
+				v-show="$store.state.showMenu"
+				variant="outline-seconadry"
+				class="w-100 p-2 text-primary"
+				@click="home()"
+			><span aria-hidden="true" style="font-size: 1.5em;">Home</span></BButton>
 
-		<BButton
-			v-show="$store.state.showMenu"
-			variant="outline-seconadry"
-			class="w-100 p-2 text-primary"
-			@click="services()"
-		><span aria-hidden="true" style="font-size: 1.5em;">Services</span></BButton>
+			<BButton
+				v-show="$store.state.showMenu"
+				variant="outline-seconadry"
+				class="w-100 p-2 text-primary"
+				@click="services()"
+			><span aria-hidden="true" style="font-size: 1.5em;">Services</span></BButton>
 
-		<BButton
-			v-show="$store.state.showMenu"
-			variant="outline-seconadry"
-			class="w-100 p-2 text-primary"
-			@click="contact()"
-		><span aria-hidden="true" style="font-size: 1.5em;">Contact</span></BButton>
+			<BButton
+				v-show="$store.state.showMenu"
+				variant="outline-seconadry"
+				class="w-100 p-2 text-primary"
+				@click="contact()"
+			><span aria-hidden="true" style="font-size: 1.5em;">Contact</span></BButton>
 
-		<BButton
-			v-show="$store.state.showMenu"
-			variant="outline-seconadry"
-			class="w-100 p-2 text-primary"
-			@click="about()"
-		><span aria-hidden="true" style="font-size: 1.5em;">About</span></BButton>
+			<BButton
+				v-show="$store.state.showMenu"
+				variant="outline-seconadry"
+				class="w-100 p-2 text-primary"
+				@click="about()"
+			><span aria-hidden="true" style="font-size: 1.5em;">About</span></BButton>
 
-		<SocialMediaPlug v-show="$store.state.showMenu" size="48" class="my-3" />
-	</nav>
+			<SocialMediaPlug v-show="$store.state.showMenu" size="48" class="my-3" />
+		</nav>
+
+		<transition name="fade">
+			<div
+				v-if="$store.state.showMenu"
+				class="backdrop w-100"
+				@click="closeMenu()"
+			></div>
+		</transition>
+	</div>
 </template>
 
 <script>
@@ -115,4 +125,21 @@
 	}
 	
 	.isOpen { width: 75%; }
+
+	.backdrop {
+		z-index: 1999;
+
+		position: fixed;
+		top: 0;
+		right: 0;
+
+		height: 100vh;
+		width: 0;
+
+		overflow-x: hidden;
+
+		background: rgba(255, 255, 255, 0.1);
+
+		backdrop-filter: blur(6px);
+	}
 </style>

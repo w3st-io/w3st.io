@@ -5,26 +5,32 @@
 				<h1 class="mb-5 text-white">Our Sites</h1>
 				<ul class="list-unstyled">
 					<li class="mb-3">
-						<a href="http://mouth2mouth.herokuapp.com" class="h1">
-							The Mouth2Mouth Beauty Bar
-						</a>
-					</li>
-
-					<li class="mb-3">
-						<a href="http://chickenwings-example.herokuapp.com" class="h1">
-							Art of Wings
-						</a>
-					</li>
-
-					<li class="mb-3">
-						<a href="http://jj-shop.herokuapp.com" class="h1">
+						<a href="http://www.jjinthemaking.com" target="blank" class="h1">
 							JJ Shop
 						</a>
 					</li>
 
 					<li class="mb-3">
-						<a href="http://blockbased.io" class="h1">
-							blockbased.io
+						<a href="https://www.balancewithpamela.com" target="blank" class="h1">
+							Balance Within
+						</a>
+					</li>
+
+					<li class="mb-3">
+						<a href="https://www.theartofwings.com" target="blank" class="h1">
+							Art of Wings
+						</a>
+					</li>
+
+					<li class="mb-3">
+						<a href="https://www.24-7fireprotection.com" target="blank" class="h1">
+							24/7 Fire Protection
+						</a>
+					</li>
+
+					<li class="mb-3">
+						<a href="https://www.rptide.com" target="blank" class="h1">
+							RpTide
 						</a>
 					</li>
 				</ul>

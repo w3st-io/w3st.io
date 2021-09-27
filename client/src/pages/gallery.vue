@@ -3,7 +3,7 @@
 		<!-- [R1] -->
 		<BRow>
 			<BCol cols="12" data-aos="fade-down">
-				<h1 class="m-0 text-center font-weight-bold text-light">
+				<h1 class="mb-4 text-center text-light">
 					{{ defaultData.r1.c1.title }}
 				</h1>
 			</BCol>
@@ -23,14 +23,20 @@
 					<img
 						:src="col.image"
 						alt="No Photo"
-						class="w-100"
+						class="w-100 rounded shadow"
 						style="height: 300px; object-fit: cover;"
 					>
 				
-					<h6 class="text-center mt-4">
-						{{ col.description }}
-						<span class="text-white">.</span>
-					</h6>
+					<a :href="col.link" target="blank">
+						<h4 class="text-center mt-4 text-dark">
+							{{ col.description }}
+						</h4>
+
+						<BButton
+							variant="light"
+							class="w-100 mb-4"
+						>Vist</BButton>
+					</a>
 				</BCol>
 			</BRow>
 		</viewer>
@@ -68,7 +74,7 @@
 	import { getIdFromURL } from 'vue-youtube-embed'
 
 	// [IMPORT] Personal //
-	import defaultData from '@/defaults/pages/gallery'
+	import defaultData from '../defaults/pages/gallery'
 
 	export default {
 		data() {
