@@ -31,21 +31,6 @@ s_socket.start(io)
 app.io = io
 
 
-// [MONGOOSE-CONNECTION] //
-mongoose.connect(
-	config.MONG_URI,
-	{
-		useNewUrlParser: true,
-		useUnifiedTopology: true,
-		useFindAndModify: false,
-	},
-	(err, connected) => {
-		if (connected) { console.log('Mongoose Connected to DB') }
-		else { console.log(`Mongoose Connection Error --> ${err}`) }
-	}
-)
-
-
 // [USE] // Default Stuff // Set static Folder // Rate-Limiter //
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
