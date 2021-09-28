@@ -7,67 +7,72 @@
 						<thead>
 							<tr>
 								<td colspan="4">
-									<h3 class="m-0 text-center font-weight-bold text-light">
+									<h3 class="text-center font-weight-bold text-primary">
 										{{ pageData.services[0].name }}
 									</h3>
+									<h6 class="text-center text-muted">
+										{{ pageData.services[0].disclaimer }}
+									</h6>
+
+									<p>{{ pageData.services[0].description }}</p>
 								</td>
 							</tr>
-							<tr>
+							<tr class="text-center font-weight-bold text-primary">
 								<td></td>
-								<td class="text-center font-weight-bold text-primary">
+								<td>
 									{{ pageData.services[0].variants[0].name }}
 								</td>
-								<td class="text-center font-weight-bold text-primary">
+								<td>
 									{{ pageData.services[0].variants[1].name }}
 								</td>
-								<td class="text-center font-weight-bold text-primary">
+								<td>
 									{{ pageData.services[0].variants[2].name }}
 								</td>
 							</tr>
 						</thead>
 
-						<tbody class="text-primary">
+						<tbody class="text-center font-weight-bold text-primary">
 							<tr>
-								<td class="text-center font-weight-bold">Complete Informative Pages</td>
-								<td class="text-center font-weight-bold">✓</td>
-								<td class="text-center font-weight-bold">✓</td>
-								<td class="text-center font-weight-bold">✓</td>
+								<td>Complete Informative Pages</td>
+								<td>✓</td>
+								<td>✓</td>
+								<td>✓</td>
 							</tr>
 							<tr>
-								<td class="text-center font-weight-bold">Blog</td>
-								<td class="text-center font-weight-bold">✓</td>
-								<td class="text-center font-weight-bold">✓</td>
-								<td class="text-center font-weight-bold">✓</td>
+								<td>Blog</td>
+								<td>✓</td>
+								<td>✓</td>
+								<td>✓</td>
 							</tr>
 							<tr>
-								<td class="text-center font-weight-bold">Full SEO</td>
-								<td class="text-center font-weight-bold">✓</td>
-								<td class="text-center font-weight-bold">✓</td>
-								<td class="text-center font-weight-bold">✓</td>
+								<td>Full SEO</td>
+								<td>✓</td>
+								<td>✓</td>
+								<td>✓</td>
 							</tr>
 							<tr>
-								<td class="text-center font-weight-bold">Online Store</td>
+								<td>Online Store</td>
 								<td></td>
-								<td class="text-center font-weight-bold">✓</td>
-								<td class="text-center font-weight-bold">✓</td>
+								<td>✓</td>
+								<td>✓</td>
 							</tr>
 							<tr>
-								<td class="text-center font-weight-bold">Mobile App</td>
+								<td>Mobile App</td>
 								<td></td>
 								<td></td>
-								<td class="text-center font-weight-bold">✓</td>
+								<td>✓</td>
 							</tr>
 							<tr>
-								<td class="text-center border-top border-primary font-weight-bold">
+								<td class="border-top border-primary">
 									Price
 								</td>
-								<td class="text-center border-top border-primary font-weight-bold">
+								<td class="border-top border-primary">
 									{{ pageData.services[0].variants[0].price }}
 								</td>
-								<td class="text-center border-top border-primary font-weight-bold">
+								<td class="border-top border-primary">
 									{{ pageData.services[0].variants[1].price }}
 								</td>
-								<td class="text-center border-top border-primary font-weight-bold">
+								<td class="border-top border-primary">
 									{{ pageData.services[0].variants[2].price }}
 								</td>
 							</tr>
@@ -82,9 +87,14 @@
 						<thead>
 							<tr>
 								<td colspan="4">
-									<h3 class="m-0 text-center font-weight-bold text-light">
+									<h3 class="text-center font-weight-bold text-primary">
 										{{ pageData.services[1].name }}
 									</h3>
+									<h6 class="text-center text-muted">
+										{{ pageData.services[1].disclaimer }}
+									</h6>
+
+									<p>{{ pageData.services[1].description }}</p>
 								</td>
 							</tr>
 							<tr>
