@@ -29,13 +29,8 @@
 				
 					<a :href="col.link" target="blank">
 						<h4 class="text-center my-4 text-dark">
-							{{ col.title }}
+							Visit {{ col.title }}
 						</h4>
-
-						<BButton
-							variant="light"
-							class="w-100 mb-4"
-						>Vist</BButton>
 					</a>
 				</BCol>
 			</BRow>
