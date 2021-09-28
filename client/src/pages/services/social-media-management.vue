@@ -3,90 +3,35 @@
 		<BRow>
 			<BCol cols="12">
 				<!-- [WEB-APP-HOSTING] -->
-				<div class="mb-5 shadow table-holder">
-					<table class="m-0 table table-striped table-dark shadow">
-						<thead class="thead">
-							<tr>
-								<td colspan="4">
-									<h3 class="text-center text-primary">
-										{{ pageData.services[2].name }}
-									</h3>
-									<h6 class="mb-4 text-center text-muted">
-										{{ pageData.services[2].disclaimer }}
-									</h6>
+				<BCard
+					bg-variant="dark"
+					text-variant="primary"
+					class="mb-5 shadow table-holder"
+				>
+					<h3 class="mb-4 text-center text-primary">
+						{{ pageData.services[2].name }}
+					</h3>
+					
+					<p class="h5 mb-4 text-light">
+						{{ pageData.services[2].descriptions[0] }}
+					</p>
 
-									<p>{{ pageData.services[2].descriptions[0] }}</p>
-								</td>
-							</tr>
+					<BListGroup class="mx-auto" style="max-width: 500px;">
+						<BListGroupItem class="bg-dark text-primary">
+							<h5 class="m-0 text-center">
+								What You Get From Our SMM Service
+							</h5>
+						</BListGroupItem>
 
-							<tr>
-								<td></td>
-								<td class="text-center font-weight-bold text-primary">
-									{{ pageData.services[2].variants[0].name }}
-								</td>
-								<td class="text-center font-weight-bold text-primary">
-									{{ pageData.services[2].variants[1].name }}
-								</td>
-								<td class="text-center font-weight-bold text-primary">
-									{{ pageData.services[2].variants[2].name }}
-								</td>
-							</tr>
-						</thead>
-
-						<tbody>
-							<tr class="text-center font-weight-bold text-primary">
-								<td class="">
-									General Code Maintaince
-								</td>
-								<td>✓</td>
-								<td>✓</td>
-								<td>✓</td>
-							</tr>
-
-							<tr class="text-center font-weight-bold text-primary">
-								<td class="">
-									General Info Updating
-								</td>
-								<td>✓</td>
-								<td>✓</td>
-								<td>✓</td>
-							</tr>
-
-							<tr class="text-center font-weight-bold text-primary">
-								<td class="">
-									Product Updating
-								</td>
-								<td></td>
-								<td>✓</td>
-								<td>✓</td>
-							</tr>
-
-							<tr class="text-center font-weight-bold text-primary">
-								<td class="">
-									App Maintainence
-								</td>
-								<td></td>
-								<td></td>
-								<td>✓</td>
-							</tr>
-
-							<tr class="text-center font-weight-bold text-primary">
-								<td class="border-top border-primary">
-									Price
-								</td>
-								<td class="border-top border-primary">
-									{{ pageData.services[2].variants[0].price }}
-								</td>
-								<td class="border-top border-primary">
-									{{ pageData.services[2].variants[1].price }}
-								</td>
-								<td class="border-top border-primary">
-									{{ pageData.services[2].variants[2].price }}
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
+						<BListGroupItem
+							v-for="(f, i) in pageData.services[2].features"
+							:key="i"
+							class="text-light bg-dark"
+						>
+							{{ f }}
+						</BListGroupItem>
+					</BListGroup>
+				</BCard>
 			</BCol>
 		</BRow>
 	</BContainer>
