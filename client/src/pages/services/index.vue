@@ -19,13 +19,14 @@
 						<h3 class="m-0 text-center text-primary">
 							{{ s.name }}
 						</h3>
-						<h6 v-if="s.disclaimer" class="my-2 text-center text-muted">
-							{{ s.disclaimer }}
-						</h6>
 					</BCardHeader>
 
 					<BCardBody>
 						<p>{{ s.descriptions[0] }}</p>
+
+						<h6 v-if="s.disclaimer" class="my-2 text-center text-muted">
+							{{ s.disclaimer }}
+						</h6>
 					</BCardBody>
 					
 					<BCardFooter>
