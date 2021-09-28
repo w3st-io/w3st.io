@@ -11,6 +11,9 @@ import emailSent from '../pages/email-sent'
 import gallery from '../pages/gallery'
 import notFound from '../pages/404'
 import services from '../pages/services'
+import services_webAppDevelopment from '../pages/services/web-app-development'
+import services_webAppHosting from '../pages/services/web-app-hosting'
+import services_socialMediaManagement from '../pages/services/social-media-management'
 
 
 Vue.use(VueRouter)
@@ -77,6 +80,33 @@ const router = new VueRouter({
 			meta: {
 				auth: true,
 				title: 'Services'
+			},
+		},
+		{
+			path: '/services/web-app-development',
+			name: 'services_webAppDevelopment',
+			component: services_webAppDevelopment,
+			meta: {
+				auth: true,
+				title: 'Web App Development'
+			},
+		},
+		{
+			path: '/services/web-app-hosting',
+			name: 'services_webAppHosting',
+			component: services_webAppHosting,
+			meta: {
+				auth: true,
+				title: 'Web App Hosting'
+			},
+		},
+		{
+			path: '/services/social-media-management',
+			name: 'services',
+			component: services_socialMediaManagement,
+			meta: {
+				auth: true,
+				title: 'Social Media Management'
 			},
 		},
 		// [404] //

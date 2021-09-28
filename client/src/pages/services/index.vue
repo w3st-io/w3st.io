@@ -1,174 +1,46 @@
 <template>
 	<BContainer class="my-5">
 		<BRow>
-			<BCol cols="12" md="6">
-				<!-- [WEB-APP-DEVELOPMENT] -->
-				<div class="mb-5 shadow table-holder">
-					<table class="m-0 table table-striped table-dark">
-						<thead class="">
-							<tr>
-								<td colspan="4">
-									<h3 class="text-center text-primary">
-										{{ pageData.services[0].name }}
-									</h3>
-									<h6 class="mb-4 text-center text-muted">
-										{{ pageData.services[0].disclaimer }}
-									</h6>
-
-									<p>{{ pageData.services[0].description }}</p>
-								</td>
-							</tr>
-							
-							<tr class="text-center font-weight-bold text-primary">
-								<td></td>
-								<td>
-									{{ pageData.services[0].variants[0].name }}
-								</td>
-								<td>
-									{{ pageData.services[0].variants[1].name }}
-								</td>
-								<td>
-									{{ pageData.services[0].variants[2].name }}
-								</td>
-							</tr>
-						</thead>
-
-						<tbody class="text-center font-weight-bold text-primary">
-							<tr>
-								<td>Complete Informative Pages</td>
-								<td>✓</td>
-								<td>✓</td>
-								<td>✓</td>
-							</tr>
-							<tr>
-								<td>Blog</td>
-								<td>✓</td>
-								<td>✓</td>
-								<td>✓</td>
-							</tr>
-							<tr>
-								<td>Full SEO</td>
-								<td>✓</td>
-								<td>✓</td>
-								<td>✓</td>
-							</tr>
-							<tr>
-								<td>Online Store</td>
-								<td></td>
-								<td>✓</td>
-								<td>✓</td>
-							</tr>
-							<tr>
-								<td>Mobile App</td>
-								<td></td>
-								<td></td>
-								<td>✓</td>
-							</tr>
-							<tr>
-								<td class="border-top border-primary">
-									Price
-								</td>
-								<td class="border-top border-primary">
-									{{ pageData.services[0].variants[0].price }}
-								</td>
-								<td class="border-top border-primary">
-									{{ pageData.services[0].variants[1].price }}
-								</td>
-								<td class="border-top border-primary">
-									{{ pageData.services[0].variants[2].price }}
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</BCol>
-
-			<BCol cols="12" md="6">
+			<BCol
+				v-for="(s, i) in pageData.services"
+				:key="i"
+				cols="12" md="6" lg="4"
+			>
 				<!-- [WEB-APP-HOSTING] -->
-				<div class="mb-5 shadow table-holder">
-					<table class="m-0 table table-striped table-dark shadow">
-						<thead class="thead">
-							<tr>
-								<td colspan="4">
-									<h3 class="text-center text-primary">
-										{{ pageData.services[1].name }}
-									</h3>
-									<h6 class="mb-4 text-center text-muted">
-										{{ pageData.services[1].disclaimer }}
-									</h6>
+				<BCard
+					bg-variant="dark"
+					text-variant="light"
+					no-body
+					class="mb-5 shadow"
+					style="min-height: 581px;"
+				>
+					<BCardHeader>
+						<h3 class="m-0 text-center text-primary">
+							{{ s.name }}
+						</h3>
+						<h6 v-if="s.disclaimer" class="my-2 text-center text-muted">
+							{{ s.disclaimer }}
+						</h6>
+					</BCardHeader>
 
-									<p>{{ pageData.services[1].description }}</p>
-								</td>
-							</tr>
-
-							<tr>
-								<td></td>
-								<td class="text-center font-weight-bold text-primary">
-									{{ pageData.services[1].variants[0].name }}
-								</td>
-								<td class="text-center font-weight-bold text-primary">
-									{{ pageData.services[1].variants[1].name }}
-								</td>
-								<td class="text-center font-weight-bold text-primary">
-									{{ pageData.services[1].variants[2].name }}
-								</td>
-							</tr>
-						</thead>
-
-						<tbody>
-							<tr class="text-center font-weight-bold text-primary">
-								<td class="">
-									General Code Maintaince
-								</td>
-								<td>✓</td>
-								<td>✓</td>
-								<td>✓</td>
-							</tr>
-
-							<tr class="text-center font-weight-bold text-primary">
-								<td class="">
-									General Info Updating
-								</td>
-								<td>✓</td>
-								<td>✓</td>
-								<td>✓</td>
-							</tr>
-
-							<tr class="text-center font-weight-bold text-primary">
-								<td class="">
-									Product Updating
-								</td>
-								<td></td>
-								<td>✓</td>
-								<td>✓</td>
-							</tr>
-
-							<tr class="text-center font-weight-bold text-primary">
-								<td class="">
-									App Maintainence
-								</td>
-								<td></td>
-								<td></td>
-								<td>✓</td>
-							</tr>
-
-							<tr class="text-center font-weight-bold text-primary">
-								<td class="border-top border-primary">
-									Price
-								</td>
-								<td class="border-top border-primary">
-									{{ pageData.services[1].variants[0].price }}
-								</td>
-								<td class="border-top border-primary">
-									{{ pageData.services[1].variants[1].price }}
-								</td>
-								<td class="border-top border-primary">
-									{{ pageData.services[1].variants[2].price }}
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
+					<BCardBody>
+						<p>
+							{{ s.descriptions[0] }}
+							<br><br>
+							{{ s.descriptions[1] }}
+						</p>
+					</BCardBody>
+					
+					<BCardFooter>
+						<RouterLink :to="`/services/${s.id}`">
+							<BButton
+								variant="primary"
+								class="w-100"
+								size="lg"
+							>See Pricing</BButton>
+						</RouterLink>
+					</BCardFooter>
+				</BCard>
 			</BCol>
 		</BRow>
 	</BContainer>
@@ -185,9 +57,3 @@
 		},
 	}
 </script>
-
-<style lang="scss" scoped>
-	.table-holder {
-		overflow-x: auto;
-	}
-</style>
