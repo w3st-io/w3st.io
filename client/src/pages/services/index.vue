@@ -25,9 +25,7 @@
 					</BCardHeader>
 
 					<BCardBody>
-						<p>
-							{{ s.descriptions[0] }}
-						</p>
+						<p>{{ s.descriptions[0] }}</p>
 					</BCardBody>
 					
 					<BCardFooter>
