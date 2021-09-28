@@ -3,7 +3,7 @@
 		<!-- [R1] -->
 		<BRow>
 			<BCol cols="12" data-aos="fade-down">
-				<h1 class="mb-4 text-center text-light">
+				<h1 class="mb-5 text-center text-light">
 					{{ defaultData.r1.c1.title }}
 				</h1>
 			</BCol>
