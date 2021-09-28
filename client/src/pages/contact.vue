@@ -1,12 +1,17 @@
 <template>
 	<!-- Content -->
 	<BContainer style="height: 80vh;">
-		<BCard bg-variant="dark" class="mx-auto my-5" style="max-width: 600px;">
+		<BCard
+			bg-variant="dark"
+			text-variant="primary"
+			class="mx-auto my-5 shadow"
+			style="max-width: 600px;"
+		>
 			<!-- [R1] -->
 			<BRow class="">
 				<!-- Get a Quote -->
 				<BCol cols="12">
-					<h2 class="mb-5 text-center text-primary">Contact Us</h2>
+					<h2 class="mb-5 text-center">Contact Us</h2>
 
 					<a href="mailto:w3st.io2021@gmail.com">
 						<h3 class="text-center text-light">
