@@ -36,4 +36,47 @@ module.exports = {
 		twitterLink: '',
 		youtubeLink: '',
 	},
+
+	services: [
+		{
+			name: 'Web Development',
+			variants: [
+				{
+					id: 'standard-website-development',
+					name: 'Standard Website Development',
+					price: '$1,499.99',
+				},
+				{
+					id: 'advanced-website-development',
+					name: 'Advanced Website Development',
+					price: '$2,999.99',
+				},
+				{
+					id: 'pro-website-development',
+					name: 'Pro Website Development',
+					price: '$5,999.99',
+				},
+			]
+		},
+		{
+			name: 'Web Hosting',
+			variants: [
+				{
+					id: 'standard-website-hosting',
+					name: 'Standard Website Hosting',
+					price: '$49.99/mo',
+				},
+				{
+					id: 'advanced-website-hosting',
+					name: 'Standard Website Hosting',
+					price: '$90.99/mo',
+				},
+				{
+					id: 'pro-website-hosting',
+					name: 'Pro Website Hosting',
+					price: '$169.99/mo',
+				},
+			]
+		}
+	],
 }
