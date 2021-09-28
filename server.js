@@ -14,6 +14,8 @@ const rateLimiter = require('./s-rate-limiters')
 
 const a_ = require('./s-routes/api')
 
+const p_services = require('./s-routes/pages/services')
+
 
 // [EXPRESS + SERVER] //
 const app = express()
@@ -36,6 +38,8 @@ app.use(rateLimiter.limiter)
 
 // [USE] Personal // API // Pages //
 app.use('/api', a_)
+
+app.use('/pages/services', p_services)
 
 
 // [HEROKU] Set Static Folder for Heroku //
