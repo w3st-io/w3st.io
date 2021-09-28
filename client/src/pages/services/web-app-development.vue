@@ -11,7 +11,7 @@
 									<h3 class="text-center text-primary">
 										{{ pageData.services[0].name }}
 									</h3>
-									<h6 class="mb-4 text-center text-muted">
+									<h6 class="small mb-4 text-center">
 										{{ pageData.services[0].disclaimer }}
 									</h6>
 

@@ -5,6 +5,7 @@
 				v-for="(s, i) in pageData.services"
 				:key="i"
 				cols="12" md="6" lg="4"
+				class="d-flex align-items-stretch"
 			>
 				<!-- [WEB-APP-HOSTING] -->
 				<BCard
@@ -12,7 +13,7 @@
 					text-variant="light"
 					no-body
 					class="mb-5 shadow"
-					style="min-height: 581px;"
+					style="min-height: 462px;"
 				>
 					<BCardHeader>
 						<h3 class="m-0 text-center text-primary">
@@ -26,8 +27,6 @@
 					<BCardBody>
 						<p>
 							{{ s.descriptions[0] }}
-							<br><br>
-							{{ s.descriptions[1] }}
 						</p>
 					</BCardBody>
 					

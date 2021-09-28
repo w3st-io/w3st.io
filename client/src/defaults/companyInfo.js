@@ -125,8 +125,8 @@ module.exports = {
 
 			features: [
 				'Upload new content every day (2 photos/videos a day)',
-				'Post stories about updates and questionnaire',
-				'Interactions with the market by responding and answering their questions',
+				'Post updates and questionnaires on story',
+				'Interactions with the audience by responding and answering their questions',
 				'Grabs feedback from the audience',
 				'Identify trends and create engaged content',
 				'Build an interactive digital community online',
