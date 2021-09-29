@@ -10,13 +10,13 @@
 				>
 					<BRow>
 						<BCol cols="12">
-							<h3 class="mb-4 text-center text-primary">
+							<h3 class="mb-5 text-center text-primary">
 								{{ pageData.services[2].name }}
 							</h3>
 						</BCol>
 
 						<BCol cols="12" md="6">
-							<p class="h5 mb-4 text-light">
+							<p class="h5 mb-4 p-5 text-light">
 								{{ pageData.services[2].descriptions[0] }}
 							</p>
 						</BCol>

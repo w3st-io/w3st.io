@@ -119,8 +119,7 @@ module.exports = {
 			],
 
 			descriptions: [
-				'It\'s important to have a digital presence online for any business because it helps engage with an audience who is constantly browsing, exploring, and contributing to the web. The benefits of engaging, interacting, and collecting thoughts and opinions on social media are extremely beneficial to a business. One of the benefits is that a business can learn which products or services are sought-after and which ones are not. Thus a business can make changes that help cater even more to the ever-changing market.',
-				'We want to help your business by collecting this information to better help you make informed decisions for operating your business. We provide the service of maintaining, uploading, interacting, and collecting from and for your social media platforms.',
+				'A presence on social media is essential for any business to successfully engage with an audience who is constantly browsing, exploring, and contributing to the web. By collecting feedback from these platforms, a business can make better-informed decisions to navigate an ever-changing world. We provide the service of maintaining and collecting feedback from these platforms so you dont have too. Here is what we offer...',
 			],
 
 			features: [

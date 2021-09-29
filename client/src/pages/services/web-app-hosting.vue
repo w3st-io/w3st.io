@@ -1,76 +1,82 @@
 <template>
 	<BContainer class="my-5">
-		<BRow>
-			<BCol cols="12">
-				<!-- [WEB-APP-HOSTING] -->
-				<div class="mb-5 shadow table-holder">
-					<table class="m-0 table table-striped table-dark shadow">
-						<thead class="thead">
-							<tr>
-								<td colspan="4">
-									<h3 class="text-center text-primary">
-										{{ pageData.services[1].name }}
-									</h3>
-									<h6 class="mb-4 text-center text-muted">
-										{{ pageData.services[1].disclaimer }}
-									</h6>
+		<!-- [WEB-APP-DEVELOPMENT] -->
+		<BRow class="mx-1 shadow">
+			<BCol cols="12" class="bg-dark text-light">
+				<div class="py-3">
+					<h3 class="text-center text-primary">
+						{{ pageData.services[1].name }}
+					</h3>
+					<h6 class="m-0 small text-center">
+						{{ pageData.services[1].disclaimer }}
+					</h6>
+				</div>
+			</BCol>
 
-									<p>{{ pageData.services[1].descriptions[0] }}</p>
-								</td>
-							</tr>
+			<BCol cols="12" xl="4" class="bg-dark text-light">
+				<div class="p-2 p-xl-5">
+					<p>{{ pageData.services[1].descriptions[0] }}</p>
+				</div>
+			</BCol>
 
-							<tr>
+			<BCol cols="12" xl="8" class="bg-dark">
+				<div class="p-3 table-holder">
+					<table class="m-0 table table-striped table-dark">
+						<thead class="">
+							<tr class="text-center font-weight-bold text-primary">
 								<td></td>
-								<td class="text-center font-weight-bold text-primary">
+								<td>
 									{{ pageData.services[1].variants[0].name }}
 								</td>
-								<td class="text-center font-weight-bold text-primary">
+								<td>
 									{{ pageData.services[1].variants[1].name }}
 								</td>
-								<td class="text-center font-weight-bold text-primary">
+								<td>
 									{{ pageData.services[1].variants[2].name }}
 								</td>
 							</tr>
 						</thead>
 
-						<tbody>
-							<tr class="text-center font-weight-bold text-primary">
-								<td class="">
+						<tbody class="text-center font-weight-bold text-primary">
+							<tr>
+								<td>
 									General Code Maintaince
 								</td>
 								<td>✓</td>
 								<td>✓</td>
 								<td>✓</td>
 							</tr>
-
-							<tr class="text-center font-weight-bold text-primary">
-								<td class="">
+							<tr>
+								<td>
 									General Info Updating
 								</td>
 								<td>✓</td>
 								<td>✓</td>
 								<td>✓</td>
 							</tr>
-
-							<tr class="text-center font-weight-bold text-primary">
-								<td class="">
+							<tr>
+								<td>
 									Product Updating
 								</td>
 								<td></td>
 								<td>✓</td>
 								<td>✓</td>
 							</tr>
-
-							<tr class="text-center font-weight-bold text-primary">
-								<td class="">
+							<tr>
+								<td>Online Store</td>
+								<td></td>
+								<td>✓</td>
+								<td>✓</td>
+							</tr>
+							<tr>
+								<td>
 									App Maintainence
 								</td>
 								<td></td>
 								<td></td>
 								<td>✓</td>
 							</tr>
-
-							<tr class="text-center font-weight-bold text-primary">
+							<tr>
 								<td class="border-top border-primary">
 									Price
 								</td>
