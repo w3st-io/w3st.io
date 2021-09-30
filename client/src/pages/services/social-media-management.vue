@@ -32,7 +32,15 @@
 							:key="i"
 							class="text-light bg-dark"
 						>- {{ f }}</BListGroupItem>
+
+						<BListGroupItem class="bg-dark text-primary">
+							<h6 class="m-0 text-center">
+								Pricing:
+								{{ pageData.services[2].variants[0].price }}
+							</h6>
+						</BListGroupItem>
 					</BListGroup>
+
 				</BCol>
 
 				<BCol cols="12">
