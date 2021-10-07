@@ -4,7 +4,7 @@
 			<BCol cols="12" class="text-center">
 				<h1 class="mb-4 text-light">Our Sites</h1>
 
-				<BRow>
+				<BRow class="mx-1">
 					<BCol
 						v-for="(cp, i) in clientProjects"
 						:key="i"
