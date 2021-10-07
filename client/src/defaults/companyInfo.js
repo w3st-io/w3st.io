@@ -48,7 +48,7 @@ module.exports = {
 
 			name: 'Web App Development (WAD)',
 
-			lottiefilesLink: 'https://assets2.lottiefiles.com/packages/lf20_hntzYU.json',
+			lottiefilesLink: 'https://assets6.lottiefiles.com/packages/lf20_8zzfnwv8.json',
 
 			variants: [
 				{
