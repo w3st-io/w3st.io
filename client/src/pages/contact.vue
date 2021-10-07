@@ -10,28 +10,44 @@
 			<!-- [R1] -->
 			<BRow class="">
 				<!-- Get a Quote -->
-				<BCol cols="12" sm="12" lg="8">
-					<div class="p-lg-5">
-						<h1 class="mb-5 text-center font-weight-bold">Contact Us</h1>
+				<BCol cols="12">
+					<h1 class="m-0 text-center font-weight-bold">Contact Us</h1>
+				</BCol>
 
-						<a href="mailto:w3st.io2021@gmail.com">
-							<h5 class="text-center text-light">
-								Email: w3st.io2021@gmail.com
-							</h5>
-						</a>
-						<br>
+				<BCol cols="12" sm="12" lg="8" class="px-5 py-3">
+					<h2 class="mb-3 text-center font-weight-bold">Email</h2>
+					<a href="mailto:w3st.io2021@gmail.com">
+						<BButton
+							variant="primary"
+							pill
+							size="lg"
+							class="w-100 mb-4"
+						>
+							<h2 class="m-0 font-weight-bold text-light">
+								w3st.io2021@gmail.com
+							</h2>
+						</BButton>
+					</a>
+					<br>
 
-						<a href="tel:2013626859">
-							<h5 class="mb-4 text-center text-light">
-								Cell: 201-362-6859
-							</h5>
-						</a>
-					</div>
+					<h2 class="mb-3 text-center font-weight-bold">Cell</h2>
+					<a href="tel:2013626859">
+						<BButton
+							variant="primary"
+							pill
+							size="lg"
+							class="w-100 mb-4"
+						>
+							<h2 class="m-0 font-weight-bold text-light">
+								201-362-6859
+							</h2>
+						</BButton>
+					</a>
 				</BCol>
 
 				<BCol cols="12" sm="12" lg="4">
 					<lottie-player
-						src="https://assets5.lottiefiles.com/packages/lf20_qumw8rhu.json"
+						src="https://assets10.lottiefiles.com/packages/lf20_lgsx862o.json"
 						class="text-center mx-auto lottie-size"
 						background="transparent"
 						speed="1"
