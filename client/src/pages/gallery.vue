@@ -3,8 +3,8 @@
 		<BCard bg-variant="dark" text-variant="primary" class="shadow">
 			<!-- [R1] -->
 			<BRow>
-				<BCol cols="12" data-aos="fade-down">
-					<h1 class="mb-5 text-center">
+				<BCol cols="12">
+					<h1 class="mb-5 text-center font-weight-bold">
 						{{ defaultData.r1.c1.title }}
 					</h1>
 				</BCol>

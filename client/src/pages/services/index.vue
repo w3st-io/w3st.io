@@ -13,18 +13,27 @@
 					text-variant="light"
 					no-body
 					class="mb-5 shadow"
-					style="min-height: 462px;"
 				>
 					<BCardHeader>
-						<h3 class="m-0 text-center text-primary">
+						<h4 class="m-0 text-center font-weight-bold text-primary">
 							{{ s.name }}
-						</h3>
+						</h4>
 					</BCardHeader>
 
 					<BCardBody>
-						<p>{{ s.descriptions[0] }}</p>
+						<lottie-player
+							:src="s.lottiefilesLink"
+							class="w-100 mx-auto my-2 text-center"
+							style="height: 300px; min-height: 300px;"
+							background="transparent"
+							speed="1"
+							loop
+							autoplay
+						/>
 
-						<h6 v-if="s.disclaimer" class="my-2 text-center text-muted">
+						<p class="font-weight-bold">{{ s.descriptions[0] }}</p>
+
+						<h6 v-if="s.disclaimer" class="my-2 text-center font-weight-bold text-muted">
 							{{ s.disclaimer }}
 						</h6>
 					</BCardBody>
@@ -33,7 +42,7 @@
 						<RouterLink :to="`/services/${s.id}`">
 							<BButton
 								variant="primary"
-								class="w-100"
+								class="w-100 font-weight-bold"
 								size="lg"
 							>See Pricing</BButton>
 						</RouterLink>

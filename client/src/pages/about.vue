@@ -1,7 +1,7 @@
 <template>
-	<BContainer class="my-5" style="height: 80vh;">
+	<BContainer class="my-5">
 		<BCard bg-variant="dark" text-variant="light" class="m-auto text-light" style="max-width: 600px;">
-			<h1 class="text-center text-primary">About {{ companyInfo.name }}</h1>
+			<h1 class="text-center font-weight-bold text-primary">About {{ companyInfo.name }}</h1>
 			<p>{{ companyInfo.description }}</p>
 			<h6 class="small">{{ companyInfo.caption }}</h6>
 		</BCard>

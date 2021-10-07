@@ -45,7 +45,11 @@ module.exports = {
 	services: [
 		{
 			id: 'web-app-development',
-			name: 'Web App Development',
+
+			name: 'Web App Development (WAD)',
+
+			lottiefilesLink: 'https://assets2.lottiefiles.com/packages/lf20_hntzYU.json',
+
 			variants: [
 				{
 					id: 'standard-web-app-development',
@@ -70,12 +74,15 @@ module.exports = {
 
 			features: [],
 
-
-			disclaimer: 'DISCLAIMER: WEB APP CODE ONLY. THIS DOES NOT INCLUDE HOSTING.',
+			disclaimer: 'DISCLAIMER: Web app code only. hosting not included.',
 		},
 		{
 			id: 'web-app-hosting',
-			name: 'Web App Hosting',
+
+			name: 'Web App Hosting (WAH)',
+
+			lottiefilesLink: 'https://assets2.lottiefiles.com/packages/lf20_3jezq8s4.json',
+
 			variants: [
 				{
 					id: 'standard-web-app-hosting',
@@ -104,12 +111,16 @@ module.exports = {
 		},
 		{
 			id: 'social-media-management',
+			
 			name: 'Social Media Management (SMM)',
+
+			lottiefilesLink: 'https://assets10.lottiefiles.com/packages/lf20_q4m6E9.json',
+
 			variants: [
 				{
 					id: 'stanard-social-media-management',
 					name: 'Standard Social Media Management',
-					price: '$49.99 /mo',
+					price: '$59.99 /mo',
 				},
 				{
 					id: 'pro-social-media-management',

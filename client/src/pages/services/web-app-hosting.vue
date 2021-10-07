@@ -4,111 +4,120 @@
 		<BCard
 			bg-variant="dark"
 			text-variant="light"
+			no-body
 			class="mb-5 shadow table-holder"
 		>
-			<BRow>
-				<BCol cols="12" class="bg-dark text-light">
-					<div class="py-3">
-						<h3 class="text-center text-primary">
-							{{ pageData.services[1].name }}
-						</h3>
-						<h6 class="m-0 small text-center">
-							{{ pageData.services[1].disclaimer }}
-						</h6>
-					</div>
-				</BCol>
+			<BCardHeader>
+				<BRow>
+					<BCol cols="12">
+						<div class="text-light">
+							<h3 class="m-0 text-center font-weight-bold text-primary">
+								{{ pageData.services[1].name }}
+							</h3>
+						</div>
+					</BCol>
+				</BRow>
+			</BCardHeader>
 
-				<BCol cols="12" xl="4" class="bg-dark text-light">
-					<div class="p-2 p-xl-5">
-						<p>{{ pageData.services[1].descriptions[0] }}</p>
-					</div>
-				</BCol>
+			<BCardBody>
+				<BRow>
+					<BCol cols="12" xl="4" class="bg-dark text-light">
+						<div class="p-2 p-xl-5">
+							<p class="font-weight-bold">
+								{{ pageData.services[1].descriptions[0] }}
+							</p>
+						</div>
+					</BCol>
 
-				<BCol cols="12" xl="8" class="bg-dark">
-					<div class="p-3 table-holder">
-						<table class="m-0 table table-striped table-dark">
-							<thead class="">
-								<tr class="text-center font-weight-bold text-primary">
-									<td></td>
-									<td>
-										{{ pageData.services[1].variants[0].name }}
-									</td>
-									<td>
-										{{ pageData.services[1].variants[1].name }}
-									</td>
-									<td>
-										{{ pageData.services[1].variants[2].name }}
-									</td>
-								</tr>
-							</thead>
+					<BCol cols="12" xl="8" class="bg-dark">
+						<div class="table-holder">
+							<table class="m-0 table table-striped table-dark shadow">
+								<thead class="">
+									<tr class="text-center font-weight-bold text-primary">
+										<td></td>
+										<td>
+											{{ pageData.services[1].variants[0].name }}
+										</td>
+										<td>
+											{{ pageData.services[1].variants[1].name }}
+										</td>
+										<td>
+											{{ pageData.services[1].variants[2].name }}
+										</td>
+									</tr>
+								</thead>
 
-							<tbody class="text-center font-weight-bold text-primary">
-								<tr>
-									<td>
-										General Code Maintaince
-									</td>
-									<td>✓</td>
-									<td>✓</td>
-									<td>✓</td>
-								</tr>
-								<tr>
-									<td>
-										General Info Updating
-									</td>
-									<td>✓</td>
-									<td>✓</td>
-									<td>✓</td>
-								</tr>
-								<tr>
-									<td>
-										Product Updating
-									</td>
-									<td></td>
-									<td>✓</td>
-									<td>✓</td>
-								</tr>
-								<tr>
-									<td>Online Store</td>
-									<td></td>
-									<td>✓</td>
-									<td>✓</td>
-								</tr>
-								<tr>
-									<td>
-										App Maintainence
-									</td>
-									<td></td>
-									<td></td>
-									<td>✓</td>
-								</tr>
-								<tr>
-									<td class="border-top border-primary">
-										Price
-									</td>
-									<td class="border-top border-primary">
-										{{ pageData.services[1].variants[0].price }}
-									</td>
-									<td class="border-top border-primary">
-										{{ pageData.services[1].variants[1].price }}
-									</td>
-									<td class="border-top border-primary">
-										{{ pageData.services[1].variants[2].price }}
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</BCol>
+								<tbody class="text-center font-weight-bold text-primary">
+									<tr>
+										<td>
+											General Code Maintaince
+										</td>
+										<td>✓</td>
+										<td>✓</td>
+										<td>✓</td>
+									</tr>
+									<tr>
+										<td>
+											General Info Updating
+										</td>
+										<td>✓</td>
+										<td>✓</td>
+										<td>✓</td>
+									</tr>
+									<tr>
+										<td>
+											Product Updating
+										</td>
+										<td></td>
+										<td>✓</td>
+										<td>✓</td>
+									</tr>
+									<tr>
+										<td>Online Store</td>
+										<td></td>
+										<td>✓</td>
+										<td>✓</td>
+									</tr>
+									<tr>
+										<td>
+											App Maintainence
+										</td>
+										<td></td>
+										<td></td>
+										<td>✓</td>
+									</tr>
+									<tr>
+										<td class="border-top border-primary">
+											Price
+										</td>
+										<td class="border-top border-primary">
+											{{ pageData.services[1].variants[0].price }}
+										</td>
+										<td class="border-top border-primary">
+											{{ pageData.services[1].variants[1].price }}
+										</td>
+										<td class="border-top border-primary">
+											{{ pageData.services[1].variants[2].price }}
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</BCol>
+				</BRow>
+			</BCardBody>
 
-				<BCol cols="12">
+			<BCardFooter class="bg-dark">
+				<div class="text-center">
 					<RouterLink to="/contact">
 						<BButton
 							variant="primary"
-							class="w-100"
+							class="w-100 font-weight-bold"
+							size="lg"
 						>Contact</BButton>
 					</RouterLink>
-				</BCol>
-			</BRow>
+				</div>
+			</BCardFooter>
 		</BCard>
 	</BContainer>
 </template>
