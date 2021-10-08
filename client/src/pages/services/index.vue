@@ -13,35 +13,36 @@
 				</h3>
 			</BCardHeader>
 
-			<BCardBody
+			<BCardHeader
 				v-for="(s, i) in pageData.services"
 				:key="i"
 				cols="12"
-				class="border-bottom bg-service"
-				style="border-color: rgba(0, 0, 0, 0.125) !important;"
 			>
 				<BRow>
 					<BCol cols="12" md="8" order="1" :order-md="isEven(i)">
-						<div class="px-md-5">
-							<div class="p-lg-3">
-								<h3 class="mb-4 text-center font-weight-bold text-dark">
-									{{ s.name }}
-								</h3>
+						<div class="px-md-4 py-4">
+							<div class="px-lg-5">
+								<div class="px-xl-5">
+									<h3 class="mb-5 text-center font-weight-bold text-light">
+										{{ s.name }}
+									</h3>
 
-								<p class="font-weight-bold text-justify text-light">
-									{{ s.descriptions[0] }}
-								</p>
-							</div>
-
-							<div class="text-center my-3">
-								<RouterLink :to="`/services/${s.id}`">
-									<BButton
-										variant="light"
-										class="w-100 font-weight-bold"
-										size="lg"
-										style="max-width: 300px"
-									>See Pricing</BButton>
-								</RouterLink>
+									<p class="h5 mb-5 font-weight-bold text-justify text-dark">
+										{{ s.descriptions[0] }}
+									</p>
+								
+									<div class="text-center">
+										<RouterLink :to="`/services/${s.id}`">
+											<BButton
+												variant="light"
+												class="w-100 font-weight-bold"
+												size="lg"
+												pill
+												style="max-width: 300px"
+											>See Pricing</BButton>
+										</RouterLink>
+									</div>
+								</div>
 							</div>
 						</div>
 					</BCol>
@@ -49,7 +50,7 @@
 					<BCol cols="12" md="4" order="0" :order-md="isOdd(i)">
 						<lottie-player
 							:src="s.lottiefilesLink"
-							class="w-100 mx-auto text-center lottie"
+							class="mx-auto text-center lottie"
 							style=""
 							background="transparent"
 							speed="1"
@@ -58,7 +59,7 @@
 						/>
 					</BCol>
 				</BRow>
-			</BCardBody>
+			</BCardHeader>
 		</BCard>
 	</BContainer>
 </template>
@@ -101,16 +102,10 @@
 
 <style lang="scss" scoped>
 	.lottie {
-		width: 300px;
-		height: 300px;
+		width: 100%;
 
-		@media (max-width: 576px) {
+		@media (max-width: 752px) {
 			width: 200px;
-			height: 200px;
 		}
-	}
-
-	.bg-service {
-		background-color: rgba(0, 0, 0, 0.0) !important;
 	}
 </style>

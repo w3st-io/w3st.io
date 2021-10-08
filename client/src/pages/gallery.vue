@@ -7,7 +7,7 @@
 				</h3>
 			</BCardHeader>
 
-			<BCardBody>
+			<BCardHeader>
 				<!-- viewer -->
 				<viewer :options="{ title: false, transition: false, }">
 					<!-- [R3] -->
@@ -59,7 +59,7 @@
 						/>
 					</BCol>
 				</BRow>
-			</BCardBody>
+			</BCardHeader>
 		</BCard>
 	</BContainer>
 </template>

@@ -14,9 +14,9 @@
 				</BCol>
 			</BCardHeader>
 
-			<BCardBody>
+			<BCardHeader>
 				<BRow>
-					<BCol cols="12" sm="12" lg="8" class="px-5 py-3">
+					<BCol cols="12" lg="7" class="px-md-5 py-3">
 						<h2 class="mb-3 text-center font-weight-bold text-dark">
 							Email
 						</h2>
@@ -27,9 +27,9 @@
 								size="lg"
 								class="w-100 mb-5"
 							>
-								<h4 class="m-0 font-weight-bold">
+								<h6 class="m-0 font-weight-bold">
 									w3st.io2021@gmail.com
-								</h4>
+								</h6>
 							</BButton>
 						</a>
 						<br>
@@ -44,17 +44,17 @@
 								size="lg"
 								class="w-100 mb-5"
 							>
-								<h4 class="m-0 font-weight-bold">
+								<h6 class="m-0 font-weight-bold">
 									201-362-6859
-								</h4>
+								</h6>
 							</BButton>
 						</a>
 					</BCol>
 
-					<BCol cols="12" sm="12" lg="4">
+					<BCol cols="12" lg="5">
 						<lottie-player
-							src="https://assets10.lottiefiles.com/packages/lf20_lgsx862o.json"
-							class="text-center mx-auto lottie"
+							src="https://assets1.lottiefiles.com/packages/lf20_5o8zf8kq.json"
+							class="w-100 text-center mx-auto"
 							background="transparent"
 							speed="1"
 							loop
@@ -62,19 +62,7 @@
 						/>
 					</BCol>
 				</BRow>
-			</BCardBody>
+			</BCardHeader>
 		</BCard>
 	</BContainer>
 </template>
-
-<style lang="scss" scoped>
-	.lottie {
-		width: 300px;
-		height: 300px;
-
-		@media (max-width: 768px) {
-			width: 200px;
-			height: 200px;
-		}
-	}
-</style>
