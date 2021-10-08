@@ -2,7 +2,7 @@
 	<BContainer class="my-5">
 		<!-- [WEB-APP-DEVELOPMENT] -->
 		<BCard
-			bg-variant="dark"
+			bg-variant="primary"
 			text-variant="light"
 			no-body
 			class="mb-5 shadow table-holder"
@@ -11,11 +11,11 @@
 				<BRow>
 					<BCol cols="12">
 						<div class="text-light">
-							<h3 class="m-0 text-center font-weight-bold text-primary">
+							<h3 class="m-0 text-center font-weight-bold text-light">
 								{{ pageData.services[0].name }}
 							</h3>
 
-							<h6 class="m-0 small text-center">
+							<h6 class="m-0 small text-center text-dark">
 								{{ pageData.services[0].disclaimer }}
 							</h6>
 						</div>
@@ -23,21 +23,32 @@
 				</BRow>
 			</BCardHeader>
 
-			<BCardBody>
+			<BCardHeader>
 				<BRow>
-					<BCol cols="12" xl="4" class="bg-dark text-light">
+					<BCol cols="12" xl="4" class="text-dark">
 						<div class="p-2 p-xl-5">
-							<p class="font-weight-bold">
+							<p class="mb-5 text-justify h5 font-weight-bold">
 								{{ pageData.services[0].descriptions[0] }}
 							</p>
+
+							<div class="text-center">
+								<RouterLink to="/contact">
+									<BButton
+										variant="light"
+										class="w-100 font-weight-bold"
+										size="lg"
+										pill
+									>Contact</BButton>
+								</RouterLink>
+							</div>
 						</div>
 					</BCol>
 
-					<BCol cols="12" xl="8" class="bg-dark">
+					<BCol cols="12" xl="8">
 						<div class="p-3 table-holder">
 							<table class="m-0 table table-striped table-dark">
 								<thead class="">
-									<tr class="text-center font-weight-bold text-primary">
+									<tr class="text-center font-weight-bold text-light">
 										<td></td>
 										<td>
 											{{ pageData.services[0].variants[0].name }}
@@ -51,7 +62,7 @@
 									</tr>
 								</thead>
 
-								<tbody class="text-center font-weight-bold text-primary">
+								<tbody class="text-center font-weight-bold text-light">
 									<tr>
 										<td>Complete Informative Pages</td>
 										<td>✓</td>
@@ -101,19 +112,7 @@
 						</div>
 					</BCol>
 				</BRow>
-			</BCardBody>
-
-			<BCardFooter class="bg-dark">
-				<div class="text-center">
-					<RouterLink to="/contact">
-						<BButton
-							variant="primary"
-							class="w-100 font-weight-bold"
-							size="lg"
-						>Contact</BButton>
-					</RouterLink>
-				</div>
-			</BCardFooter>
+			</BCardHeader>
 		</BCard>
 	</BContainer>
 </template>

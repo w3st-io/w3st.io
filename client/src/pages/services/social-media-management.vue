@@ -2,16 +2,16 @@
 	<BContainer class="my-5">
 		<!-- [WEB-APP-HOSTING] -->
 		<BCard
-			bg-variant="dark"
+			bg-variant="primary"
 			text-variant="light"
 			no-body
-			class="mb-5 shadow table-holder"
+			class="mb-5 shadow table-holder shadow"
 		>
 			<BCardHeader>
 				<BRow>
 					<BCol cols="12">
 						<div class="text-light">
-							<h3 class="m-0 text-center font-weight-bold text-primary">
+							<h3 class="m-0 text-center font-weight-bold text-light">
 								{{ pageData.services[2].name }}
 							</h3>
 						</div>
@@ -19,52 +19,48 @@
 				</BRow>
 			</BCardHeader>
 
-			<BCardBody>
+			<BCardHeader>
 				<BRow>
 					<BCol cols="12" xl="6">
-						<div class="p-2 p-xl-5">
-							<p class="font-weight-bold">
-								{{ pageData.services[2].descriptions[0] }}
+						<div class="px-xl-5 py-4">
+							<p class="mb-5 h5 text-justify font-weight-bold text-dark">
+								{{ pageData.services[1].descriptions[0] }}
 							</p>
+
+							<div class="text-center">
+								<RouterLink to="/contact">
+									<BButton
+										variant="light"
+										class="w-100 font-weight-bold"
+										size="lg"
+										pill
+									>Contact</BButton>
+								</RouterLink>
+							</div>
 						</div>
 					</BCol>
 
 					<BCol cols="12" xl="6">
-						<BListGroup class="mx-auto mb-3">
-							<BListGroupItem class="bg-dark text-primary">
+						<BListGroup class="mx-auto my-3">
+							<BListGroupItem class="bg-primary text-light">
 								<h5 class="m-0 text-center font-weight-bold">
-									What You Get From Our SMM Service
+									What You Get From Our SMM
 								</h5>
 							</BListGroupItem>
 
 							<BListGroupItem
 								v-for="(f, i) in pageData.services[2].features"
 								:key="i"
-								class="text-light bg-dark"
+								class="font-weight-bold text-dark bg-primary"
 							>- {{ f }}</BListGroupItem>
-
-							<BListGroupItem class="bg-dark text-primary">
-								<h6 class="m-0 text-center font-weight-bold">
-									Pricing:
-									{{ pageData.services[2].variants[0].price }}
-								</h6>
-							</BListGroupItem>
 						</BListGroup>
+
+						<h5 class="my-3 text-center font-weight-bold">
+							{{ pageData.services[2].variants[0].price }}
+						</h5>
 					</BCol>
 				</BRow>
-			</BCardBody>
-
-			<BCardFooter class="bg-dark">
-				<div class="text-center">
-					<RouterLink to="/contact">
-						<BButton
-							variant="primary"
-							class="w-100 font-weight-bold"
-							size="lg"
-						>Contact</BButton>
-					</RouterLink>
-				</div>
-			</BCardFooter>
+			</BCardHeader>
 		</BCard>
 	</BContainer>
 </template>

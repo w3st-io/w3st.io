@@ -4,7 +4,7 @@
 			bg-variant="primary"
 			text-variant="light"
 			no-body
-			class="m-auto text-light"
+			class="m-auto text-light shadow"
 		>
 			<BCardHeader>
 				<BCol cols="12">

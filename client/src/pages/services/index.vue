@@ -5,7 +5,7 @@
 			bg-variant="primary"
 			text-variant="light"
 			no-body
-			class="mb-3 mb-md-5"
+			class="mb-3 mb-md-5 shadow"
 		>
 			<BCardHeader class="text-light">
 				<h3 class="m-0 text-center font-weight-bold text-light">

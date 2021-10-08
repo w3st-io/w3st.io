@@ -1,6 +1,6 @@
 <template>
 	<BContainer class="my-5">
-		<BCard bg-variant="primary" text-variant="light" no-body class="">
+		<BCard bg-variant="primary" text-variant="light" no-body class="shadow">
 			<BCardHeader>
 				<h3 class="m-0 text-center font-weight-bold">
 					{{ defaultData.r1.c1.title }}

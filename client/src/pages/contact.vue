@@ -5,7 +5,7 @@
 			bg-variant="primary"
 			text-variant="light"
 			no-body
-			class="w-100 mx-auto my-5"
+			class="w-100 mx-auto my-5 shadow"
 			style="max-width: 1000px;"
 		>
 			<BCardHeader>
