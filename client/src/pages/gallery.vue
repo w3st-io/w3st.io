@@ -1,10 +1,10 @@
 <template>
 	<BContainer class="my-5">
-		<BCard bg-variant="dark" text-variant="primary" no-body class="shadow">
+		<BCard bg-variant="primary" text-variant="light" no-body class="">
 			<BCardHeader>
-				<h1 class="m-0 text-center font-weight-bold">
+				<h3 class="m-0 text-center font-weight-bold">
 					{{ defaultData.r1.c1.title }}
-				</h1>
+				</h3>
 			</BCardHeader>
 
 			<BCardBody>
@@ -22,12 +22,12 @@
 							<img
 								:src="col.image"
 								alt="No Photo"
-								class="w-100 rounded shadow"
+								class="w-100 rounded"
 								style="height: 300px; object-fit: cover;"
 							>
 						
 							<a :href="col.link" target="blank">
-								<h4 class="text-center my-4">
+								<h4 class="text-center my-4 font-weight-bold text-light">
 									Visit {{ col.title }}
 								</h4>
 							</a>
@@ -38,7 +38,7 @@
 				<!-- [R4] -->
 				<BRow v-if="defaultData.r5.cx.length > 0" class="mb-3">
 					<BCol cols="12">
-						<h3 class="m-0 text-primary" data-aos="fade-right">
+						<h3 class="m-0 text-light" data-aos="fade-right">
 							{{ defaultData.r4.c1.title }}
 						</h3>
 					</BCol>

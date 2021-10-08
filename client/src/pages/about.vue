@@ -1,7 +1,7 @@
 <template>
 	<BContainer class="my-5">
 		<BCard
-			bg-variant="dark"
+			bg-variant="primary"
 			text-variant="light"
 			no-body
 			class="m-auto text-light"
@@ -9,15 +9,15 @@
 		>
 			<BCardHeader>
 				<BCol cols="12">
-					<h1 class="m-0 text-center font-weight-bold text-primary">
+					<h3 class="m-0 text-center font-weight-bold text-light">
 						About {{ companyInfo.name }}
-					</h1>
+					</h3>
 				</BCol>
 			</BCardHeader>
 
 			<BCardBody>
-				<p>{{ companyInfo.description }}</p>
-				<h6 class="small">{{ companyInfo.caption }}</h6>
+				<p class="font-weight-bold text-dark">{{ companyInfo.description }}</p>
+				<p class="font-weight-bold text-dark">{{ companyInfo.caption }}</p>
 			</BCardBody>
 		</BCard>
 	</BContainer>
