@@ -31,7 +31,7 @@
 					
 					<BCol cols="12" lg="4">
 						<lottie-player
-							src="https://assets1.lottiefiles.com/packages/lf20_5o8zf8kq.json"
+							src="https://assets5.lottiefiles.com/packages/lf20_3jmvq04g.json"
 							class="w-100 text-center mx-auto lottie"
 							background="transparent"
 							speed="1"
@@ -60,6 +60,7 @@
 <style lang="scss" scoped>
 	.lottie {
 		width: 100%;
+		max-height: 300px;
 
 		@media (max-width: 576px) {
 			width: 200px;
