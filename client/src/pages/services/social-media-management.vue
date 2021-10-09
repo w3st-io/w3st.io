@@ -31,10 +31,12 @@
 								<RouterLink to="/contact">
 									<BButton
 										variant="light"
-										class="w-100 font-weight-bold"
+										class="w-100 text-primary"
 										size="lg"
 										pill
-									>Contact</BButton>
+									>
+										<h4 class="m-0 font-weight-bold">Contact</h4>
+									</BButton>
 								</RouterLink>
 							</div>
 						</div>

@@ -2,13 +2,12 @@
 	<div class="w-100 bg-dark text-light">
 		<BContainer>
 			<BRow class="pt-4">
-				<BCol cols="12" class="text-center text-light" data-aos="fade">
-					<h5>
-						{{ companyInfo.name }} {{ new Date().getFullYear() }}
-					</h5>
-					<h6 v-html="companyInfo.caption" class="text-primary">
+				<BCol cols="12" class="text-center text-primary">
+					<h5 v-html="companyInfo.nameHTML"></h5>
+					<h6 class="text-light">
+						{{ new Date().getFullYear() }}
 					</h6>
-					<hr>
+					<hr class="bg-secondary">
 				</BCol>
 
 				<BCol cols="12" sm="6" class="text-center text-sm-left" data-aos="fade-up">

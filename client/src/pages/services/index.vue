@@ -35,11 +35,15 @@
 										<RouterLink :to="`/services/${s.id}`">
 											<BButton
 												variant="light"
-												class="w-100 font-weight-bold"
+												class="w-100 text-primary"
 												size="lg"
 												pill
 												style="max-width: 300px"
-											>See Pricing</BButton>
+											>
+												<h4 class="m-0 font-weight-bold">
+													See Pricing
+												</h4>
+											</BButton>
 										</RouterLink>
 									</div>
 								</div>

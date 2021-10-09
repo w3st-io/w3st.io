@@ -4,11 +4,13 @@ module.exports = {
 
 	name: 'W3ST.IO',
 
+	nameHTML: '<span class="text-primary">W<span class="text-light">3</span>ST<span class="text-light">.</span>IO</span>',
+
 	caption: 'Nothing is impossible in the W3ST',
 
 	description: 'Based in Teaneck NJ, we develop web apps and provide services for small and large businesses that cater to their needs. We aim to grow our client’s digital footprint online by providing powerful methods such SEO, and creating engaging content on social media. Formed and operating out of the great state of New Jersey, we focus on technologies that will influence and impact the future of commerce and business. We take pride in what we make and are only satisfied when our customers are as well..',
 
-	address: '724 cedar lane, Teaneck NJ',
+	address: '724 Cedar Lane, Teaneck NJ',
 
 	googleMapsLink: '',
 	
@@ -69,7 +71,7 @@ module.exports = {
 			],
 
 			descriptions: [
-				'Highly customizable Web Apps that are intuitive, informative, and scaleable. The Web Apps we develop for our clients aim to help reach out to customers who are seeking the products and services provided by them. All Web Apps come with intuitive pages, a blog system, and Search Engine Optimization.',
+				'A highly customizable website that is designed to help our clients reach out to their customers and share their products and services. We also provide the option to add an online store that can makes sales for your business anywhere! All Web Apps come with Fully Designed UI, a Blog System, and Search Engine Optimization (SEO).',
 			],
 
 			features: [],
