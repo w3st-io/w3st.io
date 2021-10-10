@@ -13,8 +13,8 @@
 					<!-- [R3] -->
 					<BRow class="mb-3">
 						<BCol
-							v-for="(col, index) in defaultData.r3.cx"
-							:key="index"
+							v-for="(col, i) in defaultData.r3.cx"
+							:key="i"
 							cols="12" sm="6" md="4" lg="3" xl="3"
 							class="mb-3"
 							data-aos="fade-up"
@@ -46,8 +46,8 @@
 
 				<BRow class="mb-3">
 					<BCol
-						v-for="(col, index) in defaultData.r5.cx"
-						:key="index"
+						v-for="(col, i) in defaultData.r5.cx"
+						:key="i"
 						cols="12" sm="6"
 						class="mb-3 p-3"
 						data-aos="fade-up"
