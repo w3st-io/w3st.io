@@ -56,7 +56,7 @@ module.exports = {
 				{
 					id: 'standard-web-app-development',
 					name: 'Standard Web App Development',
-					price: '$1,499.99',
+					price: '$1,999.99',
 				},
 				{
 					id: 'advanced-web-app-development',
@@ -89,7 +89,7 @@ module.exports = {
 				{
 					id: 'standard-web-app-hosting',
 					name: 'Standard Web App Hosting',
-					price: '$49.99 /mo',
+					price: '$59.99 /mo',
 				},
 				{
 					id: 'advanced-web-app-hosting',
@@ -99,7 +99,7 @@ module.exports = {
 				{
 					id: 'pro-web-app-hosting',
 					name: 'Pro Web App Hosting',
-					price: '$169.99 /mo',
+					price: '$199.99 /mo',
 				},
 			],
 
