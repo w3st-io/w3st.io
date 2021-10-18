@@ -93,7 +93,7 @@ module.exports = {
 				},
 				{
 					id: 'advanced-web-app-hosting',
-					name: 'Standard Web App Hosting',
+					name: 'Advanced Web App Hosting',
 					price: '$90.99 /mo',
 				},
 				{
