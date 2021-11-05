@@ -19,7 +19,7 @@
 						:data-aos-delay="200 * i"
 					>
 						<div class="h-100 py-5 bg-shade">
-							<a :href="cp.link" target="blank" class="text-decoration-none">
+							<a :href="cp.link" target="_blank" class="text-decoration-none">
 								<h1 class="text-light">{{ cp.title }}</h1>
 							</a>
 						</div>
