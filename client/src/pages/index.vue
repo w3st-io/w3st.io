@@ -2,7 +2,7 @@
 	<BContainer>
 		<BRow class="my-5">
 			<BCol cols="12" class="text-center">
-				<h1 class="mb-4 text-light">Our Sites</h1>
+				<h1 class="mb-4 text-light">A Few of Our Sites</h1>
 
 				<BRow class="mx-1">
 					<BCol
