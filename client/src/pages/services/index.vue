@@ -9,7 +9,7 @@
 			class="mb-3 mb-md-5 bg-transparent "
 		>
 			<BCardHeader class="border-primary">
-				<h1 class="my-4 text-center font-weight-bold text-primary">
+				<h1 class="my-4 text-center font-weight-bold text-primary text-uppercase">
 					Our Services
 				</h1>
 			</BCardHeader>
@@ -25,7 +25,7 @@
 						<div class="px-md-4">
 							<div class="px-lg-5">
 								<div class="px-xl-5">
-									<h3 class="mb-5 text-center font-weight-bold text-primary">
+									<h3 class="mb-5 text-center font-weight-bold text-primary text-uppercase">
 										{{ s.name }}
 									</h3>
 

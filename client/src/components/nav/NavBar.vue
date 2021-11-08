@@ -4,7 +4,7 @@
 			<BRow>
 				<BCol cols="12" class="text-center">
 					<RouterLink to="/" class="text-decoration-none">
-						<h1 class="my-2 logo">
+						<h1 class="my-2 logo text-spread">
 							<span class="text-primary">W</span>
 							<span class="text-white">3</span>
 							<span class="text-primary">ST</span>
@@ -14,24 +14,24 @@
 					</RouterLink>
 				</BCol>
 
-				<BCol cols="12" class="d-none d-md-block text-center">
-					<RouterLink to="/" class="mx-4 h4 font-weight-bold menu-link">
+				<BCol cols="12" class="d-none d-md-block text-center text-uppercase text-spread-sm">
+					<RouterLink to="/" class="mx-3 h5 font-weight-bold menu-link text-center">
 						Home
 					</RouterLink>
 
-					<RouterLink to="/services" class="mx-4 h4 font-weight-bold menu-link">
+					<RouterLink to="/services" class="mx-3 h5 font-weight-bold menu-link">
 						Services
 					</RouterLink>
 
-					<RouterLink to="/contact" class="mx-4 h4 font-weight-bold menu-link">
+					<RouterLink to="/contact" class="mx-3 h5 font-weight-bold menu-link">
 						Contact
 					</RouterLink>
 
-					<RouterLink to="/about" class="mx-4 h4 font-weight-bold menu-link">
+					<RouterLink to="/about" class="mx-3 h5 font-weight-bold menu-link">
 						About
 					</RouterLink>
 
-					<RouterLink to="/gallery" class="mx-4 h4 font-weight-bold menu-link">
+					<RouterLink to="/gallery" class="mx-3 h5 font-weight-bold menu-link">
 						Gallery
 					</RouterLink>
 				</BCol>

@@ -2,7 +2,9 @@
 	<BContainer class="py-6">
 		<BRow>
 			<BCol cols="12" class="text-center">
-				<h1 class="my-4 font-weight-bold text-primary">Our Works</h1>
+				<h1 class="my-4 font-weight-bold text-uppercase text-primary text-spread">
+					Our Works
+				</h1>
 
 				<BRow class="my-5">
 					<BCol
@@ -23,7 +25,7 @@
 						>
 							<div class="pt-4 h-100 bg-shade2">
 								<a :href="cp.link" target="_blank" class="text-decoration-none">
-									<h1 class="pt-5 font-weight-bold">{{ cp.title }}</h1>
+									<h1 class="pt-5 font-weight-bold text-uppercase">{{ cp.title }}</h1>
 								</a>
 							</div>
 						</div>

@@ -8,7 +8,7 @@
 			border-variant="primary"
 		>
 			<BCardHeader class="border-bottom border-primary">
-				<h1 class="my-4 text-center font-weight-bold text-primary">
+				<h1 class="my-4 text-center font-weight-bold text-primary text-uppercase">
 					About <span v-html="companyInfo.nameHTML"></span>
 				</h1>
 			</BCardHeader>

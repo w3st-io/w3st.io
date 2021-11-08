@@ -10,7 +10,7 @@
 		>
 			<BCardHeader class="border-primary">
 				<div class="my-4 text-primary">
-					<h3 class="text-center font-weight-bold">
+					<h3 class="text-center font-weight-bold text-uppercase">
 						{{ pageData.services[0].name }}
 					</h3>
 
