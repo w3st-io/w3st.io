@@ -21,14 +21,16 @@
 								{{ companyInfo.description }}
 							</p>
 
-							<RouterLink to="/contact">
-								<BButton
-									variant="outline-primary"
-									size="lg"
-									class="font-weight-bold"
-									pill
-								>Contact Us Today</BButton>
-							</RouterLink>
+							<div class="text-center">
+									<RouterLink to="/contact">
+										<BButton
+											variant="outline-primary"
+											size="lg"
+											class="font-weight-bold"
+											pill
+										>Contact Us Today</BButton>
+									</RouterLink>
+							</div>
 						</div>
 					</BCol>
 					

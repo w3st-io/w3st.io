@@ -16,7 +16,7 @@
 
 				<BCol cols="12" class="d-none d-md-block text-center">
 					<RouterLink to="/" class="mx-4 h4 font-weight-bold menu-link">
-						<span class="">Home</span>
+						Home
 					</RouterLink>
 
 					<RouterLink to="/services" class="mx-4 h4 font-weight-bold menu-link">
@@ -24,15 +24,15 @@
 					</RouterLink>
 
 					<RouterLink to="/contact" class="mx-4 h4 font-weight-bold menu-link">
-						<span class="">Contact</span>
+						Contact
 					</RouterLink>
 
 					<RouterLink to="/about" class="mx-4 h4 font-weight-bold menu-link">
-						<span class="">About</span>
+						About
 					</RouterLink>
 
 					<RouterLink to="/gallery" class="mx-4 h4 font-weight-bold menu-link">
-						<span class="">Gallery</span>
+						Gallery
 					</RouterLink>
 				</BCol>
 
