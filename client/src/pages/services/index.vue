@@ -1,5 +1,5 @@
 <template>
-	<BContainer class="py-5">
+	<BContainer class="py-6">
 		<!-- [WEB-APP-HOSTING] -->
 		<BCard
 			bg-variant="dark"
@@ -18,10 +18,11 @@
 				v-for="(s, i) in pageData.services"
 				:key="i"
 				cols="12"
+				class="py-5"
 			>
 				<BRow>
 					<BCol cols="12" md="8" order="1" :order-md="isEven(i)">
-						<div class="px-md-4 py-4">
+						<div class="px-md-4">
 							<div class="px-lg-5">
 								<div class="px-xl-5">
 									<h3 class="mb-5 text-center font-weight-bold text-primary">

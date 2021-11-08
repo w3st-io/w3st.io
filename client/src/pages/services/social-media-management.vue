@@ -1,5 +1,5 @@
 <template>
-	<BContainer class="py-5">
+	<BContainer class="py-6">
 		<!-- [WEB-APP-HOSTING] -->
 		<BCard
 			bg-variant="dark"
@@ -28,7 +28,7 @@
 								<RouterLink to="/contact">
 									<BButton
 										variant="outline-primary"
-										class="w-100"
+										class="w-100 mb-5"
 										size="lg"
 										pill
 									>

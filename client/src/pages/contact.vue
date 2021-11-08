@@ -1,13 +1,12 @@
 <template>
 	<!-- Content -->
-	<BContainer class="py-5">
+	<BContainer class="py-6">
 		<BCard
 			bg-variant="dark"
 			text-variant="light"
 			border-variant="primary"
 			no-body
 			class="w-100 mx-auto shadow bg-transparent"
-			style="max-width: 1000px;"
 		>
 			<BCardHeader class="border-primary">
 				<BCol cols="12">
@@ -17,7 +16,7 @@
 				</BCol>
 			</BCardHeader>
 
-			<BCardHeader class="py-4">
+			<BCardHeader class="py-5">
 				<BRow>
 					<BCol cols="12" lg="7" class="px-md-5">
 						<h2 class="mb-3 text-center font-weight-bold">

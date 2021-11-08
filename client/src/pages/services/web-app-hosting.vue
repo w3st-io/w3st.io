@@ -1,5 +1,5 @@
 <template>
-	<BContainer class="py-5">
+	<BContainer class="py-6">
 		<!-- [WEB-APP-DEVELOPMENT] -->
 		<BCard
 			bg-variant="dark"

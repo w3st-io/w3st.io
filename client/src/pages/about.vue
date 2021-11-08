@@ -1,5 +1,5 @@
 <template>
-	<BContainer class="py-5">
+	<BContainer class="py-6">
 		<BCard
 			bg-variant="dark"
 			text-variant="light"
@@ -13,24 +13,22 @@
 				</h1>
 			</BCardHeader>
 
-			<BCardHeader>
+			<BCardBody class="py-5">
 				<BRow>
 					<BCol cols="12" lg="8">
-						<div class="m-lg-5">
-							<div class="m-xl-5 text-center">
-								<p class="h5 mb-5 font-weight-bold">
-									{{ companyInfo.description }}
-								</p>
+						<div class="mx-xl-5">
+							<p class="mb-5 h5 text-center font-weight-bold">
+								{{ companyInfo.description }}
+							</p>
 
-								<RouterLink to="/contact">
-									<BButton
-										variant="outline-primary"
-										size="lg"
-										class="font-weight-bold"
-										pill
-									>Contact Us Today</BButton>
-								</RouterLink>
-							</div>
+							<RouterLink to="/contact">
+								<BButton
+									variant="outline-primary"
+									size="lg"
+									class="font-weight-bold"
+									pill
+								>Contact Us Today</BButton>
+							</RouterLink>
 						</div>
 					</BCol>
 					
@@ -45,7 +43,7 @@
 						/>
 					</BCol>
 				</BRow>
-			</BCardHeader>
+			</BCardBody>
 		</BCard>
 	</BContainer>
 </template>

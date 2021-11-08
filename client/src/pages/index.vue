@@ -1,5 +1,5 @@
 <template>
-	<BContainer class="py-5">
+	<BContainer class="py-6">
 		<BRow>
 			<BCol cols="12" class="text-center">
 				<h1 class="my-4 font-weight-bold text-primary">Our Works</h1>
