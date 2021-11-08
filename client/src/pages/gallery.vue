@@ -5,7 +5,7 @@
 			text-variant="light"
 			border-variant="primary"
 			no-body
-			class="shadow"
+			class="shadow bg-transparent"
 		>
 			<BCardHeader class="border-primary">
 				<h1 class="my-4 text-center font-weight-bold text-primary">
@@ -32,7 +32,7 @@
 							>
 						
 							<a :href="col.link" target="blank">
-								<h4 class="text-center my-4 font-weight-bold text-light">
+								<h4 class="text-center my-4 font-weight-bold">
 									Visit {{ col.title }}
 								</h4>
 							</a>

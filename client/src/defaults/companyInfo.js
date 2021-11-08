@@ -94,7 +94,7 @@ module.exports = {
 				{
 					id: 'advanced-web-app-hosting',
 					name: 'Advanced Web App Hosting',
-					price: '$90.99 /mo',
+					price: '$89.99 /mo',
 				},
 				{
 					id: 'pro-web-app-hosting',
@@ -138,7 +138,7 @@ module.exports = {
 			features: [
 				'Upload new content every day (2 photos/videos a day)',
 				'Post updates and questionnaires on story',
-				'Interactions with the audience by responding and answering their questions',
+				'Interactions with customers by responding and answering their questions',
 				'Grabs feedback from the audience',
 				'Identify trends and create engaged content',
 				'Build an interactive digital community online',

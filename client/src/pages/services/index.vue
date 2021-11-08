@@ -6,7 +6,7 @@
 			text-variant="light"
 			border-variant="primary"
 			no-body
-			class="mb-3 mb-md-5"
+			class="mb-3 mb-md-5 bg-transparent "
 		>
 			<BCardHeader class="border-primary">
 				<h1 class="my-4 text-center font-weight-bold text-primary">

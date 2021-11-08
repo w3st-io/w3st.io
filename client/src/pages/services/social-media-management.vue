@@ -1,37 +1,34 @@
 <template>
-	<BContainer class="my-5">
+	<BContainer class="py-5">
 		<!-- [WEB-APP-HOSTING] -->
 		<BCard
-			bg-variant="primary"
+			bg-variant="dark"
 			text-variant="light"
+			border-variant="primary"
 			no-body
-			class="mb-5 shadow table-holder shadow"
+			class="mb-5 shadow table-holder shadow bg-transparent"
 		>
-			<BCardHeader>
-				<BRow>
-					<BCol cols="12">
-						<div class="text-light">
-							<h3 class="m-0 text-center font-weight-bold text-light">
-								{{ pageData.services[2].name }}
-							</h3>
-						</div>
-					</BCol>
-				</BRow>
+			<BCardHeader class="border-primary">
+				<div class="my-4">
+					<h3 class="m-0 text-center font-weight-bold text-primary">
+						{{ pageData.services[2].name }}
+					</h3>
+				</div>
 			</BCardHeader>
 
-			<BCardHeader>
-				<BRow>
+			<BCardHeader class="py-4">
+				<BRow class="py-4">
 					<BCol cols="12" xl="6">
-						<div class="px-xl-5 py-4">
-							<p class="mb-5 h5 text-justify font-weight-bold text-dark">
+						<div class="px-xl-5">
+							<p class="mb-5 h5 text-center font-weight-bold">
 								{{ pageData.services[1].descriptions[0] }}
 							</p>
 
 							<div class="text-center">
 								<RouterLink to="/contact">
 									<BButton
-										variant="light"
-										class="w-100 text-primary"
+										variant="outline-primary"
+										class="w-100"
 										size="lg"
 										pill
 									>
@@ -43,8 +40,8 @@
 					</BCol>
 
 					<BCol cols="12" xl="6">
-						<BListGroup class="mx-auto my-3">
-							<BListGroupItem class="bg-primary text-light">
+						<BListGroup class="mx-auto">
+							<BListGroupItem class="bg-shade text-primary">
 								<h5 class="m-0 text-center font-weight-bold">
 									What You Get From Our SMM
 								</h5>
@@ -53,11 +50,11 @@
 							<BListGroupItem
 								v-for="(f, i) in pageData.services[2].features"
 								:key="i"
-								class="font-weight-bold text-dark bg-primary"
+								class="font-weight-bold text-light bg-shade"
 							>- {{ f }}</BListGroupItem>
 						</BListGroup>
 
-						<h5 class="my-3 text-center font-weight-bold">
+						<h5 class="py-4 text-center font-weight-bold text-success">
 							{{ pageData.services[2].variants[0].price }}
 						</h5>
 					</BCol>

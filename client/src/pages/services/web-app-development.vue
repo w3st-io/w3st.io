@@ -1,12 +1,12 @@
 <template>
-	<BContainer class="my-5">
+	<BContainer class="py-5">
 		<!-- [WEB-APP-DEVELOPMENT] -->
 		<BCard
 			bg-variant="dark"
 			text-variant="light"
 			border-variant="primary"
 			no-body
-			class="table-holder"
+			class="table-holder bg-transparent"
 		>
 			<BCardHeader class="border-primary">
 				<div class="my-4 text-primary">
@@ -45,7 +45,7 @@
 
 					<BCol cols="12" xl="8">
 						<div class="table-holder">
-							<table class="m-0 table table-striped table-dark">
+							<table class="m-0 table table-dark bg-shade">
 								<thead class="">
 									<tr class="text-center font-weight-bold">
 										<td></td>
@@ -96,13 +96,13 @@
 										<td class="border-top border-primary">
 											Price
 										</td>
-										<td class="border-top border-primary">
+										<td class="border-top border-primary text-success">
 											{{ pageData.services[0].variants[0].price }}
 										</td>
-										<td class="border-top border-primary">
+										<td class="border-top border-primary text-success">
 											{{ pageData.services[0].variants[1].price }}
 										</td>
-										<td class="border-top border-primary">
+										<td class="border-top border-primary text-success">
 											{{ pageData.services[0].variants[2].price }}
 										</td>
 									</tr>
