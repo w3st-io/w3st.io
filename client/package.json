@@ -8,6 +8,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@vue-stripe/vue-stripe": "^4.2.8",
     "aos": "^2.3.4",
     "axios": "^0.21.1",
     "bootstrap-vue": "^2.21.2",

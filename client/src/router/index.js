@@ -9,11 +9,12 @@ import about from '../pages/about'
 import contact from '../pages/contact'
 import emailSent from '../pages/email-sent'
 import gallery from '../pages/gallery'
-import notFound from '../pages/404'
+import purchaseWahSubscription from '../pages/purchase-wah-subscription'
 import services from '../pages/services'
 import services_webAppDevelopment from '../pages/services/web-app-development'
 import services_webAppHosting from '../pages/services/web-app-hosting'
 import services_socialMediaManagement from '../pages/services/social-media-management'
+import notFound from '../pages/404'
 
 
 Vue.use(VueRouter)
@@ -40,6 +41,16 @@ const router = new VueRouter({
 			meta: {
 				auth: true,
 				title: 'About'
+			},
+		},
+		// purchase-wah-subscriptiion //
+		{
+			path: '/purchase-wah-subscription',
+			name: 'purchase-wah-subscription',
+			component: purchaseWahSubscription,
+			meta: {
+				auth: true,
+				title: 'Purchase Web App Hosting Subscription'
 			},
 		},
 		// Contact Us //

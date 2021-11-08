@@ -25,9 +25,13 @@ export default new Vuex.Store({
 
 		iexKey: '',
 		
-		socket:
-			localStorage.node_env == 'development' ?
-				io('http://localhost:5000') : io()
+		socket: localStorage.node_env == 'development' ? io('http://localhost:5000') : io(),
+
+		api: {
+			stripe: {
+				publishableKey: '',
+			}
+		},
 	},
 
 	// Syncrous //
