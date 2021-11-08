@@ -21,7 +21,7 @@
 				class="py-5"
 			>
 				<BRow>
-					<BCol cols="12" md="8" order="1" :order-md="isEven(i)">
+					<BCol cols="12" md="8" order="1" :order-md="isEven(i)" class="bg-primary-transparent">
 						<div class="px-md-4">
 							<div class="px-lg-5">
 								<div class="px-xl-5">

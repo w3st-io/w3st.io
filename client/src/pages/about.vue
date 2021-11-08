@@ -17,19 +17,19 @@
 				<BRow>
 					<BCol cols="12" lg="8">
 						<div class="mx-xl-5">
-							<p class="mb-5 h5 text-center font-weight-bold">
+							<p class="mb-5 mx-auto h5 text-center font-weight-bold" style="max-width: 600px;">
 								{{ companyInfo.description }}
 							</p>
 
 							<div class="text-center">
-									<RouterLink to="/contact">
-										<BButton
-											variant="outline-primary"
-											size="lg"
-											class="font-weight-bold"
-											pill
-										>Contact Us Today</BButton>
-									</RouterLink>
+								<RouterLink to="/contact">
+									<BButton
+										variant="outline-primary"
+										size="lg"
+										class="font-weight-bold"
+										pill
+									>Contact Us Today</BButton>
+								</RouterLink>
 							</div>
 						</div>
 					</BCol>
