@@ -10,7 +10,7 @@
 		>
 			<BCardHeader class="border-primary">
 				<div class="my-4 text-primary">
-					<h3 class="text-center font-weight-bold text-uppercase">
+					<h3 class="text-center text-uppercase text-spread-sm">
 						{{ pageData.services[0].name }}
 					</h3>
 
@@ -93,16 +93,16 @@
 										<td>✓</td>
 									</tr>
 									<tr>
-										<td class="border-top border-primary">
+										<td class="border-top">
 											Price
 										</td>
-										<td class="border-top border-primary text-success">
+										<td class="border-top text-success">
 											{{ pageData.services[0].variants[0].price }}
 										</td>
-										<td class="border-top border-primary text-success">
+										<td class="border-top text-success">
 											{{ pageData.services[0].variants[1].price }}
 										</td>
-										<td class="border-top border-primary text-success">
+										<td class="border-top text-success">
 											{{ pageData.services[0].variants[2].price }}
 										</td>
 									</tr>

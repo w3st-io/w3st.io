@@ -2,7 +2,7 @@
 	<BContainer class="py-6">
 		<BRow>
 			<BCol cols="12" class="text-center">
-				<h1 class="my-4 font-weight-bold text-uppercase text-primary text-spread">
+				<h1 class="my-4 text-uppercase text-primary text-spread">
 					Our Works
 				</h1>
 
@@ -25,7 +25,7 @@
 						>
 							<div class="pt-4 h-100 bg-shade2">
 								<a :href="cp.link" target="_blank" class="text-decoration-none">
-									<h1 class="pt-5 font-weight-bold text-uppercase">{{ cp.title }}</h1>
+									<h1 class="pt-4 text-uppercase">{{ cp.title }}</h1>
 								</a>
 							</div>
 						</div>
@@ -52,11 +52,11 @@
 	@import '../assets/styles/bootstrap-override.scss';
 
 	.cp {
-		height: 200px;
+		height: 150px;
 		overflow: hidden;
 
 		.bg-shade2 {
-			height: 200px;
+			height: 150px;
 			background-color: rgba(0, 0, 0, .8) !important;
 		}
 

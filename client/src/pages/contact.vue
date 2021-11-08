@@ -10,7 +10,7 @@
 		>
 			<BCardHeader class="border-primary">
 				<BCol cols="12">
-					<h1 class="my-4 text-center font-weight-bold text-primary text-spread">
+					<h1 class="my-4 text-center text-primary text-spread-sm">
 						CONTACT US
 					</h1>
 				</BCol>

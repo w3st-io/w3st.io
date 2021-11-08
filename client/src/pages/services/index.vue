@@ -9,7 +9,7 @@
 			class="mb-3 mb-md-5 bg-transparent "
 		>
 			<BCardHeader class="border-primary">
-				<h1 class="my-4 text-center font-weight-bold text-primary text-uppercase">
+				<h1 class="my-4 text-center text-primary text-uppercase text-spread-sm">
 					Our Services
 				</h1>
 			</BCardHeader>
@@ -25,7 +25,7 @@
 						<div class="px-md-4">
 							<div class="px-lg-5">
 								<div class="px-xl-5">
-									<h3 class="mb-5 text-center font-weight-bold text-primary text-uppercase">
+									<h3 class="mb-5 text-center text-primary text-uppercase">
 										{{ s.name }}
 									</h3>
 
@@ -42,9 +42,9 @@
 												pill
 												style="max-width: 300px"
 											>
-												<h4 class="m-0 font-weight-bold">
-													See Pricing
-												</h4>
+												<h5 class="m-0 text-uppercase">
+													Learn More
+												</h5>
 											</BButton>
 										</RouterLink>
 									</div>

@@ -8,7 +8,7 @@
 			class="shadow bg-transparent"
 		>
 			<BCardHeader class="border-primary">
-				<h1 class="my-4 text-center font-weight-bold text-primary text-uppercase">
+				<h1 class="my-4 text-center text-primary text-uppercase text-spread-sm">
 					{{ defaultData.r1.c1.title }}
 				</h1>
 			</BCardHeader>

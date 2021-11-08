@@ -15,23 +15,23 @@
 				</BCol>
 
 				<BCol cols="12" class="d-none d-md-block text-center text-uppercase text-spread-sm">
-					<RouterLink to="/" class="mx-3 h5 font-weight-bold menu-link text-center">
+					<RouterLink to="/" class="mx-3 h5 menu-link">
 						Home
 					</RouterLink>
 
-					<RouterLink to="/services" class="mx-3 h5 font-weight-bold menu-link">
+					<RouterLink to="/services" class="mx-3 h5 menu-link">
 						Services
 					</RouterLink>
 
-					<RouterLink to="/contact" class="mx-3 h5 font-weight-bold menu-link">
+					<RouterLink to="/contact" class="mx-3 h5 menu-link">
 						Contact
 					</RouterLink>
 
-					<RouterLink to="/about" class="mx-3 h5 font-weight-bold menu-link">
+					<RouterLink to="/about" class="mx-3 h5 menu-link">
 						About
 					</RouterLink>
 
-					<RouterLink to="/gallery" class="mx-3 h5 font-weight-bold menu-link">
+					<RouterLink to="/gallery" class="mx-3 h5 menu-link">
 						Gallery
 					</RouterLink>
 				</BCol>
