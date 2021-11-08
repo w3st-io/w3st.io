@@ -8,7 +8,7 @@ module.exports = {
 
 	caption: 'Nothing is impossible in the W3ST',
 
-	description: '',
+	description: 'Established in 2021, W3ST.IO LLC is a web services company that provides its clients with a wide array of skillsets that help them grow their digital presence online. We understand how important it is for a business to truly connect with its community, so we make sure to meet all of our client’s business needs. We are constantly growing and we want to make sure that your business grows with us as well..',
 
 	address: '724 Cedar Lane, Teaneck NJ',
 

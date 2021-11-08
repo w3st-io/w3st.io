@@ -29,10 +29,11 @@
 									variant="outline-primary"
 									size="lg"
 									class="mb-4"
+									pill
 								>
-									<h6 class="m-0 font-weight-bold">
+									<span class="font-weight-bold">
 										w3st.io2021@gmail.com
-									</h6>
+									</span>
 								</BButton>
 							</a>
 						</div>
@@ -48,10 +49,11 @@
 									variant="outline-primary"
 									size="lg"
 									class="mb-5"
+									pill
 								>
-									<h6 class="m-0 font-weight-bold">
+									<span class="font-weight-bold">
 										201-362-6859
-									</h6>
+									</span>
 								</BButton>
 							</a>
 						</div>

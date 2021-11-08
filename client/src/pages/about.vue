@@ -18,9 +18,18 @@
 					<BCol cols="12" lg="8">
 						<div class="m-lg-5">
 							<div class="m-xl-5 text-center">
-								<p class="h5 mb-3 font-weight-bold">
+								<p class="h5 mb-5 font-weight-bold">
 									{{ companyInfo.description }}
 								</p>
+
+								<RouterLink to="/contact">
+									<BButton
+										variant="outline-primary"
+										size="lg"
+										class="font-weight-bold"
+										pill
+									>Contact Us Today</BButton>
+								</RouterLink>
 							</div>
 						</div>
 					</BCol>
