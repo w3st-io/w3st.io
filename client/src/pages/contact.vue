@@ -1,12 +1,12 @@
 <template>
 	<!-- Content -->
-	<BContainer>
+	<BContainer class="py-5">
 		<BCard
 			bg-variant="dark"
 			text-variant="light"
 			border-variant="primary"
 			no-body
-			class="w-100 mx-auto my-5 shadow"
+			class="w-100 mx-auto shadow"
 			style="max-width: 1000px;"
 		>
 			<BCardHeader class="border-primary">

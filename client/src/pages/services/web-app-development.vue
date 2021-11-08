@@ -20,10 +20,10 @@
 				</div>
 			</BCardHeader>
 
-			<BCardHeader>
-				<BRow>
-					<BCol cols="12" xl="4" class="">
-						<div class="p-2 p-xl-5">
+			<BCardHeader class="py-4">
+				<BRow class="py-4">
+					<BCol cols="12" xl="4">
+						<div class="">
 							<p class="mb-5 text-center h5 font-weight-bold">
 								{{ pageData.services[0].descriptions[0] }}
 							</p>
@@ -32,7 +32,7 @@
 								<RouterLink to="/contact">
 									<BButton
 										variant="outline-primary"
-										class="w-100"
+										class="w-100 mb-5"
 										size="lg"
 										pill
 									>
@@ -44,7 +44,7 @@
 					</BCol>
 
 					<BCol cols="12" xl="8">
-						<div class="p-3 table-holder">
+						<div class="table-holder">
 							<table class="m-0 table table-striped table-dark">
 								<thead class="">
 									<tr class="text-center font-weight-bold">

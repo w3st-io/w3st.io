@@ -39,7 +39,7 @@
 				<!-- Mobile Menu Button -->
 				<BCol cols="12" class="d-block d-md-none text-center">
 					<BButton
-						variant="outline-dark"
+						variant="outline-primary"
 						class="w-100 text-center mobile-menu-button"
 						@click="toggle()"
 					>
@@ -154,7 +154,7 @@
 	}
 
 	.mobile-menu-button-line {
-		@extend .bg-dark;
+		@extend .bg-primary;
 
 		width: 35px;
 		height: 2px;

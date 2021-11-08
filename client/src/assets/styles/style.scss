@@ -2,7 +2,7 @@
 @import 'src/assets/styles/bootstrap-override.scss';
 
 body {
-	@extend .bg-primary;
+	@extend .bg-light;
 	
 	opacity: 1;
 	background-size:
@@ -35,4 +35,9 @@ body {
 
 .bg-black {
 	background-color: black !important;
+}
+
+.py-5 {
+	padding-top: 120px !important;
+	padding-bottom: 120px !important;
 }

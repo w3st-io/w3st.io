@@ -2,36 +2,33 @@
 	<BContainer class="my-5">
 		<!-- [WEB-APP-DEVELOPMENT] -->
 		<BCard
-			bg-variant="primary"
+			bg-variant="dark"
 			text-variant="light"
+			border-variant="primary"
 			no-body
 			class="mb-5 shadow table-holder"
 		>
-			<BCardHeader>
-				<BRow>
-					<BCol cols="12">
-						<div class="text-light">
-							<h3 class="m-0 text-center font-weight-bold text-light">
-								{{ pageData.services[1].name }}
-							</h3>
-						</div>
-					</BCol>
-				</BRow>
+			<BCardHeader class="border-primary">
+				<div class="my-4">
+					<h3 class="m-0 text-center font-weight-bold text-primary">
+						{{ pageData.services[1].name }}
+					</h3>
+				</div>
 			</BCardHeader>
 
-			<BCardHeader>
-				<BRow>
-					<BCol cols="12" xl="4" class="text-dark">
-						<div class="p-2 p-xl-5">
-							<p class="mb-5 h5 text-justify font-weight-bold">
+			<BCardHeader class="py-4">
+				<BRow class="py-4">
+					<BCol cols="12" xl="4">
+						<div class="">
+							<p class="mb-5 h5 text-center font-weight-bold">
 								{{ pageData.services[1].descriptions[0] }}
 							</p>
 
 							<div class="text-center">
 								<RouterLink to="/contact">
 									<BButton
-										variant="light"
-										class="w-100 text-primary"
+										variant="outline-primary"
+										class="w-100 mb-5"
 										size="lg"
 										pill
 									>

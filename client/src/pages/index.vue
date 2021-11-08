@@ -1,6 +1,6 @@
 <template>
-	<BContainer>
-		<BRow class="my-5">
+	<BContainer class="py-5">
+		<BRow>
 			<BCol cols="12" class="text-center">
 				<h1 class="my-4 font-weight-bold text-primary">Our Works</h1>
 
@@ -15,7 +15,7 @@
 						:data-aos-delay="200 * i"
 					>
 						<div
-							class="shadow cp"
+							class="border border-primary shadow cp"
 							:style="`
 								background-image: url(${cp.image});
 								background-position: center;
@@ -23,7 +23,7 @@
 						>
 							<div class="pt-4 h-100 bg-shade2">
 								<a :href="cp.link" target="_blank" class="text-decoration-none">
-									<h1 class="pt-5 font-weight-bold text-light">{{ cp.title }}</h1>
+									<h1 class="pt-5 font-weight-bold">{{ cp.title }}</h1>
 								</a>
 							</div>
 						</div>
@@ -59,10 +59,6 @@
 		}
 
 		&:hover {
-			h1 {
-				@extend .text-primary;
-			}
-
 			.bg-shade2 {
 				background-color: rgba(0, 0, 0, .7) !important;
 			}
