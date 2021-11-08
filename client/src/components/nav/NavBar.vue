@@ -1,39 +1,58 @@
 <template>
-	<div class="w-100 text-dark nav">
-		<BContainer class="pb-3">
+	<div class="w-100 pb-4 text-light bg-dark nav border-bottom border-primary">
+		<BContainer>
 			<BRow>
 				<BCol cols="12" class="text-center">
 					<RouterLink to="/" class="text-decoration-none">
-						<Logo class="m-auto w-100" style="max-width: 450px;" />
+						<h1 class="my-2 logo">
+							<span class="text-primary">W</span>
+							<span class="text-white">3</span>
+							<span class="text-primary">ST</span>
+							<span class="text-white">.</span>
+							<span class="text-primary">IO</span>
+						</h1>
 					</RouterLink>
 				</BCol>
 
 				<BCol cols="12" class="d-none d-md-block text-center">
-					<RouterLink to="/" class="mr-5 h4 menu-item">Home</RouterLink>
-					<RouterLink to="/services" class="mr-5 h4 menu-item">Services</RouterLink>
-					<RouterLink to="/contact" class="mr-5 h4 menu-item">Contact</RouterLink>
-					<RouterLink to="/about" class="mr-5 h4 menu-item">About</RouterLink>
-					<RouterLink to="/gallery" class="mr-0 h4 menu-item">Gallery</RouterLink>
+					<RouterLink to="/" class="mx-4 h4 font-weight-bold menu-link">
+						<span class="">Home</span>
+					</RouterLink>
+
+					<RouterLink to="/services" class="mx-4 h4 font-weight-bold menu-link">
+						Services
+					</RouterLink>
+
+					<RouterLink to="/contact" class="mx-4 h4 font-weight-bold menu-link">
+						<span class="">Contact</span>
+					</RouterLink>
+
+					<RouterLink to="/about" class="mx-4 h4 font-weight-bold menu-link">
+						<span class="">About</span>
+					</RouterLink>
+
+					<RouterLink to="/gallery" class="mx-4 h4 font-weight-bold menu-link">
+						<span class="">Gallery</span>
+					</RouterLink>
 				</BCol>
 
+				<!-- Mobile Menu Button -->
 				<BCol cols="12" class="d-block d-md-none text-center">
 					<BButton
 						variant="outline-dark"
-						class="w-100 text-center m"
+						class="w-100 text-center mobile-menu-button"
 						@click="toggle()"
 					>
-						<div class="ml"></div>
-						<div class="ml"></div>
-						<div class="ml"></div>
+						<div class="mobile-menu-button-line"></div>
+						<div class="mobile-menu-button-line"></div>
+						<div class="mobile-menu-button-line"></div>
 					</BButton>
 				</BCol>
 			</BRow>
 		</BContainer>
 
-		<div class="d-none d-md-block w-100 border-bottom border-dark"></div>
-
 		<!-- Hidden Side Menu -->
-		<SideMenu class="menu-item" />
+		<SideMenu class="menu-link" />
 	</div>
 </template>
 
@@ -45,14 +64,12 @@
 	import SideMenu from '@/components/nav/SideMenu'
 	import companyInfo from '@/defaults/companyInfo'
 	//import SocialMediaPlug from '@/components/SocialMediaPlug'
-	import Logo from '../../components/svg/logo'
 
 	export default {
 		components: {
 			//SocialMediaPlug,
 			//MenuIcon,
 			SideMenu,
-			Logo,
 		},
 
 		data() {
@@ -76,40 +93,59 @@
 	.nav {
 		top: 0;
 		z-index: 10;
-		background-color: rgba(0, 0, 0, 0) !important;
 	}
 
-	a {
+	.logo {
+		font-size: 20vw;
+
+		@media screen and (min-width: 600px) {
+			font-size: 7em;
+		}
+	}
+
+	.menu-link {
 		position: relative;
-		color: #000;
 		text-decoration: none;
 		transition: .3s;
+		text-decoration: none !important;
+
+		&::before {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			bottom: 0px;
+			left: 0;
+			background-color: white;
+			visibility: hidden;
+			transform: scaleX(0);
+			transition: all 0.3s ease-in-out 0s;
+		}
+
+		&:hover {
+			@extend .text-white;
+		}
+
+		&:hover::before {
+			visibility: visible;
+			transform: scaleX(1);
+		}
 	}
 
-	a:hover {
-		color: white;
-		text-decoration: none;
+	.router-link-exact-active {
+		&.menu-link {
+			@extend .text-white;
+
+			&::before {
+				visibility: visible;
+				transform: scaleX(1);
+			}
+		}
 	}
 
-	a::before {
-		content: "";
-		position: absolute;
-		width: 100%;
-		height: 2px;
-		bottom: 0;
-		left: 0;
-		background-color: white;
-		visibility: hidden;
-		transform: scaleX(0);
-		transition: all 0.3s ease-in-out 0s;
-	}
 	
-	a:hover::before {
-		visibility: visible;
-		transform: scaleX(1);
-	}
-
-	.m {
+	// Mobile Menu //
+	.mobile-menu-button {
 		border-width: 2px !important;
 
 		&:hover {
@@ -117,7 +153,7 @@
 		}
 	}
 
-	.ml {
+	.mobile-menu-button-line {
 		@extend .bg-dark;
 
 		width: 35px;

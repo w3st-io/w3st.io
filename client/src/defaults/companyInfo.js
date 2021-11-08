@@ -8,7 +8,7 @@ module.exports = {
 
 	caption: 'Nothing is impossible in the W3ST',
 
-	description: 'Based in Teaneck NJ, we develop web apps and provide services for small and large businesses that cater to their needs. We aim to grow our client’s digital footprint online by providing powerful methods such SEO, and creating engaging content on social media. Formed and operating out of the great state of New Jersey, we focus on technologies that will influence and impact the future of commerce and business. We take pride in what we make and are only satisfied when our customers are as well..',
+	description: '',
 
 	address: '724 Cedar Lane, Teaneck NJ',
 

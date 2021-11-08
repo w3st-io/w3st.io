@@ -2,15 +2,16 @@
 	<BContainer class="my-5">
 		<!-- [WEB-APP-HOSTING] -->
 		<BCard
-			bg-variant="primary"
+			bg-variant="dark"
 			text-variant="light"
+			border-variant="primary"
 			no-body
-			class="mb-3 mb-md-5 shadow"
+			class="mb-3 mb-md-5"
 		>
-			<BCardHeader class="text-light">
-				<h3 class="m-0 text-center font-weight-bold text-light">
+			<BCardHeader class="border-primary">
+				<h1 class="my-4 text-center font-weight-bold text-primary">
 					Our Services
-				</h3>
+				</h1>
 			</BCardHeader>
 
 			<BCardHeader
@@ -23,19 +24,19 @@
 						<div class="px-md-4 py-4">
 							<div class="px-lg-5">
 								<div class="px-xl-5">
-									<h3 class="mb-5 text-center font-weight-bold text-light">
+									<h3 class="mb-5 text-center font-weight-bold text-primary">
 										{{ s.name }}
 									</h3>
 
-									<p class="h5 mb-5 font-weight-bold text-justify text-dark">
+									<p class="h5 mb-5 text-center font-weight-bold">
 										{{ s.descriptions[0] }}
 									</p>
 								
 									<div class="text-center">
 										<RouterLink :to="`/services/${s.id}`">
 											<BButton
-												variant="light"
-												class="w-100 text-primary"
+												variant="outline-primary"
+												class="w-100"
 												size="lg"
 												pill
 												style="max-width: 300px"

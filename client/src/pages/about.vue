@@ -1,29 +1,25 @@
 <template>
 	<BContainer class="my-5">
 		<BCard
-			bg-variant="primary"
+			bg-variant="dark"
 			text-variant="light"
 			no-body
-			class="m-auto text-light shadow"
+			class="m-auto shadow"
+			border-variant="primary"
 		>
-			<BCardHeader>
-				<BCol cols="12">
-					<h3 class="m-0 text-center font-weight-bold text-light">
-						About {{ companyInfo.name }}
-					</h3>
-				</BCol>
+			<BCardHeader class="border-bottom border-primary">
+				<h1 class="my-4 text-center font-weight-bold text-primary">
+					About <span v-html="companyInfo.nameHTML"></span>
+				</h1>
 			</BCardHeader>
 
 			<BCardHeader>
 				<BRow>
 					<BCol cols="12" lg="8">
 						<div class="m-lg-5">
-							<div class="m-xl-5 text-justify">
-								<p class="h5 mb-3 font-weight-bold text-dark">
+							<div class="m-xl-5 text-center">
+								<p class="h5 mb-3 font-weight-bold">
 									{{ companyInfo.description }}
-								</p>
-								<p class="h5 font-weight-bold text-dark">
-									{{ companyInfo.caption }}
 								</p>
 							</div>
 						</div>

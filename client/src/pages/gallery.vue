@@ -1,13 +1,19 @@
 <template>
 	<BContainer class="my-5">
-		<BCard bg-variant="primary" text-variant="light" no-body class="shadow">
-			<BCardHeader>
-				<h3 class="m-0 text-center font-weight-bold">
+		<BCard
+			bg-variant="dark"
+			text-variant="light"
+			border-variant="primary"
+			no-body
+			class="shadow"
+		>
+			<BCardHeader class="border-primary">
+				<h1 class="my-4 text-center font-weight-bold text-primary">
 					{{ defaultData.r1.c1.title }}
-				</h3>
+				</h1>
 			</BCardHeader>
 
-			<BCardHeader>
+			<BCardHeader class="py-5">
 				<!-- viewer -->
 				<viewer :options="{ title: false, transition: false, }">
 					<!-- [R3] -->
@@ -16,8 +22,7 @@
 							v-for="(col, i) in defaultData.r3.cx"
 							:key="i"
 							cols="12" sm="6" md="4" lg="3" xl="3"
-							class="mb-3"
-							data-aos="fade-up"
+							class=""
 						>
 							<img
 								:src="col.image"
@@ -41,22 +46,6 @@
 						<h3 class="m-0 text-light" data-aos="fade-right">
 							{{ defaultData.r4.c1.title }}
 						</h3>
-					</BCol>
-				</BRow>
-
-				<BRow class="mb-3">
-					<BCol
-						v-for="(col, i) in defaultData.r5.cx"
-						:key="i"
-						cols="12" sm="6"
-						class="mb-3 p-3"
-						data-aos="fade-up"
-					>
-						<youtube
-							:video-id="getIdFromURL(col.youtubeURL)"
-							player-width="100%"
-							style="max-width: 700px;"
-						/>
 					</BCol>
 				</BRow>
 			</BCardHeader>

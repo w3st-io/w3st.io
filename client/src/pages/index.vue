@@ -2,26 +2,30 @@
 	<BContainer>
 		<BRow class="my-5">
 			<BCol cols="12" class="text-center">
-				<h1 class="mb-4 text-light">A Few of Our Sites</h1>
+				<h1 class="my-4 font-weight-bold text-primary">Our Works</h1>
 
-				<BRow class="mx-1">
+				<BRow class="my-5">
 					<BCol
 						v-for="(cp, i) in clientProjects"
 						:key="i"
 						cols="12" md="6"
-						class="p-0 border border-primary shadow cp"
-						:style="`
-							background-image: url(${cp.image});
-							background-position: center;
-						`"
+						class="pb-5 px-3"
 						data-aos="fade-down"
 						data-aos-offset="-10000"
 						:data-aos-delay="200 * i"
 					>
-						<div class="h-100 py-5 bg-shade">
-							<a :href="cp.link" target="_blank" class="text-decoration-none">
-								<h1 class="text-light">{{ cp.title }}</h1>
-							</a>
+						<div
+							class="shadow cp"
+							:style="`
+								background-image: url(${cp.image});
+								background-position: center;
+							`"
+						>
+							<div class="pt-4 h-100 bg-shade2">
+								<a :href="cp.link" target="_blank" class="text-decoration-none">
+									<h1 class="pt-5 font-weight-bold text-light">{{ cp.title }}</h1>
+								</a>
+							</div>
 						</div>
 					</BCol>
 				</BRow>
@@ -46,17 +50,21 @@
 	@import '../assets/styles/bootstrap-override.scss';
 
 	.cp {
-		min-height: 140px;
+		height: 200px;
 		overflow: hidden;
 
+		.bg-shade2 {
+			height: 200px;
+			background-color: rgba(0, 0, 0, .8) !important;
+		}
+
 		&:hover {
-			
 			h1 {
 				@extend .text-primary;
 			}
 
-			.bg-shade {
-				background-color: rgba(0, 0, 0, .45) !important;
+			.bg-shade2 {
+				background-color: rgba(0, 0, 0, .7) !important;
 			}
 		}
 	}

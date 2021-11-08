@@ -2,40 +2,37 @@
 	<BContainer class="my-5">
 		<!-- [WEB-APP-DEVELOPMENT] -->
 		<BCard
-			bg-variant="primary"
+			bg-variant="dark"
 			text-variant="light"
+			border-variant="primary"
 			no-body
-			class="mb-5 shadow table-holder"
+			class="table-holder"
 		>
-			<BCardHeader>
-				<BRow>
-					<BCol cols="12">
-						<div class="text-light">
-							<h3 class="m-0 text-center font-weight-bold text-light">
-								{{ pageData.services[0].name }}
-							</h3>
+			<BCardHeader class="border-primary">
+				<div class="my-4 text-primary">
+					<h3 class="text-center font-weight-bold">
+						{{ pageData.services[0].name }}
+					</h3>
 
-							<h6 class="m-0 small text-center text-dark">
-								{{ pageData.services[0].disclaimer }}
-							</h6>
-						</div>
-					</BCol>
-				</BRow>
+					<h6 class="m-0 small text-center text-light">
+						{{ pageData.services[0].disclaimer }}
+					</h6>
+				</div>
 			</BCardHeader>
 
 			<BCardHeader>
 				<BRow>
-					<BCol cols="12" xl="4" class="text-dark">
+					<BCol cols="12" xl="4" class="">
 						<div class="p-2 p-xl-5">
-							<p class="mb-5 text-justify h5 font-weight-bold">
+							<p class="mb-5 text-center h5 font-weight-bold">
 								{{ pageData.services[0].descriptions[0] }}
 							</p>
 
 							<div class="text-center">
 								<RouterLink to="/contact">
 									<BButton
-										variant="light"
-										class="w-100 text-primary"
+										variant="outline-primary"
+										class="w-100"
 										size="lg"
 										pill
 									>
@@ -50,7 +47,7 @@
 						<div class="p-3 table-holder">
 							<table class="m-0 table table-striped table-dark">
 								<thead class="">
-									<tr class="text-center font-weight-bold text-light">
+									<tr class="text-center font-weight-bold">
 										<td></td>
 										<td>
 											{{ pageData.services[0].variants[0].name }}
@@ -64,7 +61,7 @@
 									</tr>
 								</thead>
 
-								<tbody class="text-center font-weight-bold text-light">
+								<tbody class="text-center font-weight-bold">
 									<tr>
 										<td>Complete UI Design</td>
 										<td>✓</td>

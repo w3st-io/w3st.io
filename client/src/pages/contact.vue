@@ -2,22 +2,25 @@
 	<!-- Content -->
 	<BContainer>
 		<BCard
-			bg-variant="primary"
+			bg-variant="dark"
 			text-variant="light"
+			border-variant="primary"
 			no-body
 			class="w-100 mx-auto my-5 shadow"
 			style="max-width: 1000px;"
 		>
-			<BCardHeader>
+			<BCardHeader class="border-primary">
 				<BCol cols="12">
-					<h3 class="m-0 text-center font-weight-bold">Contact Us</h3>
+					<h1 class="my-4 text-center font-weight-bold text-primary">
+						Contact Us
+					</h1>
 				</BCol>
 			</BCardHeader>
 
 			<BCardHeader>
 				<BRow>
 					<BCol cols="12" lg="7" class="px-md-5 py-3">
-						<h2 class="mb-3 text-center font-weight-bold text-dark">
+						<h2 class="mb-3 text-center font-weight-bold">
 							Email
 						</h2>
 						<a href="mailto:w3st.io2021@gmail.com">
@@ -34,7 +37,7 @@
 						</a>
 						<br>
 
-						<h2 class="mb-3 text-center font-weight-bold text-dark">
+						<h2 class="mb-3 text-center font-weight-bold">
 							Cell
 						</h2>
 						<a href="tel:2013626859">

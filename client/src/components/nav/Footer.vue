@@ -1,15 +1,7 @@
 <template>
-	<div class="w-100 bg-dark text-light">
+	<div class="w-100 py-5 bg-dark text-light">
 		<BContainer>
-			<BRow class="pt-4">
-				<BCol cols="12" class="text-center text-primary">
-					<h5 v-html="companyInfo.nameHTML"></h5>
-					<h6 class="text-light">
-						{{ new Date().getFullYear() }}
-					</h6>
-					<hr class="bg-secondary">
-				</BCol>
-
+			<BRow>
 				<BCol cols="12" sm="6" class="text-center text-sm-left" data-aos="fade-up">
 					<h4 class="text-light">Location</h4>
 					<a :href="companyInfo.googleMapsLink" class="mb-3">
@@ -26,7 +18,6 @@
 							{{ hoo.hours }}
 						</li>
 					</ul>
-					<hr>
 				</BCol>
 
 				<BCol cols="12" sm="6" class="text-center" data-aos="fade-up">
@@ -59,7 +50,6 @@
 						</li>
 						
 					</ul>
-					<hr>
 				</BCol>
 
 				<BCol cols="12" class="my-3 text-center text-secondary">
