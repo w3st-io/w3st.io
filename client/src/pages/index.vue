@@ -18,7 +18,7 @@
 					>
 						<a :href="cp.link" target="_blank" class="text-decoration-none">
 							<div
-								class="border border-secondary cp"
+								class="border border-secondary rounded cp"
 								:style="`
 									background-image: url(${cp.image});
 									background-position: center;
