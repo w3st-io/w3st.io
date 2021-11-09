@@ -106,8 +106,8 @@
 				stripe: {
 					publishableKey: '',
 
-					successURL: 'http://www.google.com',
-					cancelURL: 'http://www.yahoo.com',
+					successURL: '',
+					cancelURL: '',
 
 					standard: {
 						loading: false,
@@ -153,6 +153,9 @@
 						this.stripe.standard.lineItems[0].price = this.resData.standardWahPrice_id
 						this.stripe.advanced.lineItems[0].price = this.resData.advancedWahPrice_id
 						this.stripe.pro.lineItems[0].price = this.resData.proWahPrice_id
+
+						this.stripe.successURL = this.resData.successURL
+						this.stripe.cancelURL = this.resData.cancelURL
 					}
 				}
 				catch (err) { this.error = err }

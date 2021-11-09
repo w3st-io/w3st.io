@@ -15,18 +15,15 @@ const router = express.Router().use(cors())
 router.get(
 	'/',
 	async (req, res) => {
-		const stripePublishableKey = config.api.stripe.publishableKey
-		const standardWahPrice_id = config.api.stripe.standardWahPrice_id
-		const advancedWahPrice_id = config.api.stripe.advancedWahPrice_id
-		const proWahPrice_id = config.api.stripe.proWahPrice_id
-
 		res.send({
 			executed: true,
 			status: true,
-			stripePublishableKey: stripePublishableKey,
-			standardWahPrice_id: standardWahPrice_id,
-			advancedWahPrice_id: advancedWahPrice_id,
-			proWahPrice_id: proWahPrice_id,
+			stripePublishableKey: config.api.stripe.publishableKey,
+			standardWahPrice_id: config.api.stripe.standardWahPrice_id,
+			advancedWahPrice_id: config.api.stripe.advancedWahPrice_id,
+			proWahPrice_id: config.api.stripe.proWahPrice_id,
+			successURL: `${config.app.baseURL.client}/purchase-successfull`,
+			cancelURL: `${config.app.baseURL.client}/something-went-wrong`,
 		})
 	}
 )

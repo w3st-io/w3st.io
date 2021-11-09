@@ -4,11 +4,18 @@ require('dotenv').config()
 
 // [EXPORT] //
 module.exports = {
-	// [APP] //
+	// [HEROKU] NODE_ENV - PORT //
 	NODE_ENV: process.env.NODE_ENV || 'development',
-
-	// [PORT] //
 	port: process.env.PORT || 5000,
+
+	// [APP] //
+	app: {
+		// [BASE-URL] //
+		baseURL: {
+			client: process.env.APP__BASE_URL || 'http://localhost:8080',
+			server: process.env.APP__BASE_URL || 'http://localhost:5000',
+		}
+	},
 
 	// [API] //
 	api: {
