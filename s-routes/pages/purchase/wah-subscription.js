@@ -1,6 +1,7 @@
 // [REQUIRE] //
 const cors = require('cors')
 const express = require('express')
+const validator = require('validator')
 
 
 // [REQUIRE] Personal //
