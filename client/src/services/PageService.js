@@ -104,11 +104,11 @@ export default {
 	},
 
 
-	s_purchase_wad: async function () {
+	s_purchase_wad: async function ({ promo }) {
 		try {
 			const authAxios = await this.authAxios()
 	
-			const reqData = await authAxios.get('/purchase/wad')
+			const reqData = await authAxios.get(`/purchase/wad?promo=${promo}`)
 	
 			return reqData.data
 		}
