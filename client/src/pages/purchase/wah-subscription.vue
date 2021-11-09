@@ -145,7 +145,9 @@
 		methods: {
 			async getPageData() {
 				try {
-					this.resData = await PageService.s_purchase_wahSubscription()
+					this.resData = await PageService.s_purchase_wahSubscription({
+						promo: this.$route.query.promo
+					})
 
 					if (this.resData.status) {
 						this.stripe.publishableKey = this.resData.stripePublishableKey

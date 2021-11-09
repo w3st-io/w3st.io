@@ -122,11 +122,13 @@ export default {
 	},
 
 
-	s_purchase_wahSubscription: async function () {
+	s_purchase_wahSubscription: async function ({ promo }) {
 		try {
 			const authAxios = await this.authAxios()
 	
-			const reqData = await authAxios.get('/purchase/wah-subscription')
+			const reqData = await authAxios.get(
+				`/purchase/wah-subscription?promo=${promo}`
+			)
 	
 			return reqData.data
 		}
