@@ -1,5 +1,5 @@
 <template>
-	<div class="w-100 pb-4 text-light nav border-bottom border-primary">
+	<div class="w-100 pb-4 bg-dark text-light nav border-bottom border-primary">
 		<BContainer>
 			<BRow>
 				<BCol cols="12" class="text-center">

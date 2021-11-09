@@ -16,19 +16,19 @@
 						data-aos-offset="-10000"
 						:data-aos-delay="200 * i"
 					>
-						<div
-							class="shadow cp"
-							:style="`
-								background-image: url(${cp.image});
-								background-position: center;
-							`"
-						>
-							<div class="h-100 bg-shade2 text-holder ">
-								<a :href="cp.link" target="_blank" class="text-decoration-none">
+						<a :href="cp.link" target="_blank" class="text-decoration-none">
+							<div
+								class="border border-secondary cp"
+								:style="`
+									background-image: url(${cp.image});
+									background-position: center;
+								`"
+							>
+								<div class="h-100 bg-shade2 text-holder ]">
 									<h1 class="text-uppercase">{{ cp.title }}</h1>
-								</a>
+								</div>
 							</div>
-						</div>
+						</a>
 					</BCol>
 				</BRow>
 			</BCol>
