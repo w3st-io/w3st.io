@@ -19,11 +19,6 @@ router.get(
 
 		switch (req.query.promo) {
 			case 'discount':
-				console.log({
-					standardWahPrice_id: config.api.stripe.wad.discounted.standardPrice_id,
-					advancedWahPrice_id: config.api.stripe.wad.discounted.advancedPrice_id,
-					proWahPrice_id: config.api.stripe.wad.discounted.proPrice_id,
-				})
 				res.send({
 					executed: true,
 					status: true,
@@ -38,12 +33,6 @@ router.get(
 			break
 		
 			default:
-				console.log({
-					standardWahPrice_id: config.api.stripe.wad.standardPrice_id,
-					advancedWahPrice_id: config.api.stripe.wad.advancedPrice_id,
-					proWahPrice_id: config.api.stripe.wad.proPrice_id,
-				})
-
 				res.send({
 					executed: true,
 					status: true,
