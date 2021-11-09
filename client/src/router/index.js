@@ -10,7 +10,7 @@ import contact from '../pages/contact'
 import emailSent from '../pages/email-sent'
 import gallery from '../pages/gallery'
 import purchaseSuccessful from '../pages/purchase-successful'
-import purchaseWahSubscription from '../pages/purchase-wah-subscription'
+import purchase_wahSubscription from '../pages/purchase/wah-subscription'
 import services from '../pages/services'
 import services_webAppDevelopment from '../pages/services/web-app-development'
 import services_webAppHosting from '../pages/services/web-app-hosting'
@@ -55,14 +55,14 @@ const router = new VueRouter({
 				title: 'Purchase Successful'
 			},
 		},
-		// purchase-wah-subscriptiion //
+		// purchase_wah-subscriptiion //
 		{
-			path: '/purchase-wah-subscription',
-			name: 'purchase-wah-subscription',
-			component: purchaseWahSubscription,
+			path: '/purchase/wah-subscription',
+			name: 'purchase_wah-subscription',
+			component: purchase_wahSubscription,
 			meta: {
 				auth: true,
-				title: 'Purchase Web App Hosting Subscription'
+				title: 'Purchase WAH Subscription'
 			},
 		},
 		// Contact Us //

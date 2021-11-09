@@ -90,7 +90,7 @@
 <script>
 	import { StripeCheckout } from '@vue-stripe/vue-stripe'
 
-	import PageService from '../services/PageService'
+	import PageService from '../../services/PageService'
 
 	export default {
 		components: {
@@ -145,7 +145,7 @@
 		methods: {
 			async getPageData() {
 				try {
-					this.resData = await PageService.s_purchaseWahSubscription()
+					this.resData = await PageService.s_purchase_wahSubscription()
 
 					if (this.resData.status) {
 						this.stripe.publishableKey = this.resData.stripePublishableKey

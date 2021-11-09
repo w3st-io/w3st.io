@@ -4,7 +4,7 @@ const express = require('express')
 
 
 // [REQUIRE] Personal //
-const config = require('../../s-config')
+const config = require('../../../s-config')
 
 
 // [EXPRESS + USE] //

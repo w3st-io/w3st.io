@@ -104,11 +104,11 @@ export default {
 	},
 
 
-	s_purchaseWahSubscription: async function () {
+	s_purchase_wahSubscription: async function () {
 		try {
 			const authAxios = await this.authAxios()
 	
-			const reqData = await authAxios.get('/purchase-wah-subscription')
+			const reqData = await authAxios.get('/purchase/wah-subscription')
 	
 			return reqData.data
 		}

@@ -15,7 +15,7 @@ const rateLimiter = require('./s-rate-limiters')
 const a_ = require('./s-routes/api')
 
 const p_services = require('./s-routes/pages/services')
-const p_purchaseWahSubscription = require('./s-routes/pages/purchase-wah-subscription')
+const p_purchase_wahSubscription = require('./s-routes/pages/purchase/wah-subscription')
 
 
 // [EXPRESS + SERVER] //
@@ -41,7 +41,7 @@ app.use(rateLimiter.limiter)
 app.use('/api', a_)
 
 app.use('/pages/services', p_services)
-app.use('/pages/purchase-wah-subscription', p_purchaseWahSubscription)
+app.use('/pages/purchase/wah-subscription', p_purchase_wahSubscription)
 
 
 // [HEROKU] Set Static Folder for Heroku //
