@@ -79,7 +79,7 @@ const router = new VueRouter({
 		// purchase_wah-subscriptiion //
 		{
 			path: '/purchase/wah-subscription',
-			name: 'purchase_wah-subscription',
+			name: 'purchase_wahSubscription',
 			component: purchase_wahSubscription,
 			meta: {
 				auth: true,
@@ -146,7 +146,7 @@ const router = new VueRouter({
 		},
 		{
 			path: '/services/social-media-management',
-			name: 'services',
+			name: 'services_socialMediaManagement',
 			component: services_socialMediaManagement,
 			meta: {
 				auth: true,

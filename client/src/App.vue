@@ -44,9 +44,6 @@
 			await this.setNodeEnv()
 
 			EventBus.$on('force-rerender', () => { this.forceRerender() })
-
-			// [LOG] //
-			this.log()
 		},
 
 		methods: {
@@ -56,23 +53,12 @@
 				try {
 					this.reqData = await Service.index()
 
-					console.log('reqData:', this.reqData)
-
 					if (this.reqData.status) {
 						localStorage.setItem('node_env', this.reqData.node_env)
 					}	
 				}
 				catch (err) { console.log(`App: Error --> ${err}`) }
 			},
-
-			log() {
-				console.log('%%% [APP] %%%')
-				console.log('usertoken:', localStorage.usertoken)
-				console.log('admintoken:', localStorage.admintoken)
-				console.log('reqData:', this.reqData)
-				console.log('socket:', this.socket)
-				console.log('appKey:', this.appKey)
-			}
 		},
 	}
 </script>
