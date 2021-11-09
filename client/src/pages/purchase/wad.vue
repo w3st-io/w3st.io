@@ -152,7 +152,7 @@
 
 						this.stripe.standard.lineItems[0].price = this.resData.standardWadPrice_id
 						this.stripe.advanced.lineItems[0].price = this.resData.advancedWadPrice_id
-						this.stripe.pro.lineItems[0].price = this.resData.proWaDPrice_id
+						this.stripe.pro.lineItems[0].price = this.resData.proWadPrice_id
 
 						this.stripe.successURL = this.resData.successURL
 						this.stripe.cancelURL = this.resData.cancelURL
