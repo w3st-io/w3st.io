@@ -17,15 +17,15 @@
 						:data-aos-delay="200 * i"
 					>
 						<div
-							class="border border-primary shadow cp"
+							class="shadow cp"
 							:style="`
 								background-image: url(${cp.image});
 								background-position: center;
 							`"
 						>
-							<div class="pt-4 h-100 bg-shade2">
+							<div class="h-100 bg-shade2 text-holder ">
 								<a :href="cp.link" target="_blank" class="text-decoration-none">
-									<h1 class="pt-4 text-uppercase">{{ cp.title }}</h1>
+									<h1 class="text-uppercase">{{ cp.title }}</h1>
 								</a>
 							</div>
 						</div>
@@ -52,11 +52,11 @@
 	@import '../assets/styles/bootstrap-override.scss';
 
 	.cp {
-		height: 150px;
+		height: 200px;
 		overflow: hidden;
 
 		.bg-shade2 {
-			height: 150px;
+			height: 200px;
 			background-color: rgba(0, 0, 0, .8) !important;
 		}
 
@@ -65,5 +65,11 @@
 				background-color: rgba(0, 0, 0, .7) !important;
 			}
 		}
+	}
+
+	.text-holder {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 </style>

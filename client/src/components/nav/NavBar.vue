@@ -14,25 +14,25 @@
 					</RouterLink>
 				</BCol>
 
-				<BCol cols="12" class="d-none d-md-block text-center h4 text-uppercase text-spread-sm">
-					<RouterLink to="/" class="mx-2 menu-link">
-						Home
+				<BCol cols="12" class="d-none d-md-block text-center h5 font-weight-bold text-uppercase text-spread-sm">
+					<RouterLink to="/" class="mx-3 menu-link">
+						<span>Home</span>
 					</RouterLink>
 
-					<RouterLink to="/services" class="mx-2 menu-link">
-						Services
+					<RouterLink to="/services" class="mx-3 menu-link">
+						<span>Services</span>
 					</RouterLink>
 
-					<RouterLink to="/contact" class="mx-2 menu-link">
-						Contact
+					<RouterLink to="/contact" class="mx-3 menu-link">
+						<span>Contact</span>
 					</RouterLink>
 
-					<RouterLink to="/about" class="mx-2 menu-link">
-						About
+					<RouterLink to="/about" class="mx-3 menu-link">
+						<span>About</span>
 					</RouterLink>
 
-					<RouterLink to="/gallery" class="mx-2 menu-link">
-						Gallery
+					<RouterLink to="/gallery" class="mx-3 menu-link">
+						<span>Gallery</span>
 					</RouterLink>
 				</BCol>
 
@@ -114,7 +114,7 @@
 			position: absolute;
 			width: 100%;
 			height: 2px;
-			bottom: 0px;
+			bottom: -3px;
 			left: 0;
 			background-color: white;
 			visibility: hidden;
