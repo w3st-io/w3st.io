@@ -84,7 +84,6 @@
 
 				<BRow v-if="error">
 					<BCol cols="12">
-						<h6 class="text-primary">{{ resData }}</h6>
 						<h6 class="text-danger">{{ error }}</h6>
 					</BCol>
 				</BRow>
