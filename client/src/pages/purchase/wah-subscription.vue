@@ -76,6 +76,12 @@
 					</BCol>
 				</BRow>
 
+				<BRow v-if="loading">
+					<BCol cols="12">
+						<h1 class="text-center text-light">Loading..</h1>
+					</BCol>
+				</BRow>
+
 				<BRow v-if="error">
 					<BCol cols="12">
 						<h6 class="text-primary">{{ resData }}</h6>
