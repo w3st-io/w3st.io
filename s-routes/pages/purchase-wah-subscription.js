@@ -22,7 +22,7 @@ router.get(
 			standardWahPrice_id: config.api.stripe.standardWahPrice_id,
 			advancedWahPrice_id: config.api.stripe.advancedWahPrice_id,
 			proWahPrice_id: config.api.stripe.proWahPrice_id,
-			successURL: `${config.app.baseURL.client}/purchase-successfull`,
+			successURL: `${config.app.baseURL.client}/purchase-successful`,
 			cancelURL: `${config.app.baseURL.client}/something-went-wrong`,
 		})
 	}
