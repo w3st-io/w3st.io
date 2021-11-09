@@ -15,6 +15,7 @@ const rateLimiter = require('./s-rate-limiters')
 const a_ = require('./s-routes/api')
 
 const p_services = require('./s-routes/pages/services')
+const p_purchase_wad = require('./s-routes/pages/purchase/wad')
 const p_purchase_wahSubscription = require('./s-routes/pages/purchase/wah-subscription')
 
 
@@ -41,6 +42,7 @@ app.use(rateLimiter.limiter)
 app.use('/api', a_)
 
 app.use('/pages/services', p_services)
+app.use('/pages/purchase/wad', p_purchase_wad)
 app.use('/pages/purchase/wah-subscription', p_purchase_wahSubscription)
 
 

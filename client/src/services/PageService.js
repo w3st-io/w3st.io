@@ -104,6 +104,24 @@ export default {
 	},
 
 
+	s_purchase_wad: async function () {
+		try {
+			const authAxios = await this.authAxios()
+	
+			const reqData = await authAxios.get('/purchase/wad')
+	
+			return reqData.data
+		}
+		catch (err) {
+			return {
+				executed: false,
+				status: false,
+				message: `PageService: Error --> ${err}`
+			}
+		}
+	},
+
+
 	s_purchase_wahSubscription: async function () {
 		try {
 			const authAxios = await this.authAxios()
@@ -119,5 +137,5 @@ export default {
 				message: `PageService: Error --> ${err}`
 			}
 		}
-	}
+	},
 }
