@@ -1,6 +1,6 @@
 <template>
-	<BContainer class="my-3">
-		<BCard bg-variant="light" class="my-4 text-center">
+	<BContainer class="py-6">
+		<BCard bg-variant="dark" text-variant="light" border-variant="primary" class="text-center">
 			<h1 class="text-center text-primary">404 Not Found</h1>
 			<p>Strange..</p>
 
