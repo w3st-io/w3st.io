@@ -164,6 +164,7 @@
 						this.stripe.successURL = this.resData.successURL
 						this.stripe.cancelURL = this.resData.cancelURL
 					}
+					else { this.error = this.resData.message }
 				}
 				catch (err) { this.error = err }
 			},

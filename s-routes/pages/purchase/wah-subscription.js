@@ -15,36 +15,52 @@ const router = express.Router().use(cors())
 router.get(
 	'/',
 	async (req, res) => {
-		console.log(req.query);
+		try {
+			if (validator.isAscii(req.query.promo) || !req.query.promo) {
+				switch (req.query.promo) {
+					case 'discount':
+						res.send({
+							executed: true,
+							status: true,
+							stripePublishableKey: config.api.stripe.publishableKey,
+							successURL: `${config.app.baseURL.client}/purchase/successful`,
+							cancelURL: `${config.app.baseURL.client}/purchase/unsuccessful`,
 
-		switch (req.query.promo) {
-			case 'discount':
+							standardWahPrice_id: config.api.stripe.wah.discounted.standardPrice_id,
+							advancedWahPrice_id: config.api.stripe.wah.discounted.advancedPrice_id,
+							proWahPrice_id: config.api.stripe.wah.discounted.proPrice_id,
+						})
+					break
+				
+					default:
+						res.send({
+							executed: true,
+							status: true,
+							stripePublishableKey: config.api.stripe.publishableKey,
+							successURL: `${config.app.baseURL.client}/purchase/successful`,
+							cancelURL: `${config.app.baseURL.client}/purchase/unsuccessful`,
+
+							standardWahPrice_id: config.api.stripe.wah.standardPrice_id,
+							advancedWahPrice_id: config.api.stripe.wah.advancedPrice_id,
+							proWahPrice_id: config.api.stripe.wah.proPrice_id,
+						})
+					break
+				}
+			}
+			else {
 				res.send({
 					executed: true,
-					status: true,
-					stripePublishableKey: config.api.stripe.publishableKey,
-					successURL: `${config.app.baseURL.client}/purchase/successful`,
-					cancelURL: `${config.app.baseURL.client}/purchase/unsuccessful`,
-
-					standardWahPrice_id: config.api.stripe.wah.discounted.standardPrice_id,
-					advancedWahPrice_id: config.api.stripe.wah.discounted.advancedPrice_id,
-					proWahPrice_id: config.api.stripe.wah.discounted.proPrice_id,
+					status: false,
+					message: 'Invalid Promo'
 				})
-			break
-		
-			default:
-				res.send({
-					executed: true,
-					status: true,
-					stripePublishableKey: config.api.stripe.publishableKey,
-					successURL: `${config.app.baseURL.client}/purchase/successful`,
-					cancelURL: `${config.app.baseURL.client}/purchase/unsuccessful`,
-
-					standardWahPrice_id: config.api.stripe.wah.standardPrice_id,
-					advancedWahPrice_id: config.api.stripe.wah.advancedPrice_id,
-					proWahPrice_id: config.api.stripe.wah.proPrice_id,
-				})
-			break
+			}
+		}
+		catch (err) {
+			res.send({
+				executed: false,
+				status: false,
+				message: err
+			})
 		}
 	}
 )

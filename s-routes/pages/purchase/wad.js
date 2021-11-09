@@ -1,6 +1,7 @@
 // [REQUIRE] //
 const cors = require('cors')
 const express = require('express')
+const validator = require('validator')
 
 
 // [REQUIRE] Personal //
@@ -15,36 +16,52 @@ const router = express.Router().use(cors())
 router.get(
 	'/',
 	async (req, res) => {
-		console.log(req.query);
-
-		switch (req.query.promo) {
-			case 'discount':
-				res.send({
-					executed: true,
-					status: true,
-					stripePublishableKey: config.api.stripe.publishableKey,
-					successURL: `${config.app.baseURL.client}/purchase/successful`,
-					cancelURL: `${config.app.baseURL.client}/purchase/unsuccessful`,
-
-					standardWadPrice_id: config.api.stripe.wad.discounted.standardPrice_id,
-					advancedWadPrice_id: config.api.stripe.wad.discounted.advancedPrice_id,
-					proWadPrice_id: config.api.stripe.wad.discounted.proPrice_id,
-				})
-			break
+		try {
+			if (validator.isAscii(req.query.promo) || !req.query.promo) {
+				switch (req.query.promo) {
+					case 'discount':
+						res.send({
+							executed: true,
+							status: true,
+							stripePublishableKey: config.api.stripe.publishableKey,
+							successURL: `${config.app.baseURL.client}/purchase/successful`,
+							cancelURL: `${config.app.baseURL.client}/purchase/unsuccessful`,
 		
-			default:
+							standardWadPrice_id: config.api.stripe.wad.discounted.standardPrice_id,
+							advancedWadPrice_id: config.api.stripe.wad.discounted.advancedPrice_id,
+							proWadPrice_id: config.api.stripe.wad.discounted.proPrice_id,
+						})
+					break
+				
+					default:
+						res.send({
+							executed: true,
+							status: true,
+							stripePublishableKey: config.api.stripe.publishableKey,
+							successURL: `${config.app.baseURL.client}/purchase/successful`,
+							cancelURL: `${config.app.baseURL.client}/purchase/unsuccessful`,
+		
+							standardWadPrice_id: config.api.stripe.wad.standardPrice_id,
+							advancedWadPrice_id: config.api.stripe.wad.advancedPrice_id,
+							proWadPrice_id: config.api.stripe.wad.proPrice_id,
+						})
+					break
+				}
+			}
+			else {
 				res.send({
 					executed: true,
-					status: true,
-					stripePublishableKey: config.api.stripe.publishableKey,
-					successURL: `${config.app.baseURL.client}/purchase/successful`,
-					cancelURL: `${config.app.baseURL.client}/purchase/unsuccessful`,
-
-					standardWadPrice_id: config.api.stripe.wad.standardPrice_id,
-					advancedWadPrice_id: config.api.stripe.wad.advancedPrice_id,
-					proWadPrice_id: config.api.stripe.wad.proPrice_id,
+					status: false,
+					message: 'Invalid Promo'
 				})
-			break
+			}
+		}
+		catch (err) {
+			res.send({
+				executed: false,
+				status: false,
+				message: err
+			})
 		}
 	}
 )
