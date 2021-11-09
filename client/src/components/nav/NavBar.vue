@@ -14,24 +14,24 @@
 					</RouterLink>
 				</BCol>
 
-				<BCol cols="12" class="d-none d-md-block text-center text-uppercase text-spread-sm">
-					<RouterLink to="/" class="mx-3 h5 menu-link">
+				<BCol cols="12" class="d-none d-md-block text-center h4 text-uppercase text-spread-sm">
+					<RouterLink to="/" class="mx-2 menu-link">
 						Home
 					</RouterLink>
 
-					<RouterLink to="/services" class="mx-3 h5 menu-link">
+					<RouterLink to="/services" class="mx-2 menu-link">
 						Services
 					</RouterLink>
 
-					<RouterLink to="/contact" class="mx-3 h5 menu-link">
+					<RouterLink to="/contact" class="mx-2 menu-link">
 						Contact
 					</RouterLink>
 
-					<RouterLink to="/about" class="mx-3 h5 menu-link">
+					<RouterLink to="/about" class="mx-2 menu-link">
 						About
 					</RouterLink>
 
-					<RouterLink to="/gallery" class="mx-3 h5 menu-link">
+					<RouterLink to="/gallery" class="mx-2 menu-link">
 						Gallery
 					</RouterLink>
 				</BCol>
