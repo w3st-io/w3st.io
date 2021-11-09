@@ -9,13 +9,13 @@ import about from '../pages/about'
 import contact from '../pages/contact'
 import emailSent from '../pages/email-sent'
 import gallery from '../pages/gallery'
-import purchaseSuccessful from '../pages/purchase-successful'
+import purchase_successful from '../pages/purchase/successful'
+import purchase_unsuccessful from '../pages/purchase/unsuccessful'
 import purchase_wahSubscription from '../pages/purchase/wah-subscription'
 import services from '../pages/services'
 import services_webAppDevelopment from '../pages/services/web-app-development'
 import services_webAppHosting from '../pages/services/web-app-hosting'
 import services_socialMediaManagement from '../pages/services/social-media-management'
-import somethingWentWrong from '../pages/something-went-wrong'
 import notFound from '../pages/404'
 
 
@@ -45,14 +45,24 @@ const router = new VueRouter({
 				title: 'About'
 			},
 		},
-		// purchase-successful //
+		// purchase_successful //
 		{
-			path: '/purchase-successful',
-			name: 'purchase-successful',
-			component: purchaseSuccessful,
+			path: '/purchase/successful',
+			name: 'purchase_successful',
+			component: purchase_successful,
 			meta: {
 				auth: true,
 				title: 'Purchase Successful'
+			},
+		},
+		// purchase_unsuccessful //
+		{
+			path: '/purchase/unsuccessful',
+			name: 'purchase_unsuccessful',
+			component: purchase_unsuccessful,
+			meta: {
+				auth: true,
+				title: 'Purchase Unsuccessful'
 			},
 		},
 		// purchase_wah-subscriptiion //
@@ -130,16 +140,6 @@ const router = new VueRouter({
 			meta: {
 				auth: true,
 				title: 'Social Media Management'
-			},
-		},
-		// something-went-wrong //
-		{
-			path: '/something-went-wrong',
-			name: 'something-went-wrong',
-			component: somethingWentWrong,
-			meta: {
-				auth: true,
-				title: 'Something Went Wrong'
 			},
 		},
 		// [404] //
