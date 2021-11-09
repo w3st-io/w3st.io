@@ -15,10 +15,10 @@
 							ref="standardWad"
 							mode="payment"
 							:pk="stripe.publishableKey"
-							:line-items="stripe.advanced.lineItems"
+							:line-items="stripe.standard.lineItems"
 							:success-url="stripe.successURL"
 							:cancel-url="stripe.cancelURL"
-							@loading="v => stripe.advanced.loading = v"
+							@loading="v => stripe.standard.loading = v"
 						/>
 
 						<h3 class="my-5 text-center text-uppercase">Standard</h3>
@@ -59,10 +59,10 @@
 							ref="proWad"
 							mode="payment"
 							:pk="stripe.publishableKey"
-							:line-items="stripe.advanced.lineItems"
+							:line-items="stripe.pro.lineItems"
 							:success-url="stripe.successURL"
 							:cancel-url="stripe.cancelURL"
-							@loading="v => stripe.advanced.loading = v"
+							@loading="v => stripe.pro.loading = v"
 						/>
 
 						<h3 class="my-5 text-center text-uppercase">Pro</h3>
@@ -156,8 +156,6 @@
 
 						this.stripe.successURL = this.resData.successURL
 						this.stripe.cancelURL = this.resData.cancelURL
-
-						console.log(this.stripe.successURL, this.stripe.cancelURL)
 					}
 				}
 				catch (err) { this.error = err }
@@ -166,7 +164,7 @@
 			submit(option) {
 				switch (option) {
 					case 0:
-						this.$refs.standardWadn.redirectToCheckout()
+						this.$refs.standardWad.redirectToCheckout()
 					break
 
 					case 1:

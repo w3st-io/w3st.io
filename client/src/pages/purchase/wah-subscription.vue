@@ -156,8 +156,6 @@
 
 						this.stripe.successURL = this.resData.successURL
 						this.stripe.cancelURL = this.resData.cancelURL
-
-						console.log(this.stripe.successURL, this.stripe.cancelURL)
 					}
 				}
 				catch (err) { this.error = err }

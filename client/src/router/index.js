@@ -11,6 +11,7 @@ import emailSent from '../pages/email-sent'
 import gallery from '../pages/gallery'
 import purchase_successful from '../pages/purchase/successful'
 import purchase_unsuccessful from '../pages/purchase/unsuccessful'
+import purchase_wad from '../pages/purchase/wad'
 import purchase_wahSubscription from '../pages/purchase/wah-subscription'
 import services from '../pages/services'
 import services_webAppDevelopment from '../pages/services/web-app-development'
@@ -63,6 +64,16 @@ const router = new VueRouter({
 			meta: {
 				auth: true,
 				title: 'Purchase Unsuccessful'
+			},
+		},
+		// purchase_wad //
+		{
+			path: '/purchase/wad',
+			name: 'purchase_wad',
+			component: purchase_wad,
+			meta: {
+				auth: true,
+				title: 'Purchase WAD'
 			},
 		},
 		// purchase_wah-subscriptiion //
