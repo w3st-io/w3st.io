@@ -161,7 +161,7 @@ module.exports = {
 			lottiefilesLink: 'https://assets9.lottiefiles.com/packages/lf20_VegC5p.json',
 
 			descriptions: [
-				'Take your business to the next level! We work with advertising services such as Google ads & Instagram ads to help get out your message to even more customers. We recommend this service once a Web App is established and all SEO is complete.',
+				'Take your business to the next level! We work with advertising services such as Google ads & Instagram ads to help get your message out to even more people. This is usually done after a Web App is established and SEO is complete.',
 			],
 
 			variants: [],
