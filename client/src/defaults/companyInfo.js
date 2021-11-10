@@ -185,5 +185,22 @@ module.exports = {
 			
 			disclaimer: '',
 		},
+
+		// EMS //
+		{
+			id: '',
+			
+			name: 'Email Marketing Service (EMS)',
+
+			lottiefilesLink: 'https://assets6.lottiefiles.com/packages/lf20_t6nmtpwm.json',
+
+			descriptions: [
+				'An emailing list is a great way to connect with your community. We can help your business generate a list of contacts who will recieve emails that they can read about what your business is up too!',
+			],
+
+			variants: [],
+			
+			disclaimer: '',
+		},
 	],
 }

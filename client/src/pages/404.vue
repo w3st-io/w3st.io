@@ -5,7 +5,7 @@
 			<p>Strange..</p>
 
 			<a href="/" class="m-auto text-center">
-				<BButton variant="primary" class="m-auto text-center">
+				<BButton variant="primary" class="m-auto text-center text-uppercase">
 					Return Home
 				</BButton>
 			</a>
