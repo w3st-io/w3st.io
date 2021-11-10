@@ -18,10 +18,10 @@
 				v-for="(s, i) in pageData.services"
 				:key="i"
 				cols="12"
-				class="py-5"
+				class="py-5 border-bottom border-primary"
 			>
 				<BRow>
-					<BCol cols="12" md="6" order="1" :order-md="isEven(i)" class="bg-primary-transparent">
+					<BCol cols="12" md="7" order="1" :order-md="isEven(i)" class="bg-primary-transparent">
 						<div class="px-md-4">
 							<div class="px-lg-3">
 								<div class="px-xl-1">
@@ -72,7 +72,7 @@
 						</div>
 					</BCol>
 
-					<BCol cols="12" md="6" order="0" :order-md="isOdd(i)">
+					<BCol cols="12" md="5" order="0" :order-md="isOdd(i)">
 						<lottie-player
 							:src="s.lottiefilesLink"
 							class="mx-auto text-center lottie"
