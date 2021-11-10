@@ -33,8 +33,10 @@
 										{{ s.descriptions[0] }}
 									</p>
 								
+									<!-- Read More / Contact -->
 									<div class="text-center">
-										<RouterLink :to="`/services/${s.id}`">
+										<!-- Read More -->
+										<RouterLink v-if="s.id" :to="`/services/${s.id}`">
 											<BButton
 												variant="outline-primary"
 												class="w-100"
@@ -47,7 +49,24 @@
 												</h5>
 											</BButton>
 										</RouterLink>
+
+										<!-- Get Quote -->
+										<RouterLink v-else to="/services/contact">
+											<BButton
+												variant="outline-primary"
+												class="w-100"
+												size="lg"
+												pill
+												style="max-width: 300px"
+											>
+												<h5 class="m-0 text-uppercase">
+													Get Quote
+												</h5>
+											</BButton>
+										</RouterLink>
 									</div>
+
+
 								</div>
 							</div>
 						</div>
@@ -57,7 +76,7 @@
 						<lottie-player
 							:src="s.lottiefilesLink"
 							class="mx-auto text-center lottie"
-							style=""
+							style="max-width: 300px;"
 							background="transparent"
 							speed="1"
 							loop

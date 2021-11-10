@@ -12,11 +12,11 @@ import gallery from '../pages/gallery'
 import purchase_successful from '../pages/purchase/successful'
 import purchase_unsuccessful from '../pages/purchase/unsuccessful'
 import purchase_wad from '../pages/purchase/wad'
-import purchase_wahSubscription from '../pages/purchase/wah-subscription'
+import purchase_wah from '../pages/purchase/wah'
 import services from '../pages/services'
-import services_webAppDevelopment from '../pages/services/web-app-development'
-import services_webAppHosting from '../pages/services/web-app-hosting'
-import services_socialMediaManagement from '../pages/services/social-media-management'
+import services_smm from '../pages/services/smm'
+import services_wad from '../pages/services/wad'
+import services_wah from '../pages/services/wah'
 import notFound from '../pages/404'
 
 
@@ -76,17 +76,17 @@ const router = new VueRouter({
 				title: 'Purchase WAD'
 			},
 		},
-		// purchase_wah-subscriptiion //
+		// purchase_wah //
 		{
-			path: '/purchase/wah-subscription',
-			name: 'purchase_wahSubscription',
-			component: purchase_wahSubscription,
+			path: '/purchase/wah',
+			name: 'purchase_wah',
+			component: purchase_wah,
 			meta: {
 				auth: true,
-				title: 'Purchase WAH Subscription'
+				title: 'Purchase WAH'
 			},
 		},
-		// Contact Us //
+		// contact //
 		{
 			path: '/contact',
 			name: 'contact',
@@ -96,7 +96,7 @@ const router = new VueRouter({
 				title: 'Contact'
 			},
 		},
-		// Email //
+		// email //
 		{
 			path: '/email-sent',
 			name: 'email-sent',
@@ -106,7 +106,7 @@ const router = new VueRouter({
 				title: 'Email Sent'
 			},
 		},
-		// Gallery //
+		// gallery //
 		{
 			path: '/gallery',
 			name: 'gallery',
@@ -116,7 +116,7 @@ const router = new VueRouter({
 				title: 'Gallery'
 			},
 		},
-		// [SERVICES] //
+		// services //
 		{
 			path: '/services',
 			name: 'services',
@@ -127,33 +127,33 @@ const router = new VueRouter({
 			},
 		},
 		{
-			path: '/services/web-app-development',
-			name: 'services_webAppDevelopment',
-			component: services_webAppDevelopment,
+			path: '/services/smm',
+			name: 'services_smm',
+			component: services_smm,
 			meta: {
 				auth: true,
-				title: 'Web App Development'
+				title: 'Social Media Management (SMM)'
 			},
 		},
 		{
-			path: '/services/web-app-hosting',
-			name: 'services_webAppHosting',
-			component: services_webAppHosting,
+			path: '/services/wad',
+			name: 'services_wad',
+			component: services_wad,
 			meta: {
 				auth: true,
-				title: 'Web App Hosting'
+				title: 'Web App Development (WAD)'
 			},
 		},
 		{
-			path: '/services/social-media-management',
-			name: 'services_socialMediaManagement',
-			component: services_socialMediaManagement,
+			path: '/services/wah',
+			name: 'services_wah',
+			component: services_wah,
 			meta: {
 				auth: true,
-				title: 'Social Media Management'
+				title: 'Web App Hosting (WAH)'
 			},
 		},
-		// [404] //
+		// 404 //
 		{
 			path: '/**',
 			name: '404',

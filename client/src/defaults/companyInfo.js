@@ -47,8 +47,9 @@ module.exports = {
 	},
 
 	services: [
+		// WAD //
 		{
-			id: 'web-app-development',
+			id: 'wad',
 
 			name: 'Web App Development (WAD)',
 
@@ -80,8 +81,9 @@ module.exports = {
 
 			disclaimer: 'DISCLAIMER: Web app code only. hosting not included.',
 		},
+		// WAH //
 		{
-			id: 'web-app-hosting',
+			id: 'wah',
 
 			name: 'Web App Hosting (WAH)',
 
@@ -113,8 +115,9 @@ module.exports = {
 
 			disclaimer: '',
 		},
+		// SMM //
 		{
-			id: 'social-media-management',
+			id: 'smm',
 			
 			name: 'Social Media Management (SMM)',
 
@@ -147,6 +150,22 @@ module.exports = {
 			],
 			
 			disclaimer: '',
-		}
+		},
+		// ASM //
+		{
+			id: '',
+			
+			name: 'Advertisement Service Management (ASM)',
+
+			lottiefilesLink: 'https://assets9.lottiefiles.com/packages/lf20_VegC5p.json',
+
+			descriptions: [
+				'Take your business to the next level! We work with advertising services such as Google ads & Instagram ads to help get out your message to even more customers. We recommend this service once a Web App is established and all SEO is complete.',
+			],
+
+			variants: [],
+			
+			disclaimer: '',
+		},
 	],
 }
