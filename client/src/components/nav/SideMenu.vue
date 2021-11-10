@@ -14,30 +14,30 @@
 			<BButton
 				v-show="$store.state.showMenu"
 				variant="outline-seconadry"
-				class="w-100 p-2 text-primary"
+				class="w-100 p-2 text-uppercase text-primary"
 				@click="home()"
-			><span aria-hidden="true" style="font-size: 1.5em;">Home</span></BButton>
+			><span aria-hidden="true" style="font-size: 1.4em;">Home</span></BButton>
 
 			<BButton
 				v-show="$store.state.showMenu"
 				variant="outline-seconadry"
-				class="w-100 p-2 text-primary"
+				class="w-100 p-2 text-uppercase text-primary"
 				@click="services()"
-			><span aria-hidden="true" style="font-size: 1.5em;">Services</span></BButton>
+			><span aria-hidden="true" style="font-size: 1.4em;">Services</span></BButton>
 
 			<BButton
 				v-show="$store.state.showMenu"
 				variant="outline-seconadry"
-				class="w-100 p-2 text-primary"
+				class="w-100 p-2 text-uppercase text-primary"
 				@click="contact()"
-			><span aria-hidden="true" style="font-size: 1.5em;">Contact</span></BButton>
+			><span aria-hidden="true" style="font-size: 1.4em;">Contact</span></BButton>
 
 			<BButton
 				v-show="$store.state.showMenu"
 				variant="outline-seconadry"
-				class="w-100 p-2 text-primary"
+				class="w-100 p-2 text-uppercase text-primary"
 				@click="about()"
-			><span aria-hidden="true" style="font-size: 1.5em;">About</span></BButton>
+			><span aria-hidden="true" style="font-size: 1.4em;">About</span></BButton>
 
 			<SocialMediaPlug v-show="$store.state.showMenu" size="48" class="my-3" />
 		</nav>
