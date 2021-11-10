@@ -151,6 +151,7 @@ module.exports = {
 			
 			disclaimer: '',
 		},
+
 		// ASM //
 		{
 			id: '',
@@ -158,6 +159,23 @@ module.exports = {
 			name: 'Advertisement Service Management (ASM)',
 
 			lottiefilesLink: 'https://assets9.lottiefiles.com/packages/lf20_VegC5p.json',
+
+			descriptions: [
+				'Take your business to the next level! We work with advertising services such as Google ads & Instagram ads to help get out your message to even more customers. We recommend this service once a Web App is established and all SEO is complete.',
+			],
+
+			variants: [],
+			
+			disclaimer: '',
+		},
+
+		// BCD //
+		{
+			id: '',
+			
+			name: 'Business Card Design (BCD)',
+
+			lottiefilesLink: 'https://assets3.lottiefiles.com/packages/lf20_ngxmrwkr.json',
 
 			descriptions: [
 				'Take your business to the next level! We work with advertising services such as Google ads & Instagram ads to help get out your message to even more customers. We recommend this service once a Web App is established and all SEO is complete.',
