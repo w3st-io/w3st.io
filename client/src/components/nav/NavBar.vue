@@ -1,5 +1,5 @@
 <template>
-	<div class="w-100 pb-4 bg-dark text-light nav border-bottom border-primary">
+	<div class="w-100 bg-dark text-light nav">
 		<BContainer>
 			<BRow>
 				<BCol cols="12" class="text-center">
@@ -40,7 +40,7 @@
 				<BCol cols="12" class="d-block d-md-none text-center">
 					<BButton
 						variant="outline-primary"
-						class="w-100 text-center mobile-menu-button"
+						class="mt-4 w-100 mobile-menu-button"
 						@click="toggle()"
 					>
 						<div class="mobile-menu-button-line"></div>
@@ -49,6 +49,11 @@
 					</BButton>
 				</BCol>
 			</BRow>
+		</BContainer>
+
+		<!-- divider -->
+		<BContainer fluid class="d-none d-md-block m-0 p-0">
+			<hr class="my-3 p-0 bg-primary">
 		</BContainer>
 
 		<!-- Hidden Side Menu -->
@@ -149,15 +154,15 @@
 		border-width: 2px !important;
 
 		&:hover {
-			.ml { @extend .bg-primary; }
+			.mobile-menu-button-line { @extend .bg-dark; }
 		}
 	}
 
 	.mobile-menu-button-line {
 		@extend .bg-primary;
 
-		width: 35px;
+		width: 45px;
 		height: 2px;
-		margin: 6px auto;
+		margin: 8px auto;
 	}
 </style>
