@@ -79,7 +79,7 @@ module.exports = {
 
 			features: [],
 
-			disclaimer: 'DISCLAIMER: Web app code only. hosting not included.',
+			disclaimer: 'DISCLAIMER: Web app code only. hosting not included. (SEO included)',
 		},
 		// WAH //
 		{
@@ -175,7 +175,7 @@ module.exports = {
 			
 			name: 'Business Card Design (BCD)',
 
-			lottiefilesLink: 'https://assets3.lottiefiles.com/packages/lf20_ngxmrwkr.json',
+			lottiefilesLink: 'https://assets8.lottiefiles.com/packages/lf20_n9cqez8k.json',
 
 			descriptions: [
 				'Take your business to the next level! We work with advertising services such as Google ads & Instagram ads to help get out your message to even more customers. We recommend this service once a Web App is established and all SEO is complete.',

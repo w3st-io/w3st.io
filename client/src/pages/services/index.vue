@@ -21,15 +21,15 @@
 				class="py-5"
 			>
 				<BRow>
-					<BCol cols="12" md="8" order="1" :order-md="isEven(i)" class="bg-primary-transparent">
+					<BCol cols="12" md="6" order="1" :order-md="isEven(i)" class="bg-primary-transparent">
 						<div class="px-md-4">
-							<div class="px-lg-5">
-								<div class="px-xl-5">
+							<div class="px-lg-3">
+								<div class="px-xl-1">
 									<h3 class="mb-5 text-center text-primary text-uppercase">
 										{{ s.name }}
 									</h3>
 
-									<p class="h5 mb-5 text-center font-weight-bold">
+									<p class="h5 mb-5 text-center font-weight-bold text-spread-sm">
 										{{ s.descriptions[0] }}
 									</p>
 								
@@ -72,7 +72,7 @@
 						</div>
 					</BCol>
 
-					<BCol cols="12" md="4" order="0" :order-md="isOdd(i)">
+					<BCol cols="12" md="6" order="0" :order-md="isOdd(i)">
 						<lottie-player
 							:src="s.lottiefilesLink"
 							class="mx-auto text-center lottie"
