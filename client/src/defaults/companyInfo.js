@@ -10,6 +10,8 @@ module.exports = {
 
 	description: 'Established in 2021, W3ST.IO LLC is a web services company that provides its clients with an array of skillsets that help them grow their digital presence online. We understand how important it is for a business to truly connect with its community, so we make sure to meet all of our client’s business needs. We are constantly growing and want your business to grow with us as well..',
 
+	missionStatement: 'W3ST stands for Web 3 Services & Technologies because we believe in the 3rd stage of the internet also called the Decentralized Internet. We want to guide all of our clients to this new internet and help them integrate the future into their businesses today. Our preferred blockchain is Ethereum.',
+
 	address: '724 Cedar Lane, Teaneck NJ',
 
 	googleMapsLink: '',
