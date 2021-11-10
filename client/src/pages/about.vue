@@ -17,9 +17,10 @@
 				<BRow>
 					<BCol cols="12" lg="8">
 						<div class="mx-lg-5">
-							<p class="mb-5 mx-auto h5 text-center font-weight-bold" style="max-width: 600px;">
-								{{ companyInfo.description }}
-							</p>
+							<p
+								class="mb-5 mx-auto h5 text-center font-weight-bold"
+								style="max-width: 600px;"
+							>{{ companyInfo.description }}</p>
 
 							<div class="text-center">
 								<RouterLink to="/contact">
