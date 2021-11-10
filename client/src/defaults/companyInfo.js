@@ -178,7 +178,7 @@ module.exports = {
 			lottiefilesLink: 'https://assets8.lottiefiles.com/packages/lf20_n9cqez8k.json',
 
 			descriptions: [
-				'Take your business to the next level! We work with advertising services such as Google ads & Instagram ads to help get out your message to even more customers. We recommend this service once a Web App is established and all SEO is complete.',
+				'Need a business card designed? We can do that for you!',
 			],
 
 			variants: [],
