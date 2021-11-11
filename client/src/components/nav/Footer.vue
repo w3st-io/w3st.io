@@ -70,6 +70,7 @@
 
 				<BCol cols="12" class="my-3 text-center text-secondary">
 					<h6>© w3st.io {{ new Date().getFullYear() }}</h6>
+					<br><br><br>
 
 					<!-- [CREDIATION] -->
 					<a href="https://icons8.com/icon/82749/menu">
