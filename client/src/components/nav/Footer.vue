@@ -48,7 +48,9 @@
 								Gallery
 							</RouterLink>
 						</li>
-						
+						<li>
+							<a href="https://www.freeprivacypolicy.com/live/8c02deff-f1b1-4643-aabb-f4ca6e3e3a54">Privacy & Policy Statement</a>
+						</li>
 					</ul>
 				</BCol>
 
