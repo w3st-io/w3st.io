@@ -59,7 +59,7 @@ module.exports = {
 				{
 					id: 'standard-web-app-development',
 					name: 'Standard Web App Development',
-					price: '$1,999.99',
+					price: '$2,499.99',
 				},
 				{
 					id: 'advanced-web-app-development',
