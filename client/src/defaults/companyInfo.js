@@ -64,12 +64,12 @@ module.exports = {
 				{
 					id: 'advanced-web-app-development',
 					name: 'Advanced Web App Development',
-					price: '$2,999.99',
+					price: '$4,999.99',
 				},
 				{
 					id: 'pro-web-app-development',
 					name: 'Pro Web App Development',
-					price: '$5,999.99',
+					price: '$9,999.99',
 				},
 			],
 
