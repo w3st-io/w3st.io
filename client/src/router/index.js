@@ -9,6 +9,7 @@ import about from '../pages/about'
 import contact from '../pages/contact'
 import emailSent from '../pages/email-sent'
 import gallery from '../pages/gallery'
+import privacyPolicy from '../pages/privacy-policy'
 import purchase_successful from '../pages/purchase/successful'
 import purchase_unsuccessful from '../pages/purchase/unsuccessful'
 import purchase_wad from '../pages/purchase/wad'
@@ -54,6 +55,16 @@ const router = new VueRouter({
 			meta: {
 				auth: true,
 				title: 'Purchase Successful'
+			},
+		},
+		// privacy-policy //
+		{
+			path: '/privacy-policy',
+			name: 'privacy-policy',
+			component: privacyPolicy,
+			meta: {
+				auth: true,
+				title: 'Privacy Policy and Terms of Service'
 			},
 		},
 		// purchase_unsuccessful //

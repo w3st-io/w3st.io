@@ -2,7 +2,7 @@
 	<div class="w-100 py-6 bg-dark text-light border-top border-secondary">
 		<BContainer>
 			<BRow>
-				<BCol cols="12" sm="6" class="text-center text-sm-left" data-aos="fade-up">
+				<BCol cols="12" sm="4" class="text-center text-sm-left" data-aos="fade-up">
 					<h4 class="text-light">Location</h4>
 					<a :href="companyInfo.googleMapsLink" class="mb-3">
 						<h5 class="mb-4">{{ companyInfo.address }}</h5>
@@ -20,7 +20,7 @@
 					</ul>
 				</BCol>
 
-				<BCol cols="12" sm="6" class="text-center" data-aos="fade-up">
+				<BCol cols="12" sm="4" class="text-center" data-aos="fade-up">
 					<h4>Company</h4>
 					<ul class="list-unstyled text-small">
 						<li>
@@ -48,8 +48,22 @@
 								Gallery
 							</RouterLink>
 						</li>
+					</ul>
+				</BCol>
+
+				<BCol cols="12" sm="4" class="text-center" data-aos="fade-up">
+					<h4>Company</h4>
+					<ul class="list-unstyled text-small">
 						<li>
-							<a href="https://www.freeprivacypolicy.com/live/8c02deff-f1b1-4643-aabb-f4ca6e3e3a54">Privacy & Policy Statement</a>
+							<a href="https://www.freeprivacypolicy.com/live/8c02deff-f1b1-4643-aabb-f4ca6e3e3a54">
+								Privacy & Policy Statement
+							</a>
+						</li>
+
+						<li>
+							<RouterLink to="/privacy-policy">
+								Privacy & Policy Statement
+							</RouterLink>
 						</li>
 					</ul>
 				</BCol>
