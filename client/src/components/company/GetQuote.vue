@@ -2,7 +2,7 @@
 	<div>
 		<!-- Get a Quote -->
 		<form @submit.prevent="submit">
-			<h3 class="mb-3 text-center text-primary">{{ title }}</h3>
+			<h3 class="mb-3 text-center text-dark">{{ title }}</h3>
 			<hr>
 
 			<!-- Email -->

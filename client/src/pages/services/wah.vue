@@ -4,13 +4,13 @@
 		<BCard
 			bg-variant="dark"
 			text-variant="light"
-			border-variant="primary"
+			border-variant="dark"
 			no-body
 			class="mb-5 shadow table-holder bg-transparent"
 		>
-			<BCardHeader class="border-primary">
+			<BCardHeader class="border-dark">
 				<div class="my-4">
-					<h3 class="m-0 text-center text-primary text-uppercase text-spread-sm">
+					<h3 class="m-0 text-center text-dark text-uppercase text-spread-sm">
 						{{ pageData.services[1].name }}
 					</h3>
 				</div>
@@ -27,7 +27,7 @@
 							<div class="text-center">
 								<RouterLink to="/contact">
 									<BButton
-										variant="outline-primary"
+										variant="dark"
 										class="w-100 mb-5"
 										size="lg"
 										pill

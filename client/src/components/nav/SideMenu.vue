@@ -14,28 +14,28 @@
 			<BButton
 				v-show="$store.state.showMenu"
 				variant="outline-seconadry"
-				class="w-100 p-2 text-uppercase text-primary"
+				class="w-100 p-2 text-uppercase text-dark"
 				@click="home()"
 			><span aria-hidden="true" style="font-size: 1.4em;">Home</span></BButton>
 
 			<BButton
 				v-show="$store.state.showMenu"
 				variant="outline-seconadry"
-				class="w-100 p-2 text-uppercase text-primary"
+				class="w-100 p-2 text-uppercase text-dark"
 				@click="services()"
 			><span aria-hidden="true" style="font-size: 1.4em;">Services</span></BButton>
 
 			<BButton
 				v-show="$store.state.showMenu"
 				variant="outline-seconadry"
-				class="w-100 p-2 text-uppercase text-primary"
+				class="w-100 p-2 text-uppercase text-dark"
 				@click="contact()"
 			><span aria-hidden="true" style="font-size: 1.4em;">Contact</span></BButton>
 
 			<BButton
 				v-show="$store.state.showMenu"
 				variant="outline-seconadry"
-				class="w-100 p-2 text-uppercase text-primary"
+				class="w-100 p-2 text-uppercase text-dark"
 				@click="about()"
 			><span aria-hidden="true" style="font-size: 1.4em;">About</span></BButton>
 

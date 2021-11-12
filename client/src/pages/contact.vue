@@ -2,15 +2,15 @@
 	<!-- Content -->
 	<BContainer class="py-6">
 		<BCard
-			bg-variant="dark"
+			bg-variant="primary"
 			text-variant="light"
-			border-variant="primary"
+			border-variant="dark"
 			no-body
-			class="w-100 mx-auto shadow bg-transparent"
+			class="w-100 mx-auto shadow"
 		>
-			<BCardHeader class="border-primary">
+			<BCardHeader class="border-dark">
 				<BCol cols="12">
-					<h1 class="my-4 text-center text-primary text-spread-sm">
+					<h1 class="my-4 text-center text-dark text-spread-sm">
 						CONTACT US
 					</h1>
 				</BCol>
@@ -25,7 +25,7 @@
 						<div class="text-center">
 							<a href="mailto:w3st.io2021@gmail.com">
 								<BButton
-									variant="outline-primary"
+									variant="dark"
 									size="lg"
 									class="mb-4"
 									pill
@@ -45,7 +45,7 @@
 						<div class="text-center">
 							<a href="tel:2013626859">
 								<BButton
-									variant="outline-primary"
+									variant="dark"
 									size="lg"
 									class="mb-5"
 									pill

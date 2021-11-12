@@ -1,11 +1,11 @@
 <template>
 	<!-- Operations -->
 	<BCard bg-variant="dark" class="text-light">
-		<h3 class="mb-3 text-center text-primary">Hours & Location</h3>
+		<h3 class="mb-3 text-center text-dark">Hours & Location</h3>
 		<hr class="border-light">
 
 		<!-- Hours Of Operation -->
-		<p class="mt-3 h4 text-primary">Hours</p>
+		<p class="mt-3 h4 text-dark">Hours</p>
 		<BListGroup>
 			<BListGroupItem
 				v-for="(hOO, index) in companyInfo.hoursOfOperation"
@@ -19,21 +19,21 @@
 		</BListGroup>
 
 		<!-- Location -->
-		<p class="mt-3 h4 text-primary">Location</p>
+		<p class="mt-3 h4 text-dark">Location</p>
 		<a
 			:href="companyInfo.googleMapsLink"
 			class="mt-3 text-light"
 		>{{ companyInfo.address }}</a>
 
 		<!-- Phone # -->
-		<p class="h4 mt-3 text-primary">Phone Number</p>
+		<p class="h4 mt-3 text-dark">Phone Number</p>
 		<a
 			:href="companyInfo.contact.cell.number"
 			class="text-light"
 		>{{ companyInfo.contact.cell.link }}</a>
 
 		<!-- Fax # -->
-		<p class="h4 mt-3 text-primary">Fax Number:</p>
+		<p class="h4 mt-3 text-dark">Fax Number:</p>
 		<a
 			:href="companyInfo.faxNumberLink"
 			class="text-light"

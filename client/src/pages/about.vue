@@ -1,23 +1,23 @@
 <template>
 	<BContainer class="py-6">
 		<BCard
-			bg-variant="dark"
+			bg-variant="primary"
 			text-variant="light"
 			no-body
-			class="m-auto shadow bg-transparent"
-			border-variant="primary"
+			class="m-auto shadow"
+			border-variant="dark"
 		>
-			<BCardHeader class="border-bottom border-primary">
-				<h1 class="my-4 text-center text-primary text-uppercase text-spread-sm">
+			<BCardHeader class="border-bottom border-dark">
+				<h1 class="my-4 text-center text-dark text-uppercase text-spread-sm">
 					About <span v-html="companyInfo.nameHTML"></span>
 				</h1>
 			</BCardHeader>
 
-			<BCardHeader class="py-5 border-bottom border-primary">
+			<BCardHeader class="py-5 border-bottom border-dark">
 				<BRow>
 					<BCol cols="12" lg="7">
 						<div class="mx-lg-5 my-5">
-							<h3 class="mb-4 text-center text-uppercase text-primary">
+							<h3 class="mb-4 text-center text-uppercase text-dark">
 								Who We Are
 							</h3>
 							<p
@@ -28,7 +28,7 @@
 							<div class="text-center">
 								<RouterLink to="/contact">
 									<BButton
-										variant="outline-primary"
+										variant="dark"
 										size="lg"
 										class="font-weight-bold"
 										pill
@@ -65,7 +65,7 @@
 
 					<BCol cols="12" lg="7">
 						<div class="mx-lg-5 my-5">
-							<h3 class="mb-4 text-center text-uppercase text-primary">
+							<h3 class="mb-4 text-center text-uppercase text-dark">
 								What We Believe In
 							</h3>
 							<p
@@ -76,7 +76,7 @@
 							<div class="text-center">
 								<RouterLink to="/services">
 									<BButton
-										variant="outline-primary"
+										variant="dark"
 										size="lg"
 										class="font-weight-bold"
 										pill

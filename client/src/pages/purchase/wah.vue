@@ -1,8 +1,14 @@
 <template>
 	<BContainer class="py-6 text-light">
-		<BCard bg-variant="dark" border-variant="primary" no-body class="bg-transparent">
-			<BCardHeader class="border-primary">
-				<h1 class="my-4 text-center text-uppercase text-primary text-spread-sm">
+		<BCard
+			bg-variant="primary"
+			border-variant="dark"
+			text-variant="dark"
+			no-body
+			class="shadow"
+		>
+			<BCardHeader class="border-dark">
+				<h1 class="my-4 text-center text-uppercase text-dark text-spread-sm">
 					Purchase Web App Hosting Subscription
 				</h1>
 			</BCardHeader>

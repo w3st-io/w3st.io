@@ -2,21 +2,21 @@
 @import 'src/assets/styles/bootstrap-override.scss';
 
 body {
-	@extend .bg-primary;
+	@extend .bg-dark;
 	
 	opacity: 1;
 	background-size:
-		80px 80px,
-		80px 80px
+		100px 100px,
+		100px 100px
 	;
 	background-image:
 		linear-gradient(
-			rgb(0, 0, 0) 79px,
+			#f99e2d 98px,
 			transparent 0
 		),
 		linear-gradient(
 			90deg,
-			rgb(0, 0, 0) 79px,
+			#f99e2d 98px,
 			transparent 0
 		),
 	;

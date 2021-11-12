@@ -2,7 +2,7 @@
 	<BContainer class="py-6">
 		<BRow>
 			<BCol cols="12" class="text-center">
-				<h1 class="my-4 text-uppercase text-primary text-spread">
+				<h1 class="my-4 text-uppercase text-dark text-spread">
 					Our Works
 				</h1>
 

@@ -1,37 +1,37 @@
 <template>
-	<div class="w-100 bg-dark text-light nav">
+	<div class="w-100 bg-primary text-light nav">
 		<BContainer>
 			<BRow>
 				<BCol cols="12" class="text-center">
 					<RouterLink to="/" class="text-decoration-none">
 						<h1 class="my-2 logo text-spread">
-							<span class="text-primary">W</span>
+							<span class="text-dark">W</span>
 							<span class="text-white">3</span>
-							<span class="text-primary">ST</span>
+							<span class="text-dark">ST</span>
 							<span class="text-white">.</span>
-							<span class="text-primary">IO</span>
+							<span class="text-dark">IO</span>
 						</h1>
 					</RouterLink>
 				</BCol>
 
 				<BCol cols="12" class="d-none d-md-block text-center h5 font-weight-bold text-uppercase text-spread-sm">
-					<RouterLink to="/" class="mx-3 menu-link">
+					<RouterLink to="/" class="mx-3 text-dark menu-link">
 						<span>Home</span>
 					</RouterLink>
 
-					<RouterLink to="/services" class="mx-3 menu-link">
+					<RouterLink to="/services" class="mx-3 text-dark menu-link">
 						<span>Services</span>
 					</RouterLink>
 
-					<RouterLink to="/contact" class="mx-3 menu-link">
+					<RouterLink to="/contact" class="mx-3 text-dark menu-link">
 						<span>Contact</span>
 					</RouterLink>
 
-					<RouterLink to="/about" class="mx-3 menu-link">
+					<RouterLink to="/about" class="mx-3 text-dark menu-link">
 						<span>About</span>
 					</RouterLink>
 
-					<RouterLink to="/gallery" class="mx-3 menu-link">
+					<RouterLink to="/gallery" class="mx-3 text-dark menu-link">
 						<span>Gallery</span>
 					</RouterLink>
 				</BCol>
@@ -39,7 +39,7 @@
 				<!-- Mobile Menu Button -->
 				<BCol cols="12" class="d-block d-md-none text-center">
 					<BButton
-						variant="outline-primary"
+						variant="dark"
 						class="mt-4 w-100 mobile-menu-button"
 						@click="toggle()"
 					>
@@ -53,7 +53,7 @@
 
 		<!-- divider -->
 		<BContainer fluid class="d-none d-md-block m-0 p-0">
-			<hr class="my-3 p-0 bg-primary">
+			<hr class="my-3 p-0 bg-dark">
 		</BContainer>
 
 		<!-- Hidden Side Menu -->

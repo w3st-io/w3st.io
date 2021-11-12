@@ -1,14 +1,14 @@
 <template>
 	<BContainer class="py-6">
 		<BCard
-			bg-variant="dark"
+			bg-variant="primary"
 			text-variant="light"
-			border-variant="primary"
+			border-variant="dark"
 			no-body
-			class="shadow bg-transparent"
+			class="shadow"
 		>
-			<BCardHeader class="border-primary">
-				<h1 class="my-4 text-center text-primary text-uppercase text-spread-sm">
+			<BCardHeader class="border-dark">
+				<h1 class="my-4 text-center text-dark text-uppercase text-spread-sm">
 					{{ defaultData.r1.c1.title }}
 				</h1>
 			</BCardHeader>

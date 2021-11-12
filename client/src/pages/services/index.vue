@@ -2,14 +2,14 @@
 	<BContainer class="py-6">
 		<!-- [WEB-APP-HOSTING] -->
 		<BCard
-			bg-variant="dark"
+			bg-variant="primary"
 			text-variant="light"
-			border-variant="primary"
+			border-variant="dark"
 			no-body
-			class="mb-3 mb-md-5 bg-transparent "
+			class="mb-3 mb-md-5"
 		>
-			<BCardHeader class="border-primary">
-				<h1 class="my-4 text-center text-primary text-uppercase text-spread-sm">
+			<BCardHeader class="border-dark">
+				<h1 class="my-4 text-center text-dark text-uppercase text-spread-sm">
 					Our Services
 				</h1>
 			</BCardHeader>
@@ -18,14 +18,14 @@
 				v-for="(s, i) in pageData.services"
 				:key="i"
 				cols="12"
-				class="py-5 border-bottom border-primary"
+				class="py-5 border-bottom border-dark"
 			>
 				<BRow>
 					<BCol cols="12" md="7" order="1" :order-md="isEven(i)" class="bg-primary-transparent">
 						<div class="px-md-4">
 							<div class="px-lg-3">
 								<div class="px-xl-1">
-									<h3 class="mb-5 text-center text-primary text-uppercase">
+									<h3 class="mb-5 text-center text-dark text-uppercase">
 										{{ s.name }}
 									</h3>
 
@@ -38,7 +38,7 @@
 										<!-- Read More -->
 										<RouterLink v-if="s.id" :to="`/services/${s.id}`">
 											<BButton
-												variant="outline-primary"
+												variant="dark"
 												class="w-100"
 												size="lg"
 												pill
@@ -53,7 +53,7 @@
 										<!-- Get Quote -->
 										<RouterLink v-else to="/services/contact">
 											<BButton
-												variant="outline-primary"
+												variant="dark"
 												class="w-100"
 												size="lg"
 												pill
