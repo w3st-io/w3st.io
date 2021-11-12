@@ -1,8 +1,8 @@
 <template>
-	<BContainer class="py-6">
+	<BContainer class="py-5">
 		<BRow>
 			<BCol cols="12" class="text-center">
-				<h1 class="my-4 text-uppercase text-dark text-spread">
+				<h1 class="my-4 text-uppercase text-light text-spread">
 					Our Works
 				</h1>
 
@@ -18,7 +18,7 @@
 					>
 						<a :href="cp.link" target="_blank" class="text-decoration-none">
 							<div
-								class="border border-secondary rounded cp"
+								class="border border-dark rounded shadow cp"
 								:style="`
 									background-image: url(${cp.image});
 									background-position: center;

@@ -2,11 +2,11 @@
 	<BContainer class="py-6">
 		<!-- [WEB-APP-DEVELOPMENT] -->
 		<BCard
-			bg-variant="dark"
+			bg-variant="primary"
 			text-variant="light"
 			border-variant="dark"
 			no-body
-			class="mb-5 shadow table-holder bg-transparent"
+			class="mb-5 shadow table-holder"
 		>
 			<BCardHeader class="border-dark">
 				<div class="my-4">
@@ -41,7 +41,7 @@
 
 					<BCol cols="12" xl="8">
 						<div class="table-holder">
-							<table class="m-0 table table-dark bg-shade">
+							<table class="m-0 table table-dark bg-shade-less">
 								<thead class="">
 									<tr class="text-center font-weight-bold text-light">
 										<td></td>

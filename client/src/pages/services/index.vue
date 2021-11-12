@@ -6,7 +6,7 @@
 			text-variant="light"
 			border-variant="dark"
 			no-body
-			class="mb-3 mb-md-5"
+			class="mb-3 mb-md-5 shadow"
 		>
 			<BCardHeader class="border-dark">
 				<h1 class="my-4 text-center text-dark text-uppercase text-spread-sm">

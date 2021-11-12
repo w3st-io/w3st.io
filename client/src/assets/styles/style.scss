@@ -6,17 +6,17 @@ body {
 	
 	opacity: 1;
 	background-size:
-		100px 100px,
-		100px 100px
+		50px 50px,
+		50px 50px
 	;
 	background-image:
 		linear-gradient(
-			#f99e2d 98px,
+			#f99e2d 49px,
 			transparent 0
 		),
 		linear-gradient(
 			90deg,
-			#f99e2d 98px,
+			#f99e2d 49px,
 			transparent 0
 		),
 	;
@@ -31,6 +31,14 @@ body {
 
 .bg-shade {
 	background-color: rgba(0, 0, 0, 0.55) !important;
+}
+
+.bg-shade-less {
+	background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+.bg-shine {
+	background-color: rgba(255, 255, 255, 0.55) !important;
 }
 
 .bg-black {

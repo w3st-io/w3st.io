@@ -9,12 +9,12 @@
 					</a>
 
 					<h4 class="text-light">Hours</h4>
-					<ul class="list-unstyled text-small text-light">
+					<ul class="list-unstyled text-small text-primary">
 						<li
 							v-for="(hoo, index) in companyInfo.hoursOfOperation"
 							:key="index"
 						>
-							<span class="text-dark">{{ hoo.days }}:</span>
+							<span class="text-light">{{ hoo.days }}:</span>
 							{{ hoo.hours }}
 						</li>
 					</ul>

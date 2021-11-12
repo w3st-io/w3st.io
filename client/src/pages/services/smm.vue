@@ -2,11 +2,11 @@
 	<BContainer class="py-6">
 		<!-- [WEB-APP-HOSTING] -->
 		<BCard
-			bg-variant="dark"
+			bg-variant="primary"
 			text-variant="light"
 			border-variant="dark"
 			no-body
-			class="mb-5 shadow table-holder shadow bg-transparent"
+			class="mb-5 shadow table-holder shadow"
 		>
 			<BCardHeader class="border-dark">
 				<div class="my-4">
@@ -41,7 +41,7 @@
 
 					<BCol cols="12" xl="6">
 						<BListGroup class="mx-auto">
-							<BListGroupItem class="bg-shade text-dark">
+							<BListGroupItem class="bg-shade-less text-primary">
 								<h5 class="m-0 text-center font-weight-bold">
 									What You Get From Our SMM
 								</h5>
@@ -50,7 +50,7 @@
 							<BListGroupItem
 								v-for="(f, i) in pageData.services[2].features"
 								:key="i"
-								class="font-weight-bold text-light bg-shade"
+								class="font-weight-bold text-light bg-shade-less"
 							>- {{ f }}</BListGroupItem>
 						</BListGroup>
 
