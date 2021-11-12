@@ -39,7 +39,7 @@
 				<!-- Mobile Menu Button -->
 				<BCol cols="12" class="d-block d-md-none text-center">
 					<BButton
-						variant="dark"
+						variant="outline-dark"
 						class="mt-4 w-100 mobile-menu-button"
 						@click="toggle()"
 					>
@@ -154,12 +154,12 @@
 		border-width: 2px !important;
 
 		&:hover {
-			.mobile-menu-button-line { @extend .bg-dark; }
+			.mobile-menu-button-line { @extend .bg-primary; }
 		}
 	}
 
 	.mobile-menu-button-line {
-		@extend .bg-primary;
+		@extend .bg-dark;
 
 		width: 45px;
 		height: 2px;
