@@ -14,96 +14,79 @@
 						{{ pageData.services[0].name }}
 					</h3>
 
-					<h6 class="m-0 small text-center text-light">
+					<h6 class="m-0 small text-center text-secondary">
 						{{ pageData.services[0].disclaimer }}
 					</h6>
 				</div>
 			</BCardHeader>
 
-			<BCardHeader class="py-4">
-				<BRow class="py-4">
-					<BCol cols="12" xl="4">
-						<div class="">
-							<p class="mb-5 text-center h5 font-weight-bold">
-								{{ pageData.services[0].descriptions[0] }}
-							</p>
-
-							<div class="text-center">
-								<RouterLink to="/contact">
-									<BButton
-										variant="dark"
-										class="w-100 mb-5"
-										size="lg"
-										pill
-									>
-										<h4 class="m-0 font-weight-bold">Contact</h4>
-									</BButton>
-								</RouterLink>
-							</div>
-						</div>
+			<BCardBody>
+				<BRow>
+					<BCol cols="12" md="6" class="d-none d-md-block">
+						<lottie-player
+							:src="pageData.services[0].lottiefilesLink"
+							class="mx-auto text-center lottie"
+							style="max-width: 300px;"
+							background="transparent"
+							speed="1"
+							loop
+							autoplay
+						/>
 					</BCol>
 
-					<BCol cols="12" xl="8">
-						<div class="table-holder">
+					<BCol cols="12" md="6">
+						<p class="mx-md-5 my-5 text-center h5 font-weight-bold">
+							{{ pageData.services[0].descriptions[0] }}
+						</p>
+					</BCol>
+
+					<BCol cols="12">
+						<div class="mb-5 table-holder">
 							<table class="m-0 table table-dark bg-shade-less">
-								<thead class="">
-									<tr class="text-center font-weight-bold">
+								<thead>
+									<tr>
 										<td></td>
-										<td>
-											{{ pageData.services[0].variants[0].name }}
-										</td>
-										<td>
-											{{ pageData.services[0].variants[1].name }}
-										</td>
-										<td>
-											{{ pageData.services[0].variants[2].name }}
-										</td>
+
+										<!-- Features -->
+										<td
+											v-for="(f, i) in pageData.services[0].features"
+											:key="i"
+											class="text-center font-weight-bold"
+											style="min-width: 100px;"
+										>{{ f }}</td>
+
+										<td></td>
 									</tr>
 								</thead>
 
-								<tbody class="text-center font-weight-bold">
-									<tr>
-										<td>Complete UI Design</td>
-										<td>✓</td>
-										<td>✓</td>
-										<td>✓</td>
-									</tr>
-									<tr>
-										<td>Blog</td>
-										<td>✓</td>
-										<td>✓</td>
-										<td>✓</td>
-									</tr>
-									<tr>
-										<td>Full SEO</td>
-										<td>✓</td>
-										<td>✓</td>
-										<td>✓</td>
-									</tr>
-									<tr>
-										<td>Online Store</td>
-										<td></td>
-										<td>✓</td>
-										<td>✓</td>
-									</tr>
-									<tr>
-										<td>Mobile App</td>
-										<td></td>
-										<td></td>
-										<td>✓</td>
-									</tr>
-									<tr>
-										<td class="border-top">
-											Price
+								<tbody>
+									<tr
+										v-for="(v, i) in pageData.services[0].variants"
+										:key="i"
+									>
+										<!-- Variant Name -->
+										<td class="text-center font-weight-bold">
+											{{ v.name }}
 										</td>
-										<td class="border-top text-success">
-											{{ pageData.services[0].variants[0].price }}
+
+										<!-- Feature Availability -->
+										<td
+											v-for="(f, ii) in pageData.services[0].features"
+											:key="ii"
+											class="text-center font-weight-bold"
+										>
+											<span
+												v-if="ii <= v.featureLimit - 1"
+											>✓</span>
 										</td>
-										<td class="border-top text-success">
-											{{ pageData.services[0].variants[1].price }}
-										</td>
-										<td class="border-top text-success">
-											{{ pageData.services[0].variants[2].price }}
+
+										<!-- Variant Name -->
+										<td class="text-center">
+											<BBadge variant="success">
+												<h6 class="m-0 font-weight-bold">
+													{{ v.price }}
+												</h6>
+											</BBadge>
 										</td>
 									</tr>
 								</tbody>
@@ -111,7 +94,21 @@
 						</div>
 					</BCol>
 				</BRow>
-			</BCardHeader>
+			</BCardBody>
+
+			<BCardFooter>
+				<div class="text-center">
+					<RouterLink to="/contact">
+						<BButton
+							variant="dark"
+							class="w-100 my-2"
+							size="lg"
+						>
+							<h4 class="m-0 font-weight-bold">Contact</h4>
+						</BButton>
+					</RouterLink>
+				</div>
+			</BCardFooter>
 		</BCard>
 	</BContainer>
 </template>
@@ -131,5 +128,13 @@
 <style lang="scss" scoped>
 	.table-holder {
 		overflow-x: auto;
+	}
+
+	.lottie {
+		width: 100%;
+
+		@media (max-width: 752px) {
+			width: 200px;
+		}
 	}
 </style>

@@ -5,21 +5,22 @@
 				cols="12" md="6"
 				v-for="(s, i) in pageData.services"
 				:key="i"
-				class="d-flex align-items-stretch text-light"
+				class="d-flex align-items-stretch"
 			>
 				<BCard
 					bg-variant="primary"
 					border-variant="dark"
+					text-variant="dark"
 					no-body
-					class="mb-5 shadow"
+					class="w-100 mb-5"
 				>
 					<BCardHeader class="border-dark">
-						<h3 class="m-0 text-center text-dark text-uppercase">
+						<h2 class="my-4 text-center text-uppercase text-light">
 							{{ s.name }}
-						</h3>
+						</h2>
 					</BCardHeader>
 
-					<BCardBody class="p-0">
+					<BCardBody class="p-0 border-0">
 						<lottie-player
 							:src="s.lottiefilesLink"
 							class="mx-auto text-center lottie"
@@ -31,7 +32,7 @@
 						/>
 					</BCardBody>
 
-					<BCardBody>
+					<BCardBody class="border-0">
 						<p class="h6 text-center font-weight-bold text-spread-sm">
 							{{
 								s.descriptions[0].length > 200 ?
@@ -48,7 +49,7 @@
 							<RouterLink v-if="s.id" :to="`/services/${s.id}`">
 								<BButton
 									variant="dark"
-									class="w-100"
+									class="w-100 my-2"
 									size="lg"
 								>
 									<h5 class="m-0 text-uppercase">
@@ -61,7 +62,7 @@
 							<RouterLink v-else to="/services/contact">
 								<BButton
 									variant="dark"
-									class="w-100"
+									class="w-100 my-2"
 									size="lg"
 									pill
 									style="max-width: 300px"
