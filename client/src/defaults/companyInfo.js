@@ -50,11 +50,11 @@ module.exports = {
 		// WAD //
 		{
 			id: 'wad',
-
 			name: 'Web App Development (WAD)',
-
+			descriptions: [
+				'A highly customizable website that is designed to help our clients reach out to their customers and share their products and services. We also provide the option to add an online store that can makes sales for your business anywhere! All Web Apps come with Fully Designed UI, a Blog System, and Search Engine Optimization (SEO).',
+			],
 			lottiefilesLink: 'https://assets6.lottiefiles.com/packages/lf20_8zzfnwv8.json',
-
 			variants: [
 				{
 					id: 'standard-web-app-development',
@@ -72,23 +72,18 @@ module.exports = {
 					price: '$9,999.99',
 				},
 			],
-
-			descriptions: [
-				'A highly customizable website that is designed to help our clients reach out to their customers and share their products and services. We also provide the option to add an online store that can makes sales for your business anywhere! All Web Apps come with Fully Designed UI, a Blog System, and Search Engine Optimization (SEO).',
-			],
-
 			features: [],
-
 			disclaimer: 'DISCLAIMER: Web app code only. hosting not included. (SEO included)',
 		},
+
 		// WAH //
 		{
 			id: 'wah',
-
 			name: 'Web App Hosting (WAH)',
-
+			descriptions: [
+				'All Web App needs to be hosted and we are here to help provide that for you. Our hosting service includes updating, maintaining, and improving the Web Apps we host. We make sure to work closely with our clients so that changes are up to their standards.',
+			],
 			lottiefilesLink: 'https://assets2.lottiefiles.com/packages/lf20_3jezq8s4.json',
-
 			variants: [
 				{
 					id: 'standard-web-app-hosting',
@@ -106,23 +101,66 @@ module.exports = {
 					price: '$199.99 /mo',
 				},
 			],
+			features: [],
+			disclaimer: '',
+		},
 
+		// WAH //
+		{
+			id: 'was',
+			name: 'Web App Servicing (WAS)',
+			descriptions: [
+				'Need help servicing your wep app? Let us do that for you! We provide the service of updating, repairing, and customizing a web app to the standards of your business needs.',
+			],
+			lottiefilesLink: 'https://assets4.lottiefiles.com/packages/lf20_y3qfynfr.json',
+			variants: [
+				{
+					id: 'standard-servicing',
+					name: 'Standard Web App Hosting',
+					price: '$999.99',
+				},
+			],
+			features: [],
+			disclaimer: '',
+		},
+
+		// WAH //
+		{
+			id: 'wah',
+			name: 'Web App Hosting (WAH)',
 			descriptions: [
 				'All Web App needs to be hosted and we are here to help provide that for you. Our hosting service includes updating, maintaining, and improving the Web Apps we host. We make sure to work closely with our clients so that changes are up to their standards.',
 			],
-
+			lottiefilesLink: 'https://assets2.lottiefiles.com/packages/lf20_3jezq8s4.json',
+			variants: [
+				{
+					id: 'standard-web-app-hosting',
+					name: 'Standard Web App Hosting',
+					price: '$59.99 /mo',
+				},
+				{
+					id: 'advanced-web-app-hosting',
+					name: 'Advanced Web App Hosting',
+					price: '$89.99 /mo',
+				},
+				{
+					id: 'pro-web-app-hosting',
+					name: 'Pro Web App Hosting',
+					price: '$199.99 /mo',
+				},
+			],
 			features: [],
-
 			disclaimer: '',
 		},
+
 		// SMM //
 		{
 			id: 'smm',
-			
 			name: 'Social Media Management (SMM)',
-
+			descriptions: [
+				'A presence on social media is essential for any business to successfully engage with an audience who is constantly browsing, exploring, and contributing to the web. By collecting feedback from these platforms, a business can make better-informed decisions to navigate an ever-changing world. We provide the service of maintaining and collecting feedback from these platforms so you dont have too. Here is what we offer...',
+			],
 			lottiefilesLink: 'https://assets10.lottiefiles.com/packages/lf20_q4m6E9.json',
-
 			variants: [
 				{
 					id: 'stanard-social-media-management',
@@ -135,11 +173,6 @@ module.exports = {
 					price: '$89.99 /mo',
 				},
 			],
-
-			descriptions: [
-				'A presence on social media is essential for any business to successfully engage with an audience who is constantly browsing, exploring, and contributing to the web. By collecting feedback from these platforms, a business can make better-informed decisions to navigate an ever-changing world. We provide the service of maintaining and collecting feedback from these platforms so you dont have too. Here is what we offer...',
-			],
-
 			features: [
 				'Upload new content every day (2 photos/videos a day)',
 				'Post updates and questionnaires on story',
@@ -148,58 +181,45 @@ module.exports = {
 				'Identify trends and create engaged content',
 				'Build an interactive digital community online',
 			],
-			
 			disclaimer: '',
 		},
 
 		// ASM //
 		{
-			id: '',
-			
-			name: 'Advertisement Service Management (ASM)',
-
-			lottiefilesLink: 'https://assets9.lottiefiles.com/packages/lf20_VegC5p.json',
-
+			id: 'asm',
+			name: 'Advertisement Service Management (ASM)',			
 			descriptions: [
 				'Take your business to the next level! We work with advertising services such as Google ads & Instagram ads to help get your message out to even more people. This is usually done after a Web App is established and SEO is complete.',
 			],
-
+			lottiefilesLink: 'https://assets9.lottiefiles.com/packages/lf20_VegC5p.json',
 			variants: [],
-			
+			features: [],
 			disclaimer: '',
 		},
 
 		// BCD //
 		{
-			id: '',
-			
+			id: 'bcd',
 			name: 'Business Card Design (BCD)',
-
-			lottiefilesLink: 'https://assets8.lottiefiles.com/packages/lf20_n9cqez8k.json',
-
 			descriptions: [
 				'Need a business card designed? We can do that for you!',
 			],
-
+			lottiefilesLink: 'https://assets8.lottiefiles.com/packages/lf20_n9cqez8k.json',
 			variants: [],
-			
+			features: [],
 			disclaimer: '',
 		},
 
 		// EMS //
 		{
-			id: '',
-			
+			id: 'ems',
 			name: 'Email Marketing Service (EMS)',
-
-			lottiefilesLink: 'https://assets6.lottiefiles.com/packages/lf20_t6nmtpwm.json',
-
 			descriptions: [
 				'An emailing list is a great way to connect with your community. We can help your business generate a list of contacts who will recieve emails that they can read about what your business is up too!',
 			],
-
+			lottiefilesLink: 'https://assets6.lottiefiles.com/packages/lf20_t6nmtpwm.json',
 			variants: [],
-			
+			features: [],
 			disclaimer: '',
 		},
 	],

@@ -11,7 +11,7 @@
 			<BCardHeader class="border-dark">
 				<div class="my-4">
 					<h3 class="m-0 text-center text-dark text-uppercase text-spread-sm">
-						{{ pageData.services[2].name }}
+						{{ pageData.services[4].name }}
 					</h3>
 				</div>
 			</BCardHeader>
@@ -48,14 +48,14 @@
 							</BListGroupItem>
 
 							<BListGroupItem
-								v-for="(f, i) in pageData.services[2].features"
+								v-for="(f, i) in pageData.services[4].features"
 								:key="i"
 								class="font-weight-bold text-light bg-shade-less"
 							>- {{ f }}</BListGroupItem>
 						</BListGroup>
 
 						<h5 class="py-4 text-center font-weight-bold text-success">
-							{{ pageData.services[2].variants[0].price }}
+							{{ pageData.services[4].variants[0].price }}
 						</h5>
 					</BCol>
 				</BRow>

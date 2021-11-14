@@ -1,91 +1,81 @@
 <template>
 	<BContainer class="py-6">
-		<!-- [WEB-APP-HOSTING] -->
-		<BCard
-			bg-variant="primary"
-			text-variant="light"
-			border-variant="dark"
-			no-body
-			class="mb-3 mb-md-5 shadow"
-		>
-			<BCardHeader class="border-dark">
-				<h1 class="my-4 text-center text-dark text-uppercase text-spread-sm">
-					Our Services
-				</h1>
-			</BCardHeader>
-
-			<BCardHeader
+		<BRow>
+			<BCol
+				cols="12" md="6"
 				v-for="(s, i) in pageData.services"
 				:key="i"
-				cols="12"
-				class="py-5 border-bottom border-dark"
+				class="d-flex align-items-stretch text-light"
 			>
-				<BRow>
-					<BCol cols="12" md="7" order="1" :order-md="isEven(i)" class="bg-primary-transparent">
-						<div class="px-md-4">
-							<div class="px-lg-3">
-								<div class="px-xl-1">
-									<h3 class="mb-5 text-center text-dark text-uppercase">
-										{{ s.name }}
-									</h3>
+				<BCard
+					bg-variant="primary"
+					border-variant="dark"
+					no-body
+					class="mb-5 shadow"
+				>
+					<BCardHeader class="border-dark">
+						<h3 class="m-0 text-center text-dark text-uppercase">
+							{{ s.name }}
+						</h3>
+					</BCardHeader>
 
-									<p class="h5 mb-5 text-center font-weight-bold text-spread-sm">
-										{{ s.descriptions[0] }}
-									</p>
-								
-									<!-- Read More / Contact -->
-									<div class="text-center">
-										<!-- Read More -->
-										<RouterLink v-if="s.id" :to="`/services/${s.id}`">
-											<BButton
-												variant="dark"
-												class="w-100"
-												size="lg"
-												pill
-												style="max-width: 300px"
-											>
-												<h5 class="m-0 text-uppercase">
-													Learn More
-												</h5>
-											</BButton>
-										</RouterLink>
-
-										<!-- Get Quote -->
-										<RouterLink v-else to="/services/contact">
-											<BButton
-												variant="dark"
-												class="w-100"
-												size="lg"
-												pill
-												style="max-width: 300px"
-											>
-												<h5 class="m-0 text-uppercase">
-													Get Quote
-												</h5>
-											</BButton>
-										</RouterLink>
-									</div>
-
-
-								</div>
-							</div>
-						</div>
-					</BCol>
-
-					<BCol cols="12" md="5" order="0" :order-md="isOdd(i)">
+					<BCardBody class="p-0">
 						<lottie-player
 							:src="s.lottiefilesLink"
 							class="mx-auto text-center lottie"
-							style="max-width: 300px;"
+							style="max-width: 200px;"
 							background="transparent"
 							speed="1"
 							loop
 							autoplay
 						/>
-					</BCol>
-				</BRow>
-			</BCardHeader>
-		</BCard>
+					</BCardBody>
+
+					<BCardBody>
+						<p class="h6 text-center font-weight-bold text-spread-sm">
+							{{
+								s.descriptions[0].length > 200 ?
+									s.descriptions[0].substring(0, 200 - 3) + '...' :
+									s.descriptions[0]
+							}}
+						</p>
+					</BCardBody>
+
+					<BCardFooter class="border-dark">
+						<!-- Read More / Contact -->
+						<div class="text-center">
+							<!-- Read More -->
+							<RouterLink v-if="s.id" :to="`/services/${s.id}`">
+								<BButton
+									variant="dark"
+									class="w-100"
+									size="lg"
+								>
+									<h5 class="m-0 text-uppercase">
+										Learn More
+									</h5>
+								</BButton>
+							</RouterLink>
+
+							<!-- Get Quote -->
+							<RouterLink v-else to="/services/contact">
+								<BButton
+									variant="dark"
+									class="w-100"
+									size="lg"
+									pill
+									style="max-width: 300px"
+								>
+									<h5 class="m-0 text-uppercase">
+										Get Quote
+									</h5>
+								</BButton>
+							</RouterLink>
+						</div>
+					</BCardFooter>
+				</BCard>
+			</BCol>
+		</BRow>
 	</BContainer>
 </template>
 

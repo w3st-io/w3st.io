@@ -18,6 +18,7 @@ import services from '../pages/services'
 import services_smm from '../pages/services/smm'
 import services_wad from '../pages/services/wad'
 import services_wah from '../pages/services/wah'
+import services_was from '../pages/services/was'
 import notFound from '../pages/404'
 
 
@@ -162,6 +163,16 @@ const router = new VueRouter({
 			meta: {
 				auth: true,
 				title: 'Web App Hosting (WAH)'
+			},
+		},
+		// purchase_wah //
+		{
+			path: '/services/was',
+			name: 'services_was',
+			component: services_was,
+			meta: {
+				auth: true,
+				title: 'Web App Servicing (WAS)'
 			},
 		},
 		// 404 //
