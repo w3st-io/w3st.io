@@ -6,7 +6,7 @@ module.exports = {
 
 	nameHTML: '<span class="text-dark">W<span class="text-light">3</span>ST<span class="text-light">.</span>IO</span>',
 
-	caption: 'Nothing is impossible in the W3ST',
+	caption: '',
 
 	description: 'Established in 2021, W3ST.IO LLC is a web services company that provides its clients with an array of skillsets that help them grow their digital presence online. We understand how important it is for a business to truly connect with its community, so we make sure to meet all of our client’s business needs. We are constantly growing and want your business to grow with us as well..',
 
