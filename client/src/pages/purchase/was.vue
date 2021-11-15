@@ -9,17 +9,17 @@
 		>
 			<BCardHeader class="border-dark">
 				<h1 class="my-4 text-center text-uppercase text-dark text-spread-sm">
-					Purchase Web App Hosting Subscription
+					Purchase Web App Servicing
 				</h1>
 			</BCardHeader>
 
-			<BCardBody class="">
-				<BRow v-if="!loading" class="">
+			<BCardBody>
+				<BRow v-if="!loading">
 					<!-- Standard -->
 					<BCol cols="12" lg="4">
 						<StripeCheckout
-							ref="standardWah"
-							mode="subscription"
+							ref="standardWas"
+							mode="payment"
 							:pk="stripe.publishableKey"
 							:line-items="stripe.standard.lineItems"
 							:success-url="stripe.successURL"
@@ -34,50 +34,6 @@
 							size="lg"
 							pill
 							@click="submit(0)"
-						>Purchase</BButton>
-					</BCol>
-
-					<!-- Advanced -->
-					<BCol cols="12" lg="4">
-						<StripeCheckout
-							ref="advancedWah"
-							mode="subscription"
-							:pk="stripe.publishableKey"
-							:line-items="stripe.advanced.lineItems"
-							:success-url="stripe.successURL"
-							:cancel-url="stripe.cancelURL"
-							@loading="v => stripe.advanced.loading = v"
-						/>
-
-						<h3 class="my-5 text-center text-uppercase">Advanced</h3>
-						<BButton
-							variant="success"
-							class="w-100 mb-5 text-uppercase"
-							size="lg"
-							pill
-							@click="submit(1)"
-						>Purchase</BButton>
-					</BCol>
-
-					<!-- Pro -->
-					<BCol cols="12" lg="4">
-						<StripeCheckout
-							ref="proWah"
-							mode="subscription"
-							:pk="stripe.publishableKey"
-							:line-items="stripe.pro.lineItems"
-							:success-url="stripe.successURL"
-							:cancel-url="stripe.cancelURL"
-							@loading="v => stripe.pro.loading = v"
-						/>
-
-						<h3 class="my-5 text-center text-uppercase">Pro</h3>
-						<BButton
-							variant="success"
-							class="w-100 mb-5 text-uppercase"
-							size="lg"
-							pill
-							@click="submit(2)"
 						>Purchase</BButton>
 					</BCol>
 				</BRow>
@@ -129,26 +85,6 @@
 							},
 						],
 					},
-
-					advanced: {
-						loading: false,
-						lineItems: [
-							{
-								price: '',
-								quantity: 1,
-							},
-						],
-					},
-
-					pro: {
-						loading: false,
-						lineItems: [
-							{
-								price: '',
-								quantity: 1,
-							},
-						],
-					},
 				},
 			}
 		},
@@ -156,16 +92,14 @@
 		methods: {
 			async getPageData() {
 				try {
-					this.resData = await PageService.s_purchase_wah({
+					this.resData = await PageService.s_purchase_was({
 						promo: this.$route.query.promo
 					})
 
 					if (this.resData.status) {
 						this.stripe.publishableKey = this.resData.stripePublishableKey
 
-						this.stripe.standard.lineItems[0].price = this.resData.standardWahPrice_id
-						this.stripe.advanced.lineItems[0].price = this.resData.advancedWahPrice_id
-						this.stripe.pro.lineItems[0].price = this.resData.proWahPrice_id
+						this.stripe.standard.lineItems[0].price = this.resData.standardWasPrice_id
 
 						this.stripe.successURL = this.resData.successURL
 						this.stripe.cancelURL = this.resData.cancelURL
@@ -178,15 +112,7 @@
 			submit(option) {
 				switch (option) {
 					case 0:
-						this.$refs.standardWah.redirectToCheckout()
-					break
-
-					case 1:
-						this.$refs.advancedWah.redirectToCheckout()
-					break;
-
-					case 2:
-						this.$refs.proWah.redirectToCheckout()
+						this.$refs.standardWas.redirectToCheckout()
 					break
 				
 					default:

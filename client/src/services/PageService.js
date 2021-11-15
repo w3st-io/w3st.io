@@ -122,12 +122,32 @@ export default {
 	},
 
 
-	s_purchase_wahSubscription: async function ({ promo }) {
+	s_purchase_wah: async function ({ promo }) {
 		try {
 			const authAxios = await this.authAxios()
 	
 			const reqData = await authAxios.get(
-				`/purchase/wah-subscription?promo=${promo}`
+				`/purchase/wah?promo=${promo}`
+			)
+	
+			return reqData.data
+		}
+		catch (err) {
+			return {
+				executed: false,
+				status: false,
+				message: `PageService: Error --> ${err}`
+			}
+		}
+	},
+
+
+	s_purchase_was: async function ({ promo }) {
+		try {
+			const authAxios = await this.authAxios()
+	
+			const reqData = await authAxios.get(
+				`/purchase/was?promo=${promo}`
 			)
 	
 			return reqData.data

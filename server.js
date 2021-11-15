@@ -16,7 +16,8 @@ const a_ = require('./s-routes/api')
 
 const p_services = require('./s-routes/pages/services')
 const p_purchase_wad = require('./s-routes/pages/purchase/wad')
-const p_purchase_wahSubscription = require('./s-routes/pages/purchase/wah-subscription')
+const p_purchase_wah = require('./s-routes/pages/purchase/wah')
+const p_purchase_was = require('./s-routes/pages/purchase/was')
 
 
 // [EXPRESS + SERVER] //
@@ -43,7 +44,8 @@ app.use('/api', a_)
 
 app.use('/pages/services', p_services)
 app.use('/pages/purchase/wad', p_purchase_wad)
-app.use('/pages/purchase/wah-subscription', p_purchase_wahSubscription)
+app.use('/pages/purchase/wah', p_purchase_wah)
+app.use('/pages/purchase/was', p_purchase_was)
 
 
 // [HEROKU] Set Static Folder for Heroku //

@@ -30,7 +30,7 @@
 						<h3 class="my-5 text-center text-uppercase">Standard</h3>
 						<BButton
 							variant="success"
-							class="w-100 text-uppercase"
+							class="w-100 mb-5 text-uppercase"
 							size="lg"
 							pill
 							@click="submit(0)"
@@ -52,7 +52,7 @@
 						<h3 class="my-5 text-center text-uppercase">Advanced</h3>
 						<BButton
 							variant="success"
-							class="w-100 text-uppercase"
+							class="w-100 mb-5 text-uppercase"
 							size="lg"
 							pill
 							@click="submit(1)"
@@ -74,7 +74,7 @@
 						<h3 class="my-5 text-center text-uppercase">Pro</h3>
 						<BButton
 							variant="success"
-							class="w-100 text-uppercase"
+							class="w-100 mb-5 text-uppercase"
 							size="lg"
 							pill
 							@click="submit(2)"

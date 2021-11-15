@@ -47,6 +47,13 @@ module.exports = {
 					proPrice_id: process.env.API__STRIPE__WAH__DISCOUNTED__PRO_PRICE_ID || '',
 				}
 			},
+
+			was: {
+				standardPrice_id: process.env.API__STRIPE__WAS__STANDARD_PRICE_ID || '',
+				discounted: {
+					standardPrice_id: process.env.API__STRIPE__WAS__DISCOUNTED__STANDARD_PRICE_ID || '',
+				}
+			},
 		}
 	}
 }

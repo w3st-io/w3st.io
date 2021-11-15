@@ -14,6 +14,7 @@ import purchase_successful from '../pages/purchase/successful'
 import purchase_unsuccessful from '../pages/purchase/unsuccessful'
 import purchase_wad from '../pages/purchase/wad'
 import purchase_wah from '../pages/purchase/wah'
+import purchase_was from '../pages/purchase/was'
 import services from '../pages/services'
 import services_info from '../pages/services/info'
 import notFound from '../pages/404'
@@ -93,6 +94,16 @@ const router = new VueRouter({
 			meta: {
 				auth: true,
 				title: 'Purchase WAH'
+			},
+		},
+		// purchase_was //
+		{
+			path: '/purchase/was',
+			name: 'purchase_was',
+			component: purchase_was,
+			meta: {
+				auth: true,
+				title: 'Purchase WAS'
 			},
 		},
 		// contact //
