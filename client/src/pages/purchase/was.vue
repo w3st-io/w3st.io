@@ -36,6 +36,32 @@
 							@click="submit(0)"
 						>Purchase</BButton>
 					</BCol>
+
+					<!-- Standard -->
+					<BCol cols="12" lg="4">
+						<h3 class="my-5 text-center text-uppercase">Advanced</h3>
+						<BButton
+							:disabled="true"
+							variant="success"
+							class="w-100 mb-5 text-uppercase"
+							size="lg"
+							pill
+							@click="submit(0)"
+						>Purchase</BButton>
+					</BCol>
+
+					<!-- Standard -->
+					<BCol cols="12" lg="4">
+						<h3 class="my-5 text-center text-uppercase">Pro</h3>
+						<BButton
+							:disabled="true"
+							variant="success"
+							class="w-100 mb-5 text-uppercase"
+							size="lg"
+							pill
+							@click="submit(0)"
+						>Purchase</BButton>
+					</BCol>
 				</BRow>
 
 				<BRow v-if="loading">
