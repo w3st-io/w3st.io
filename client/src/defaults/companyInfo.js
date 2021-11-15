@@ -137,7 +137,7 @@ module.exports = {
 			descriptions: [
 				'Need help servicing your wep app? Let us do that for you! We provide the service of updating, repairing, and customizing a web app to the standards of your business needs.',
 			],
-			lottiefilesLink: 'https://assets4.lottiefiles.com/packages/lf20_y3qfynfr.json',
+			lottiefilesLink: 'https://assets7.lottiefiles.com/private_files/lf30_Gh7uJv.json',
 			variants: [
 				{
 					id: 'standard-servicing',
