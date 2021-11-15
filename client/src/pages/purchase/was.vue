@@ -46,7 +46,7 @@
 							class="w-100 mb-5 text-uppercase"
 							size="lg"
 							pill
-							@click="submit(0)"
+							@click="submit(1)"
 						>Purchase</BButton>
 					</BCol>
 
@@ -59,7 +59,7 @@
 							class="w-100 mb-5 text-uppercase"
 							size="lg"
 							pill
-							@click="submit(0)"
+							@click="submit(2)"
 						>Purchase</BButton>
 					</BCol>
 				</BRow>
