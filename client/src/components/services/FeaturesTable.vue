@@ -1,19 +1,21 @@
 <template>
-	<div v-if="service.features.length > 0">
-		<table class="m-0 table table-dark bg-shade-less">
+	<div>
+		<table
+			v-if="service.features.length > 0"
+			class="m-0 table table-dark bg-shade-less"
+		>
 			<thead>
-				<tr>
+				<tr class="text-center font-weight-bold">
 					<td></td>
 
 					<!-- Features -->
 					<td
 						v-for="(f, i) in service.features"
 						:key="i"
-						class="text-center font-weight-bold"
 						style="min-width: 100px;"
 					>{{ f }}</td>
 
-					<td></td>
+					<td>Pricing</td>
 				</tr>
 			</thead>
 
@@ -49,6 +51,19 @@
 				</tr>
 			</tbody>
 		</table>
+
+		<div v-else class="text-center">
+			<h4>
+				<span>
+					<!-- Variant Name -->
+					<BBadge variant="success">
+						<h6 class="m-0 font-weight-bold">
+							{{ service.variants[0].price }}
+						</h6>
+					</BBadge>
+				</span>
+			</h4>
+		</div>
 	</div>
 </template>
 
