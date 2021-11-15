@@ -191,14 +191,14 @@ module.exports = {
 				{
 					id: 'stanard-social-media-management',
 					name: 'Standard Social Media Management',
-					price: '$59.99 /mo',
+					price: '$199.99 /mo',
 					featureLimit: 5,
 					exclusiveFeatures: [],
 				},
 				{
 					id: 'pro-social-media-management',
 					name: 'Pro Social Media Management',
-					price: '$89.99 /mo',
+					price: '$199.99 /mo',
 					featureLimit: 7,
 					exclusiveFeatures: [],
 				},

@@ -2,7 +2,7 @@
 	<BContainer class="py-6">
 		<BRow>
 			<BCol
-				cols="12" md="6"
+				cols="12" lg="6" xl="4"
 				v-for="(s, i) in pageData.services"
 				:key="i"
 				class="d-flex align-items-stretch"
@@ -15,9 +15,9 @@
 					class="w-100 mb-5"
 				>
 					<BCardHeader class="border-dark">
-						<h2 class="my-4 text-center text-uppercase text-light">
+						<h3 class="my-4 text-center text-uppercase text-light">
 							{{ s.name }}
-						</h2>
+						</h3>
 					</BCardHeader>
 
 					<BCardBody class="p-0 border-0">
