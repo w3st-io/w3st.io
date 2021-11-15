@@ -59,4 +59,6 @@ if (config.NODE_ENV == 'production') {
 
 
 // [LISTEN] //
-server.listen(config.port, () => { console.log(`server started on port: ${config.port}`) })
+server.listen(config.port, () => {
+	console.log(`Server started on port: ${config.port}`)
+})
