@@ -102,25 +102,31 @@ module.exports = {
 					id: 'standard-web-app-hosting',
 					name: 'Standard Web App Hosting',
 					price: '$59.99 /mo',
-					featureLimit: 0,
+					featureLimit: 2,
 					exclusiveFeatures: [],
 				},
 				{
 					id: 'advanced-web-app-hosting',
 					name: 'Advanced Web App Hosting',
 					price: '$89.99 /mo',
-					featureLimit: 0,
+					featureLimit: 4,
 					exclusiveFeatures: [],
 				},
 				{
 					id: 'pro-web-app-hosting',
 					name: 'Pro Web App Hosting',
 					price: '$199.99 /mo',
-					featureLimit: 0,
+					featureLimit: 5,
 					exclusiveFeatures: [],
 				},
 			],
-			features: [],
+			features: [
+				'General Code Maintaince',
+				'General Info Updating',
+				'Product Updating',
+				'Online Store',
+				'App Maintainence',
+			],
 			disclaimer: '',
 		},
 
@@ -152,33 +158,19 @@ module.exports = {
 			disclaimer: '',
 		},
 
-		// WAH //
+		// WAO //
 		{
-			id: 'wah',
-			name: 'Web App Hosting (WAH)',
+			id: 'wao',
+			name: 'Web App Onboarding (WAH)',
 			descriptions: [
-				'All Web App needs to be hosted and we are here to help provide that for you. Our hosting service includes updating, maintaining, and improving the Web Apps we host. We make sure to work closely with our clients so that changes are up to their standards.',
+				'Looking to have your web app mananged by us? Have it onboarded to our services. We will make sure it is updated and running under our management.',
 			],
-			lottiefilesLink: 'https://assets2.lottiefiles.com/packages/lf20_3jezq8s4.json',
+			lottiefilesLink: 'https://assets9.lottiefiles.com/packages/lf20_sh2yyL.json',
 			variants: [
 				{
 					id: 'standard-web-app-hosting',
 					name: 'Standard Web App Hosting',
-					price: '$59.99 /mo',
-					featureLimit: 0,
-					exclusiveFeatures: [],
-				},
-				{
-					id: 'advanced-web-app-hosting',
-					name: 'Advanced Web App Hosting',
-					price: '$89.99 /mo',
-					featureLimit: 0,
-					exclusiveFeatures: [],
-				},
-				{
-					id: 'pro-web-app-hosting',
-					name: 'Pro Web App Hosting',
-					price: '$199.99 /mo',
+					price: '$499.99 /mo',
 					featureLimit: 0,
 					exclusiveFeatures: [],
 				},
@@ -189,7 +181,7 @@ module.exports = {
 
 		// SMM //
 		{
-			id: 'smm',
+			id: '',
 			name: 'Social Media Management (SMM)',
 			descriptions: [
 				'A presence on social media is essential for any business to successfully engage with an audience who is constantly browsing, exploring, and contributing to the web. By collecting feedback from these platforms, a business can make better-informed decisions to navigate an ever-changing world. We provide the service of maintaining and collecting feedback from these platforms so you dont have too. Here is what we offer...',
@@ -201,33 +193,31 @@ module.exports = {
 					name: 'Standard Social Media Management',
 					price: '$59.99 /mo',
 					featureLimit: 5,
-					exclusiveFeatures: [
-						'Post 3 times a week',
-					],
+					exclusiveFeatures: [],
 				},
 				{
 					id: 'pro-social-media-management',
 					name: 'Pro Social Media Management',
 					price: '$89.99 /mo',
-					featureLimit: 5,
-					exclusiveFeatures: [
-						'Post 5 times a week',
-						'Direct Messaging',
-					],
+					featureLimit: 7,
+					exclusiveFeatures: [],
 				},
 			],
 			features: [
 				'Post questionnaires to gather feedback',
-				'Interact with followers by responding and answering questions publicly',
+				'Respond and answer questions publicly',
 				'Collect feedback from followers',
 				'Identify trends and create engaged content',
+				'Post at least 3 times a week',
+				'Post at leaste 5 times a week',
+				'Follower Direct Messaging',
 			],
 			disclaimer: '',
 		},
 
 		// ASM //
 		{
-			id: 'asm',
+			id: '',
 			name: 'Advertisement Service Management (ASM)',			
 			descriptions: [
 				'Take your business to the next level! We work with advertising services such as Google ads & Instagram ads to help get your message out to even more people. This is usually done after a Web App is established and SEO is complete.',
@@ -240,7 +230,7 @@ module.exports = {
 
 		// BCD //
 		{
-			id: 'bcd',
+			id: '',
 			name: 'Business Card Design (BCD)',
 			descriptions: [
 				'Need a business card designed? We can do that for you!',
@@ -253,7 +243,7 @@ module.exports = {
 
 		// EMS //
 		{
-			id: 'ems',
+			id: '',
 			name: 'Email Marketing Service (EMS)',
 			descriptions: [
 				'An emailing list is a great way to connect with your community. We can help your business generate a list of contacts who will recieve emails that they can read about what your business is up too!',

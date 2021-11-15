@@ -15,10 +15,7 @@ import purchase_unsuccessful from '../pages/purchase/unsuccessful'
 import purchase_wad from '../pages/purchase/wad'
 import purchase_wah from '../pages/purchase/wah'
 import services from '../pages/services'
-import services_smm from '../pages/services/smm'
-import services_wad from '../pages/services/wad'
-import services_wah from '../pages/services/wah'
-import services_was from '../pages/services/was'
+import services_info from '../pages/services/info'
 import notFound from '../pages/404'
 
 
@@ -139,40 +136,12 @@ const router = new VueRouter({
 			},
 		},
 		{
-			path: '/services/smm',
-			name: 'services_smm',
-			component: services_smm,
+			path: '/services/info/:serviceid',
+			name: 'services_info',
+			component: services_info,
 			meta: {
 				auth: true,
-				title: 'Social Media Management (SMM)'
-			},
-		},
-		{
-			path: '/services/wad',
-			name: 'services_wad',
-			component: services_wad,
-			meta: {
-				auth: true,
-				title: 'Web App Development (WAD)'
-			},
-		},
-		{
-			path: '/services/wah',
-			name: 'services_wah',
-			component: services_wah,
-			meta: {
-				auth: true,
-				title: 'Web App Hosting (WAH)'
-			},
-		},
-		// purchase_wah //
-		{
-			path: '/services/was',
-			name: 'services_was',
-			component: services_was,
-			meta: {
-				auth: true,
-				title: 'Web App Servicing (WAS)'
+				title: 'Services'
 			},
 		},
 		// 404 //

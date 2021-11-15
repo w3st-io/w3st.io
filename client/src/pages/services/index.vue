@@ -46,7 +46,7 @@
 						<!-- Read More / Contact -->
 						<div class="text-center">
 							<!-- Read More -->
-							<RouterLink v-if="s.id" :to="`/services/${s.id}`">
+							<RouterLink v-if="s.id" :to="`/services/info/${s.id}`">
 								<BButton
 									variant="dark"
 									class="w-100 my-2"
@@ -59,13 +59,11 @@
 							</RouterLink>
 
 							<!-- Get Quote -->
-							<RouterLink v-else to="/services/contact">
+							<RouterLink v-else to="/contact">
 								<BButton
 									variant="dark"
 									class="w-100 my-2"
 									size="lg"
-									pill
-									style="max-width: 300px"
 								>
 									<h5 class="m-0 text-uppercase">
 										Get Quote
