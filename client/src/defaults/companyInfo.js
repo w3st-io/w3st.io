@@ -121,11 +121,11 @@ module.exports = {
 				},
 			],
 			features: [
-				'General Code Maintaince',
+				'General Code Maintenance',
 				'General Info Updating',
 				'Product Updating',
 				'Online Store',
-				'App Maintainence',
+				'App Maintenance',
 			],
 			disclaimer: '',
 		},
