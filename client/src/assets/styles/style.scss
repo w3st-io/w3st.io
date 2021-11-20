@@ -2,7 +2,7 @@
 @import 'src/assets/styles/bootstrap-override.scss';
 
 body {
-	@extend .bg-dark;
+	@extend .bg-primary;
 	
 	opacity: 1;
 	background-size:
@@ -20,6 +20,16 @@ body {
 			transparent 0
 		),
 	;
+}
+
+.bg-svg {
+	background-image: url('../bg.svg');
+	background-repeat: repeat;
+}
+
+.bg-svg-dark {
+	background-image: url('../dark-bg.svg');
+	background-repeat: repeat;
 }
 
 .nav-spacer {
