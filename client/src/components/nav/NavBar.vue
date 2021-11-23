@@ -148,7 +148,6 @@
 		}
 	}
 
-	
 	// Mobile Menu //
 	.mobile-menu-button {
 		border-width: 2px !important;
