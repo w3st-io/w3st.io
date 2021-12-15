@@ -5,6 +5,11 @@ module.exports = [
 		link: 'https://www.jjinthemaking.com' 
 	},
 	{
+		image: 'https://images2.imgbox.com/56/52/v5IBaDhV_o.png',
+		title: 'Tethys Apparel',
+		link: 'https://www.tethysapparel.com' 
+	},
+	{
 		image: 'https://images2.imgbox.com/63/8b/WPGVTmOl_o.png',
 		title: 'AISONI & CO',
 		link: 'https://aisoni.herokuapp.com' 
@@ -22,7 +27,7 @@ module.exports = [
 	{
 		image: 'https://images2.imgbox.com/dc/b1/X2zhrG2c_o.png',
 		title: '24-7 Fire Protection',
-		link: 'https://www.24-7fireprotection.com' 
+		link: 'https://fpi247.herokuapp.com' 
 	},
 	{
 		image: 'https://images2.imgbox.com/f3/8f/iWDuBgBF_o.png',
