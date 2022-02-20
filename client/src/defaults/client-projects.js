@@ -4,16 +4,7 @@ module.exports = [
 		title: 'Power Market',
 		link: 'https://www.pwrmarket.com' 
 	},
-	{
-		image: 'https://source.unsplash.com/800x400/?design',
-		title: 'Gordon Palmer',
-		link: 'https://www.gordonpalmer.com' 
-	},
-	{
-		image: 'https://images2.imgbox.com/56/52/v5IBaDhV_o.png',
-		title: 'Tethys Apparel',
-		link: 'https://www.tethysapparel.com' 
-	},
+	
 	{
 		image: 'https://images2.imgbox.com/9d/9f/wCLwHAKF_o.png',
 		title: 'Balance Within',
@@ -35,11 +26,6 @@ module.exports = [
 		link: 'https://www.jjinthemaking.com' 
 	},
 	{
-		image: 'https://images2.imgbox.com/dc/b1/X2zhrG2c_o.png',
-		title: '24-7 Fire Protection',
-		link: 'https://fpi247.herokuapp.com' 
-	},
-	{
 		image: 'https://images2.imgbox.com/f3/8f/iWDuBgBF_o.png',
 		title: 'The Art of Wings',
 		link: 'https://www.theartofwings.com' 
@@ -48,5 +34,20 @@ module.exports = [
 		image: 'https://images2.imgbox.com/d2/1c/LLlHfKcC_o.png',
 		title: 'RpTide',
 		link: 'https://www.rptide.com' 
+	},
+	{
+		image: 'https://images2.imgbox.com/56/52/v5IBaDhV_o.png',
+		title: 'Tethys Apparel',
+		link: 'https://www.tethysapparel.com' 
+	},
+	{
+		image: 'https://source.unsplash.com/800x400/?design',
+		title: 'Gordon Palmer',
+		link: 'https://www.gordonpalmer.com' 
+	},
+	{
+		image: 'https://images2.imgbox.com/dc/b1/X2zhrG2c_o.png',
+		title: '24-7 Fire Protection',
+		link: 'https://fpi247.herokuapp.com' 
 	},
 ]
