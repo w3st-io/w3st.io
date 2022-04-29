@@ -35,6 +35,7 @@ module.exports = [
 		title: 'RpTide',
 		link: 'https://www.rptide.com' 
 	},
+	/*
 	{
 		image: 'https://images2.imgbox.com/56/52/v5IBaDhV_o.png',
 		title: 'Tethys Apparel',
@@ -50,4 +51,5 @@ module.exports = [
 		title: '24-7 Fire Protection',
 		link: 'https://fpi247.herokuapp.com' 
 	},
+	*/
 ]
