@@ -14,10 +14,10 @@
 					no-body
 					class="w-100 mb-5"
 				>
-					<BCardHeader class="border-dark">
-						<h3 class="my-4 text-center text-uppercase text-light">
+					<BCardHeader class="bg-dark border-dark center-content" style="height: 80px;">
+						<h5 class="my-1 text-center text-uppercase text-primary font-weight-bold">
 							{{ s.name }}
-						</h3>
+						</h5>
 					</BCardHeader>
 
 					<BCardBody class="p-0 border-0">
@@ -121,5 +121,12 @@
 		@media (max-width: 752px) {
 			width: 200px;
 		}
+	}
+
+	.center-content {
+		background: #CCCCCC;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 </style>

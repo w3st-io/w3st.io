@@ -30,10 +30,6 @@
 					<RouterLink to="/about" class="mx-3 text-dark menu-link">
 						<span>About</span>
 					</RouterLink>
-
-					<RouterLink to="/gallery" class="mx-3 text-dark menu-link">
-						<span>Gallery</span>
-					</RouterLink>
 				</BCol>
 
 				<!-- Mobile Menu Button -->

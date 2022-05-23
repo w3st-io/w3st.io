@@ -8,9 +8,9 @@
 			no-body
 			class="w-100 mx-auto shadow"
 		>
-			<BCardHeader class="border-dark">
+			<BCardHeader class="border-dark bg-dark">
 				<BCol cols="12">
-					<h1 class="my-4 text-center text-dark text-spread-sm">
+					<h1 class="my-2 text-center text-primary font-weight-bold text-spread-sm">
 						CONTACT US
 					</h1>
 				</BCol>
