@@ -27,13 +27,6 @@ module.exports = {
 	},
 
 	r5: {
-		cx: [
-			/*
-			{
-				youtubeURL: 'https://www.youtube.com/watch?v=QsC-Uvih6Eo',
-				description: '', 
-			},
-			*/
-		],
+		cx: [],
 	},
 }
