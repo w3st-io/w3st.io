@@ -22,8 +22,13 @@ module.exports = [
 	},
 	{
 		image: 'https://images2.imgbox.com/f8/3f/4VIlG5Um_o.png',
-		title: 'JJ Shop',
-		link: 'https://www.jjinthemaking.com' 
+		title: 'JJ Vinyls',
+		link: 'https://www.jjvinyls.com' 
+	},
+	{
+		image: 'https://images2.imgbox.com/d2/1c/LLlHfKcC_o.png',
+		title: 'Store JJ Vinyls',
+		link: 'https://shop.jjvinyls.com' 
 	},
 	{
 		image: 'https://images2.imgbox.com/d2/1c/LLlHfKcC_o.png',
