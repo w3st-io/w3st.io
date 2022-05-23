@@ -26,12 +26,12 @@ module.exports = [
 		link: 'https://www.jjvinyls.com' 
 	},
 	{
-		image: 'https://images2.imgbox.com/d2/1c/LLlHfKcC_o.png',
+		image: 'https://images2.imgbox.com/96/fc/zsWRlvJu_o.png',
 		title: 'Store JJ Vinyls',
 		link: 'https://shop.jjvinyls.com' 
 	},
 	{
-		image: 'https://images2.imgbox.com/d2/1c/LLlHfKcC_o.png',
+		image: 'https://images2.imgbox.com/73/09/sZu1UVLO_o.png',
 		title: 'Borghi Fine Art',
 		link: 'https://borghi.herokuapp.com' 
 	},
