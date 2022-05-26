@@ -1,25 +1,22 @@
 # --- [SERVER] --------------
 ## ENV Example
-###### note: *VARIABLE --> (ONLY ON PRODUCTION)
+###### note: *VARIABLE --> (ONLY NEEDED ON PRODUCTION)
 
-* *BASE_URL = http://www.website.com
-* *SOCKET_BASE_URL = http://www.website.com 
-
-* PORT = < Set by heroku >
-
-* MONG_URI = blah
-
-* EMAIL_SERVICE = example
-* EMAIL = john@example.com
-* EMAIL_PASSWORD = emailpassword
-
-* ADMIN_EMAIL = admin@example.com
-* SERVICES_EMAIL = servicespecialist@example.com
-* INSTALLS_EMAIL = installspecialist@example.com
-* DESIGNS_EMAIL = designspecialist@example.com
-
-* SECRET_KEY = < Something long and complicated >
-
+* API__STRIPE__PUBLISHABLE_KEY = <GET-FROM-STRIPE>
+* API__STRIPE__WAD__ADVANCED_PRICE_ID = <GET-FROM-STRIPE>
+* API__STRIPE__WAD__DISCOUNTED__ADVANCED_PRICE_ID = <GET-FROM-STRIPE>
+* API__STRIPE__WAD__DISCOUNTED__PRO_PRICE_ID = <GET-FROM-STRIPE>
+* API__STRIPE__WAD__DISCOUNTED__STANDARD_PRICE_ID = <GET-FROM-STRIPE>
+* API__STRIPE__WAD__PRO_PRICE_ID = <GET-FROM-STRIPE>
+* API__STRIPE__WAD__STANDARD_PRICE_ID = <GET-FROM-STRIPE>
+* API__STRIPE__WAH__ADVANCED_PRICE_ID = <GET-FROM-STRIPE>
+* API__STRIPE__WAH__DISCOUNTED__ADVANCED_PRICE_ID = <GET-FROM-STRIPE>
+* API__STRIPE__WAH__DISCOUNTED__PRO_PRICE_ID = <GET-FROM-STRIPE>
+* API__STRIPE__WAH__DISCOUNTED__STANDARD_PRICE_ID = <GET-FROM-STRIPE>
+* API__STRIPE__WAH__PRO_PRICE_ID = <GET-FROM-STRIPE>
+* API__STRIPE__WAH__STANDARD_PRICE_ID = <GET-FROM-STRIPE>
+* API__STRIPE__WAS__STANDARD_PRICE_ID = <GET-FROM-STRIPE>
+* *APP__BASE_URL = http://www.<website-name-here>.com
 
 # --- [Client] --------------
 ## Project setup
