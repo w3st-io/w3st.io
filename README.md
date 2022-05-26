@@ -1,4 +1,4 @@
-# --- [SERVER] --------------
+# --- [SERVER]
 ## ENV Example
 ###### note: *VARIABLE --> (ONLY NEEDED ON PRODUCTION)
 
@@ -18,7 +18,7 @@
 * API__STRIPE__WAS__STANDARD_PRICE_ID = < GET-FROM-STRIPE >
 * *APP__BASE_URL = http://www.< website-name-here >.com
 
-# --- [Client] --------------
+# --- [Client]
 ## Project setup
 ```
 npm install
