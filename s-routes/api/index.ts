@@ -1,11 +1,10 @@
 // [REQUIRE] //
-const axios = require('axios')
 const cors = require('cors')
 const express = require('express')
 
 
 // [REQUIRE] Personal //
-const config = require('../../s-config')
+import config from '../../s-config'
 
 
 // [EXPRESS + USE] //
@@ -15,12 +14,12 @@ const router = express.Router().use(cors())
 // [MAIN-ROUTE] //
 router.get(
 	'/',
-	async (req, res) => {
-		const products = axios.get('/user?ID=12345')
+	async (req: any, res: any) => {
 		res.send({
 			executed: true,
 			status: true,
-			products: products
+			node_env: config.NODE_ENV,
+			__dirname: __dirname
 		})
 	}
 )

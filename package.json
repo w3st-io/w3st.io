@@ -7,8 +7,11 @@
   "description": "this is a server",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js",
+    "build": "rimraf dist && tsc",
+    "predev": "npm run build",
+    "dev": "cross-env NODE_ENV=development concurrently \"tsc --watch\" \"nodemon -q dist/server.js\"",
+    "prestart": "npm run build",
+    "start": "cross-env NODE_ENV=production node dist/server.js",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm install --only=dev --prefix client && npm run build --prefix client"
   },
   "author": "Aleem Ahmed",
@@ -17,16 +20,24 @@
     "axios": "^0.21.4",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-rate-limit": "^5.2.3",
     "jsonwebtoken": "^8.5.1",
     "mongoose-fuzzy-searching": "^2.0.2",
-    "nodemon": "^2.0.7",
-    "socket.io": "^2.3.0",
+    "rimraf": "^3.0.2",
     "uuid": "^8.3.2",
     "validator": "^13.5.2",
     "vue-youtube-embed": "^2.2.2",
     "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.2",
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.35",
+    "concurrently": "^7.2.1",
+    "nodemon": "^2.0.16",
+    "typescript": "^4.7.2"
   }
 }

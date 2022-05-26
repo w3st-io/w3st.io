@@ -5,7 +5,7 @@ const validator = require('validator')
 
 
 // [REQUIRE] Personal //
-const config = require('../../../s-config')
+import config from '../../../s-config'
 
 
 // [EXPRESS + USE] //
@@ -15,7 +15,7 @@ const router = express.Router().use(cors())
 // [MAIN-ROUTE] //
 router.get(
 	'/',
-	async (req, res) => {
+	async (req: any, res: any) => {
 		try {
 			if (validator.isAscii(req.query.promo) || !req.query.promo) {
 				switch (req.query.promo) {
