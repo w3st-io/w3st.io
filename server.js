@@ -52,7 +52,7 @@ app.use('/pages/purchase/was', p_purchase_was)
 if (config.NODE_ENV == 'production') {
 	app.use(express.static('client/dist'))
 
-	app.get('*', (req: object, res: any) => {
+	app.get('*', (req, res) => {
 		res.sendFile(path.resolve(__dirname, 'client', 'dist', 'index.html'))
 	})
 }
