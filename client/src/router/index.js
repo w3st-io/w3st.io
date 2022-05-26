@@ -6,6 +6,7 @@ import VueRouter from 'vue-router'
 // [IMPORT] Personal //
 import index from '../pages'
 import about from '../pages/about'
+import code from '../pages/code'
 import contact from '../pages/contact'
 import emailSent from '../pages/email-sent'
 import gallery from '../pages/gallery'
@@ -29,9 +30,10 @@ const router = new VueRouter({
 	routes: [
 		{
 			path: '/',
-			name: '/',
+			name: 'home',
 			component: index,
 			meta: {
+				header: true,
 				auth: true,
 				title: 'Home'
 			},
@@ -42,6 +44,7 @@ const router = new VueRouter({
 			name: 'about',
 			component: about,
 			meta: {
+				header: true,
 				auth: true,
 				title: 'About'
 			},
@@ -52,6 +55,7 @@ const router = new VueRouter({
 			name: 'purchase_successful',
 			component: purchase_successful,
 			meta: {
+				header: false,
 				auth: true,
 				title: 'Purchase Successful'
 			},
@@ -62,6 +66,7 @@ const router = new VueRouter({
 			name: 'privacy-policy',
 			component: privacyPolicy,
 			meta: {
+				header: false,
 				auth: true,
 				title: 'Privacy Policy and Terms of Service'
 			},
@@ -72,6 +77,7 @@ const router = new VueRouter({
 			name: 'purchase_unsuccessful',
 			component: purchase_unsuccessful,
 			meta: {
+				header: false,
 				auth: true,
 				title: 'Purchase Unsuccessful'
 			},
@@ -82,6 +88,7 @@ const router = new VueRouter({
 			name: 'purchase_wad',
 			component: purchase_wad,
 			meta: {
+				header: false,
 				auth: true,
 				title: 'Purchase WAD'
 			},
@@ -92,6 +99,7 @@ const router = new VueRouter({
 			name: 'purchase_wah',
 			component: purchase_wah,
 			meta: {
+				header: false,
 				auth: true,
 				title: 'Purchase WAH'
 			},
@@ -102,8 +110,20 @@ const router = new VueRouter({
 			name: 'purchase_was',
 			component: purchase_was,
 			meta: {
+				header: false,
 				auth: true,
 				title: 'Purchase WAS'
+			},
+		},
+		// Code //
+		{
+			path: '/code',
+			name: 'code',
+			component: code,
+			meta: {
+				header: true,
+				auth: true,
+				title: 'Code'
 			},
 		},
 		// contact //
@@ -112,6 +132,7 @@ const router = new VueRouter({
 			name: 'contact',
 			component: contact,
 			meta: {
+				header: true,
 				auth: true,
 				title: 'Contact'
 			},
@@ -122,6 +143,7 @@ const router = new VueRouter({
 			name: 'email-sent',
 			component: emailSent,
 			meta: {
+				header: false,
 				auth: true,
 				title: 'Email Sent'
 			},
@@ -132,6 +154,7 @@ const router = new VueRouter({
 			name: 'gallery',
 			component: gallery,
 			meta: {
+				header: false,
 				auth: true,
 				title: 'Gallery'
 			},
@@ -142,6 +165,7 @@ const router = new VueRouter({
 			name: 'services',
 			component: services,
 			meta: {
+				header: true,
 				auth: true,
 				title: 'Services'
 			},
@@ -151,6 +175,7 @@ const router = new VueRouter({
 			name: 'services_info',
 			component: services_info,
 			meta: {
+				header: false,
 				auth: true,
 				title: 'Services'
 			},
@@ -161,6 +186,7 @@ const router = new VueRouter({
 			name: '404',
 			component: notFound,
 			meta: {
+				header: false,
 				auth: true,
 				title: '404 Not Found..'
 			},

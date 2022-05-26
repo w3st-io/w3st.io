@@ -79,7 +79,7 @@
 			},
 
 			home() {
-				router.push({ name: '/' })
+				router.push('/')
 				this.closeMenu()
 			},
 

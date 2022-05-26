@@ -15,20 +15,39 @@
 				</BCol>
 
 				<BCol cols="12" class="d-none d-md-block text-center h5 font-weight-bold text-uppercase text-spread-sm">
-					<RouterLink to="/" class="mx-3 text-dark menu-link">
-						<span>Home</span>
+					<!-- Home -->
+					<RouterLink
+						:to="menuItems[0].path" class="mx-3 text-dark menu-link"
+					>
+						<span>{{ menuItems[0].name }}</span>
 					</RouterLink>
 
-					<RouterLink to="/services" class="mx-3 text-dark menu-link">
-						<span>Services</span>
+					<!-- Services -->
+					<RouterLink
+						:to="menuItems[4].path" class="mx-3 text-dark menu-link"
+					>
+						<span>{{ menuItems[4].name }}</span>
 					</RouterLink>
 
-					<RouterLink to="/contact" class="mx-3 text-dark menu-link">
-						<span>Contact</span>
+					<!-- Contact -->
+					<RouterLink
+						:to="menuItems[3].path" class="mx-3 text-dark menu-link"
+					>
+						<span>{{ menuItems[3].name }}</span>
 					</RouterLink>
 
-					<RouterLink to="/about" class="mx-3 text-dark menu-link">
-						<span>About</span>
+					<!-- Code -->
+					<RouterLink
+						:to="menuItems[2].path" class="mx-3 text-dark menu-link"
+					>
+						<span>Our Code</span>
+					</RouterLink>
+
+					<!-- About -->
+					<RouterLink
+						:to="menuItems[1].path" class="mx-3 text-dark menu-link"
+					>
+						<span>{{ menuItems[1].name }}</span>
 					</RouterLink>
 				</BCol>
 
@@ -78,11 +97,28 @@
 				companyInfo: companyInfo,
 				loggedIn: false,
 				decoded: {},
+				menuItems: [],
 			}
 		},
 
 		methods: {
 			toggle() { this.$store.state.showMenu = !this.$store.state.showMenu },
+
+			loadMenu() {
+				this.$router.options.routes.forEach(route => {
+					if (route.meta.header) {
+						this.menuItems.push({
+							name: route.name,
+							path: route.path,
+							meta: route.meta
+						})
+					}
+				})
+			},
+		},
+
+		created() {
+			this.loadMenu()
 		},
 	}
 </script>

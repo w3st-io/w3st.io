@@ -7,6 +7,7 @@
 			border-variant="dark"
 			no-body
 			class="w-100 mx-auto shadow"
+			style="max-width: 800px;"
 		>
 			<BCardHeader class="border-dark bg-dark">
 				<BCol cols="12">
