@@ -1,5 +1,5 @@
 # --- [SERVER]
-## ENV Example
+## .Environmental Variables (Create .env file root)
 ###### note: *VARIABLE --> (ONLY NEEDED ON PRODUCTION)
 
 * API__STRIPE__PUBLISHABLE_KEY = < GET-FROM-STRIPE >
