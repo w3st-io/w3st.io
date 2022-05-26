@@ -1,5 +1,5 @@
 # --- [SERVER]
-## .Environmental Variables (Create .env file root)
+## Environmental Variables (Create .env file root)
 ```
 API__STRIPE__PUBLISHABLE_KEY = < GET-FROM-STRIPE >
 API__STRIPE__WAD__ADVANCED_PRICE_ID = < GET-FROM-STRIPE >
