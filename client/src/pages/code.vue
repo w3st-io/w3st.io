@@ -17,11 +17,14 @@
 
 			<BCardHeader class="py-5 text-center">
 				<BRow>
-					<BCol cols="12" sm="6" md="4">
+					<BCol cols="12" md="6" xl="4">
+						<h5 class="description">Projects By W3ST.IO LLC</h5>
+
 						<a href="https://www.github.com/w3st-io" target="_blank">
 							<BButton
 								variant="dark"
 								size="lg"
+								pill
 								class="w-100 github-link"
 							>
 								<span class="h3">
@@ -31,14 +34,16 @@
 								</span>
 							</BButton>
 						</a>
-						<h5 class="description">Projects by W3ST.IO LLC</h5>
 					</BCol>
 
-					<BCol cols="12" sm="6" md="4">
+					<BCol cols="12" md="6" xl="4">
+						<h5 class="description">Projects Under JJ VINYLS LLC</h5>
+
 						<a href="https://github.com/jjvinyls" target="_blank">
 							<BButton
 								variant="dark"
 								size="lg"
+								pill
 								class="w-100 github-link"
 							>
 								<span class="h3">
@@ -48,14 +53,16 @@
 								</span>
 							</BButton>
 						</a>
-						<h5 class="description">Projects under JJ VINYLS</h5>
 					</BCol>
 
-					<BCol cols="12" sm="6" md="4">
+					<BCol cols="12" md="6" xl="4">
+						<h5 class="description">Non-Profit Work</h5>
+
 						<a href="https://www.github.com/w3st-io-foundation" target="_blank">
 							<BButton
 								variant="dark"
 								size="lg"
+								pill
 								class="w-100 github-link"
 							>
 								<span class="h3">
@@ -65,14 +72,16 @@
 								</span>
 							</BButton>
 						</a>
-						<h5 class="description">Non-profit work</h5>
 					</BCol>
 
-					<BCol cols="12" sm="6" md="4" class="mx-auto">
+					<BCol cols="12" md="6" xl="4" class="mx-auto">
+						<h5 class="description">References & Code Practice</h5>
+
 						<a href="https://www.github.com/aleem-ahmed" target="_blank">
 							<BButton
 								variant="dark"
 								size="lg"
+								pill
 								class="w-100 github-link"
 							>
 								<span class="h3">
@@ -82,8 +91,6 @@
 								</span>
 							</BButton>
 						</a>
-
-						<h5 class="description">References & code practice</h5>
 					</BCol>
 				</BRow>
 			</BCardHeader>
@@ -103,7 +110,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-	.description,
+	.description {
+		font-weight: bold;
+		margin-bottom: 1em;
+	}
+	
 	.github-link {
 		margin-bottom: 1em;
 	}
