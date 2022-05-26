@@ -7,7 +7,7 @@
   "description": "this is a server",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node server.ts",
     "dev": "nodemon server.ts",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm install --only=dev --prefix client && npm run build --prefix client"
   },
