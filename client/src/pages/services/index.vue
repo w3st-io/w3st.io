@@ -12,7 +12,7 @@
 					border-variant="dark"
 					text-variant="dark"
 					no-body
-					class="w-100 mb-5"
+					class="w-100 mb-5 shadow"
 				>
 					<BCardHeader class="bg-dark border-dark center-content" style="height: 80px;">
 						<h5 class="my-1 text-center text-uppercase text-primary font-weight-bold">
@@ -33,7 +33,7 @@
 					</BCardBody>
 
 					<BCardBody class="border-0">
-						<p class="h6 text-center font-weight-bold text-spread-sm">
+						<p class="h6 text-center font-weight-bold text-light">
 							{{
 								s.descriptions[0].length > 200 ?
 									s.descriptions[0].substring(0, 200 - 3) + '...' :
