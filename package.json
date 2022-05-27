@@ -7,7 +7,7 @@
   "description": "this is a server",
   "main": "server.js",
   "scripts": {
-    "build": "rimraf dist && tsc",
+    "build": "rimraf dist && npx tsc",
     "predev": "npm run build",
     "dev": "cross-env NODE_ENV=development concurrently \"tsc --watch\" \"nodemon -q dist/server.js\"",
     "prestart": "npm run build",
@@ -27,6 +27,7 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose-fuzzy-searching": "^2.0.2",
     "rimraf": "^3.0.2",
+    "typescript": "^4.7.2",
     "uuid": "^8.3.2",
     "validator": "^13.5.2",
     "vue-youtube-embed": "^2.2.2",
@@ -37,7 +38,6 @@
     "@types/express": "^4.17.13",
     "@types/node": "^17.0.35",
     "concurrently": "^7.2.1",
-    "nodemon": "^2.0.16",
-    "typescript": "^4.7.2"
+    "nodemon": "^2.0.16"
   }
 }
