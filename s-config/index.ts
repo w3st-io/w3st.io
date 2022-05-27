@@ -1,3 +1,5 @@
+declare var require: any
+
 // [REQUIRE] //
 require('dotenv').config()
 

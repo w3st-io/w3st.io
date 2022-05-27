@@ -1,3 +1,6 @@
+declare var require: any
+
+
 // [IMPORT] Personal //
 import config from './s-config'
 
