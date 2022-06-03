@@ -1,10 +1,34 @@
 <template>
-	<div>
-		{{ this.resData }}
-	</div>
+	<BContainer class="py-5">
+		<BCard
+			v-if="!loading"
+			text-variant="dark"
+			bg-variant="primary"
+			class="font-weight-bold shadow"
+			no-body
+		>
+			<BCardHeader class="text-center bg-dark text-primary">
+				<h4 class="font-weight-bold">
+					{{ this.webContent.name }}
+				</h4>
+				<h6 class="mb-0 font-weight-bold text-light">
+					harpoonjs.eth -
+					{{ new Date(this.webContent.createdTimeStamp).toLocaleString() }}
+				</h6>
+			</BCardHeader>
+
+			<BCardBody class="py-5">
+				<CleanJSONToHTML
+					:cleanJSON="this.webContent.cleanJSON"
+				/>
+			</BCardBody>
+		</BCard>
+	</BContainer>
 </template>
 <script>
 	import axios from 'axios'
+	
+	import CleanJSONToHTML from '../../components/CleanJSONToHTML.vue'
 
 	export default {
 		data() {
@@ -17,17 +41,24 @@
 				resData: {},
 				error: '',
 
-				webContents: [],
+				webContent: null,
 			}
 		},
 
 		methods: {
 			async getPageData() {
 				try {
+					this.loading = true
 					this.error = ''
 					
 					this.resData = await this.authAxios.get(`/${this.$route.params.webcontent}`)
-					console.log(this.resData);
+					
+					if (this.resData.data.status) {
+						this.webContent = this.resData.data.webContent
+					}
+					else {
+						this.error = this.resData.data.message
+					}
 
 					this.loading = false
 				}
@@ -35,6 +66,10 @@
 					this.error = err
 				}
 			},
+		},
+
+		components: {
+			CleanJSONToHTML
 		},
 
 		async created() {
