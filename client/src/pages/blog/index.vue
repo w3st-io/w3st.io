@@ -1,30 +1,30 @@
 <template>
 	<BContainer class="py-5">
-		<h1 class="text-dark text-center text-uppercase font-weight-bold">Blog</h1>
+		<h1 v-if="false" class="mb-4 text-dark text-center text-uppercase font-weight-bold">Blog</h1>
 		
 		<BRow v-if="!loading">
 			<BCol
 				v-for="(w, i) in webContents"
 				:key="i"
 				sm="6" md="4"
+				class="mx-auto"
 			>
-				<BCard no-body bg-variant="primary">
+				<BCard no-body bg-variant="primary" class="shadow">
 					<BCardHeader class="bg-dark">
-						<h4 class="m-0 text-center font-weight-bold text-primary">
+						<h4 class="m-0 text-center font-weight-bold text-uppercase text-spread-sm text-primary">
 							{{ w.name }}
 						</h4>
 					</BCardHeader>
-					
-					<BCardHeader class="py-4">
-						<h5 class="m-0 font-weight-bold">
+					<BCardBody class="py-4">
+						<h6 class="m-0 text-center font-weight-bold text-dark text-spread-sm">
 							{{ w.cleanJSON.blocks[0].data.text }}
-						</h5>
-					</BCardHeader>
+						</h6>
+					</BCardBody>
 
 					<BCardFooter>
-						<h5 class="m-0 font-weight-bold">
+						<h6 class="m-0 text-center font-weight-bold text-spread-sm text-light small">
 							{{ new Date(w.createdTimeStamp).toLocaleString() }}
-						</h5>
+						</h6>
 					</BCardFooter>
 				</BCard>
 			</BCol>
