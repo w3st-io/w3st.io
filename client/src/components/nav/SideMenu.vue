@@ -36,6 +36,13 @@
 				v-show="$store.state.showMenu"
 				variant="outline-seconadry"
 				class="w-100 p-2 text-uppercase text-primary"
+				@click="code()"
+			><span aria-hidden="true" style="font-size: 1.4em;">Our Code</span></BButton>
+
+			<BButton
+				v-show="$store.state.showMenu"
+				variant="outline-seconadry"
+				class="w-100 p-2 text-uppercase text-primary"
 				@click="about()"
 			><span aria-hidden="true" style="font-size: 1.4em;">About</span></BButton>
 
@@ -91,6 +98,11 @@
 			
 			services() {
 				router.push({ name: 'services' })
+				this.closeMenu()
+			},
+
+			code() {
+				router.push({ name: 'code' })
 				this.closeMenu()
 			},
 
