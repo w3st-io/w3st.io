@@ -46,6 +46,13 @@
 				@click="about()"
 			><span aria-hidden="true" style="font-size: 1.4em;">About</span></BButton>
 
+			<BButton
+				v-show="$store.state.showMenu"
+				variant="outline-seconadry"
+				class="w-100 p-2 text-uppercase text-primary"
+				@click="blog()"
+			><span aria-hidden="true" style="font-size: 1.4em;">Blog</span></BButton>
+
 			<SocialMediaPlug v-show="$store.state.showMenu" size="48" class="my-3" />
 		</nav>
 
@@ -108,6 +115,11 @@
 
 			contact() {
 				router.push({ name: 'contact' })
+				this.closeMenu()
+			},
+
+			blog() {
+				router.push({ name: 'blog' })
 				this.closeMenu()
 			},
 		}
