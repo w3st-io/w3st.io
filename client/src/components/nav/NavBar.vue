@@ -17,37 +17,44 @@
 				<BCol cols="12" class="d-none d-md-block text-center h5 font-weight-bold text-uppercase text-spread-sm">
 					<!-- Home -->
 					<RouterLink
-						:to="menuItems[0].path" class="mx-3 text-dark menu-link"
+						to="/" class="mx-3 text-dark menu-link"
 					>
-						<span>{{ menuItems[0].name }}</span>
+						<span>Home</span>
 					</RouterLink>
 
 					<!-- Services -->
 					<RouterLink
-						:to="menuItems[4].path" class="mx-3 text-dark menu-link"
+						to="/services" class="mx-3 text-dark menu-link"
 					>
-						<span>{{ menuItems[4].name }}</span>
+						<span>Services</span>
 					</RouterLink>
 
 					<!-- Contact -->
 					<RouterLink
-						:to="menuItems[3].path" class="mx-3 text-dark menu-link"
+						to="/contact" class="mx-3 text-dark menu-link"
 					>
-						<span>{{ menuItems[3].name }}</span>
+						<span>Contact</span>
 					</RouterLink>
 
 					<!-- Code -->
 					<RouterLink
-						:to="menuItems[2].path" class="mx-3 text-dark menu-link"
+						to="/code" class="mx-3 text-dark menu-link"
 					>
 						<span>Our Code</span>
 					</RouterLink>
 
 					<!-- About -->
 					<RouterLink
-						:to="menuItems[1].path" class="mx-3 text-dark menu-link"
+						to="/about" class="mx-3 text-dark menu-link"
 					>
-						<span>{{ menuItems[1].name }}</span>
+						<span>About</span>
+					</RouterLink>
+
+					<!-- About -->
+					<RouterLink
+						to="/blog" class="mx-3 text-dark menu-link"
+					>
+						<span>Blog</span>
 					</RouterLink>
 				</BCol>
 
@@ -77,18 +84,12 @@
 </template>
 
 <script>
-	// [IMPORT] //
-	//import { MenuIcon } from 'vue-feather-icons'
-
 	// [IMPORT] Personal //
 	import SideMenu from '@/components/nav/SideMenu'
 	import companyInfo from '@/defaults/companyInfo'
-	//import SocialMediaPlug from '@/components/SocialMediaPlug'
 
 	export default {
 		components: {
-			//SocialMediaPlug,
-			//MenuIcon,
 			SideMenu,
 		},
 
@@ -103,22 +104,9 @@
 
 		methods: {
 			toggle() { this.$store.state.showMenu = !this.$store.state.showMenu },
-
-			loadMenu() {
-				this.$router.options.routes.forEach(route => {
-					if (route.meta.header) {
-						this.menuItems.push({
-							name: route.name,
-							path: route.path,
-							meta: route.meta
-						})
-					}
-				})
-			},
 		},
 
 		created() {
-			this.loadMenu()
 		},
 	}
 </script>

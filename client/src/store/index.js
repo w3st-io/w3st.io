@@ -1,5 +1,4 @@
 // [IMPORT] //
-import io from 'socket.io-client'
 import Vue from 'vue'
 import Vuex from 'vuex'
 
@@ -24,8 +23,6 @@ export default new Vuex.Store({
 		admin_decoded: {},
 
 		iexKey: '',
-		
-		socket: localStorage.node_env == 'development' ? io('http://localhost:5000') : io(),
 
 		api: {
 			stripe: {

@@ -10,9 +10,6 @@
 			<!-- Footer -->
 			<Footer />
 		</div>
-
-		<!-- Socket -->
-		<Socket />
 	</div>
 </template>
 
@@ -20,7 +17,6 @@
 	// [IMPORT] Personal //
 	import Footer from '@/components/nav/Footer'
 	import NavBar from '@/components/nav/NavBar'
-	import Socket from '@/components/socket'
 	import { EventBus } from '@/main'
 	import Service from '@/services/Service'
 
@@ -28,7 +24,6 @@
 		components: {
 			Footer,
 			NavBar,
-			Socket,
 		},
 
 		data() {

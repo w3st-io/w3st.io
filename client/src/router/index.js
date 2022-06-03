@@ -6,6 +6,7 @@ import VueRouter from 'vue-router'
 // [IMPORT] Personal //
 import index from '../pages'
 import about from '../pages/about'
+import blog from '../pages/blog'
 import code from '../pages/code'
 import contact from '../pages/contact'
 import emailSent from '../pages/email-sent'
@@ -47,6 +48,17 @@ const router = new VueRouter({
 				header: true,
 				auth: true,
 				title: 'About'
+			},
+		},
+		// About //
+		{
+			path: '/blog',
+			name: 'blog',
+			component: blog,
+			meta: {
+				header: true,
+				auth: true,
+				title: 'Blog'
 			},
 		},
 		// purchase_successful //
