@@ -47,8 +47,8 @@ app.use('/pages/purchase/was', p_purchase_was)
 if (config.NODE_ENV == 'production') {
 	app.use(express.static('client/dist'))
 
-	app.get('*', (req: Request, res: any) => {
-		res.sendFile(path.resolve(__dirname, 'client', 'dist', 'index.html'))
+	app.get('*', (req: any, res: any) => {
+		res.sendFile(path.resolve(__dirname, 'client', 'dist', './index.html'))
 	})
 }
 
