@@ -30,6 +30,15 @@
 					</BCard>
 				</RouterLink>
 			</BCol>
+
+			<BCol v-if="webContents.length == 0">
+				<h3 class="text-center text-light font-weight-bold">
+					No Blog Posts Yet
+				</h3>
+				<h6 class="text-center text-dark font-weight-bold">
+					Check Back Soon!
+				</h6>
+			</BCol>
 		</BRow>
 	</BContainer>
 </template>
