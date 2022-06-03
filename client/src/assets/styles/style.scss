@@ -74,3 +74,7 @@ body {
 .text-spread-sm { letter-spacing: 2px; }
 
 .text-spread-lg { letter-spacing: 8px; }
+
+.hover-card:hover {
+	background-color: rgba(136, 136, 136, 0.15) !important;
+}

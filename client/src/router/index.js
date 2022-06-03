@@ -7,6 +7,7 @@ import VueRouter from 'vue-router'
 import index from '../pages'
 import about from '../pages/about'
 import blog from '../pages/blog'
+import blog_read from '../pages/blog/read'
 import code from '../pages/code'
 import contact from '../pages/contact'
 import emailSent from '../pages/email-sent'
@@ -50,11 +51,22 @@ const router = new VueRouter({
 				title: 'About'
 			},
 		},
-		// About //
+		// Blog //
 		{
 			path: '/blog',
 			name: 'blog',
 			component: blog,
+			meta: {
+				header: true,
+				auth: true,
+				title: 'Blog'
+			},
+		},
+		// Blog //
+		{
+			path: '/blog/read/:webcontent',
+			name: 'blog_read',
+			component: blog_read,
 			meta: {
 				header: true,
 				auth: true,

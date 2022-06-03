@@ -6,27 +6,29 @@
 			<BCol
 				v-for="(w, i) in webContents"
 				:key="i"
-				sm="6" md="4"
+				sm="6"
 				class="mx-auto"
 			>
-				<BCard no-body bg-variant="primary" class="shadow">
-					<BCardHeader class="bg-dark">
-						<h4 class="m-0 text-center font-weight-bold text-uppercase text-spread-sm text-primary">
-							{{ w.name }}
-						</h4>
-					</BCardHeader>
-					<BCardBody class="py-4">
-						<h6 class="m-0 text-center font-weight-bold text-dark text-spread-sm">
-							{{ w.cleanJSON.blocks[0].data.text }}
-						</h6>
-					</BCardBody>
+				<RouterLink :to="`/blog/read/${w._id}`" class="text-decoration-none">
+					<BCard no-body bg-variant="primary" class="shadow hover-card">
+						<BCardHeader class="bg-dark">
+							<h4 class="m-0 text-center font-weight-bold text-uppercase text-spread-sm text-primary">
+								{{ w.name }}
+							</h4>
+						</BCardHeader>
+						<BCardBody class="py-4">
+							<h6 class="m-0 text-center font-weight-bold text-dark text-spread-sm">
+								{{ w.cleanJSON.blocks[0].data.text }}
+							</h6>
+						</BCardBody>
 
-					<BCardFooter>
-						<h6 class="m-0 text-center font-weight-bold text-spread-sm text-light small">
-							{{ new Date(w.createdTimeStamp).toLocaleString() }}
-						</h6>
-					</BCardFooter>
-				</BCard>
+						<BCardFooter>
+							<h6 class="m-0 text-center font-weight-bold text-spread-sm text-light small">
+								{{ new Date(w.createdTimeStamp).toLocaleString() }}
+							</h6>
+						</BCardFooter>
+					</BCard>
+				</RouterLink>
 			</BCol>
 		</BRow>
 	</BContainer>

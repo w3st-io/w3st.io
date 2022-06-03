@@ -25,4 +25,4 @@ router.get(
 )
 
 // [EXPORT] //
-module.exports = router
+export default router

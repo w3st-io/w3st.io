@@ -1,5 +1,11 @@
 // [IMPORT] Personal //
 import config from './s-config'
+import a_ from './s-routes/api'
+import p_blog from './s-routes/pages/blog'
+import p_blog_read from './s-routes/pages/blog/read'
+import p_purchase_wad from './s-routes/pages/purchase/wad'
+import p_purchase_wah from './s-routes/pages/purchase/wah'
+import p_purchase_was from './s-routes/pages/purchase/was'
 
 
 // [REQUIRE] //
@@ -12,13 +18,6 @@ const path = require('path')
 
 // [REQUIRE] Personal // Other // API // Pages //
 const rateLimiter = require('./s-rate-limiters')
-
-const a_ = require('./s-routes/api')
-
-const p_blog = require('./s-routes/pages/blog')
-const p_purchase_wad = require('./s-routes/pages/purchase/wad')
-const p_purchase_wah = require('./s-routes/pages/purchase/wah')
-const p_purchase_was = require('./s-routes/pages/purchase/was')
 
 
 // [EXPRESS + SERVER] //
@@ -38,6 +37,7 @@ app.use(rateLimiter.limiter)
 app.use('/api', a_)
 
 app.use('/pages/blog', p_blog)
+app.use('/pages/blog/read', p_blog_read)
 app.use('/pages/purchase/wad', p_purchase_wad)
 app.use('/pages/purchase/wah', p_purchase_wah)
 app.use('/pages/purchase/was', p_purchase_was)
