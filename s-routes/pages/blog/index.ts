@@ -14,7 +14,7 @@ const router = express.Router().use(cors())
 router.get(
 	'/',
 	async (req: any, res: any) => {
-		res.send(await rh.index())
+		res.send(await rh.handle({ req }))
 	}
 )
 

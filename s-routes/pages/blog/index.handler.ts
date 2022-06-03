@@ -16,7 +16,7 @@ const authAxios = axios.create({
 
 
 module.exports = {
-	index: async () => {
+	handle: async ({ req }: any) => {
 		try {
 			const result = await authAxios.post(
 				'/find-paginated/50/1',

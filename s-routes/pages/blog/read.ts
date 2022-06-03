@@ -14,8 +14,6 @@ const router = express.Router().use(cors())
 router.get(
 	'/:webcontent',
 	async (req: any, res: any) => {
-		console.log('called');
-		
 		res.send(await rh.handle({ req }))
 	}
 )
