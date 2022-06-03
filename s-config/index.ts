@@ -19,8 +19,11 @@ export default {
 
 	// [API] //
 	api: {
-		rptidePrivateKey: process.env.API__RPTIDE_PRIVATE_KEY || '',
-		
+		rptide: {
+			privateKey: process.env.API__RPTIDE__PRIVATE_KEY || '',
+			webApp: process.env.API__RPTIDE__WEB_APP || '',
+		},
+
 		stripe: {
 			publishableKey: process.env.API__STRIPE__PUBLISHABLE_KEY || '',
 
