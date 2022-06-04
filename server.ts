@@ -1,23 +1,23 @@
+// [IMPORT] //
+import cors from 'cors'
+import bodyParser from 'body-parser'
+import express from 'express'
+import http from 'http'
+import path from 'path'
+
 // [IMPORT] Personal //
 import config from './s-config'
-import a_ from './s-routes/api'
-import p_blog from './s-routes/pages/blog'
-import p_blog_read from './s-routes/pages/blog/read'
-import p_purchase_wad from './s-routes/pages/purchase/wad'
-import p_purchase_wah from './s-routes/pages/purchase/wah'
-import p_purchase_was from './s-routes/pages/purchase/was'
-
-
-// [REQUIRE] //
-const bodyParser = require('body-parser')
-const cors = require('cors')
-const express = require('express')
-const http = require('http')
-const path = require('path')
 
 
 // [REQUIRE] Personal // Other // API // Pages //
 const rateLimiter = require('./s-rate-limiters')
+
+const a_ = require('./s-routes/api')
+const p_blog = require( './s-routes/pages/blog')
+const p_blog_read = require('./s-routes/pages/blog/read')
+const p_purchase_wad = require('./s-routes/pages/purchase/wad')
+const p_purchase_wah = require('./s-routes/pages/purchase/wah')
+const p_purchase_was = require('./s-routes/pages/purchase/was')
 
 
 // [EXPRESS + SERVER] //

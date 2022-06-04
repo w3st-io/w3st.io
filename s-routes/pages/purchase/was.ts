@@ -1,8 +1,7 @@
 // [REQUIRE] //
-const cors = require('cors')
-const express = require('express')
-const validator = require('validator')
-
+import cors from 'cors'
+import express from 'express'
+import validator from 'validator'
 
 // [REQUIRE] Personal //
 import config from '../../../s-config'
@@ -63,4 +62,4 @@ router.get(
 )
 
 // [EXPORT] //
-export default router
+module.exports = router

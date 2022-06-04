@@ -1,6 +1,6 @@
 // [REQUIRE] //
-const cors = require('cors')
-const express = require('express')
+import cors from 'cors'
+import express from 'express'
 
 // [REQUIRE] Personal //
 const rh = require('./index.handler')
@@ -19,4 +19,4 @@ router.get(
 )
 
 // [EXPORT] //
-export default router
+module.exports = router
