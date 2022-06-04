@@ -21,28 +21,22 @@
 			</div>
 
 			<!-- Headers -->
-			<h1 v-if="b.type == 'header' && b.data.level == 1">
-				{{ b.data.text }}
+			<h1 v-if="b.type == 'header' && b.data.level == 1" v-html="b.data.text">
 			</h1>
 
-			<h2 v-if="b.type == 'header' && b.data.level == 2">
-				{{ b.data.text }}
+			<h2 v-if="b.type == 'header' && b.data.level == 2" v-html="b.data.text">
 			</h2>
 
-			<h3 v-if="b.type == 'header' && b.data.level == 3">
-				{{ b.data.text }}
+			<h3 v-if="b.type == 'header' && b.data.level == 3" v-html="b.data.text">
 			</h3>
 
-			<h4 v-if="b.type == 'header' && b.data.level == 4">
-				{{ b.data.text }}
+			<h4 v-if="b.type == 'header' && b.data.level == 4" v-html="b.data.text">
 			</h4>
 
-			<h5 v-if="b.type == 'header' && b.data.level == 5">
-				{{ b.data.text }}
+			<h5 v-if="b.type == 'header' && b.data.level == 5" v-html="b.data.text">
 			</h5>
 
-			<h6 v-if="b.type == 'header' && b.data.level == 6">
-				{{ b.data.text }}
+			<h6 v-if="b.type == 'header' && b.data.level == 6" v-html="b.data.text">
 			</h6>
 
 			<!-- Image -->
@@ -70,7 +64,7 @@
 			</ol>
 
 			<!-- Paragraph -->
-			<p v-if="b.type == 'paragraph'" class="mb-2">{{ b.data.text }}</p>
+			<p v-if="b.type == 'paragraph'" v-html="b.data.text" class="mb-2"></p>
 
 			<!-- Quote -->
 			<figure v-if="b.type == 'quote'">
