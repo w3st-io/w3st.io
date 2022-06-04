@@ -9,9 +9,11 @@ import path from 'path'
 import config from './s-config'
 
 
+// [REQUIRE] //
+const history = require('connect-history-api-fallback')
+
 // [REQUIRE] Personal // Other // API // Pages //
 const rateLimiter = require('./s-rate-limiters')
-
 const a_ = require('./s-routes/api')
 const p_blog = require( './s-routes/pages/blog')
 const p_blog_read = require('./s-routes/pages/blog/read')
@@ -31,6 +33,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(cors())
 app.use(express.static(__dirname + '/s-static'))
 app.use(rateLimiter.limiter)
+app.use(history())
 
 
 // [USE] Personal // API // Pages //
