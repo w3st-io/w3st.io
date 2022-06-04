@@ -67,7 +67,7 @@
 			<p v-if="b.type == 'paragraph'" v-html="b.data.text" class="mb-2"></p>
 
 			<!-- Quote -->
-			<figure v-if="b.type == 'quote'">
+			<figure v-if="b.type == 'quote'" class="mx-auto" style="max-width: 800px;">
 				<blockquote>
 					<i>{{ b.data.text }}</i>
 				</blockquote>
