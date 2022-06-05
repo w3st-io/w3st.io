@@ -70,7 +70,7 @@
 					class="w-100 mx-auto mb-2 shadow"
 					style="max-width: 800px;"
 				>
-				<p>{{ b.data.caption }}</p>
+				<p v-html="b.data.caption"></p>
 			</viewer>
 
 			<!-- List Unordered -->
