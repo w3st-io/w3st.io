@@ -67,7 +67,7 @@
 					:src="b.data.url"
 					v-lazy="b.data.url"
 					alt=""
-					class="w-100 mx-auto shadow"
+					class="w-100 mx-auto mb-2 shadow"
 					style="max-width: 800px;"
 				>
 				<p>{{ b.data.caption }}</p>
