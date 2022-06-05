@@ -63,7 +63,13 @@
 				:options="{ title: false, transition: false, }"
 				class="text-center"
 			>
-				<img :src="b.data.url" alt="">
+				<img
+					:src="b.data.url"
+					v-lazy="b.data.url"
+					alt=""
+					class="w-100 mx-auto"
+					style="max-width: 800px;"
+				>
 				<p>{{ b.data.caption }}</p>
 			</viewer>
 
