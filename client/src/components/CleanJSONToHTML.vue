@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="cleanJSON">
 		<div v-for="(b, i) in cleanJSON.blocks" :key="i">
 			<!-- Code -->
 			<code v-if="b.type == 'code'">
@@ -61,24 +61,36 @@
 			<viewer
 				v-if="b.type == 'image'"
 				:options="{ title: false, transition: false, }"
-				class="text-center"
+				class="my-4 text-center"
 			>
-				<img :src="b.data.url" alt="">
+				<img
+					:src="b.data.url"
+					v-lazy="b.data.url"
+					alt=""
+					class="w-100 mx-auto mb-2 shadow"
+					style="max-width: 800px;"
+				>
 				<p>{{ b.data.caption }}</p>
 			</viewer>
 
 			<!-- List Unordered -->
-			<ul v-if="b.type == 'list' && b.data.style == 'unordered'" class="my-2">
-				<li v-for="(li, index) in b.data.items" :key="index">
-					{{ li }}
-				</li>
+			<ul v-if="b.type == 'list' && b.data.style == 'unordered'" class="my-3">
+				<li
+					v-for="(li, ii) in b.data.items"
+					:key="ii"
+					v-html="li"
+					class="mb-2"
+				></li>
 			</ul>
 
 			<!-- List Ordered -->
-			<ol v-if="b.type == 'list' && b.data.style == 'ordered'" class="my-2">
-				<li v-for="(li, index) in b.data.items" :key="index">
-					{{ li }}
-				</li>
+			<ol v-if="b.type == 'list' && b.data.style == 'ordered'" class="my-3">
+				<li
+					v-for="(li, ii) in b.data.items"
+					:key="ii"
+					v-html="li"
+					class="mb-2"
+				></li>
 			</ol>
 
 			<!-- Paragraph -->
@@ -118,3 +130,15 @@
 		},
 	}
 </script>
+
+<style lang="scss" scoped>
+	.cleanJSON {
+		a {
+			color: white;
+
+			&:hover {
+				color: grey;
+			}
+		}
+	}
+</style>
