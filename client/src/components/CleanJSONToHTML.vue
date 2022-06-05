@@ -61,13 +61,13 @@
 			<viewer
 				v-if="b.type == 'image'"
 				:options="{ title: false, transition: false, }"
-				class="text-center"
+				class="my-4 text-center"
 			>
 				<img
 					:src="b.data.url"
 					v-lazy="b.data.url"
 					alt=""
-					class="w-100 mx-auto"
+					class="w-100 mx-auto shadow"
 					style="max-width: 800px;"
 				>
 				<p>{{ b.data.caption }}</p>
