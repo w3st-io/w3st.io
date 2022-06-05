@@ -20,6 +20,9 @@
 			<BCardHeader class="py-5">
 				<BRow>
 					<BCol cols="12" lg="7" class="px-md-5">
+						<h1 class="mb-3 text-center font-weight-bold text-dark">
+							Aleem Ahmed
+						</h1>
 						<h2 class="mb-3 text-center font-weight-bold">
 							Email
 						</h2>
@@ -52,7 +55,7 @@
 									pill
 								>
 									<span class="font-weight-bold">
-										201-362-6859
+										(201) 362-6859
 									</span>
 								</BButton>
 							</a>
