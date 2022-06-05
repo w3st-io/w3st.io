@@ -1,7 +1,7 @@
 <template>
 	<div class="">
 		<nav
-			class="bg-dark shadow nav-drawer-menu"
+			class="mb-5 bg-dark shadow nav-drawer-menu"
 			:class="{ isOpen: $store.state.showMenu }"
 		>
 			<BButton
@@ -16,44 +16,42 @@
 				variant="outline-seconadry"
 				class="w-100 p-2 text-uppercase text-primary"
 				@click="home()"
-			><span aria-hidden="true" style="font-size: 1.4em;">Home</span></BButton>
+			><span aria-hidden="true" class="">Home</span></BButton>
 
 			<BButton
 				v-show="$store.state.showMenu"
 				variant="outline-seconadry"
 				class="w-100 p-2 text-uppercase text-primary"
 				@click="services()"
-			><span aria-hidden="true" style="font-size: 1.4em;">Services</span></BButton>
+			><span aria-hidden="true" class="">Services</span></BButton>
 
 			<BButton
 				v-show="$store.state.showMenu"
 				variant="outline-seconadry"
 				class="w-100 p-2 text-uppercase text-primary"
 				@click="contact()"
-			><span aria-hidden="true" style="font-size: 1.4em;">Contact</span></BButton>
+			><span aria-hidden="true" class="">Contact</span></BButton>
 
 			<BButton
 				v-show="$store.state.showMenu"
 				variant="outline-seconadry"
 				class="w-100 p-2 text-uppercase text-primary"
 				@click="code()"
-			><span aria-hidden="true" style="font-size: 1.4em;">Our Code</span></BButton>
+			><span aria-hidden="true" class="">Code</span></BButton>
 
 			<BButton
 				v-show="$store.state.showMenu"
 				variant="outline-seconadry"
 				class="w-100 p-2 text-uppercase text-primary"
 				@click="about()"
-			><span aria-hidden="true" style="font-size: 1.4em;">About</span></BButton>
+			><span aria-hidden="true" class="">About</span></BButton>
 
 			<BButton
 				v-show="$store.state.showMenu"
 				variant="outline-seconadry"
 				class="w-100 p-2 text-uppercase text-primary"
 				@click="blog()"
-			><span aria-hidden="true" style="font-size: 1.4em;">Blog</span></BButton>
-
-			<SocialMediaPlug v-show="$store.state.showMenu" size="48" class="my-3" />
+			><span aria-hidden="true" class="">Blog</span></BButton>
 		</nav>
 
 		<transition name="fade">
@@ -72,13 +70,11 @@
 
 	// [IMPORT] Personal //
 	import router from '@/router'
-	import SocialMediaPlug from '../SocialMediaPlug'
 
 	// [EXPORT] //
 	export default {
 		components: {
 			XIcon,
-			SocialMediaPlug,
 		},
 
 		data() {
