@@ -16,11 +16,6 @@
 								{{ w.name }}
 							</h4>
 						</BCardHeader>
-						<BCardBody class="py-4">
-							<h6 class="m-0 text-center font-weight-bold text-dark text-spread-sm">
-								{{ w.cleanJSON.blocks[0].data.text }}
-							</h6>
-						</BCardBody>
 
 						<BCardFooter>
 							<h6 class="m-0 text-center font-weight-bold text-spread-sm text-light small">
