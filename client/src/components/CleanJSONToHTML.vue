@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="cleanJSON">
 		<div v-for="(b, i) in cleanJSON.blocks" :key="i">
 			<!-- Code -->
 			<code v-if="b.type == 'code'">
@@ -130,3 +130,15 @@
 		},
 	}
 </script>
+
+<style lang="scss" scoped>
+	.cleanJSON {
+		a {
+			color: white;
+
+			&:hover {
+				color: grey;
+			}
+		}
+	}
+</style>
