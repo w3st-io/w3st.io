@@ -5,7 +5,7 @@
 			text-variant="dark"
 			bg-variant="primary"
 			no-body
-			class="mx-auto font-weight-bold shadow"
+			class="mx-auto shadow"
 			style="max-width: 1000px;"
 		>
 			<BCardHeader class="text-center bg-dark text-primary">
