@@ -4,8 +4,9 @@
 			v-if="!loading"
 			text-variant="dark"
 			bg-variant="primary"
-			class="font-weight-bold shadow"
 			no-body
+			class="mx-auto font-weight-bold shadow"
+			style="max-width: 1000px;"
 		>
 			<BCardHeader class="text-center bg-dark text-primary">
 				<h4 class="font-weight-bold">
@@ -17,11 +18,11 @@
 				</h6>
 			</BCardHeader>
 
-			<BCardBody class="py-5">
+			<BCardHeader class="p-5">
 				<CleanJSONToHTML
 					:cleanJSON="this.webContent.cleanJSON"
 				/>
-			</BCardBody>
+			</BCardHeader>
 		</BCard>
 	</BContainer>
 </template>
