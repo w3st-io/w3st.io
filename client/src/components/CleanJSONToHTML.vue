@@ -74,15 +74,15 @@
 			</viewer>
 
 			<!-- List Unordered -->
-			<ul v-if="b.type == 'list' && b.data.style == 'unordered'" class="my-2">
-				<li v-for="(li, index) in b.data.items" :key="index">
+			<ul v-if="b.type == 'list' && b.data.style == 'unordered'" class="my-3">
+				<li v-for="(li, index) in b.data.items" :key="index" class="mb-2">
 					{{ li }}
 				</li>
 			</ul>
 
 			<!-- List Ordered -->
-			<ol v-if="b.type == 'list' && b.data.style == 'ordered'" class="my-2">
-				<li v-for="(li, index) in b.data.items" :key="index">
+			<ol v-if="b.type == 'list' && b.data.style == 'ordered'" class="my-3">
+				<li v-for="(li, index) in b.data.items" :key="index" class="mb-2">
 					{{ li }}
 				</li>
 			</ol>
