@@ -59,7 +59,7 @@
 	import { getIdFromURL } from 'vue-youtube-embed'
 
 	// [IMPORT] Personal //
-	import defaultData from '../defaults/pages/gallery'
+	import defaultData from '@/defaults/pages/gallery'
 
 	export default {
 		data() {
@@ -73,3 +73,13 @@
 		},
 	}
 </script>
+
+<style lang="scss" scoped>
+a {
+	color: white !important;
+
+	&:hover {
+		color: rgb(218, 218, 218) !important;
+	}
+}
+</style>

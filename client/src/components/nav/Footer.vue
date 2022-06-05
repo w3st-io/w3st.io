@@ -39,13 +39,18 @@
 							</RouterLink>
 						</li>
 						<li>
+							<RouterLink to="/code">
+								Code
+							</RouterLink>
+						</li>
+						<li>
 							<RouterLink to="/about">
 								About
 							</RouterLink>
 						</li>
 						<li>
-							<RouterLink to="/gallery">
-								Gallery
+							<RouterLink to="/blog">
+								Blog
 							</RouterLink>
 						</li>
 					</ul>

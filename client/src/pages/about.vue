@@ -88,10 +88,13 @@
 				</BRow>
 			</BCardHeader>
 		</BCard>
+
+		<Gallery />
 	</BContainer>
 </template>
 
 <script>
+	import Gallery from '../components/Gallery.vue'
 	import companyInfo from '../defaults/companyInfo'
 
 	export default {
@@ -99,6 +102,10 @@
 			return {
 				companyInfo: companyInfo
 			}
+		},
+
+		components: {
+			Gallery
 		},
 	}
 </script>

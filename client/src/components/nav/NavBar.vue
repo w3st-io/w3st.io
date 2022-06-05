@@ -40,7 +40,7 @@
 					<RouterLink
 						to="/code" class="mx-3 text-dark menu-link"
 					>
-						<span>Our Code</span>
+						<span>Code</span>
 					</RouterLink>
 
 					<!-- About -->

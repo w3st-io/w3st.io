@@ -11,7 +11,6 @@ import blog_read from '../pages/blog/read'
 import code from '../pages/code'
 import contact from '../pages/contact'
 import emailSent from '../pages/email-sent'
-import gallery from '../pages/gallery'
 import privacyPolicy from '../pages/privacy-policy'
 import purchase_successful from '../pages/purchase/successful'
 import purchase_unsuccessful from '../pages/purchase/unsuccessful'
@@ -170,17 +169,6 @@ const router = new VueRouter({
 				header: false,
 				auth: true,
 				title: 'Email Sent'
-			},
-		},
-		// gallery //
-		{
-			path: '/gallery',
-			name: 'gallery',
-			component: gallery,
-			meta: {
-				header: false,
-				auth: true,
-				title: 'Gallery'
 			},
 		},
 		// services //
