@@ -130,15 +130,3 @@
 		},
 	}
 </script>
-
-<style lang="scss" scoped>
-	.cleanJSON {
-		a {
-			color: white;
-
-			&:hover {
-				color: grey;
-			}
-		}
-	}
-</style>

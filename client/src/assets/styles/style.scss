@@ -80,3 +80,13 @@ body {
 .hover-card:hover {
 	background-color: rgba(136, 136, 136, 0.15) !important;
 }
+
+.cleanJSON {
+	a {
+		color: white !important;
+
+		&:hover {
+			color: grey !important;
+		}
+	}
+}
