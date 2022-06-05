@@ -75,16 +75,22 @@
 
 			<!-- List Unordered -->
 			<ul v-if="b.type == 'list' && b.data.style == 'unordered'" class="my-3">
-				<li v-for="(li, index) in b.data.items" :key="index" class="mb-2">
-					{{ li }}
-				</li>
+				<li
+					v-for="(li, ii) in b.data.items"
+					:key="ii"
+					v-html="li"
+					class="mb-2"
+				></li>
 			</ul>
 
 			<!-- List Ordered -->
 			<ol v-if="b.type == 'list' && b.data.style == 'ordered'" class="my-3">
-				<li v-for="(li, index) in b.data.items" :key="index" class="mb-2">
-					{{ li }}
-				</li>
+				<li
+					v-for="(li, ii) in b.data.items"
+					:key="ii"
+					v-html="li"
+					class="mb-2"
+				></li>
 			</ol>
 
 			<!-- Paragraph -->
