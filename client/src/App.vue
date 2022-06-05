@@ -57,10 +57,3 @@
 		},
 	}
 </script>
-
-<style lang="scss">
-	// [IMPORT] //
-	@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
-
-	* { font-family: 'Montserrat', sans-serif !important; }
-</style>

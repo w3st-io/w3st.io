@@ -1,5 +1,12 @@
+// [IMPORT] //
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
 // [IMPORT] Personal //
 @import 'src/assets/styles/bootstrap-override.scss';
+
+* {
+	font-family: 'Montserrat', sans-serif !important;
+}
 
 body {
 	@extend .bg-primary;
@@ -20,8 +27,6 @@ body {
 			transparent 0
 		),
 	;
-
-	font-size: large;
 }
 
 .bg-svg {
@@ -82,6 +87,8 @@ body {
 }
 
 .cleanJSON {
+	font-size: larger !important;
+	
 	a {
 		color: white !important;
 
