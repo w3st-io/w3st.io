@@ -1,6 +1,6 @@
 <template>
 	<BContainer class="py-5">
-		<h1 v-if="false" class="mb-4 text-dark text-center text-uppercase font-weight-bold">Blog</h1>
+		<h1 class="mb-4 text-dark text-center text-uppercase font-weight-bold">Blog</h1>
 		
 		<BRow v-if="!loading">
 			<BCol

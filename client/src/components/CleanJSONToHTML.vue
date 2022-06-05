@@ -17,7 +17,7 @@
 					class="mx-auto"
 					style="max-width: 700px;"
 				/>
-				<p>{{ b.data.caption }}</p>
+				<p v-html="b.data.caption"></p>
 			</div>
 
 			<!-- Headers -->
@@ -101,7 +101,7 @@
 				<blockquote>
 					<i v-html="b.data.text"></i>
 				</blockquote>
-				<figcaption>{{ b.data.caption }}</figcaption>
+				<figcaption v-html="b.data.caption"></figcaption>
 			</figure>
 
 			<!-- Table -->

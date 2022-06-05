@@ -18,7 +18,7 @@
 				</h6>
 			</BCardHeader>
 
-			<BCardHeader class="p-5">
+			<BCardHeader class="p-md-5">
 				<CleanJSONToHTML
 					:cleanJSON="this.webContent.cleanJSON"
 				/>
