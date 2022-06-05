@@ -99,7 +99,7 @@
 			<!-- Quote -->
 			<figure v-if="b.type == 'quote'" class="mx-auto" style="max-width: 800px;">
 				<blockquote>
-					<i v-html="b-data.text"></i>
+					<i v-html="b.data.text"></i>
 				</blockquote>
 				<figcaption>{{ b.data.caption }}</figcaption>
 			</figure>
