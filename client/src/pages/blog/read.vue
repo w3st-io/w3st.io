@@ -3,7 +3,8 @@
 		<BCard
 			v-if="!loading"
 			text-variant="dark"
-			bg-variant="primary"
+			bg-variant="light"
+			border-variant="primary"
 			no-body
 			class="mx-auto shadow"
 			style="max-width: 1000px;"

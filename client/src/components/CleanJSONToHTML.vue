@@ -24,37 +24,37 @@
 			<h1
 				v-if="b.type == 'header' && b.data.level == 1"
 				v-html="b.data.text"
-				class="font-weight-bold text-light"
+				class="font-weight-bold text-primary"
 			></h1>
 
 			<h2
 				v-if="b.type == 'header' && b.data.level == 2"
 				v-html="b.data.text"
-				class="font-weight-bold text-light"
+				class="font-weight-bold text-primary"
 			></h2>
 
 			<h3
 				v-if="b.type == 'header' && b.data.level == 3"
 				v-html="b.data.text"
-				class="font-weight-bold text-light"
+				class="font-weight-bold text-primary"
 			></h3>
 
 			<h4
 				v-if="b.type == 'header' && b.data.level == 4"
 				v-html="b.data.text"
-				class="font-weight-bold text-light"
+				class="font-weight-bold text-primary"
 			></h4>
 
 			<h5
 				v-if="b.type == 'header' && b.data.level == 5"
 				v-html="b.data.text"
-				class="font-weight-bold text-light"
+				class="font-weight-bold text-primary"
 			></h5>
 
 			<h6
 				v-if="b.type == 'header' && b.data.level == 6"
 				v-html="b.data.text"
-				class="font-weight-bold text-light"
+				class="font-weight-bold text-primary"
 			></h6>
 
 			<!-- Image -->
