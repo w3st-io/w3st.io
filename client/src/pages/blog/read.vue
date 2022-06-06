@@ -6,7 +6,7 @@
 			bg-variant="white"
 			border-variant="primary"
 			no-body
-			class="mx-auto shadow"
+			class="mx-auto"
 			style="max-width: 1000px;"
 		>
 			<BCardHeader class="text-center bg-dark text-primary">
