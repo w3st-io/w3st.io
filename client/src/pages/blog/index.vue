@@ -93,6 +93,7 @@
 					this.pinnedWebContents = this.resData.data.pinnedWebContents
 	
 					// Web Contents
+					this.webContents = this.resData.data.webContents
 					
 
 					this.loading = false
