@@ -23,6 +23,7 @@ module.exports = {
 				{
 					webApp: `${config.api.rptide.webApp}`,
 					visible: true,
+					notInTags: ['pinned']
 				}
 			)
 
