@@ -35,7 +35,12 @@ module.exports = {
 				}
 			)
 			
-			return result.data
+			return {
+				executed: true,
+				status: true,
+				webContents: result.data.webContents,
+				pinnedWebContents: pinnedResults.data.webContents,
+			}
 		}
 		catch (err) {
 			return {
