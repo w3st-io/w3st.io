@@ -14,7 +14,7 @@
 					</RouterLink>
 				</BCol>
 
-				<BCol cols="12" class="d-none d-md-block text-center h5 font-weight-bold text-uppercase text-spread-sm">
+				<BCol cols="12" class="d-none d-md-block text-center h6 font-weight-bold text-uppercase text-spread-sm">
 					<!-- Home -->
 					<RouterLink
 						to="/" class="mx-3 text-dark menu-link"
