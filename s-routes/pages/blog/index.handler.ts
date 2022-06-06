@@ -19,8 +19,20 @@ module.exports = {
 	handle: async ({ req }: any) => {
 		try {
 			const result = await authAxios.post(
-				'/find-paginated/50/1?visible=true',
-				{ webApp: `${config.api.rptide.webApp}` }
+				'/find-paginated/50/1',
+				{
+					webApp: `${config.api.rptide.webApp}`,
+					visible: true,
+				}
+			)
+
+			const pinnedResults = await authAxios.post(
+				'/find-paginated/50/1',
+				{
+					webApp: `${config.api.rptide.webApp}`,
+					visible: true,
+					tags: ['pinned']
+				}
 			)
 			
 			return result.data
