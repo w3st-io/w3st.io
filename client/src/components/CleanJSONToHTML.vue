@@ -67,10 +67,10 @@
 					:src="b.data.url"
 					v-lazy="b.data.url"
 					alt=""
-					class="w-100 mx-auto mb-2 shadow"
+					class="w-100 mx-auto mb-2 shadow-sm"
 					style="max-width: 800px;"
 				>
-				<p v-html="b.data.caption"></p>
+				<p v-html="b.data.caption" class="font-weight-bold"></p>
 			</viewer>
 
 			<!-- List Unordered -->
@@ -130,3 +130,9 @@
 		},
 	}
 </script>
+
+<style lang="scss" scoped>
+	h1,h2,h3,h4,h5,h6 {
+		margin: 25px 0 !important;
+	}
+</style>

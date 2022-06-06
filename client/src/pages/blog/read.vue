@@ -3,7 +3,7 @@
 		<BCard
 			v-if="!loading"
 			text-variant="dark"
-			bg-variant="light"
+			bg-variant="white"
 			border-variant="primary"
 			no-body
 			class="mx-auto shadow"
@@ -19,7 +19,7 @@
 				</h6>
 			</BCardHeader>
 
-			<BCardHeader class="p-md-5">
+			<BCardHeader class="px-md-5">
 				<CleanJSONToHTML
 					:cleanJSON="this.webContent.cleanJSON"
 				/>
