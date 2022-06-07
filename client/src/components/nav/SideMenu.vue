@@ -1,12 +1,12 @@
 <template>
 	<div class="">
 		<nav
-			class="mb-5 bg-dark shadow nav-drawer-menu"
+			class="mb-5 bg-primary shadow nav-drawer-menu"
 			:class="{ isOpen: $store.state.showMenu }"
 		>
 			<BButton
 				v-show="$store.state.showMenu"
-				variant="primary"
+				variant="dark"
 				class="w-100 mb-3 p-4 text-light rounded-0"
 				@click="closeMenu"
 			><XIcon size="36" /></BButton>
@@ -14,42 +14,42 @@
 			<BButton
 				v-show="$store.state.showMenu"
 				variant="outline-seconadry"
-				class="w-100 p-2 text-uppercase text-primary"
+				class="w-100 p-2 text-uppercase text-light text-backlit"
 				@click="home()"
 			><span aria-hidden="true" class="">Home</span></BButton>
 
 			<BButton
 				v-show="$store.state.showMenu"
 				variant="outline-seconadry"
-				class="w-100 p-2 text-uppercase text-primary"
+				class="w-100 p-2 text-uppercase text-light text-backlit"
 				@click="services()"
 			><span aria-hidden="true" class="">Services</span></BButton>
 
 			<BButton
 				v-show="$store.state.showMenu"
 				variant="outline-seconadry"
-				class="w-100 p-2 text-uppercase text-primary"
+				class="w-100 p-2 text-uppercase text-light text-backlit"
 				@click="contact()"
 			><span aria-hidden="true" class="">Contact</span></BButton>
 
 			<BButton
 				v-show="$store.state.showMenu"
 				variant="outline-seconadry"
-				class="w-100 p-2 text-uppercase text-primary"
+				class="w-100 p-2 text-uppercase text-light text-backlit"
 				@click="code()"
 			><span aria-hidden="true" class="">Code</span></BButton>
 
 			<BButton
 				v-show="$store.state.showMenu"
 				variant="outline-seconadry"
-				class="w-100 p-2 text-uppercase text-primary"
+				class="w-100 p-2 text-uppercase text-light text-backlit"
 				@click="about()"
 			><span aria-hidden="true" class="">About</span></BButton>
 
 			<BButton
 				v-show="$store.state.showMenu"
 				variant="outline-seconadry"
-				class="w-100 p-2 text-uppercase text-primary"
+				class="w-100 p-2 text-uppercase text-light text-backlit"
 				@click="blog()"
 			><span aria-hidden="true" class="">Blog</span></BButton>
 		</nav>

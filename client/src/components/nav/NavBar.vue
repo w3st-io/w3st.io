@@ -63,7 +63,7 @@
 				</BCol>
 
 				<!-- Mobile Menu Button -->
-				<BCol cols="12" class="d-block d-md-none text-center">
+				<BCol cols="12" class="d-block d-md-none text-center ">
 					<BButton
 						variant="dark"
 						class="mt-4 w-100 mobile-menu-button"
@@ -184,7 +184,7 @@
 	}
 
 	.mobile-menu-button-line {
-		@extend .bg-primary;
+		@extend .bg-light;
 
 		width: 45px;
 		height: 2px;
