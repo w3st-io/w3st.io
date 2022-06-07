@@ -1,36 +1,32 @@
 <template>
-	<BContainer class="py-5">
-		<BRow>
-			<BCol cols="12" class="text-center">
-				<h1 class="my-4 text-uppercase text-light text-spread">
-					Our Works
-				</h1>
+	<BContainer class="py-5 text-center">
+		<h6 class="mb-4 text-uppercase text-light text-spread font-weight-bold text-backlit">
+			Our Works
+		</h6>
 
-				<BRow class="my-5">
-					<BCol
-						v-for="(cp, i) in clientProjects"
-						:key="i"
-						cols="12" md="6"
-						class="pb-5 px-3"
-						data-aos="fade-down"
-						data-aos-offset="-10000"
-						:data-aos-delay="200 * i"
+		<BRow class="my-5">
+			<BCol
+				v-for="(cp, i) in clientProjects"
+				:key="i"
+				cols="12" md="6"
+				class="pb-5 px-3"
+				data-aos="fade-down"
+				data-aos-offset="-10000"
+				:data-aos-delay="200 * i"
+			>
+				<a :href="cp.link" target="_blank" class="text-decoration-none">
+					<div
+						class="border border-dark rounded backlit cp"
+						:style="`
+							background-image: url(${cp.image});
+							background-position: center;
+						`"
 					>
-						<a :href="cp.link" target="_blank" class="text-decoration-none">
-							<div
-								class="border border-dark rounded shadow cp"
-								:style="`
-									background-image: url(${cp.image});
-									background-position: center;
-								`"
-							>
-								<div class="h-100 bg-shade2 text-holder ]">
-									<h1 class="text-uppercase">{{ cp.title }}</h1>
-								</div>
-							</div>
-						</a>
-					</BCol>
-				</BRow>
+						<div class="h-100 bg-shade2 text-holder ]">
+							<h1 class="text-uppercase">{{ cp.title }}</h1>
+						</div>
+					</div>
+				</a>
 			</BCol>
 		</BRow>
 	</BContainer>

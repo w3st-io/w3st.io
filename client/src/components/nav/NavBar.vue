@@ -6,9 +6,9 @@
 					<RouterLink to="/" class="text-decoration-none">
 						<h1 class="my-2 logo text-spread">
 							<span class="text-dark">W</span>
-							<span class="text-white">3</span>
+							<span class="text-white text-backlit">3</span>
 							<span class="text-dark">ST</span>
-							<span class="text-white">.</span>
+							<span class="text-white text-backlit">.</span>
 							<span class="text-dark">IO</span>
 						</h1>
 					</RouterLink>
@@ -164,6 +164,8 @@
 	.router-link-exact-active {
 		&.menu-link {
 			@extend .text-white;
+			text-shadow: 0 0 2px #ffffff, 0 0 8px #ffffff !important;
+
 
 			&::before {
 				visibility: visible;

@@ -4,7 +4,7 @@
 			bg-variant="primary"
 			text-variant="light"
 			no-body
-			class="m-auto shadow"
+			class="m-auto backlit"
 			border-variant="dark"
 		>
 			<BCardHeader class="border-bottom border-dark">

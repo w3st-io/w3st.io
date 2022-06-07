@@ -5,7 +5,7 @@
 			text-variant="light"
 			border-variant="dark"
 			no-body
-			class="w-100 mx-auto shadow"
+			class="w-100 mx-auto backlit"
 		>
 			<BCardHeader class="border-dark bg-dark">
 				<BCol cols="12">

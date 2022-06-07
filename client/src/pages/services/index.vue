@@ -12,12 +12,12 @@
 					border-variant="dark"
 					text-variant="dark"
 					no-body
-					class="w-100 mb-5 shadow-sm"
+					class="w-100 mb-5 backlit"
 				>
-					<BCardHeader class="bg-dark border-dark center-content" style="height: 80px;">
-						<h5 class="my-1 text-center text-uppercase text-primary font-weight-bold">
+					<BCardHeader class="bg-dark border-dark center-content" style="height: 64px;">
+						<h6 class="m-0 text-center text-uppercase text-primary font-weight-bold">
 							{{ s.name }}
-						</h5>
+						</h6>
 					</BCardHeader>
 
 					<BCardBody class="p-0 border-0">

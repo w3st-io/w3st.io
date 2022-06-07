@@ -1,20 +1,18 @@
 <template>
 	<BContainer class="mx-auto py-5" style="max-width: 800px;">
-		<BRow v-if="!loading">
-			<BCol cols="12">
-				<h2 v-if="pinnedWebContents.length != 0" class="mb-4 text-center font-weight-bold text-uppercase text-spread-sm text-light">
-					Pinned Posts
-				</h2>
-			</BCol>
+		<h6 v-if="pinnedWebContents.length != 0" class="mb-4 text-center font-weight-bold text-uppercase text-spread-sm text-light text-backlit">
+			Pinned Posts
+		</h6>
 
+		<BRow v-if="!loading" class="my-5">
 			<BCol
 				v-for="(w, i) in pinnedWebContents"
 				:key="i"
-				sm="12"
+				cols="12"
 				class="mx-auto"
 			>
 				<RouterLink :to="`/blog/read/${w._id}`" class="">
-					<BCard bg-variant="primary" border-variant="dark" class="mb-4 hover-card">
+					<BCard bg-variant="primary" border-variant="dark" class="mb-4 hover-card backlit">
 						<h5 class="m-0 text-center font-weight-bold text-uppercase text-spread-sm text-dark">
 							{{ w.name }}
 						</h5>
@@ -25,21 +23,21 @@
 					</BCard>
 				</RouterLink>
 			</BCol>
+		</BRow>
 
-			<BCol v-if="webContents.length != 0" cols="12">
-				<h2 class="mb-4 text-center font-weight-bold text-uppercase text-spread-sm text-light">
-					Posts
-				</h2>
-			</BCol>
+		<h6 v-if="pinnedWebContents.length != 0" class="mb-4 text-center font-weight-bold text-uppercase text-spread-sm text-light text-backlit">
+			Posts
+		</h6>
 
+		<BRow v-if="!loading" class="my-5">
 			<BCol
 				v-for="(w, i) in webContents"
 				:key="i"
-				sm="12"
+				cols="12"
 				class="mx-auto"
 			>
 				<RouterLink :to="`/blog/read/${w._id}`" class="">
-					<BCard bg-variant="primary" border-variant="dark" class="mb-4">
+					<BCard bg-variant="primary" border-variant="dark" class="mb-4 backlit">
 						<h5 class="m-0 text-center font-weight-bold text-uppercase text-spread-sm text-dark">
 							{{ w.name }}
 						</h5>

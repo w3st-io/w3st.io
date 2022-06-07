@@ -89,3 +89,14 @@ body {
 .cleanJSON {
 	font-size: larger !important;
 }
+
+.backlit {
+    box-shadow:
+        0 0px 0px 0 rgba(255, 255, 255, 5),
+        0 0px 10px 0 rgba(255, 255, 255, .4) !important
+    ;
+}
+
+.text-backlit {
+	text-shadow: 0 0 2px #ffffff, 0 0 8px #ffffff !important;
+}
