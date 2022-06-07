@@ -9,21 +9,21 @@
 				v-for="(cp, i) in clientProjects"
 				:key="i"
 				cols="12" md="6"
-				class="pb-5 px-3"
+				class="pb-5 px-4"
 				data-aos="fade-down"
 				data-aos-offset="-10000"
 				:data-aos-delay="200 * i"
 			>
 				<a :href="cp.link" target="_blank" class="text-decoration-none">
 					<div
-						class="border border-dark rounded backlit cp"
+						class="rounded backlit the-box"
 						:style="`
 							background-image: url(${cp.image});
 							background-position: center;
 						`"
 					>
-						<div class="h-100 bg-shade2 text-holder ]">
-							<h1 class="text-uppercase">{{ cp.title }}</h1>
+						<div class="h-100 the-box-content text-holder">
+							<h1 class="text-light text-backlit text-uppercase font-weight-bold">{{ cp.title }}</h1>
 						</div>
 					</div>
 				</a>
@@ -47,19 +47,21 @@
 <style lang="scss" scoped>
 	@import '../assets/styles/bootstrap-override.scss';
 
-	.cp {
+	.the-box {
 		height: 200px;
 		overflow: hidden;
 
-		.bg-shade2 {
+		.the-box-content {
 			height: 200px;
-			background-color: rgba(0, 0, 0, .8) !important;
+			backdrop-filter: blur(4px)!important;
+			background-color: rgba(0, 0, 0, 60%) !important;
 		}
 
 		&:hover {
-			.bg-shade2 {
-				background-color: rgba(0, 0, 0, .7) !important;
+			.the-box-content {
+				background-color: rgba(0, 0, 0, 50%) !important;
 			}
+			@extend .border-light;
 		}
 	}
 
