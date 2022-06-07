@@ -4,7 +4,7 @@ module.exports = {
 
 	name: 'W3ST.IO',
 
-	nameHTML: '<span class="text-dark">W<span class="text-light">3</span>ST<span class="text-light">.</span>IO</span>',
+	nameHTML: '<span class="text-dark">W<span class="text-light text-backlit">3</span>ST<span class="text-light text-backlit">.</span>IO</span>',
 
 	caption: '',
 
