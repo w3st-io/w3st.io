@@ -15,6 +15,7 @@
 				:data-aos-delay="200 * i"
 			>
 				<a :href="cp.link" target="_blank" class="text-decoration-none">
+					<!-- the-box -->
 					<div
 						class="rounded backlit the-box"
 						:style="`
@@ -22,8 +23,17 @@
 							background-position: center;
 						`"
 					>
+						<!-- the-box-content -->
 						<div class="h-100 the-box-content text-holder">
-							<h3 class="text-white text-backlit text-uppercase font-weight-bold">{{ cp.title }}</h3>
+							<!-- Website Names -->
+							<h3
+								class="
+									text-white
+									text-uppercase
+									font-weight-bold
+									text-backlit
+								"
+							>{{ cp.title }}</h3>
 						</div>
 					</div>
 				</a>
@@ -63,11 +73,11 @@
 			}
 			@extend .border-light;
 		}
-	}
 
-	.text-holder {
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		.text-holder {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
 	}
 </style>
