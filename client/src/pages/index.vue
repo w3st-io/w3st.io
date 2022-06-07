@@ -23,7 +23,7 @@
 						`"
 					>
 						<div class="h-100 the-box-content text-holder">
-							<h1 class="text-light text-backlit text-uppercase font-weight-bold">{{ cp.title }}</h1>
+							<h3 class="text-white text-backlit text-uppercase font-weight-bold">{{ cp.title }}</h3>
 						</div>
 					</div>
 				</a>
