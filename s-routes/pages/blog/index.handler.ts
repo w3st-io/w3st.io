@@ -1,5 +1,6 @@
 // [REQUIRE] //
 const axios = require('axios')
+const Analytics = require('analytics-node')
 
 
 // [IMPORT] Personal //
@@ -15,9 +16,19 @@ const authAxios = axios.create({
 })
 
 
+// [ANALYTICS] //
+const analytics = new Analytics(config.api.segments.writeKey)
+
+
 module.exports = {
 	handle: async ({ req }: any) => {
 		try {
+			analytics.identify({
+				traits: {
+					ip: req.ip,
+				}
+			})
+
 			const result = await authAxios.post(
 				'/find-paginated/50/1',
 				{

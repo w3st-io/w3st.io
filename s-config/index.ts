@@ -24,6 +24,10 @@ export default {
 			webApp: process.env.API__RPTIDE__WEB_APP || '',
 		},
 
+		segments: {
+			writeKey: process.env.API__SEGMENTS_WRITE_KEY,
+		},
+
 		stripe: {
 			publishableKey: process.env.API__STRIPE__PUBLISHABLE_KEY || '',
 
@@ -57,6 +61,6 @@ export default {
 					standardPrice_id: process.env.API__STRIPE__WAS__DISCOUNTED__STANDARD_PRICE_ID || '',
 				}
 			},
-		}
+		},
 	}
 }
