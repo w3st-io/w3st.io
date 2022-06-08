@@ -43,13 +43,34 @@
 </template>
 
 <script>
+	import axios from 'axios'
+
 	import clientProjects from '@/defaults/client-projects'
 
 	export default {
 		data() {
 			return {
+				authAxios: axios.create({
+					baseURL: '/pages',
+				}),
+
 				clientProjects: clientProjects
 			}
+		},
+
+		methods: {
+			async getPageData() {
+				try {
+					this.resData = await this.authAxios.get('/')
+				}
+				catch (err) {
+					this.error = err
+				}
+			},
+		},
+
+		async created() {
+			await this.getPageData()
 		},
 	}
 </script>

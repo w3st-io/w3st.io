@@ -15,6 +15,7 @@ const history = require('connect-history-api-fallback')
 // [REQUIRE] Personal // Other // API // Pages //
 const rateLimiter = require('./s-rate-limiters')
 const a_ = require('./s-routes/api')
+const p_ = require( './s-routes/pages')
 const p_blog = require( './s-routes/pages/blog')
 const p_blog_read = require('./s-routes/pages/blog/read')
 const p_purchase_wad = require('./s-routes/pages/purchase/wad')
@@ -39,6 +40,7 @@ app.use(rateLimiter.limiter)
 // [USE] Personal // API // Pages //
 app.use('/api', a_)
 
+app.use('/pages', p_)
 app.use('/pages/blog', p_blog)
 app.use('/pages/blog/read', p_blog_read)
 app.use('/pages/purchase/wad', p_purchase_wad)
