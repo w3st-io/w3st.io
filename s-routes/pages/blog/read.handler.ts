@@ -26,8 +26,6 @@ module.exports = {
 			return result.data
 		}
 		catch (err) {
-			console.log(err);
-			
 			return {
 				executed: false,
 				status: false,

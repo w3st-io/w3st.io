@@ -25,7 +25,7 @@ export default {
 		},
 
 		segments: {
-			writeKey: process.env.API__SEGMENTS_WRITE_KEY,
+			writeKey: process.env.API__SEGMENTS__WRITE_KEY,
 		},
 
 		stripe: {
