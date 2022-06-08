@@ -24,6 +24,7 @@ module.exports = {
 	handle: async ({ req }: any) => {
 		try {
 			analytics.identify({
+				anonymousId: req.ip,
 				traits: {
 					ip: req.ip,
 				}
@@ -55,6 +56,8 @@ module.exports = {
 			}
 		}
 		catch (err) {
+			console.log(err);
+			
 			return {
 				executed: false,
 				status: false,
