@@ -1,10 +1,14 @@
-// [REQUIRE] //
+// [IMPORT] //
 import cors from 'cors'
 import express from 'express'
 
+// [IMPORT] Personal //
+import Segment from '../../s-middleware/Segment'
+
+
 // [REQUIRE] Personal //
 const rh = require('./index.handler')
-import Segment from '../../s-middleware/Segment'
+
 
 // [EXPRESS + USE] //
 const router = express.Router().use(cors())
