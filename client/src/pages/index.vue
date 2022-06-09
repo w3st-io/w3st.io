@@ -43,8 +43,10 @@
 </template>
 
 <script>
+	// [IMPORT] //
 	import axios from 'axios'
 
+	// [IMPORT] Personal //
 	import clientProjects from '@/defaults/client-projects'
 
 	export default {

@@ -79,12 +79,19 @@
 </template>
 
 <script>
+	// [IMPORT] //
+	import axios from 'axios'
+
 	// [IMPORT] Personal //
 	import pageData from '../../defaults/companyInfo'
 
 	export default {
 		data() {
 			return {
+				authAxios: axios.create({
+					baseURL: '/pages/services',
+				}),
+
 				pageData: pageData,
 
 				sliderOptions: {
@@ -101,6 +108,15 @@
 		},
 
 		methods: {
+			async getPageData() {
+				try {
+					this.resData = await this.authAxios.get('/')
+				}
+				catch (err) {
+					this.error = err
+				}
+			},
+
 			isEven(value) {
 				if (value % 2 == 0) { return 1 }
 				else { return 0 }
@@ -110,6 +126,10 @@
 				if (value % 2 == 0) { return 0 }
 				else { return 1 }
 			},
+		},
+
+		async created() {
+			await this.getPageData()
 		},
 	}
 </script>
