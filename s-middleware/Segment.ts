@@ -16,17 +16,20 @@ export default class Segment {
 	// [Standard] //
 	static page() {
 		return async (req, res, next) => {
-			const ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress
+			try {
+				const ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress
 
-			analytics.page({
-				anonymousId: ip,
-				properties: {
-					ip: ip,
-					ipLocation: geoip.lookup(ip),
-					path: req.originalUrl,
-					timeStamp: new Date(),
-				}
-			})
+				analytics.page({
+					anonymousId: ip,
+					properties: {
+						ip: ip,
+						ipLocation: geoip.lookup(ip),
+						path: req.originalUrl,
+						timeStamp: new Date(),
+					}
+				})
+			}
+			catch (err) { console.log(err) }
 
 			next()
 		}
