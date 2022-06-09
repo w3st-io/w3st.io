@@ -1,9 +1,9 @@
-// [REQUIRE] //
-const Analytics = require('analytics-node')
-
-
 // [IMPORT] Personal //
 import config from '../s-config'
+
+
+// [REQUIRE] //
+const Analytics = require('analytics-node')
 
 
 // [ANALYTICS] //

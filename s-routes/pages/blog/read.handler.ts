@@ -1,9 +1,9 @@
-// [REQUIRE] //
-const axios = require('axios')
-
-
 // [IMPORT] Personal //
 import config from '../../../s-config'
+
+
+// [REQUIRE] //
+const axios = require('axios')
 
 
 // [AUTH-AXIOS] //
