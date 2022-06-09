@@ -25,7 +25,7 @@
 			</BCol>
 		</BRow>
 
-		<h6 v-if="pinnedWebContents.length != 0" class="mb-4 text-center font-weight-bold text-uppercase text-spread-sm text-light text-backlit">
+		<h6 v-if="webContents.length != 0" class="mb-4 text-center font-weight-bold text-uppercase text-spread-sm text-light text-backlit">
 			Posts
 		</h6>
 
