@@ -22,9 +22,9 @@ export default class Segment {
 				analytics.page({
 					anonymousId: ip,
 					properties: {
+						path: req.originalUrl,
 						ip: ip,
 						ipLocation: geoip.lookup(ip),
-						path: req.originalUrl,
 						timeStamp: new Date(),
 					}
 				})
