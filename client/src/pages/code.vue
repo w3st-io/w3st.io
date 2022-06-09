@@ -99,14 +99,41 @@
 </template>
 
 <script>
-import { GithubIcon, ExternalLinkIcon } from 'vue-feather-icons'
+	// [IMPORT] //
+	import axios from 'axios'
 
-export default {
-	components: {
-		GithubIcon,
-		ExternalLinkIcon,
+	// [IMPORT] Personal //
+	import { GithubIcon, ExternalLinkIcon } from 'vue-feather-icons'
+
+	export default {
+		data() {
+			return {
+				authAxios: axios.create({
+					baseURL: '/pages/code',
+				}),
+			}
+		},
+
+		components: {
+			GithubIcon,
+			ExternalLinkIcon,
+		},
+
+		methods: {
+			async getPageData() {
+				try {
+					this.resData = await this.authAxios.get('/')
+				}
+				catch (err) {
+					this.error = err
+				}
+			},
+		},
+
+		async created() {
+			await this.getPageData()
+		},
 	}
-}
 </script>
 
 <style lang="scss" scoped>
