@@ -94,18 +94,40 @@
 </template>
 
 <script>
+	// [IMPORT] //
+	import axios from 'axios'
+
 	import Gallery from '../components/Gallery.vue'
 	import companyInfo from '../defaults/companyInfo'
 
 	export default {
 		data() {
 			return {
+				authAxios: axios.create({
+					baseURL: '/pages/about',
+				}),
+
 				companyInfo: companyInfo
 			}
 		},
 
 		components: {
 			Gallery
+		},
+
+		methods: {
+			async getPageData() {
+				try {
+					this.resData = await this.authAxios.get('/')
+				}
+				catch (err) {
+					this.error = err
+				}
+			},
+		},
+
+		async created() {
+			await this.getPageData()
 		},
 	}
 </script>
