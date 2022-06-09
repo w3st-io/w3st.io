@@ -4,6 +4,7 @@ import config from '../s-config'
 
 // [REQUIRE] //
 const Analytics = require('analytics-node')
+const geoip = require('geoip-lite')
 
 
 // [ANALYTICS] //
@@ -15,11 +16,15 @@ export default class Segment {
 	// [Standard] //
 	static page() {
 		return async (req, res, next) => {
+			const ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress
+
 			analytics.page({
-				anonymousId: req.ip,
+				anonymousId: ip,
 				properties: {
-				  path: req.originalUrl,
-				  timeStamp: new Date(),
+					ip: ip,
+					ipLocation: geoip.lookup(ip),
+					path: req.originalUrl,
+					timeStamp: new Date(),
 				}
 			})
 

@@ -1,4 +1,5 @@
 // [IMPORT] //
+import history from 'connect-history-api-fallback'
 import cors from 'cors'
 import bodyParser from 'body-parser'
 import express from 'express'
@@ -8,9 +9,6 @@ import path from 'path'
 // [IMPORT] Personal //
 import config from './s-config'
 
-
-// [REQUIRE] //
-const history = require('connect-history-api-fallback')
 
 // [REQUIRE] Personal // Other // API // Pages //
 const rateLimiter = require('./s-rate-limiters')
