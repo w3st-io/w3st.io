@@ -1,8 +1,9 @@
 <template>
 	<BContainer class="mx-auto py-5" style="max-width: 800px;">
-		<h6 v-if="pinnedWebContents.length != 0" class="mb-4 text-center font-weight-bold text-uppercase text-spread-sm text-light text-backlit">
-			Pinned Posts
-		</h6>
+		<h6
+			v-if="pinnedWebContents.length != 0"
+			class="mb-4 text-center font-weight-bold text-uppercase text-spread-sm text-light text-backlit"
+		>Pinned Posts</h6>
 
 		<BRow v-if="!loading" class="my-5">
 			<BCol
@@ -25,9 +26,11 @@
 			</BCol>
 		</BRow>
 
-		<h6 v-if="webContents.length != 0" class="mb-4 text-center font-weight-bold text-uppercase text-spread-sm text-light text-backlit">
-			Posts
-		</h6>
+		<h6
+			v-if="webContents.length != 0"
+			class="mb-4 text-center font-weight-bold text-uppercase text-spread-sm text-light text-backlit"
+		>Posts</h6>
+
 
 		<BRow v-if="!loading" class="my-5">
 			<BCol
