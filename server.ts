@@ -41,7 +41,6 @@ app.use(rateLimiter.limiter)
 
 // [USE] Personal // API // Pages //
 app.use('/api', a_)
-
 app.use('/pages', p_)
 app.use('/pages/about', p_about)
 app.use('/pages/blog', p_blog)
