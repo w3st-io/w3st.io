@@ -1,7 +1,7 @@
 // [IMPORT] //
+import bodyParser from 'body-parser'
 import history from 'connect-history-api-fallback'
 import cors from 'cors'
-import bodyParser from 'body-parser'
 import express from 'express'
 import http from 'http'
 import path from 'path'
@@ -33,9 +33,9 @@ const server = http.createServer(app)
 // [USE] // Default Stuff // Set static Folder // Rate-Limiter //
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
+app.use(history())  
 app.use(cors())
 app.use(express.static(__dirname + '/s-static'))
-app.use(history())
 app.use(rateLimiter.limiter)
 
 
