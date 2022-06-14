@@ -34,7 +34,16 @@ const server = http.createServer(app)
 // [USE] // Default Stuff // Set static Folder // Rate-Limiter //
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
-app.use(history())  
+app.use(history({
+    rewrites: [
+		{
+			from: /^\/fun*$/,
+			to: function(context) {
+				return context.parsedUrl.path
+			}
+		}
+    ]
+}))  
 app.use(cors())
 app.use(express.static(__dirname + '/s-static'))
 app.use(rateLimiter.limiter)
