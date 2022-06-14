@@ -4,6 +4,10 @@ const express = require('express')
 const path = require('path')
 
 
+// [IMPORT] Personal //
+import Segment from '../../s-middleware/Segment'
+
+
 // [EXPRESS + USE] //
 const router = express.Router().use(cors())
 
@@ -447,6 +451,7 @@ const html = `
 
 router.get(
 	'/',
+	Segment.page(),
 	async (req, res) => {
 		res.send(html)
 	}
