@@ -62,8 +62,16 @@ const html = `
 		border-width: 3px !important;
 	}
 	
+	.first-section {
+		border-width: 0px !important;
+	}
+
 	@media screen and (min-width: 992px) {
 		.logo { transform: translate(0px, 30px); }
+
+		.first-section {
+			border-width: 3px !important;
+		}
 	}
 
 	.logo:hover {
@@ -173,33 +181,36 @@ const html = `
 	<!-- Body -->
 	<div class="container">
 		<div class="row">
-			<div class="d-none d-lg-block col-lg-4 py-5 border-right border-dark thick-border">
+			<div class="col-lg-4 py-5 border-right border-dark thick-border first-section">
+				<h2 class="mb-5 text-light bg-dark text-uppercase">
+					<span>Status: </span>
+				</h2>
 
-				<h4 class="text-danger">
-					GAS FEE: <span id="myBarValue">78</span>
+				<h4 class="text-dark">
+					GAS FEE: <span id="myBarValue" class="text-success">78</span>
 				</h4>
 				<div id="myProgress" class="mb-3 myProgress">
 					<div id="myBar" class="myBar transition bg-success" style="transition: 2s;"></div>
 				</div>
 
-				<h4 class="text-danger">
-					CONFIRMATIONS: <span id="myBar1Value">34</span>
+				<h4 class="text-dark">
+					CONFIRMATIONS: <span id="myBar1Value" class="text-success">34</span>
 				</h4>
 				<div id="myProgress" class="mb-3 myProgress">
 					<div id="myBar1" class="myBar transition bg-success" style="transition: 2s;"></div>
 				</div>
 
-				<h4 class="text-danger">
-					TPS: <span id="myBar2Value">32</span>
+				<h4 class="text-dark">
+					TPS: <span id="myBar2Value" class="text-success">32</span>
 				</h4>
 				<div id="myProgress" class="mb-3 myProgress">
 					<div id="myBar2" class="myBar transition bg-success" style="transition: 2s;"></div>
 				</div>
 
-				<h4 class="text-danger">SHIP STATUS:</h4>
-				<p class="text-success text-glow">OPERATIONAL</p>
+				<h4 class="text-dark">SHIP STATUS:</h4>
+				<p class="h1 text-success text-glow">OPERATIONAL</p>
 
-				<img src="https://images2.imgbox.com/f1/08/hvjgYjV7_o.jpg" class="rocket-img w-100">
+				<img src="https://images2.imgbox.com/f1/08/hvjgYjV7_o.jpg" class="d-none d-lg-block rocket-img w-100">
 			</div>
 
 			<div class="col-lg-8 py-5 border-dark thick-border">
