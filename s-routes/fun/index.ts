@@ -8,7 +8,7 @@ const path = require('path')
 const router = express.Router().use(cors())
 
 
-const file = `
+const html = `
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -128,6 +128,19 @@ const file = `
 	}
 </style>
 
+<style>
+	.myProgress {
+		width: 100%;
+		background-color: white;
+		border: solid 3px;
+	}
+	
+	.myBar {
+		width: 30%;
+		height: 30px;
+	}
+</style>
+
 <body>
 	<!-- NavBar -->
 	<div class="border-bottom border-dark thick-border">
@@ -161,8 +174,31 @@ const file = `
 	<div class="container">
 		<div class="row">
 			<div class="d-none d-lg-block col-lg-4 py-5 border-right border-dark thick-border">
-				<h4 class="text-muted">SHIP STATUS:</h4>
+
+				<h4 class="text-danger">
+					GAS FEE: <span id="myBarValue">78</span>
+				</h4>
+				<div id="myProgress" class="mb-3 myProgress">
+					<div id="myBar" class="myBar transition bg-success" style="transition: 2s;"></div>
+				</div>
+
+				<h4 class="text-danger">
+					CONFIRMATIONS: <span id="myBar1Value">34</span>
+				</h4>
+				<div id="myProgress" class="mb-3 myProgress">
+					<div id="myBar1" class="myBar transition bg-success" style="transition: 2s;"></div>
+				</div>
+
+				<h4 class="text-danger">
+					TPS: <span id="myBar2Value">32</span>
+				</h4>
+				<div id="myProgress" class="mb-3 myProgress">
+					<div id="myBar2" class="myBar transition bg-success" style="transition: 2s;"></div>
+				</div>
+
+				<h4 class="text-danger">SHIP STATUS:</h4>
 				<p class="text-success text-glow">OPERATIONAL</p>
+
 				<img src="https://images2.imgbox.com/f1/08/hvjgYjV7_o.jpg" class="rocket-img w-100">
 			</div>
 
@@ -182,7 +218,7 @@ const file = `
 
 				<div class="row">
 					<div class="col-6">
-						<a href="https://ethereum.org/en/wallets/" target="_blank">
+						<a href="https://ethereum.org/en/wallets/">
 							<button class="btn btn-success w-100 deploy-button">DEPLOY</button>
 						</a>
 					</div>
@@ -219,11 +255,9 @@ const file = `
 					</div>
 
 					<div class="col-12">
-						<a href="https://github.com/w3st-io/cardinal" target="_blank">
-							<button class="btn btn-lg btn-danger w-100 hyper-jump">
-								HYPER-JUMP
-							</button>
-						</a>
+						<button class="btn btn-lg btn-danger w-100 hyper-jump">
+							HYPER-JUMP
+						</button>
 					</div>
 				</div>
 			</div>
@@ -235,15 +269,15 @@ const file = `
 		<div class="container">
 			<div class="row text-center">
 				<div class="col-6">
-					<a href="https://ethereum.org" target="_blank" class="text-light"><h6>ETH</h6></a>
-					<a href="https://bitcoin.com" target="_blank" class="text-light"><h6>BTC</h6></a>
-					<a href="https://chain.link" target="_blank" class="text-light"><h6>LINK</h6></a>
+					<a href="https://ethereum.org" class="text-light"><h6>ETH</h6></a>
+					<a href="https://bitcoin.com" class="text-light"><h6>BTC</h6></a>
+					<a href="https://chain.link" class="text-light"><h6>LINK</h6></a>
 				</div>
 
 				<div class="col-6">
-					<a href="https://uniswap.com" target="_blank" class="text-light"><h6>UNI</h6></a>
-					<a href="https://curve.fi" target="_blank" class="text-light"><h6>CRV</h6></a>
-					<a href="https://olympusdao.finance" target="_blank" class="text-light"><h6>OHM</h6></a>
+					<a href="https://uniswap.com" class="text-light"><h6>UNI</h6></a>
+					<a href="https://curve.fi" class="text-light"><h6>CRV</h6></a>
+					<a href="https://olympusdao.finance" class="text-light"><h6>OHM</h6></a>
 				</div>
 			</div>
 		</div>
@@ -319,13 +353,91 @@ const file = `
 	}
 	window.setInterval(flash2, 500)
 </script>
+
+<!-- Gas Fee -->
+<script>
+	var width = 10;
+	var i = 0;
+	var elem = document.getElementById("myBar");
+
+	if (i == 0) {
+		i = 1;
+
+		function frame() {
+			if (width >= 100) {
+				clearInterval(id)
+				i = 0;
+			}
+			else {
+				width = Math.floor(Math.random() * 100);
+				
+				elem.style.width = width + "%"
+				document.getElementById("myBarValue").innerText = width
+			}
+		}
+
+		var id = setInterval(frame, 1000);
+	}
+</script>
+
+<!-- Blocks -->
+<script>
+	var width1 = 10;
+	var i1 = 0;
+	var elem1 = document.getElementById("myBar1");
+
+	if (i1 == 0) {
+		i1 = 1
+
+		function frame1() {
+			if (width1 >= 100) {
+				clearInterval(id1)
+				i1 = 0;
+			}
+			else {
+				width1 = Math.floor(Math.random() * 100);
+				
+				elem1.style.width = width1 + "%"
+				document.getElementById("myBar1Value").innerText = width1
+			}
+		}
+
+		var id1 = setInterval(frame1, 1000);
+	}
+</script>
+
+<!-- TPS -->
+<script>
+	var width2 = 10;
+	var i2 = 0;
+	var elem2 = document.getElementById("myBar2");
+
+	if (i2 == 0) {
+		i2 = 1;
+
+		function frame2() {
+			if (width2 >= 100) {
+				clearInterval(id2)
+				i2 = 0;
+			}
+			else {
+				width2 = Math.floor(Math.random() * 100)
+				
+				elem2.style.width = width2 + "%"
+				document.getElementById("myBar2Value").innerText = width2
+			}
+		}
+
+		var id2 = setInterval(frame2, 1000);
+	}
+</script>
 `
 
 
 router.get(
 	'/',
 	async (req, res) => {
-		res.send(file)
+		res.send(html)
 	}
 )
 
