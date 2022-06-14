@@ -172,7 +172,7 @@ const file = `
 						<hr class="border-dark thick-border">
 					</div>
 
-					<div class="col-5">
+					<div class="col-lg-5">
 						<h1>DESTINATION</h1>
 
 						<h6 class="bg-dark text-light">NAME:</h6>
@@ -185,7 +185,7 @@ const file = `
 						<p>(3, 3) M/S/S</p>
 					</div>
 
-					<div class="col-7 text-center">
+					<div class="col-lg-7 text-center">
 						<img
 							src="https://images2.imgbox.com/5c/e3/VzYJM6a3_o.gif"
 							class="w-100"
