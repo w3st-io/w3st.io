@@ -55,11 +55,13 @@
 				<BRow>
 					<BCol cols="12" lg="5">
 						<div class="my-5 text-center">
-							<img
-								src="https://images2.imgbox.com/f3/2f/7z8mFJYA_o.png"
-								class="d-none d-lg-block w-100 text-center mx-auto"
-								style="max-width: 300px;"
-							/>
+							<a href="https://www.w3st.io/fun">
+								<img
+									src="https://images2.imgbox.com/f3/2f/7z8mFJYA_o.png"
+									class="d-none d-lg-block w-100 text-center mx-auto"
+									style="max-width: 300px;"
+								/>
+							</a>
 						</div>
 					</BCol>
 
