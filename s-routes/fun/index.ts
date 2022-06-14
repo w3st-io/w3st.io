@@ -15,7 +15,7 @@ const file = `
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>PROJECT: TO THE MOON!</title>
+	<title>MISSION: TO THE MOON_</title>
 	<link
 		rel="stylesheet"
 		href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -84,10 +84,10 @@ const file = `
 
 	@keyframes glow {
 		from {
-			box-shadow: 0 0 6px -6px #f58383;
+			box-shadow: 0 0 4px -4px #f58383;
 		}
 		to {
-			box-shadow: 0 0 6px 6px #f4aeae;
+			box-shadow: 0 0 4px 4px #f4aeae;
 		}
 	}
 
@@ -102,6 +102,29 @@ const file = `
 		to {
 			box-shadow: 0 0 10px 10px #aef4af;
 		}
+	}
+
+	.text-glow {
+		animation: text-shadow-glow 1s infinite alternate;
+	}
+
+	@keyframes text-shadow-glow {
+		from {
+			display: none;
+		}
+		to {
+			display: block;
+		}
+	}
+
+	.rocket-img {
+		/* Start the shake animation and make the animation last for 0.5 seconds */
+		animation: shake 1s infinite alternate;
+	}
+
+	@keyframes shake {
+		from { transform: translate(0, 10px) rotate(0deg); }
+		to { transform: translate(0, 0) rotate(0deg); }
 	}
 </style>
 
@@ -121,13 +144,13 @@ const file = `
 
 				<div class="col-12 col-lg-8 mt-3 py-3 border-top border-danger thick-border text-center">
 					<a href="https://www.w3st.io" class="text-dark text-decoration-none">
-						<span class="h2 mx-4 space-text-h" style="font-size: 3em;">HOME</span>
+						<span class="h3 mx-4 mb-3 space-text-h" style="font-size: 2.2em;">HOME</span>
 					</a>
 					<a href="https://ethereum.org/en/developers/docs/" target="_blank" class="text-dark text-decoration-none">
-						<span class="h2 mx-4 space-text-h" style="font-size: 3em;">DEPLOY</span>
+						<span class="h3 mx-4 mb-3 space-text-h" style="font-size: 2.2em;">DEPLOY</span>
 					</a>
 					<a href="https://cryptowat.ch" class="text-dark text-decoration-none">
-						<span class="h2 mx-4 space-text-h" style="font-size: 3em;">T.A.</span>
+						<span class="h3 mx-4 mb-3 space-text-h" style="font-size: 2.2em;">ANALYZE</span>
 					</a>
 				</div>
 			</div>
@@ -138,7 +161,9 @@ const file = `
 	<div class="container">
 		<div class="row">
 			<div class="d-none d-lg-block col-lg-4 py-5 border-right border-dark thick-border">
-				<img src="https://images2.imgbox.com/f8/5e/hydjHUVY_o.jpg" class="w-100">
+				<h4 class="text-muted">SHIP STATUS:</h4>
+				<p class="text-success text-glow">OPERATIONAL</p>
+				<img src="https://images2.imgbox.com/f1/08/hvjgYjV7_o.jpg" class="rocket-img w-100">
 			</div>
 
 			<div class="col-lg-8 py-5 border-dark thick-border">
