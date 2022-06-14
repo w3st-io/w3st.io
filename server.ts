@@ -23,7 +23,7 @@ const p_purchase_wad = require('./s-routes/pages/purchase/wad')
 const p_purchase_wah = require('./s-routes/pages/purchase/wah')
 const p_purchase_was = require('./s-routes/pages/purchase/was')
 const p_services = require( './s-routes/pages/services')
-const f_ = require ('./s-route/fun')
+const f_ = require ('./s-routes/fun')
 
 
 // [EXPRESS + SERVER] //
