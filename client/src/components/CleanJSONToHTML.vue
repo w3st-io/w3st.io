@@ -148,6 +148,10 @@
 		text-transform: uppercase;
 	}
 
+	.cleanJSON {
+		font-size: larger !important;
+	}
+
 	.img-container {
 		max-height: 600px;
 		overflow: hidden;
