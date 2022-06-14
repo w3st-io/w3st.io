@@ -182,7 +182,7 @@ const file = `
 
 				<div class="row">
 					<div class="col-6">
-						<a href="https://ethereum.org/en/wallets/">
+						<a href="https://ethereum.org/en/wallets/" target="_blank">
 							<button class="btn btn-success w-100 deploy-button">DEPLOY</button>
 						</a>
 					</div>
@@ -219,9 +219,11 @@ const file = `
 					</div>
 
 					<div class="col-12">
-						<button class="btn btn-lg btn-danger w-100 hyper-jump">
-							HYPER-JUMP
-						</button>
+						<a href="https://github.com/w3st-io/cardinal" target="_blank">
+							<button class="btn btn-lg btn-danger w-100 hyper-jump">
+								HYPER-JUMP
+							</button>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -233,15 +235,15 @@ const file = `
 		<div class="container">
 			<div class="row text-center">
 				<div class="col-6">
-					<a href="https://ethereum.org" class="text-light"><h6>ETH</h6></a>
-					<a href="https://bitcoin.com" class="text-light"><h6>BTC</h6></a>
-					<a href="https://chain.link" class="text-light"><h6>LINK</h6></a>
+					<a href="https://ethereum.org" target="_blank" class="text-light"><h6>ETH</h6></a>
+					<a href="https://bitcoin.com" target="_blank" class="text-light"><h6>BTC</h6></a>
+					<a href="https://chain.link" target="_blank" class="text-light"><h6>LINK</h6></a>
 				</div>
 
 				<div class="col-6">
-					<a href="https://uniswap.com" class="text-light"><h6>UNI</h6></a>
-					<a href="https://curve.fi" class="text-light"><h6>CRV</h6></a>
-					<a href="https://olympusdao.finance" class="text-light"><h6>OHM</h6></a>
+					<a href="https://uniswap.com" target="_blank" class="text-light"><h6>UNI</h6></a>
+					<a href="https://curve.fi" target="_blank" class="text-light"><h6>CRV</h6></a>
+					<a href="https://olympusdao.finance" target="_blank" class="text-light"><h6>OHM</h6></a>
 				</div>
 			</div>
 		</div>
