@@ -62,7 +62,7 @@ const file = `
 		border-width: 3px !important;
 	}
 	
-	@media only screen and (min-width: 992px) {
+	@media screen and (min-width: 992px) {
 		.logo { transform: translate(0px, 30px); }
 	}
 
@@ -71,7 +71,7 @@ const file = `
 	}
 
 	.mission-description {
-		height: 100px;
+		min-height: 100px;
 	}
 
 	.glow {
@@ -137,11 +137,11 @@ const file = `
 	<!-- Body -->
 	<div class="container">
 		<div class="row">
-			<div class="col-4 py-5 border-right border-dark thick-border">
+			<div class="d-none d-lg-block col-lg-4 py-5 border-right border-dark thick-border">
 				<img src="https://images2.imgbox.com/f8/5e/hydjHUVY_o.jpg" class="w-100">
 			</div>
 
-			<div class="col-8 py-5 border-dark thick-border">
+			<div class="col-lg-8 py-5 border-dark thick-border">
 				<div class="">
 					<h2 class="mb-5 text-light bg-dark text-uppercase">
 						<span>Mission: </span>
