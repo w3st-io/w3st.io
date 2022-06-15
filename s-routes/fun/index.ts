@@ -261,7 +261,7 @@ const html = `
 
 						<h4 class="text-dark">Time-Distance:</h4>
 						<p class="p-2 bg-dark text-light rounded">
-							34.657 LY
+						3.96 * 10^8 LY
 						</p>
 
 						<h4 class="text-dark">Astronaut:</h4>
