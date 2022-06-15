@@ -59,16 +59,8 @@
 	border-width: 3px !important;
 }
 
-.status-section {
-	border-width: 0px !important;
-}
-
 @media screen and (min-width: 992px) {
 	.logo { transform: translate(0px, 30px); }
-
-	.status-section {
-		border-width: 3px !important;
-	}
 }
 
 .logo:hover {
@@ -95,7 +87,7 @@
 
 <body>
 	<!-- NavBar -->
-	<div class="border-bottom border-danger thick-border">
+	<div class="mb-4 border-bottom border-dark thick-border">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-lg-4 mb-lg-5">
@@ -146,7 +138,7 @@
 	<div class="container">
 		<div class="row">
 			<!-- Title -->
-			<div class="col-12 border-bottom border-dark thick-border">
+			<div class="col-12 thick-border">
 				<h1
 					class="my-4 px-2 text-light text-uppercase border bg-dark border-dark rounded thick-border"
 					>
@@ -157,7 +149,7 @@
 			</div>
 
 			<!-- Status Section -->
-			<div class="col-lg-4 border-right border-dark status-section thick-border text-uppercase">
+			<div class="col-lg-4 thick-border text-uppercase">
 				<h2 class="mt-3 text-danger text-uppercase">
 					<span>Status</span>
 				</h2>
@@ -217,11 +209,14 @@
 				</p>
 				<div class="row">
 					<div class="col-6">
-						<a href="https://ethereum.org/en/wallets/">
+						<a
+							href="https://ethereum.org/en/wallets/"
+							target="_blank"
+						>
 							<button
 								class="btn btn-success btn-lg w-100 deploy-button"
 								style="border-radius: 30px;"
-							>DEPLOY</button>
+							>ENTER</button>
 						</a>
 					</div>
 
@@ -292,8 +287,11 @@
 					<a href="https://bitcoin.com" class="text-light">
 						<h6>BTC</h6>
 					</a>
-					<a href="https://chain.link" class="text-light">
-						<h6>LINK</h6>
+					<a href="https://polygon.technology" class="text-light">
+						<h6>MATIC</h6>
+					</a>
+					<a href="https://www.optimism.io/" class="text-light">
+						<h6>OP</h6>
 					</a>
 				</div>
 
@@ -304,20 +302,20 @@
 					<a href="https://curve.fi" class="text-light">
 						<h6>CRV</h6>
 					</a>
+					<a href="https://markerdao.com" class="text-light">
+						<h6>MKR</h6>
+					</a>
 					<a href="https://olympusdao.finance" class="text-light">
 						<h6>OHM</h6>
 					</a>
 				</div>
 
 				<div class="col-4">
-					<a href="https://polygon.technology" class="text-light">
-						<h6>MATIC</h6>
+					<a href="https://chain.link" class="text-light">
+						<h6>LINK</h6>
 					</a>
 					<a href="https://golem.network" class="text-light">
 						<h6>GLM</h6>
-					</a>
-					<a href="https://markerdao.com" class="text-light">
-						<h6>MKR</h6>
 					</a>
 				</div>
 			</div>
