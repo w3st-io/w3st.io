@@ -88,6 +88,22 @@ const html = `
 		height: 150px;
 	}
 
+	.flashing {
+		animation-duration: 400ms;
+		animation-name: blink;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+	 }
+
+	@keyframes blink {
+		from {
+			color: black;
+		}
+		to {
+			color: white;
+		}
+	}
+
 	.glow {
 		box-shadow: 0 0 20px 5px #f58383;
 	}
@@ -157,6 +173,7 @@ const html = `
 
 <body>
 	<!-- NavBar -->
+	<div class="flashing">sdfsdf</div>
 	<div class="border-bottom border-dark thick-border">
 		<div class="container">
 			<div class="row">
