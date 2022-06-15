@@ -10,6 +10,7 @@ import blog from '../pages/blog'
 import blog_read from '../pages/blog/read'
 import code from '../pages/code'
 import contact from '../pages/contact'
+//import crypto from '../pages/crypto'
 import emailSent from '../pages/email-sent'
 import privacyPolicy from '../pages/privacy-policy'
 import purchase_successful from '../pages/purchase/successful'
@@ -70,6 +71,16 @@ const router = new VueRouter({
 				header: true,
 				auth: true,
 				title: 'Blog'
+			},
+		},
+		{
+			path: '/crypto',
+			name: 'crypto',
+			component: blog,
+			meta: {
+				header: true,
+				auth: true,
+				title: 'Crypto'
 			},
 		},
 		// purchase_successful //
