@@ -224,14 +224,14 @@ const html = `
 
 			<div class="col-lg-8 pt-5 border-dark thick-border">
 				<div class="">
-					<h2
+					<h1
 						class="mb-5 px-2 text-dark text-uppercase border border-dark rounded"
 						style="border-width: 3px !important;"
 					>
 						<span>Mission:</span>
 						<span id="mission-name"></span>
 						<span id="mission-name-underscore">_</span>
-					</h2>
+					</h1>
 
 					<p class="mb-5 p-2 bg-dark mission-description rounded">
 						<span id="mission-description" class="text-light"></span>
