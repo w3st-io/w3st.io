@@ -38,6 +38,12 @@
 					</div>
 				</a>
 			</BCol>
+
+			<BCol cols="12">
+				<a href="https://www.w3st.io/fun" target="_blank">
+					<BButton variant="outline-dark" pill>Bored?</BButton>
+				</a>
+			</BCol>
 		</BRow>
 	</BContainer>
 </template>
