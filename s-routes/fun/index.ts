@@ -176,7 +176,7 @@ const html = `
 					<a href="https://ethereum.org/en/developers/docs/" target="_blank" class="text-dark text-decoration-none">
 						<span class="h3 mx-4 mb-3 space-text-h" style="font-size: 2.2em;">DEPLOY</span>
 					</a>
-					<a href="https://cryptowat.ch" class="text-dark text-decoration-none">
+					<a href="https://cryptowat.ch" target="_blank" class="text-dark text-decoration-none">
 						<span class="h3 mx-4 mb-3 space-text-h" style="font-size: 2.2em;">ANALYZE</span>
 					</a>
 				</div>
@@ -290,12 +290,12 @@ const html = `
 					</div>
 
 					<div class="col-12">
-						<button
-							class="mb-5 btn btn-lg btn-danger w-100 hyper-jump"
-							style="border-radius: 30px;"
-						>
-							HYPER-JUMP
-						</button>
+						<a href="https://github.com/w3st-io/cardinal" target="_blank">
+							<button
+								class="mb-5 btn btn-lg btn-danger w-100 hyper-jump"
+								style="border-radius: 30px;"
+							>HYPER-JUMP</button>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -306,16 +306,22 @@ const html = `
 	<div class="bg-dark py-5">
 		<div class="container">
 			<div class="row text-center">
-				<div class="col-6">
+				<div class="col-4">
 					<a href="https://ethereum.org" class="text-light"><h6>ETH</h6></a>
 					<a href="https://bitcoin.com" class="text-light"><h6>BTC</h6></a>
 					<a href="https://chain.link" class="text-light"><h6>LINK</h6></a>
 				</div>
 
-				<div class="col-6">
+				<div class="col-4">
 					<a href="https://uniswap.com" class="text-light"><h6>UNI</h6></a>
 					<a href="https://curve.fi" class="text-light"><h6>CRV</h6></a>
 					<a href="https://olympusdao.finance" class="text-light"><h6>OHM</h6></a>
+				</div>
+
+				<div class="col-4">
+					<a href="https://polygon.technology" class="text-light"><h6>MATIC</h6></a>
+					<a href="https://golem.network" class="text-light"><h6>GLM</h6></a>
+					<a href="https://markerdao.com" class="text-light"><h6>MKR</h6></a>
 				</div>
 			</div>
 		</div>
