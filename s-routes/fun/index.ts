@@ -58,7 +58,7 @@ const html = `
 	}
 
 	.space-text-h:hover {
-		background-color: #000000!important;
+		background-color: #000000 !important;
 		color: rgb(255, 255, 255);
 	}
 
@@ -87,19 +87,19 @@ const html = `
 	}
 
 	.glow {
-		animation: glow .3s infinite alternate;
+		box-shadow: 0 0 20px 5px #f58383;
 	}
 
 	.hyper-jump {
-		animation: glow .3s infinite alternate;
+		animation: glow 1s infinite alternate;
 	}
 
 	@keyframes glow {
 		from {
-			box-shadow: 0 0 4px -4px #f58383;
+			box-shadow: 0 0 20px -5px #f58383;
 		}
 		to {
-			box-shadow: 0 0 4px 4px #f4aeae;
+			box-shadow: 0 0 20px 5px #f58383;
 		}
 	}
 
@@ -109,10 +109,10 @@ const html = `
 
 	@keyframes deploy-button {
 		from {
-			box-shadow: 0 0 10px -10px #aef4af;
+			box-shadow: 0 0 10px 10px #aef4af;
 		}
 		to {
-			box-shadow: 0 0 10px 10px #aef4af;
+			box-shadow: 0 0 10px -10px #aef4af;
 		}
 	}
 
@@ -149,7 +149,7 @@ const html = `
 	
 	.myBar {
 		width: 30%;
-		height: 30px;
+		height: 20px;
 	}
 </style>
 
@@ -186,8 +186,8 @@ const html = `
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-4 py-5 border-right border-dark thick-border first-section">
-				<h2 class="mb-5 text-light bg-dark text-uppercase">
-					<span>Status: </span>
+				<h2 class="text-danger text-uppercase">
+					<span>Status</span>
 				</h2>
 
 				<h4 class="text-dark">
@@ -212,9 +212,13 @@ const html = `
 				</div>
 
 				<h4 class="text-dark">SHIP STATUS:</h4>
-				<p class="h1 text-success text-glow">OPERATIONAL</p>
+				<p class="text-success text-glow">&#9679; OPERATIONAL</p>
 
-				<img src="https://images2.imgbox.com/f1/08/hvjgYjV7_o.jpg" class="d-none d-lg-block rocket-img w-100">
+				<img
+					src="https://images2.imgbox.com/f1/08/hvjgYjV7_o.jpg"
+					class="d-none d-lg-block mx-auto rocket-img w-100"
+					style="max-width: 200px;"
+				>
 			</div>
 
 			<div class="col-lg-8 py-5 border-dark thick-border">
@@ -234,13 +238,19 @@ const html = `
 				<div class="row">
 					<div class="col-6">
 						<a href="https://ethereum.org/en/wallets/">
-							<button class="btn btn-success w-100 deploy-button">DEPLOY</button>
+							<button
+								class="btn btn-success w-100 deploy-button"
+								style="border-radius: 30px;"
+							>DEPLOY</button>
 						</a>
 					</div>
 
 					<div class="col-6">
 						<a href="https://w3st.io">
-							<button class="btn btn-outline-danger w-100">ABORT</button>
+							<button
+								class="btn btn-outline-danger w-100"
+								style="border-radius: 30px;"
+							>ABORT</button>
 						</a>
 					</div>
 
@@ -270,7 +280,10 @@ const html = `
 					</div>
 
 					<div class="col-12">
-						<button class="btn btn-lg btn-danger w-100 hyper-jump">
+						<button
+							class="btn btn-lg btn-danger w-100 hyper-jump"
+							style="border-radius: 30px;"
+						>
 							HYPER-JUMP
 						</button>
 					</div>
