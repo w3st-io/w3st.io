@@ -12,7 +12,8 @@ import Segment from '../../s-middleware/Segment'
 const router = express.Router().use(cors())
 
 
-const html = `<!DOCTYPE html>
+const html = `
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -523,7 +524,9 @@ const html = `<!DOCTYPE html>
 	from { transform: translate(0, 10px) rotate(0deg); }
 	to { transform: translate(0, 0) rotate(0deg); }
 }
-</style>`
+</style>
+`
+
 router.get(
 	'/',
 	Segment.page(),

@@ -7,8 +7,6 @@
   "description": "this is a server",
   "main": "server.js",
   "scripts": {
-    "copy-static": "mkdir ./dist/s-static/ && cp -r ./s-static/ ./dist/",
-    
     "build": "rimraf dist && npx tsc", 
 
     "predev": "npm run build",
