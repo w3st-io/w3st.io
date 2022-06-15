@@ -35,6 +35,7 @@ const html = `
 
 <style>
 	* {
+		letter-spacing: 2px;
 		font-family: 'Ubuntu Condensed', sans-serif;
 		font-family: 'Orbitron', sans-serif;
 	}
@@ -83,7 +84,7 @@ const html = `
 	}
 
 	.mission-description {
-		min-height: 100px;
+		min-height: 232px;
 	}
 
 	.glow {
@@ -185,7 +186,7 @@ const html = `
 	<!-- Body -->
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-4 py-5 border-right border-dark thick-border first-section">
+			<div class="col-lg-4 pt-5 border-right border-dark thick-border first-section">
 				<h2 class="text-danger text-uppercase">
 					<span>Status</span>
 				</h2>
@@ -221,17 +222,20 @@ const html = `
 				>
 			</div>
 
-			<div class="col-lg-8 py-5 border-dark thick-border">
+			<div class="col-lg-8 pt-5 border-dark thick-border">
 				<div class="">
-					<h2 class="mb-5 text-light bg-dark text-uppercase">
-						<span>Mission: </span>
+					<h2
+						class="mb-5 px-2 text-dark text-uppercase border border-dark rounded"
+						style="border-width: 3px !important;"
+					>
+						<span>Mission:</span>
 						<span id="mission-name"></span>
 						<span id="mission-name-underscore">_</span>
 					</h2>
 
-					<p class="mb-5 text-dark mission-description">
-						<span id="mission-description"></span>
-						<span id="mission-name-underscore2" class="text-dark">_</span>
+					<p class="mb-5 p-2 bg-dark mission-description rounded">
+						<span id="mission-description" class="text-light"></span>
+						<span id="mission-name-underscore2">_</span>
 					</p>
 				</div>
 
@@ -239,7 +243,7 @@ const html = `
 					<div class="col-6">
 						<a href="https://ethereum.org/en/wallets/">
 							<button
-								class="btn btn-success w-100 deploy-button"
+								class="btn btn-success btn-lg w-100 deploy-button"
 								style="border-radius: 30px;"
 							>DEPLOY</button>
 						</a>
@@ -248,27 +252,32 @@ const html = `
 					<div class="col-6">
 						<a href="https://w3st.io">
 							<button
-								class="btn btn-outline-danger w-100"
+								class="btn btn-outline-danger btn-lg w-100"
 								style="border-radius: 30px;"
 							>ABORT</button>
 						</a>
 					</div>
 
-					<div class="col-12 py-3">
-						<hr class="border-dark thick-border">
+					<div class="col-12 py-4">
+						<hr class="border-dark thick-border" style="border-style: dashed !important;">
 					</div>
 
-					<div class="col-lg-5">
-						<h1>DESTINATION</h1>
+					<div class="col-12">
+						<h2
+							class="mb-5 px-2 text-dark border border-dark rounded"
+							style="border-width: 3px !important;"
+						>DESTINATION</h2>
+					</div>
 
-						<h6 class="bg-dark text-light">NAME:</h6>
-						<p>HARPOONJS.ETH</p>
+					<div class="col-lg-5 mb-5">
+						<h4 class="text-dark">PLANET NAME:</h4>
+						<p class="p-2 bg-dark text-light rounded">HARPOONJS.ETH</p>
 
-						<h6 class="bg-dark text-light">TARGET:</h6>
-						<p>34.657 LY</p>
+						<h4 class="text-dark">DISTANCE:</h4>
+						<p class="p-2 bg-dark text-light rounded">34.657 LY</p>
 
-						<h6 class="bg-dark text-light">GRAVITATIONAL FORCE:</h6>
-						<p>(3, 3) M/S/S</p>
+						<h4 class="text-dark">TARGET:</h4>
+						<p class="p-2 bg-dark text-light rounded">Ω (3,3)</p>
 					</div>
 
 					<div class="col-lg-7 text-center">
@@ -281,7 +290,7 @@ const html = `
 
 					<div class="col-12">
 						<button
-							class="btn btn-lg btn-danger w-100 hyper-jump"
+							class="mb-5 btn btn-lg btn-danger w-100 hyper-jump"
 							style="border-radius: 30px;"
 						>
 							HYPER-JUMP
@@ -340,10 +349,10 @@ const html = `
 
 	function flash() {
 		if (displayed) {
-			underscore.style.display = 'none'
+			underscore.style.color = 'black'
 		}
 		else {
-			underscore.style.display = ''
+			underscore.style.color = 'white'
 		}
 		displayed = !displayed;
 	}
@@ -372,10 +381,10 @@ const html = `
 
 	function flash2() {
 		if (displayed2) {
-			underscore2.style.display = 'none'
+			underscore2.style.color = 'black'
 		}
 		else {
-			underscore2.style.display = ''
+			underscore2.style.color = 'white'
 		}
 		displayed2 = !displayed2;
 	}
