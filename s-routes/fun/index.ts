@@ -84,7 +84,7 @@ const html = `
 	}
 
 	.mission-description {
-		min-height: 232px;
+		min-height: 100px;
 	}
 
 	.glow {
