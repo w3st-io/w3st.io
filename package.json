@@ -7,7 +7,9 @@
   "description": "this is a server",
   "main": "server.js",
   "scripts": {
-    "build": "rimraf dist && npx tsc && mkdir ./dist/s-static/ && cp -r ./s-static/ ./dist/", 
+    "copy-static": "mkdir ./dist/s-static/ && cp -r ./s-static/ ./dist/",
+    
+    "build": "rimraf dist && npx tsc", 
 
     "predev": "npm run build",
     "dev": "cross-env NODE_ENV=development concurrently \"tsc --watch\" \"nodemon -q dist/server.js\"",
