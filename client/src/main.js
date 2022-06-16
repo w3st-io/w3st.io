@@ -2,7 +2,6 @@
 import aos from 'aos'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import Vue from 'vue'
-import Editor from 'vue-editor-js/src/index'
 import Viewer from 'v-viewer'
 import VueRellax from 'vue-rellax'
 import VueYouTubeEmbed from 'vue-youtube-embed'
@@ -20,7 +19,6 @@ import '@/assets/styles/style.scss'
 
 
 // [USE] //
-Vue.use(Editor)
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
 Vue.use(Viewer)
