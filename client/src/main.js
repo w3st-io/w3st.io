@@ -1,4 +1,4 @@
-// [IMPORT] //
+// [IMPORT]
 import aos from 'aos'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import Vue from 'vue'
@@ -10,7 +10,7 @@ import 'aos/dist/aos.css'
 import 'tiny-slider/src/tiny-slider.scss'
 import 'viewerjs/dist/viewer.css'
 
-// [IMPORT] Personal //
+// [IMPORT] Personal
 import App from '@/App.vue'
 import router from '@/router'
 import store from '@/store'
@@ -18,7 +18,7 @@ import '@/assets/styles/bootstrap-override.scss'
 import '@/assets/styles/style.scss'
 
 
-// [USE] //
+// [USE]
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
 Vue.use(Viewer)
@@ -32,12 +32,15 @@ Vue.use(VueLazyload, {
 })
 
 
-// [EXPORT] EventBus //
+// [EXPORT] EventBus
 export const EventBus = new Vue()
 
 
-// [CONFIG + RENDER] //
+// [CONFIG]
 Vue.config.productionTip = false
+
+
+// [RENDER]
 new Vue({
   router,
   store,

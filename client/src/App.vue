@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<div id="app" :key="appKey" class="">
+		<div id="app" :key="appKey">
 			<!-- Navbar -->
 			<NavBar />
 
