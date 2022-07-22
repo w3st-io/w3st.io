@@ -15,7 +15,7 @@
 						style="min-width: 100px;"
 					>{{ f }}</td>
 
-					<td>Pricing</td>
+					<td v-if="showPrices">Pricing</td>
 				</tr>
 			</thead>
 
@@ -41,7 +41,7 @@
 					</td>
 
 					<!-- Variant Name -->
-					<td class="text-center">
+					<td v-if="showPrices" class="text-center">
 						<BBadge variant="success">
 							<h6 class="m-0 font-weight-bold">
 								{{ v.price }}
@@ -73,7 +73,12 @@
 			service: {
 				type: Object,
 				required: true,
+			},
+
+			showPrices: {
+				type: Boolean,
+				default: true,
 			}
-		}
+		},
 	}
 </script>

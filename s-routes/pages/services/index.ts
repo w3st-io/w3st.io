@@ -3,6 +3,7 @@ import cors from 'cors'
 import express from 'express'
 
 // [IMPORT] Personal //
+import config from '../../../s-config'
 import Segment from '../../../s-middleware/Segment'
 
 
@@ -15,7 +16,9 @@ router.get(
 	'/',
 	Segment.page(),
 	async (req: any, res: any) => {
-		res.send()
+		res.send({
+			showPrices: config.app.showPrices == 'false' ? false : true
+		})
 	}
 )
 

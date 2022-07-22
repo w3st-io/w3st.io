@@ -40,7 +40,10 @@
 
 				<BCol cols="12">
 					<div class="table-holder">
-						<FeaturesTable :service="service" />
+						<FeaturesTable
+							:service="service"
+							:showPrices="showPrices"
+						/>
 					</div>
 				</BCol>
 			</BRow>
@@ -71,6 +74,11 @@
 			service: {
 				type: Object,
 				required: true,
+			},
+
+			showPrices: {
+				type: Boolean,
+				default: true,
 			},
 		},
 		

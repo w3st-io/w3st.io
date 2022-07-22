@@ -14,7 +14,9 @@ export default {
 		baseURL: {
 			client: process.env.APP__BASE_URL || 'http://localhost:8080',
 			server: process.env.APP__BASE_URL || 'http://localhost:5000',
-		}
+		},
+
+		showPrices: process.env.APP__SHOW_PRICES,
 	},
 
 	// [API] //
