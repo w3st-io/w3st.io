@@ -283,7 +283,7 @@ router.get(
 								</div>
 
 								<div class="col-12">
-									<a href="https://github.com/w3st-io/cardinal" target="_blank">
+									<a href="https://etherscan.io/address/0x1f66011C758E01dAdCb520d5FD69b1Ea6ae91487#code" target="_blank">
 										<button
 											class="mb-5 btn btn-lg btn-danger w-100 hyper-jump"
 										>HYPER-JUMP</button>
