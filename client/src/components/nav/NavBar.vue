@@ -26,13 +26,6 @@
 						<span>Home</span>
 					</RouterLink>
 
-					<!-- Services -->
-					<RouterLink
-						to="/services" class="mx-3 text-dark menu-link"
-					>
-						<span>Services</span>
-					</RouterLink>
-
 					<!-- Contact -->
 					<RouterLink
 						to="/contact" class="mx-3 text-dark menu-link"
@@ -45,13 +38,6 @@
 						to="/code" class="mx-3 text-dark menu-link"
 					>
 						<span>Code</span>
-					</RouterLink>
-
-					<!-- About -->
-					<RouterLink
-						to="/about" class="mx-3 text-dark menu-link"
-					>
-						<span>About</span>
 					</RouterLink>
 
 					<!-- About -->

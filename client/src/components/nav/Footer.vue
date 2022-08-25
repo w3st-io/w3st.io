@@ -29,11 +29,6 @@
 							</RouterLink>
 						</li>
 						<li>
-							<RouterLink to="/services">
-								Services
-							</RouterLink>
-						</li>
-						<li>
 							<RouterLink to="/contact">
 								Contact
 							</RouterLink>
@@ -41,11 +36,6 @@
 						<li>
 							<RouterLink to="/code">
 								Code
-							</RouterLink>
-						</li>
-						<li>
-							<RouterLink to="/about">
-								About
 							</RouterLink>
 						</li>
 						<li>
