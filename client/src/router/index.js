@@ -5,7 +5,7 @@ import VueRouter from 'vue-router'
 
 // [IMPORT] Personal //
 import index from '../pages'
-import about from '../pages/about'
+//import about from '../pages/about'
 import blog from '../pages/blog'
 import blog_read from '../pages/blog/read'
 import code from '../pages/code'
@@ -18,7 +18,7 @@ import purchase_unsuccessful from '../pages/purchase/unsuccessful'
 import purchase_wad from '../pages/purchase/wad'
 import purchase_wah from '../pages/purchase/wah'
 import purchase_was from '../pages/purchase/was'
-import services from '../pages/services'
+//import services from '../pages/services'
 import services_info from '../pages/services/info'
 import notFound from '../pages/404'
 
@@ -41,6 +41,7 @@ const router = new VueRouter({
 			},
 		},
 		// About //
+		/*
 		{
 			path: '/about',
 			name: 'about',
@@ -51,6 +52,7 @@ const router = new VueRouter({
 				title: 'About'
 			},
 		},
+		*/
 		// Blog //
 		{
 			path: '/blog',
@@ -183,6 +185,7 @@ const router = new VueRouter({
 			},
 		},
 		// services //
+		/*
 		{
 			path: '/services',
 			name: 'services',
@@ -193,6 +196,7 @@ const router = new VueRouter({
 				title: 'Services'
 			},
 		},
+		*/
 		{
 			path: '/services/info/:serviceid',
 			name: 'services_info',
