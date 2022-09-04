@@ -8,7 +8,7 @@ const axios = require('axios')
 
 // [AUTH-AXIOS] //
 const authAxios = axios.create({
-	baseURL: 'https://www.rptide.com/api/user/web-content',
+	baseURL: 'https://www.rptide.com/api/web-content',
 	headers: {
 		authorization: `Bearer ${config.api.rptide.privateKey}`,
 	}
@@ -44,8 +44,6 @@ module.exports = {
 			}
 		}
 		catch (err) {
-			console.log(err);
-			
 			return {
 				executed: false,
 				status: false,
