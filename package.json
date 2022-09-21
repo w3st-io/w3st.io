@@ -4,14 +4,17 @@
   "engines": {
     "node": "14.x"
   },
-  "description": "this is a server",
+  "description": "",
   "main": "server.js",
   "scripts": {
-    "build": "rimraf dist && npx tsc && mkdir dist/s-static/ && cp -r s-static/ dist/",
+    "build": "rimraf dist && npx tsc && cp -r s-static/ dist/",
+    
     "predev": "npm run build",
     "dev": "cross-env NODE_ENV=development concurrently \"tsc --watch\" \"nodemon -q dist/server.js\"",
+    
     "prestart": "npm run build",
     "start": "cross-env NODE_ENV=production node dist/server.js",
+    
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm install --only=dev --prefix client && npm run build --prefix client"
   },
   "author": "Aleem Ahmed",
