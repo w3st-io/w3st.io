@@ -2,7 +2,7 @@
 const clientProjects = require('../client-projects')
 
 
-// [EXPORT] //
+// [EXPORT]
 module.exports = {
 	r1: {
 		c1: {

@@ -87,7 +87,7 @@
 					message: this.message
 				})
 
-				// [LOG] //
+				// [LOG]
 				console.log('MailService.s_getQuote:', mObj)
 
 				if (mObj.status) { router.push({ name: 'email-sent' }) }

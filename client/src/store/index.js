@@ -1,9 +1,9 @@
-// [IMPORT] //
+// [IMPORT]
 import Vue from 'vue'
 import Vuex from 'vuex'
 
 
-// [USE] //
+// [USE]
 Vue.use(Vuex)
 
 

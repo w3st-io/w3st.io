@@ -1,4 +1,4 @@
-// [EXPORT] //
+// [EXPORT]
 module.exports = {
 	logo: require('../assets/images/logo.svg'),
 

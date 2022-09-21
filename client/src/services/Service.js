@@ -1,8 +1,8 @@
-// [IMPORT] //
+// [IMPORT]
 import axios from 'axios'
 
 
-// [AUTH-TOKEN-SETUP] //
+// [AUTH-TOKEN-SETUP]
 async function authAxios() {
 	return axios.create({
 		baseURL: '/api',
@@ -22,7 +22,7 @@ async function index() {
 }
 
 
-// [EXPORT] //
+// [EXPORT]
 export default {
 	authAxios,
 	index,

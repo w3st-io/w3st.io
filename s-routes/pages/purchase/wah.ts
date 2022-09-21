@@ -1,4 +1,4 @@
-// [REQUIRE] //
+// [REQUIRE]
 import cors from 'cors'
 import express from 'express'
 import validator from 'validator'
@@ -7,11 +7,11 @@ import validator from 'validator'
 import config from '../../../s-config'
 
 
-// [EXPRESS + USE] //
+// [EXPRESS + USE]
 const router = express.Router().use(cors())
 
 
-// [MAIN-ROUTE] //
+// [MAIN-ROUTE]
 router.get(
 	'/',
 	async (req: any, res: any) => {
@@ -65,5 +65,5 @@ router.get(
 	}
 )
 
-// [EXPORT] //
+// [EXPORT]
 module.exports = router

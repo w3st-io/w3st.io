@@ -1,8 +1,8 @@
-// [IMPORT] //
+// [IMPORT]
 import axios from 'axios'
 
 
-// [AUTH-TOKEN-SETUP] //
+// [AUTH-TOKEN-SETUP]
 async function authAxios() {
 	return axios.create({
 		baseURL: '/api/mail',
@@ -57,7 +57,7 @@ async function s_careers(formData) {
 }
 
 
-// [EXPORT] //
+// [EXPORT]
 export default {
 	authAxios,
 	s_getQuote,

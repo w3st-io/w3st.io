@@ -55,7 +55,7 @@
 
 
 <script>
-	// [IMPORT] //
+	// [IMPORT]
 	import { getIdFromURL } from 'vue-youtube-embed'
 
 	// [IMPORT] Personal //

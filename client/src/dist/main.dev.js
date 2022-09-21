@@ -39,9 +39,9 @@ require("@/assets/styles/style.scss");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-// [IMPORT] //
+// [IMPORT]
 // [IMPORT] Personal //
-// [USE] //
+// [USE]
 _vue["default"].use(_index["default"]);
 
 _vue["default"].use(_bootstrapVue.BootstrapVue);
@@ -62,7 +62,7 @@ _vue["default"].use(_vueLazyload["default"], {
 }); // [EXPORT] EventBus //
 
 
-var EventBus = new _vue["default"](); // [CONFIG + RENDER] //
+var EventBus = new _vue["default"](); // [CONFIG + RENDER]
 
 exports.EventBus = EventBus;
 _vue["default"].config.productionTip = false;

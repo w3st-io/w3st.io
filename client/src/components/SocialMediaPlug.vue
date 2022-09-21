@@ -15,7 +15,7 @@
 </template>
 
 <script>
-	// [IMPORT] //
+	// [IMPORT]
 	import { FacebookIcon, InstagramIcon, YoutubeIcon } from 'vue-feather-icons'
 
 	// [IMPORT] Personal //

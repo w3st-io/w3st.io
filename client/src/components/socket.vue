@@ -4,10 +4,10 @@
 </template>
 
 <script>
-	// [IMPORT] //
+	// [IMPORT]
 	import io from 'socket.io-client'
 
-	// [EXPORT] //
+	// [EXPORT]
 	export default {
 		data() {
 			return {

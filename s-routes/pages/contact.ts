@@ -1,4 +1,4 @@
-// [IMPORT] //
+// [IMPORT]
 import cors from 'cors'
 import express from 'express'
 
@@ -6,11 +6,11 @@ import express from 'express'
 import Segment from '../../s-middleware/Segment'
 
 
-// [EXPRESS + USE] //
+// [EXPRESS + USE]
 const router = express.Router().use(cors())
 
 
-// [MAIN-ROUTE] //
+// [MAIN-ROUTE]
 router.get(
 	'/',
 	Segment.page(),
@@ -19,5 +19,5 @@ router.get(
 	}
 )
 
-// [EXPORT] //
+// [EXPORT]
 module.exports = router

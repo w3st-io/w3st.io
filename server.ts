@@ -1,4 +1,4 @@
-// [IMPORT] //
+// [IMPORT]
 import bodyParser from 'body-parser'
 import history from 'connect-history-api-fallback'
 import cors from 'cors'
@@ -26,12 +26,12 @@ const p_services = require( './s-routes/pages/services')
 const f_ = require ('./s-routes/fun')
 
 
-// [EXPRESS + SERVER] //
+// [EXPRESS + SERVER]
 const app = express()
 const server = http.createServer(app)
 
 
-// [USE] // Default Stuff // Set static Folder // Rate-Limiter //
+// [USE] Default Stuff // Set static Folder // Rate-Limiter //
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(history({
@@ -75,7 +75,7 @@ app.use('/pages/purchase/was', p_purchase_was)
 app.use('/pages/services', p_services)
 
 
-// [USE][ROUTE][FUN] //
+// [USE][ROUTE][FUN]
 app.use('/fun', f_)
 
 
@@ -89,7 +89,7 @@ if (config.NODE_ENV == 'production') {
 }
 
 
-// [LISTEN] //
+// [LISTEN]
 server.listen(config.port, () => {
 	console.log(`Server started on port: ${config.port}`)
 })

@@ -65,13 +65,13 @@
 </template>
 
 <script>
-	// [IMPORT] //
+	// [IMPORT]
 	import { XIcon } from 'vue-feather-icons'
 
 	// [IMPORT] Personal //
 	import router from '@/router'
 
-	// [EXPORT] //
+	// [EXPORT]
 	export default {
 		components: {
 			XIcon,

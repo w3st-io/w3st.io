@@ -2,11 +2,11 @@
 import config from '../../../s-config'
 
 
-// [REQUIRE] //
+// [REQUIRE]
 const axios = require('axios')
 
 
-// [AUTH-AXIOS] //
+// [AUTH-AXIOS]
 const authAxios = axios.create({
 	baseURL: 'https://www.rptide.com/api/web-content',
 	headers: {

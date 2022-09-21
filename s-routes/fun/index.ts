@@ -1,20 +1,22 @@
-// [REQUIRE] //
+// [REQUIRE]
 const cors = require('cors')
-const express = require('express')
 
+
+// [IMPORT]
+import express from 'express'
 
 // [IMPORT] Personal //
 import Segment from '../../s-middleware/Segment'
 
 
-// [EXPRESS + USE] //
+// [EXPRESS + USE]
 const router = express.Router().use(cors())
 
 
 router.get(
 	'/',
 	Segment.page(),
-	async (req, res) => {
+	async (req: express.Request, res: express.Response) => {
 		res.send(`
 			<!DOCTYPE html>
 			<html lang="en">
