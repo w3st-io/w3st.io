@@ -15,7 +15,7 @@ const router = express.Router().use(cors())
 router.get(
 	'/',
 	Segment.page(),
-	async (req: any, res: any) => {
+	async (req: express.Request, res: express.Response) => {
 		res.send({
 			showPrices: config.app.showPrices == 'false' ? false : true
 		})

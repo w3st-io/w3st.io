@@ -13,7 +13,7 @@ const router = express.Router().use(cors())
 // [MAIN-ROUTE] //
 router.get(
 	'/',
-	async (req: any, res: any) => {
+	async (req: express.Request, res: express.Response) => {
 		res.send({
 			executed: true,
 			status: true,

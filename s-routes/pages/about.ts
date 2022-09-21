@@ -14,8 +14,8 @@ const router = express.Router().use(cors())
 router.get(
 	'/',
 	Segment.page(),
-	async (req: any, res: any) => {
-		res.send()
+	async (req: express.Request, res: express.Response) => {
+		res.status(200).send();
 	}
 )
 

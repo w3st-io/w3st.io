@@ -37,7 +37,19 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(history({
     rewrites: [
 		{
-			from: /^\/fun*$/,
+			from: /^\/api*\/*$/,
+			to: function(context) {
+				return context.parsedUrl.path
+			}
+		},
+		{
+			from: /^\/pages\/*$/,
+			to: function(context) {
+				return context.parsedUrl.path
+			}
+		},
+		{
+			from: /^\/fun\/*$/,
 			to: function(context) {
 				return context.parsedUrl.path
 			}
@@ -71,7 +83,7 @@ app.use('/fun', f_)
 if (config.NODE_ENV == 'production') {
 	app.use(express.static('client/dist'))
 
-	app.get('*', (req: any, res: any) => {
+	app.get('*', (req: express.Request, res: express.Response) => {
 		res.sendFile(path.resolve(__dirname, 'client', 'dist', 'index.html'))
 	})
 }
