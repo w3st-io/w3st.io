@@ -38,5 +38,5 @@ npm run build
 ```
 This command creates a "dist" directory for the compiled TS code. It then copies over the "s-static" directory into the "dist" directory as well.
 
-### NOTE
+## NOTE
 Heroku deployments runs the `build` scripts by default.
