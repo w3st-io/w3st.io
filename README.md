@@ -1,5 +1,8 @@
 # Server
+
 ## Environmental Variables (Create .env file root)
+
+### Required
 ```
 API__STRIPE__PUBLISHABLE_KEY = < GET-FROM-STRIPE >
 API__STRIPE__WAD__ADVANCED_PRICE_ID = < GET-FROM-STRIPE >
@@ -17,12 +20,14 @@ API__STRIPE__WAH__STANDARD_PRICE_ID = < GET-FROM-STRIPE >
 API__STRIPE__WAS__STANDARD_PRICE_ID = < GET-FROM-STRIPE >
 ```
 
-### ONLY REQUIRED ON PRODUCTION
+### Required only on Production
 ```
 APP__BASE_URL = http://www.< website-name-here >.com
 ```
 
 ## Project setup
+
+### Install Node.js packages
 ```
 npm install
 ```
