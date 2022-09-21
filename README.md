@@ -20,7 +20,7 @@ API__STRIPE__WAH__STANDARD_PRICE_ID = < GET-FROM-STRIPE >
 API__STRIPE__WAS__STANDARD_PRICE_ID = < GET-FROM-STRIPE >
 ```
 
-### Required only on Production
+### Required only on production
 ```
 APP__BASE_URL = http://www.< website-name-here >.com
 ```
