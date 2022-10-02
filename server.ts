@@ -1,29 +1,29 @@
 // [IMPORT]
-import bodyParser from 'body-parser'
-import history from 'connect-history-api-fallback'
-import cors from 'cors'
-import express from 'express'
-import http from 'http'
-import path from 'path'
+import bodyParser from "body-parser"
+import history from "connect-history-api-fallback"
+import cors from "cors"
+import express from "express"
+import http from "http"
+import path from "path"
 
 // [IMPORT] Personal //
-import config from './s-config'
+import config from "./s-config"
 
 
 // [REQUIRE] Personal // Other // API // Pages //
-const rateLimiter = require('./s-rate-limiters')
-const a_ = require('./s-routes/api')
-const p_ = require( './s-routes/pages')
-const p_about = require( './s-routes/pages/about')
-const p_blog = require( './s-routes/pages/blog')
-const p_code = require( './s-routes/pages/code')
-const p_contact = require( './s-routes/pages/contact')
-const p_blog_read = require('./s-routes/pages/blog/read')
-const p_purchase_wad = require('./s-routes/pages/purchase/wad')
-const p_purchase_wah = require('./s-routes/pages/purchase/wah')
-const p_purchase_was = require('./s-routes/pages/purchase/was')
-const p_services = require( './s-routes/pages/services')
-const f_ = require ('./s-routes/fun')
+const rateLimiter = require("./s-rate-limiters")
+const a_ = require("./s-routes/api")
+const p_ = require( "./s-routes/pages")
+const p_about = require( "./s-routes/pages/about")
+const p_blog = require( "./s-routes/pages/blog")
+const p_code = require( "./s-routes/pages/code")
+const p_contact = require( "./s-routes/pages/contact")
+const p_blog_read = require("./s-routes/pages/blog/read")
+const p_purchase_wad = require("./s-routes/pages/purchase/wad")
+const p_purchase_wah = require("./s-routes/pages/purchase/wah")
+const p_purchase_was = require("./s-routes/pages/purchase/was")
+const p_services = require( "./s-routes/pages/services")
+const f_ = require ("./s-routes/fun")
 
 
 // [EXPRESS + SERVER]
@@ -32,64 +32,69 @@ const server = http.createServer(app)
 
 
 // [USE] Default Stuff // Set static Folder // Rate-Limiter //
-app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({ extended: false }))
-app.use(history({
-    rewrites: [
-		{
-			from: /^\/api*\/*$/,
-			to: function(context) {
-				return context.parsedUrl.path
+app
+	.use(bodyParser.json())
+	.use(bodyParser.urlencoded({ extended: false }))
+	.use(history({
+		rewrites: [
+			{
+				from: /^\/api*\/*$/,
+				to: function(context) {
+					return context.parsedUrl.path
+				}
+			},
+			{
+				from: /^\/pages\/*$/,
+				to: function(context) {
+					return context.parsedUrl.path
+				}
+			},
+			{
+				from: /^\/fun\/*$/,
+				to: function(context) {
+					return context.parsedUrl.path
+				}
 			}
-		},
-		{
-			from: /^\/pages\/*$/,
-			to: function(context) {
-				return context.parsedUrl.path
-			}
-		},
-		{
-			from: /^\/fun\/*$/,
-			to: function(context) {
-				return context.parsedUrl.path
-			}
-		}
-    ]
-}))  
-app.use(cors())
-app.use(express.static(__dirname + '/s-static'))
-app.use(rateLimiter.limiter)
+		]
+	}))
+	.use(cors())
+	.use(express.static(__dirname + "/s-static"))
+	.use(rateLimiter.limiter)
+;
 
 
 // [USE] Personal // API // Pages //
-app.use('/api', a_)
-app.use('/pages', p_)
-app.use('/pages/about', p_about)
-app.use('/pages/blog', p_blog)
-app.use('/pages/code', p_code)
-app.use('/pages/contact', p_contact)
-app.use('/pages/blog/read', p_blog_read)
-app.use('/pages/purchase/wad', p_purchase_wad)
-app.use('/pages/purchase/wah', p_purchase_wah)
-app.use('/pages/purchase/was', p_purchase_was)
-app.use('/pages/services', p_services)
+app
+	.use("/api", a_)
+	.use("/pages", p_)
+	.use("/pages/about", p_about)
+	.use("/pages/blog", p_blog)
+	.use("/pages/code", p_code)
+	.use("/pages/contact", p_contact)
+	.use("/pages/blog/read", p_blog_read)
+	.use("/pages/purchase/wad", p_purchase_wad)
+	.use("/pages/purchase/wah", p_purchase_wah)
+	.use("/pages/purchase/was", p_purchase_was)
+	.use("/pages/services", p_services)
+;
 
 
 // [USE][ROUTE][FUN]
-app.use('/fun', f_)
+app.use("/fun", f_)
 
 
 // [HEROKU] Set Static Folder for Heroku //
-if (config.NODE_ENV == 'production') {
-	app.use(express.static('client/dist'))
+if (config.NODE_ENV == "production") {
+	app.use(express.static("client/dist"))
 
-	app.get('*', (req: express.Request, res: express.Response) => {
-		res.sendFile(path.resolve(__dirname, 'client', 'dist', 'index.html'))
+	app.get("*", (req: express.Request, res: express.Response) => {
+		res.sendFile(path.resolve(__dirname, "client", "dist", "index.html"))
 	})
 }
 
 
 // [LISTEN]
-server.listen(config.port, () => {
-	console.log(`Server started on port: ${config.port}`)
-})
+server.listen(
+	config.port,
+	() => console.log(`Server started on port: ${config.port}`)
+)
