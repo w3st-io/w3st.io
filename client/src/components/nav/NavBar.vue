@@ -4,13 +4,13 @@
 			<BRow>
 				<BCol cols="12" class="text-center">
 					<RouterLink to="/" class="text-decoration-none">
-						<h1 class="my-2 logo text-spread">
+						<h6 class="my-2 logo text-spread">
 							<span class="text-dark">W</span>
 							<span class="text-white text-backlit">3</span>
 							<span class="text-dark">ST</span>
 							<span class="text-white text-backlit">.</span>
 							<span class="text-dark">IO</span>
-						</h1>
+						</h6>
 					</RouterLink>
 				</BCol>
 
