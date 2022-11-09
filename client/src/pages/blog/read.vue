@@ -47,6 +47,25 @@
 			}
 		},
 
+		metaInfo() {
+			return {
+				title: this.webContent ? this.webContent.name : '',
+				titleTemplate: '%s | W3ST.IO',
+				meta: [
+					{
+						vmid: 'title',
+						name: 'title',
+						content: this.webContent ? this.webContent.name : ''
+					},
+					{
+						vmid: 'description',
+						name: 'description',
+						content: this.webContent ? this.webContent.name : ''
+					}
+				]
+			}
+		},
+
 		methods: {
 			async getPageData() {
 				try {

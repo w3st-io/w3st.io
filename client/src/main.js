@@ -1,14 +1,15 @@
 // [IMPORT]
 import aos from 'aos'
+import 'aos/dist/aos.css'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import Vue from 'vue'
 import Viewer from 'v-viewer'
 import VueRellax from 'vue-rellax'
 import VueYouTubeEmbed from 'vue-youtube-embed'
 import VueLazyload from 'vue-lazyload'
-import 'aos/dist/aos.css'
-import 'tiny-slider/src/tiny-slider.scss'
+import VueMeta from 'vue-meta'
 import 'viewerjs/dist/viewer.css'
+import 'tiny-slider/src/tiny-slider.scss'
 
 // [IMPORT] Personal
 import App from '@/App.vue'
@@ -18,18 +19,20 @@ import '@/assets/styles/bootstrap-override.scss'
 import '@/assets/styles/style.scss'
 
 
+
 // [USE]
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
 Vue.use(Viewer)
-Vue.use(VueRellax)
-Vue.use(VueYouTubeEmbed)
 Vue.use(VueLazyload, {
   preLoad: 1.3,
   error: require('./assets/media/err.png'),
   loading: require('./assets/media/loading.gif'),
   attempt: 1
 })
+Vue.use(VueMeta)
+Vue.use(VueRellax)
+Vue.use(VueYouTubeEmbed)
 
 
 // [EXPORT] EventBus
