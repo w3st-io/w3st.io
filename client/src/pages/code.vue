@@ -9,7 +9,7 @@
 		>
 			<BCardHeader class="border-dark bg-dark">
 				<BCol cols="12">
-					<h1 class="my-2 text-center text-primary font-weight-bold text-spread-sm">
+					<h1 class="my-2 text-center text-primary text-spread-sm">
 						Find Our Code
 					</h1>
 				</BCol>
@@ -138,7 +138,7 @@
 
 <style lang="scss" scoped>
 	.description {
-		font-weight: bold;
+		font-weight: bold !important;
 		margin-bottom: 1em;
 	}
 	

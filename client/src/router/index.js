@@ -5,7 +5,6 @@ import VueRouter from 'vue-router'
 
 // [IMPORT] Personal //
 import index from '../pages'
-//import about from '../pages/about'
 import blog from '../pages/blog'
 import blog_read from '../pages/blog/read'
 import code from '../pages/code'
@@ -18,8 +17,6 @@ import purchase_unsuccessful from '../pages/purchase/unsuccessful'
 import purchase_wad from '../pages/purchase/wad'
 import purchase_wah from '../pages/purchase/wah'
 import purchase_was from '../pages/purchase/was'
-//import services from '../pages/services'
-import services_info from '../pages/services/info'
 import notFound from '../pages/404'
 
 
@@ -40,19 +37,6 @@ const router = new VueRouter({
 				title: 'Home'
 			},
 		},
-		// About //
-		/*
-		{
-			path: '/about',
-			name: 'about',
-			component: about,
-			meta: {
-				header: true,
-				auth: true,
-				title: 'About'
-			},
-		},
-		*/
 		// Blog //
 		{
 			path: '/blog',
@@ -182,29 +166,6 @@ const router = new VueRouter({
 				header: false,
 				auth: true,
 				title: 'Email Sent'
-			},
-		},
-		// services //
-		/*
-		{
-			path: '/services',
-			name: 'services',
-			component: services,
-			meta: {
-				header: true,
-				auth: true,
-				title: 'Services'
-			},
-		},
-		*/
-		{
-			path: '/services/info/:serviceid',
-			name: 'services_info',
-			component: services_info,
-			meta: {
-				header: false,
-				auth: true,
-				title: 'Services'
 			},
 		},
 		// 404 //

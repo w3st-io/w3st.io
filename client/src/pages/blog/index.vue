@@ -1,5 +1,6 @@
 <template>
 	<BContainer class="mx-auto py-5" style="max-width: 800px;">
+		<!-- Pinned Posts -->
 		<div v-if="!loading && pinnedWebContents.length != 0" class="">
 			<h6
 				class="mb-4 text-center font-weight-bold text-uppercase text-spread-sm text-light text-backlit"
@@ -27,6 +28,7 @@
 			</BRow>
 		</div>
 
+		<!-- Posts -->
 		<div v-if="!loading && webContents.length != 0" class="">
 			<h6
 				class="mb-4 text-center font-weight-bold text-uppercase text-spread-sm text-light text-backlit"
