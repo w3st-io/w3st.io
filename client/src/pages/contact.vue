@@ -17,45 +17,22 @@
 				</BCol>
 			</BCardHeader>
 
-			<BCardHeader class="py-5">
+			<BCardHeader class="py-5 bg-light">
 				<BRow>
-					<BCol cols="12" lg="7" class="px-md-5">
-						<h1 class="mb-3 text-center font-weight-bold text-dark">
-							Aleem Ahmed
-						</h1>
+					<BCol cols="12" lg="7" class="px-md-5 text-dark">
 						<h2 class="mb-3 text-center font-weight-bold">
 							Email
 						</h2>
 						<div class="text-center">
 							<a href="mailto:w3st.io2021@gmail.com">
 								<BButton
-									variant="dark"
+									variant="secondary"
 									size="lg"
 									class="mb-4"
 									pill
 								>
 									<span class="font-weight-bold">
 										w3st.io2021@gmail.com
-									</span>
-								</BButton>
-							</a>
-						</div>
-						<br>
-
-						<h2 class="mb-3 text-center font-weight-bold">
-							Cell
-						</h2>
-
-						<div class="text-center">
-							<a href="tel:2013626859">
-								<BButton
-									variant="dark"
-									size="lg"
-									class="mb-5"
-									pill
-								>
-									<span class="font-weight-bold">
-										(201) 362-6859
 									</span>
 								</BButton>
 							</a>

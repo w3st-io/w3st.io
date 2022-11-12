@@ -3,7 +3,7 @@
 		<BCard
 			bg-variant="primary"
 			text-variant="light"
-			border-variant="dark"
+			border-variant="secondary"
 			no-body
 			class="w-100 mx-auto backlit"
 		>
@@ -15,14 +15,14 @@
 				</BCol>
 			</BCardHeader>
 
-			<BCardHeader class="py-5 text-center">
+			<BCardHeader class="py-5 text-center bg-light text-dark">
 				<BRow>
 					<BCol cols="12" md="6" xl="4">
 						<h5 class="description">Projects By W3ST.IO LLC</h5>
 
 						<a href="https://www.github.com/w3st-io" target="_blank">
 							<BButton
-								variant="dark"
+								variant="secondary"
 								size="lg"
 								pill
 								class="w-100 github-link"
@@ -41,7 +41,7 @@
 
 						<a href="https://github.com/jjvinyls" target="_blank">
 							<BButton
-								variant="dark"
+								variant="secondary"
 								size="lg"
 								pill
 								class="w-100 github-link"
@@ -60,7 +60,7 @@
 
 						<a href="https://www.github.com/w3st-io-foundation" target="_blank">
 							<BButton
-								variant="dark"
+								variant="secondary"
 								size="lg"
 								pill
 								class="w-100 github-link"
@@ -79,7 +79,7 @@
 
 						<a href="https://www.github.com/aleem-ahmed" target="_blank">
 							<BButton
-								variant="dark"
+								variant="secondary"
 								size="lg"
 								pill
 								class="w-100 github-link"
