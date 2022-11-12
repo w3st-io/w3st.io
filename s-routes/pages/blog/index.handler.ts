@@ -19,7 +19,7 @@ module.exports = {
 	handle: async ({ req }: any) => {
 		try {
 			const result = await authAxios.post(
-				'/find-paginated/50/1',
+				'/find-paginated/50/1?sort=newest',
 				{
 					webApp: `${config.api.rptide.webApp}`,
 					visible: true,
