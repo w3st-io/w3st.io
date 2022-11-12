@@ -12,11 +12,6 @@ import contact from '../pages/contact'
 //import crypto from '../pages/crypto'
 import emailSent from '../pages/email-sent'
 import privacyPolicy from '../pages/privacy-policy'
-import purchase_successful from '../pages/purchase/successful'
-import purchase_unsuccessful from '../pages/purchase/unsuccessful'
-import purchase_wad from '../pages/purchase/wad'
-import purchase_wah from '../pages/purchase/wah'
-import purchase_was from '../pages/purchase/was'
 import notFound from '../pages/404'
 
 
@@ -69,17 +64,6 @@ const router = new VueRouter({
 				title: 'Crypto'
 			},
 		},
-		// purchase_successful //
-		{
-			path: '/purchase/successful',
-			name: 'purchase_successful',
-			component: purchase_successful,
-			meta: {
-				header: false,
-				auth: true,
-				title: 'Purchase Successful'
-			},
-		},
 		// privacy-policy //
 		{
 			path: '/privacy-policy',
@@ -89,50 +73,6 @@ const router = new VueRouter({
 				header: false,
 				auth: true,
 				title: 'Privacy Policy and Terms of Service'
-			},
-		},
-		// purchase_unsuccessful //
-		{
-			path: '/purchase/unsuccessful',
-			name: 'purchase_unsuccessful',
-			component: purchase_unsuccessful,
-			meta: {
-				header: false,
-				auth: true,
-				title: 'Purchase Unsuccessful'
-			},
-		},
-		// purchase_wad //
-		{
-			path: '/purchase/wad',
-			name: 'purchase_wad',
-			component: purchase_wad,
-			meta: {
-				header: false,
-				auth: true,
-				title: 'Purchase WAD'
-			},
-		},
-		// purchase_wah //
-		{
-			path: '/purchase/wah',
-			name: 'purchase_wah',
-			component: purchase_wah,
-			meta: {
-				header: false,
-				auth: true,
-				title: 'Purchase WAH'
-			},
-		},
-		// purchase_was //
-		{
-			path: '/purchase/was',
-			name: 'purchase_was',
-			component: purchase_was,
-			meta: {
-				header: false,
-				auth: true,
-				title: 'Purchase WAS'
 			},
 		},
 		// Code //

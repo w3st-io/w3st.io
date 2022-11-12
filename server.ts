@@ -14,15 +14,10 @@ import config from "./s-config"
 const rateLimiter = require("./s-rate-limiters")
 const a_ = require("./s-routes/api")
 const p_ = require( "./s-routes/pages")
-const p_about = require( "./s-routes/pages/about")
 const p_blog = require( "./s-routes/pages/blog")
 const p_code = require( "./s-routes/pages/code")
 const p_contact = require( "./s-routes/pages/contact")
 const p_blog_read = require("./s-routes/pages/blog/read")
-const p_purchase_wad = require("./s-routes/pages/purchase/wad")
-const p_purchase_wah = require("./s-routes/pages/purchase/wah")
-const p_purchase_was = require("./s-routes/pages/purchase/was")
-const p_services = require( "./s-routes/pages/services")
 const f_ = require ("./s-routes/fun")
 
 
@@ -67,15 +62,10 @@ app
 app
 	.use("/api", a_)
 	.use("/pages", p_)
-	.use("/pages/about", p_about)
 	.use("/pages/blog", p_blog)
 	.use("/pages/code", p_code)
 	.use("/pages/contact", p_contact)
 	.use("/pages/blog/read", p_blog_read)
-	.use("/pages/purchase/wad", p_purchase_wad)
-	.use("/pages/purchase/wah", p_purchase_wah)
-	.use("/pages/purchase/was", p_purchase_was)
-	.use("/pages/services", p_services)
 ;
 
 
