@@ -2,25 +2,7 @@
 	<div class="w-100 py-6 text-light border-top border-secondary bg-svg-dark">
 		<BContainer>
 			<BRow>
-				<BCol cols="12" sm="4" class="text-center text-sm-left" data-aos="fade-up" data-aos-once="true">
-					<h4 class="text-light">Location</h4>
-					<a :href="companyInfo.googleMapsLink" class="mb-3">
-						<h5 class="mb-4">{{ companyInfo.address }}</h5>
-					</a>
-
-					<h4 class="text-light">Hours</h4>
-					<ul class="list-unstyled text-small text-primary">
-						<li
-							v-for="(hoo, index) in companyInfo.hoursOfOperation"
-							:key="index"
-						>
-							<span class="text-light">{{ hoo.days }}:</span>
-							{{ hoo.hours }}
-						</li>
-					</ul>
-				</BCol>
-
-				<BCol cols="12" sm="4" class="text-center" data-aos="fade-up" data-aos-once="true">
+				<BCol cols="12" sm="6" class="text-center" data-aos="fade-up" data-aos-once="true">
 					<h4>Company</h4>
 					<ul class="list-unstyled text-small">
 						<li>
@@ -46,7 +28,7 @@
 					</ul>
 				</BCol>
 
-				<BCol cols="12" sm="4" class="text-center" data-aos="fade-up" data-aos-once="true">
+				<BCol cols="12" sm="6" class="text-center" data-aos="fade-up" data-aos-once="true">
 					<h4>Legal</h4>
 					<ul class="list-unstyled text-small">
 						<li>
