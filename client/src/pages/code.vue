@@ -10,7 +10,7 @@
 			<BCardHeader class="border-dark bg-dark">
 				<BCol cols="12">
 					<h1 class="my-2 text-center text-primary text-spread-sm font-weight-bold">
-						Find Our Code
+						Code
 					</h1>
 				</BCol>
 			</BCardHeader>

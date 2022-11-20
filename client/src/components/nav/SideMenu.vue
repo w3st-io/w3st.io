@@ -22,13 +22,6 @@
 				v-show="$store.state.showMenu"
 				variant="outline-seconadry"
 				class="w-100 p-2 text-uppercase text-light text-backlit"
-				@click="services()"
-			><span aria-hidden="true" class="">Services</span></BButton>
-
-			<BButton
-				v-show="$store.state.showMenu"
-				variant="outline-seconadry"
-				class="w-100 p-2 text-uppercase text-light text-backlit"
 				@click="contact()"
 			><span aria-hidden="true" class="">Contact</span></BButton>
 
@@ -38,13 +31,6 @@
 				class="w-100 p-2 text-uppercase text-light text-backlit"
 				@click="code()"
 			><span aria-hidden="true" class="">Code</span></BButton>
-
-			<BButton
-				v-show="$store.state.showMenu"
-				variant="outline-seconadry"
-				class="w-100 p-2 text-uppercase text-light text-backlit"
-				@click="about()"
-			><span aria-hidden="true" class="">About</span></BButton>
 
 			<BButton
 				v-show="$store.state.showMenu"
