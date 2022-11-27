@@ -9,7 +9,7 @@
 		>
 			<BCardHeader class="border-dark bg-dark">
 				<BCol cols="12">
-					<h1 class="my-2 text-center text-primary text-spread-sm font-weight-bold">
+					<h1 class="my-2 text-center text-primary text-spread-sm">
 						Code
 					</h1>
 				</BCol>
@@ -137,11 +137,6 @@
 </script>
 
 <style lang="scss" scoped>
-	.description {
-		font-weight: bold !important;
-		margin-bottom: 1em;
-	}
-	
 	.github-link {
 		margin-bottom: 1em;
 	}

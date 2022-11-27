@@ -16,8 +16,8 @@
 
 				<BCol
 					cols="12"
-					class="d-none d-md-block text-center font-weight-bold text-uppercase text-spread-sm"
-					style="font-size: 1.2em !important"
+					class="d-none d-md-block text-center text-uppercase text-spread-sm"
+					style="font-size: 1.2em !important;"
 				>
 					<!-- Home -->
 					<RouterLink
@@ -112,6 +112,7 @@
 
 	.logo {
 		font-size: 20vw;
+		font-weight: 200 !important;
 
 		@media screen and (min-width: 600px) {
 			font-size: 7em;

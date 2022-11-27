@@ -1,6 +1,6 @@
 <template>
 	<BContainer fluid class="m-0 p-0 bg-primary">
-		<BContainer class="py-6 font-weight-bold text-dark">
+		<BContainer class="py-6 text-dark">
 			<h1 class="text-light">Privacy Policy for w3st.io llc</h1>
 
 			<p>At w3st.io, accessible from https://www.w3st.io, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by w3st.io and how we use it.</p>

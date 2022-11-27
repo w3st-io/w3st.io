@@ -1,6 +1,6 @@
 <template>
 	<BContainer class="py-5 text-center">
-		<h6 class="mb-4 text-uppercase text-light text-spread font-weight-bold text-backlit">
+		<h6 class="mb-4 text-uppercase text-light text-spread text-backlit">
 			Our Works
 		</h6>
 
@@ -30,7 +30,6 @@
 								class="
 									text-white
 									text-uppercase
-									font-weight-bold
 									text-backlit
 								"
 							>{{ cp.title }}</h3>

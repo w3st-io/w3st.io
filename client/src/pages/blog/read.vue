@@ -10,10 +10,10 @@
 			style="max-width: 1000px;"
 		>
 			<BCardHeader class="text-center bg-dark text-primary">
-				<h4 class="font-weight-bold">
+				<h4>
 					{{ this.webContent.name }}
 				</h4>
-				<h6 class="mb-0 font-weight-bold text-light">
+				<h6 class="mb-0 text-light">
 					harpoonjs.eth -
 					{{ new Date(this.webContent.createdTimeStamp).toLocaleString() }}
 				</h6>

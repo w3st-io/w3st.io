@@ -11,7 +11,7 @@
 		>
 			<BCardHeader class="border-dark bg-dark">
 				<BCol cols="12">
-					<h1 class="my-2 text-center text-primary font-weight-bold text-spread-sm">
+					<h1 class="my-2 text-center text-primary text-spread-sm">
 						Contact
 					</h1>
 				</BCol>
@@ -20,7 +20,7 @@
 			<BCardHeader class="py-5 bg-light">
 				<BRow>
 					<BCol cols="12" lg="7" class="px-md-5 text-dark">
-						<h2 class="mb-3 text-center font-weight-bold">
+						<h2 class="mb-3 text-center">
 							Email
 						</h2>
 						<div class="text-center">
@@ -30,11 +30,7 @@
 									size="lg"
 									class="mb-4"
 									pill
-								>
-									<span class="font-weight-bold">
-										w3st.io2021@gmail.com
-									</span>
-								</BButton>
+								>w3st.io2021@gmail.com</BButton>
 							</a>
 						</div>
 					</BCol>

@@ -24,37 +24,37 @@
 			<h1
 				v-if="b.type == 'header' && b.data.level == 1"
 				v-html="b.data.text"
-				class="font-weight-bold text-primary"
+				class="text-primary"
 			/>
 
 			<h2
 				v-if="b.type == 'header' && b.data.level == 2"
 				v-html="b.data.text"
-				class="font-weight-bold text-primary"
+				class="text-primary"
 			/>
 
 			<h3
 				v-if="b.type == 'header' && b.data.level == 3"
 				v-html="b.data.text"
-				class="font-weight-bold text-primary"
+				class="text-primary"
 			/>
 
 			<h4
 				v-if="b.type == 'header' && b.data.level == 4"
 				v-html="b.data.text"
-				class="font-weight-bold text-primary"
+				class="text-primary"
 			/>
 
 			<h5
 				v-if="b.type == 'header' && b.data.level == 5"
 				v-html="b.data.text"
-				class="font-weight-bold text-primary"
+				class="text-primary"
 			/>
 
 			<h6
 				v-if="b.type == 'header' && b.data.level == 6"
 				v-html="b.data.text"
-				class="font-weight-bold text-primary"
+				class="text-primary"
 			/>
 
 			<!-- Image -->
@@ -81,7 +81,7 @@
 							class="w-100"
 						>
 					</div>
-					<p v-html="b.data.caption" class="text-center font-weight-bold" />
+					<p v-html="b.data.caption" class="text-center" />
 				</viewer>
 
 			<!-- List Unordered -->
