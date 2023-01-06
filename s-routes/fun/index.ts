@@ -103,6 +103,10 @@ router.get(
 				width: 30%;
 				height: 20px;
 			}
+
+			.mlink:hover {
+				color: white !important;
+			}
 			</style>
 
 			<body>
@@ -122,7 +126,7 @@ router.get(
 							<div class="col-12 col-lg-8 mt-3 py-3 border-top border-danger thick-border text-center text-uppercase">
 								<a
 									href="https://www.w3st.io"
-									class="text-dark text-decoration-none"
+									class="mlink text-dark text-decoration-none"
 								>
 									<span
 										class="h3 mx-4 mb-3 space-text-h"
@@ -132,7 +136,7 @@ router.get(
 								<a
 									href="https://ethereum.org/en/developers/docs/"
 									target="_blank"
-									class="text-dark text-decoration-none"
+									class="mlink text-dark text-decoration-none"
 								>
 									<span
 										class="h3 mx-4 mb-3 space-text-h"
@@ -142,7 +146,7 @@ router.get(
 								<a
 									href="https://cryptowat.ch"
 									target="_blank"
-									class="text-dark text-decoration-none"
+									class="mlink text-dark text-decoration-none"
 								>
 									<span
 										class="h3 mx-4 mb-3 space-text-h"

@@ -44,7 +44,7 @@
 
 			<BCol cols="12">
 				<a href="https://www.w3st.io/fun" target="_blank">
-					<BButton variant="outline-light" pill>Bored?</BButton>
+					<BButton variant="outline-light" pill>Bored..?</BButton>
 				</a>
 			</BCol>
 		</BRow>

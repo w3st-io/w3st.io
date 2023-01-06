@@ -1,10 +1,13 @@
 <template>
-	<div class="w-100 py-6 text-light border-top border-secondary bg-svg-dark">
+	<div class="w-100 py-5 text-light border-top border-secondary bg-svg-dark">
 		<BContainer>
 			<BRow>
 				<BCol cols="12" class="text-center">
+					<h6 class="mb-3 text-primary">© w3st.io {{ new Date().getFullYear() }}</h6>
 					<a href="https://github.com/w3st-io/w3st.io" target="_blank" rel="noopener noreferrer">
-						<BButton variant="primary">Source Code for this site</BButton>
+						<BButton pill variant="outline-light">
+							Source Code
+						</BButton>
 					</a>
 				</BCol>
 
@@ -51,12 +54,9 @@
 					</ul>
 				</BCol>
 
-				<BCol cols="12" class="my-3 text-center text-secondary">
-					<h6>© w3st.io {{ new Date().getFullYear() }}</h6>
-					<br><br><br>
-
+				<BCol cols="12" class="text-center">
 					<!-- [CREDIATION] -->
-					<a href="https://icons8.com/icon/82749/menu">
+					<a href="https://icons8.com/icon/82749/menu" class="text-secondary">
 						Menu icon by Icons8
 					</a>
 				</BCol>
