@@ -9,7 +9,7 @@
 				v-for="(cp, i) in clientProjects"
 				:key="i"
 				cols="12" md="6"
-				class="pb-5 px-4"
+				class="px-4"
 				data-aos="fade-down"
 				data-aos-offset="-10000"
 				:data-aos-delay="200 * i"
@@ -17,7 +17,7 @@
 				<a :href="cp.link" target="_blank" class="text-decoration-none">
 					<!-- the-box -->
 					<div
-						class="rounded backlit the-box"
+						class="mb-2 rounded backlit the-box"
 						:style="`
 							background-image: url(${cp.image});
 							background-position: center;
@@ -36,11 +36,15 @@
 						</div>
 					</div>
 				</a>
+
+				<a :href="cp.source" target="_blank">
+					<BButton variant="outline-light" pill class="mb-3">Source Code</BButton>
+				</a>
 			</BCol>
 
 			<BCol cols="12">
 				<a href="https://www.w3st.io/fun" target="_blank">
-					<BButton variant="outline-dark" pill>Bored?</BButton>
+					<BButton variant="outline-light" pill>Bored?</BButton>
 				</a>
 			</BCol>
 		</BRow>
