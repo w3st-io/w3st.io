@@ -53,7 +53,6 @@ app
 		]
 	}))
 	.use(cors())
-	.use(express.static(__dirname + "/s-static"))
 	.use(rateLimiter.limiter)
 ;
 
