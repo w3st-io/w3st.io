@@ -17,7 +17,7 @@
 
 			<BCardHeader class="py-5 text-center bg-light text-dark">
 				<BRow>
-					<BCol cols="12" md="6" xl="4">
+					<BCol cols="12" md="6" xl="4" class="mx-auto">
 						<h5 class="description">Projects By W3ST.IO LLC</h5>
 
 						<a href="https://www.github.com/w3st-io" target="_blank">
@@ -36,7 +36,7 @@
 						</a>
 					</BCol>
 
-					<BCol cols="12" md="6" xl="4">
+					<BCol cols="12" md="6" xl="4" class="mx-auto">
 						<h5 class="description">Projects Under JJ VINYLS LLC</h5>
 
 						<a href="https://github.com/jjvinyls" target="_blank">
@@ -55,10 +55,29 @@
 						</a>
 					</BCol>
 
-					<BCol cols="12" md="6" xl="4">
+					<BCol cols="12" md="6" xl="4" class="mx-auto">
+						<h5 class="description">Projects Under Igloo Fi</h5>
+
+						<a href="https://www.github.com/igloo-fi" target="_blank">
+							<BButton
+								variant="secondary"
+								size="lg"
+								pill
+								class="w-100 github-link"
+							>
+								<span class="h3">
+									<GithubIcon stroke-width="1px" />
+									Igloo Fi
+									<ExternalLinkIcon stroke-width="1px" />
+								</span>
+							</BButton>
+						</a>
+					</BCol>
+
+					<BCol cols="12" md="6" xl="4" class="mx-auto">
 						<h5 class="description">Non-Profit Work</h5>
 
-						<a href="https://www.github.com/w3st-io-foundation" target="_blank">
+						<a href="https://github.com/aleem-ahmed-contributions" target="_blank">
 							<BButton
 								variant="secondary"
 								size="lg"
@@ -68,25 +87,6 @@
 								<span class="h3">
 									<GithubIcon stroke-width="1px" />
 									Foundational
-									<ExternalLinkIcon stroke-width="1px" />
-								</span>
-							</BButton>
-						</a>
-					</BCol>
-
-					<BCol cols="12" md="6" xl="4" class="mx-auto">
-						<h5 class="description">References & Code Practice</h5>
-
-						<a href="https://www.github.com/aleem-ahmed" target="_blank">
-							<BButton
-								variant="secondary"
-								size="lg"
-								pill
-								class="w-100 github-link"
-							>
-								<span class="h3">
-									<GithubIcon stroke-width="1px" />
-									Personal
 									<ExternalLinkIcon stroke-width="1px" />
 								</span>
 							</BButton>

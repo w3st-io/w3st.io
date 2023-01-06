@@ -2,6 +2,12 @@
 	<div class="w-100 py-6 text-light border-top border-secondary bg-svg-dark">
 		<BContainer>
 			<BRow>
+				<BCol cols="12" class="text-center">
+					<a href="https://github.com/w3st-io/w3st.io" target="_blank" rel="noopener noreferrer">
+						<BButton variant="primary">Source Code for this site</BButton>
+					</a>
+				</BCol>
+
 				<BCol cols="12" sm="6" class="text-center" data-aos="fade-up" data-aos-once="true">
 					<h4>Company</h4>
 					<ul class="list-unstyled text-small">
@@ -54,8 +60,6 @@
 						Menu icon by Icons8
 					</a>
 				</BCol>
-
-				
 			</BRow>
 		</BContainer>
 	</div>
