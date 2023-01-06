@@ -29,40 +29,5 @@ export default {
 		segments: {
 			writeKey: process.env.API__SEGMENTS__WRITE_KEY,
 		},
-
-		stripe: {
-			publishableKey: process.env.API__STRIPE__PUBLISHABLE_KEY || '',
-
-			wad: {
-				standardPrice_id: process.env.API__STRIPE__WAD__STANDARD_PRICE_ID || '',
-				advancedPrice_id: process.env.API__STRIPE__WAD__ADVANCED_PRICE_ID || '',
-				proPrice_id: process.env.API__STRIPE__WAD__PRO_PRICE_ID || '',
-
-				discounted: {
-					standardPrice_id: process.env.API__STRIPE__WAD__DISCOUNTED__STANDARD_PRICE_ID || '',
-					advancedPrice_id: process.env.API__STRIPE__WAD__DISCOUNTED__ADVANCED_PRICE_ID || '',
-					proPrice_id: process.env.API__STRIPE__WAD__DISCOUNTED__PRO_PRICE_ID || '',
-				}
-			},
-
-			wah: {
-				standardPrice_id: process.env.API__STRIPE__WAH__STANDARD_PRICE_ID || '',
-				advancedPrice_id: process.env.API__STRIPE__WAH__ADVANCED_PRICE_ID || '',
-				proPrice_id: process.env.API__STRIPE__WAH__PRO_PRICE_ID || '',
-
-				discounted: {
-					standardPrice_id: process.env.API__STRIPE__WAH__DISCOUNTED__STANDARD_PRICE_ID || '',
-					advancedPrice_id: process.env.API__STRIPE__WAH__DISCOUNTED__ADVANCED_PRICE_ID || '',
-					proPrice_id: process.env.API__STRIPE__WAH__DISCOUNTED__PRO_PRICE_ID || '',
-				}
-			},
-
-			was: {
-				standardPrice_id: process.env.API__STRIPE__WAS__STANDARD_PRICE_ID || '',
-				discounted: {
-					standardPrice_id: process.env.API__STRIPE__WAS__DISCOUNTED__STANDARD_PRICE_ID || '',
-				}
-			},
-		},
 	}
 }
