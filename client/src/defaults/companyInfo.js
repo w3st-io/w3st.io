@@ -6,11 +6,7 @@ module.exports = {
 
 	nameHTML: '<span class="text-dark">W<span class="text-light text-backlit">3</span>ST<span class="text-light text-backlit">.</span>IO</span>',
 
-	caption: '',
-
-	description: 'Established in 2021, W3ST.IO LLC is a web services company that provides its clients with an array of skillsets that help them grow their digital presence online. We understand how important it is for a business to truly connect with its community, so we make sure to meet all of our client\'s business needs. We are constantly growing and want your business to grow with us as well.',
-
-	missionStatement: 'W3ST stands for Web 3 Services & Technologies because we believe in the 3rd stage of the internet also called the Decentralized Internet. We want to guide all of our clients to this new internet and help them integrate the future into their businesses today. Our preferred blockchain is Ethereum.',
+	missionStatement: 'W.3.S.T. stands for Web3 Services & Technologies. We believe in a 3rd stage for the internet where operations are automated by a set of smart protocols and access to open finance services are available to anyone and anything.',
 	
 	hoursOfOperation: [
 		{
