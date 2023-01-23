@@ -12,7 +12,7 @@ router.get(
 	'/:id',
 	async (req: express.Request, res: express.Response) => {
 		res.send({
-			name: "1",
+			name: `#${req.params.id}`,
 			image: "https://images2.imgbox.com/8f/c2/E0ms241I_o.png",
 			attributes: []
 		})
