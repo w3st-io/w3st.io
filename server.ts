@@ -33,8 +33,9 @@ app
 	.use(bodyParser.urlencoded({ extended: false }))
 	.use(history({
 		rewrites: [
+			
 			{
-				from: /^\/api*\/*fsp/,
+				from: /^\/api*/,
 				to: function(context) {
 					return context.parsedUrl.path
 				}
