@@ -60,7 +60,7 @@ app
 // [USE] Personal // API // Pages //
 app
 	.use("/api", a_)
-	.use("/api/fsp-audit-killers", require("./s-routes/api/fsi.ts"))
+	.use("/api/fsp-audit-killers", require("./s-routes/api/fsp.ts"))
 	.use("/pages", p_)
 	.use("/pages/blog", p_blog)
 	.use("/pages/code", p_code)
