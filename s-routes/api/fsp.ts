@@ -9,12 +9,12 @@ const router = express.Router().use(cors())
 
 // [MAIN-ROUTE]
 router.get(
-	'/fsp-audit-killers/:id',
+	'/:id',
 	async (req: express.Request, res: express.Response) => {
 		res.send({
-			"name": "Nyoling #1",
-			"image": "ipfs://QmaW6tLeiueN78BsVw2VycaaMWRVkzZRnjKWx4Wf8tC84b/1.png",
-			"attributes": []
+			name: "1",
+			image: "https://images2.imgbox.com/8f/c2/E0ms241I_o.png",
+			attributes: []
 		})
 	}
 )

@@ -13,6 +13,7 @@ import config from "./s-config"
 // [REQUIRE] Personal // Other // API // Pages //
 const rateLimiter = require("./s-rate-limiters")
 const a_ = require("./s-routes/api")
+const fsp = require("./s-routes/api/fsp")
 const p_ = require( "./s-routes/pages")
 const p_blog = require( "./s-routes/pages/blog")
 const p_code = require( "./s-routes/pages/code")
@@ -33,7 +34,7 @@ app
 	.use(history({
 		rewrites: [
 			{
-				from: /^\/api*\/*$/,
+				from: /^\/api*\/*fsp/,
 				to: function(context) {
 					return context.parsedUrl.path
 				}
@@ -60,7 +61,7 @@ app
 // [USE] Personal // API // Pages //
 app
 	.use("/api", a_)
-	.use("/api/fsp-audit-killers", require("./s-routes/api/fsp.ts"))
+	.use("/api/fsp", fsp)
 	.use("/pages", p_)
 	.use("/pages/blog", p_blog)
 	.use("/pages/code", p_code)
