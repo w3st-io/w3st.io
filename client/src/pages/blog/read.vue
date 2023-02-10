@@ -14,7 +14,7 @@
 					{{ this.webContent.name }}
 				</h4>
 				<h6 class="mb-0 text-light">
-					harpoonjs.eth -
+					Aleem Ahmed -
 					{{ new Date(this.webContent.createdTimeStamp).toLocaleString() }}
 				</h6>
 			</BCardHeader>
