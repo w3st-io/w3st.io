@@ -29,7 +29,7 @@
 </template>
 <script>
 	import axios from 'axios'
-	
+
 	import CleanJSONToHTML from '../../components/CleanJSONToHTML.vue'
 
 	export default {
@@ -71,9 +71,9 @@
 				try {
 					this.loading = true
 					this.error = ''
-					
+
 					this.resData = await this.authAxios.get(`/${this.$route.params.webcontent}`)
-					
+
 					if (this.resData.data.status) {
 						this.webContent = this.resData.data.webContent
 					}

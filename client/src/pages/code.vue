@@ -56,9 +56,9 @@
 					</BCol>
 
 					<BCol cols="12" md="6" xl="4" class="mx-auto">
-						<h5 class="description">Projects Under Igloo Fi</h5>
+						<h5 class="description">Projects Under Yield Sync</h5>
 
-						<a href="https://www.github.com/igloo-fi" target="_blank">
+						<a href="https://www.github.com/yield-sync" target="_blank">
 							<BButton
 								variant="secondary"
 								size="lg"
@@ -67,7 +67,7 @@
 							>
 								<span class="h3">
 									<GithubIcon stroke-width="1px" />
-									Igloo Fi
+									Yield Sync
 									<ExternalLinkIcon stroke-width="1px" />
 								</span>
 							</BButton>

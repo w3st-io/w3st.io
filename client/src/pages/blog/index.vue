@@ -91,15 +91,15 @@
 			async getPageData() {
 				try {
 					this.error = ''
-					
+
 					this.resData = await this.authAxios.get('/')
 
 					// Pinned Web Contents
 					this.pinnedWebContents = this.resData.data.pinnedWebContents
-	
+
 					// Web Contents
 					this.webContents = this.resData.data.webContents
-					
+
 
 					this.loading = false
 				}
