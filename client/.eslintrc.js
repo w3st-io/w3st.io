@@ -3,13 +3,12 @@ module.exports = {
 	env: {
 		node: true
 	},
-	"extends": [
-		"plugin:vue/vue3-essential",
+	extends: [
+		"plugin:vue/essential",
 		"eslint:recommended",
-		"@vue/typescript/recommended",
 	],
 	parserOptions: {
-		ecmaVersion: 2020
+		parser: "babel-eslint"
 	},
 	rules: {
 		"array-bracket-newline": [
@@ -236,30 +235,6 @@ module.exports = {
 		"vue/padding-line-between-blocks": [
 			"error",
 			"always",
-		],
-		/**
-		 * @dev Cannot uncomment until eslint-plugin-vue v9.9+
-		* "vue/padding-line-between-tags": [
-		* 	"error",
-		* 	
-		* 	{
-		* 		"blankLine": "always",
-		* 		"prev": "*",
-		* 		"next": "*" 
-		* 	},
-		* ],
-		* "vue/padding-lines-in-component-definition": [
-		* 	"error",
-		* 	{
-		* 		"betweenOptions": "always"			
-		* 	},
-		* ],
-		*/
-		"vue/require-direct-export": [
-			"error",
-			{
-				"disallowFunctionalComponentFunction": false
-		  },
 		],
 		"vue/require-name-property": 1,
 		"vue/script-indent": [
