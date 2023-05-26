@@ -7,7 +7,7 @@
 				class="form-control form-control-dark border-success"
 				placeholder="Web App Title"
 			>
-			
+
 			<div class="input-group-append">
 				<BButton
 					variant="success"
@@ -26,6 +26,7 @@
 	import axios from 'axios'
 
 	export default {
+		name: "CCreate",
 		data() {
 			return {
 				authAxios: axios.create({
@@ -47,7 +48,7 @@
 			async createWebApp() {
 				try {
 					this.error = ''
-					
+
 					const resData = await this.authAxios.post('/create', {
 						webApp: this.webApp
 					})

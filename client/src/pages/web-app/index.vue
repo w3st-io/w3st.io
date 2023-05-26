@@ -1,7 +1,7 @@
 <template>
 	<BContainer class="py-5">
 		<h3 class="mb-5 text-center text-primary">Web Apps</h3>
-		
+
 		<BCard bg-variant="dark" border-variant="secondary" no-body>
 			<BCardHeader class="border-secondary">
 				<h4 class="m-0 text-primary">Create Web App</h4>
@@ -25,10 +25,12 @@
 </template>
 
 <script>
-	import Create from '../../components/webApps/Create.vue';
-	import Read from '../../components/webApps/Read.vue';
+	import Create from '../../components/webApps/CCreate.vue';
+	import Read from '../../components/webApps/CRead.vue';
 
 	export default {
+		name: "WebAppIndex",
+
 		components: {
 			Create,
 			Read,

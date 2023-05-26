@@ -73,10 +73,12 @@
 	import axios from 'axios'
 
 	// [IMPORT] Personal
-	import Confirm from '@/components/popups/Confirm'
+	import Confirm from '@/components/popups/CConfirm'
 	import router from '@/router'
 
 	export default {
+		name: "CUpdate",
+
 		props: {
 			webApp_id: {
 				required: true,
@@ -92,7 +94,7 @@
 						user_authorization: `Bearer ${localStorage.usertoken}`
 					}
 				}),
-				
+
 				success: false,
 				loading: true,
 				error: '',

@@ -8,21 +8,21 @@
 			<RouterView :key="$route.name + ($route.params.id || '')" />
 
 			<!-- Footer -->
-			<Footer />
+			<CFooter />
 		</div>
 	</div>
 </template>
 
 <script>
 	// [IMPORT] Personal //
-	import Footer from '@/components/nav/Footer'
+	import CFooter from '@/components/nav/CFooter'
 	import NavBar from '@/components/nav/NavBar'
 	import { EventBus } from '@/main'
 	import Service from '@/services/Service'
 
 	export default {
 		components: {
-			Footer,
+			CFooter,
 			NavBar,
 		},
 
@@ -50,7 +50,7 @@
 
 					if (this.reqData.status) {
 						localStorage.setItem('node_env', this.reqData.node_env)
-					}	
+					}
 				}
 				catch (err) { console.log(`App: Error --> ${err}`) }
 			},

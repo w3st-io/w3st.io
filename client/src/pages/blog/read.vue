@@ -33,6 +33,8 @@
 	import CleanJSONToHTML from '../../components/CleanJSONToHTML.vue'
 
 	export default {
+		name: "p-blog-read",
+
 		data() {
 			return {
 				authAxios: axios.create({

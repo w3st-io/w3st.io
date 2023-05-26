@@ -12,6 +12,12 @@ import contact from '../pages/contact'
 //import crypto from '../pages/crypto'
 import emailSent from '../pages/email-sent'
 import privacyPolicy from '../pages/privacy-policy'
+// Web App
+import webApp from '@/pages/web-app';
+import webApp_update from '@/pages/web-app/update';
+// Web Content
+import webContent_create from '@/pages/web-content/create';
+import webContent_update from '@/pages/web-content/update';
 import notFound from '../pages/404'
 
 
@@ -107,6 +113,42 @@ const router = new VueRouter({
 				auth: true,
 				title: 'Email Sent'
 			},
+		},
+		{
+			path: '/web-app',
+			name: 'web-app',
+			component: webApp,
+			meta: {
+				auth: true,
+				title: 'Web Apps'
+			}
+		},
+		{
+			path: '/web-app/update/:webapp_id',
+			name: 'Web App Update',
+			component: webApp_update,
+			meta: {
+				auth: true,
+				title: ''
+			}
+		},
+		{
+			path: '/web-content/create',
+			name: 'Web Content Create',
+			component: webContent_create,
+			meta: {
+				auth: true,
+				title: ''
+			}
+		},
+		{
+			path: '/web-content/update/:webcontent',
+			name: 'Web Content Update',
+			component: webContent_update,
+			meta: {
+				auth: true,
+				title: ''
+			}
 		},
 		// 404 //
 		{

@@ -106,6 +106,7 @@
 	import { GithubIcon, ExternalLinkIcon } from 'vue-feather-icons'
 
 	export default {
+		name: "p-code",
 		data() {
 			return {
 				authAxios: axios.create({

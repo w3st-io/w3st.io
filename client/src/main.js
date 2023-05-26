@@ -26,8 +26,8 @@ Vue.use(IconsPlugin)
 Vue.use(Viewer)
 Vue.use(VueLazyload, {
   preLoad: 1.3,
-  error: require('./assets/media/err.png'),
-  loading: require('./assets/media/loading.gif'),
+  error: import('./assets/media/err.png'),
+  loading: import('./assets/media/loading.gif'),
   attempt: 1
 })
 Vue.use(VueMeta)

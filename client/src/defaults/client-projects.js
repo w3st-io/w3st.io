@@ -1,4 +1,4 @@
-module.exports = [
+export default [
 	{
 		image: 'https://images2.imgbox.com/94/80/qFy3R4tw_o.png',
 		title: 'Power Market',

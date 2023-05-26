@@ -151,10 +151,11 @@
 	import axios from 'axios'
 
 	// [IMPORT] Personal
-	import Confirm from '@/components/popups/Confirm'
+	import Confirm from '@/components/popups/CConfirm'
 	import router from '@/router'
 
 	export default {
+		name: "WebContentUpdate",
 		data() {
 			return {
 				// [AUTH-AXIOS]
@@ -169,9 +170,9 @@
 				loading: true,
 				resData: {},
 				error: '',
-				
+
 				showConfirm: false,
-				
+
 				webContent: {},
 			}
 		},
@@ -272,7 +273,7 @@
 		components: {
 			Confirm,
 		},
-		
+
 		async created() {
 			await this.getPageData()
 		},

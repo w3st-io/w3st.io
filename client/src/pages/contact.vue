@@ -56,6 +56,8 @@
 	import axios from 'axios'
 
 	export default {
+		name: "p-contact",
+
 		data() {
 			return {
 				authAxios: axios.create({

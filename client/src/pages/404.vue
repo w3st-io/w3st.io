@@ -12,3 +12,9 @@
 		</BCard>
 	</BContainer>
 </template>
+
+<script>
+export default {
+	name: "p-404",
+}
+</script>

@@ -1,6 +1,6 @@
 // [EXPORT]
-module.exports = {
-	logo: require('../assets/images/logo.svg'),
+export default {
+	logo: import('../assets/images/logo.svg'),
 
 	name: 'W3ST.IO',
 

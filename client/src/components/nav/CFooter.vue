@@ -69,6 +69,7 @@
 	import companyInfo from '../../defaults/companyInfo'
 
 	export default {
+		name:"CFooter",
 		data() {
 			return {
 				companyInfo: companyInfo

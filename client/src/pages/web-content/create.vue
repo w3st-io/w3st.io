@@ -42,7 +42,7 @@
 							class="mb-3 bg-white border border-primary text-dark"
 						/>
 					</BCol>
-				
+
 					<BCol cols="12" md="3">
 						<div>
 							<BFormCheckbox
@@ -105,6 +105,7 @@ import axios from 'axios'
 import router from '@/router'
 
 export default {
+	name: "WebContentCreate",
 	data() {
 		return {
 			resData: {},
@@ -176,7 +177,7 @@ export default {
 
 <style lang="scss" scoped>
 	@import 'src/assets/styles/index.scss';
-	
+
 	input {
 		@extend .form-control;
 		@extend .bg-dark;

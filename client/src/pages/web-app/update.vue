@@ -9,9 +9,10 @@
 </template>
 
 <script>
-	import Update from '../../components/webApps/Update'
+	import Update from '../../components/webApps/CUpdate'
 
 	export default {
+		name: "WebAppUpdate",
 		components: {
 			Update
 		},

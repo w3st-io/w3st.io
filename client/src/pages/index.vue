@@ -59,6 +59,8 @@
 	import clientProjects from '@/defaults/client-projects'
 
 	export default {
+		name: "p-home",
+
 		data() {
 			return {
 				authAxios: axios.create({

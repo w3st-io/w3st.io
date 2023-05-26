@@ -72,6 +72,8 @@
 	import axios from 'axios'
 
 	export default {
+		name: "p-blog",
+
 		data() {
 			return {
 				authAxios: axios.create({
