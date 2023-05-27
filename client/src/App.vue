@@ -15,7 +15,7 @@
 
 <script>
 	// [IMPORT] Personal //
-	import CFooter from '@/components/nav/CFooter'
+	import CFooter from '@/components/nav/Footer'
 	import NavBar from '@/components/nav/NavBar'
 	import { EventBus } from '@/main'
 	import Service from '@/services/Service'

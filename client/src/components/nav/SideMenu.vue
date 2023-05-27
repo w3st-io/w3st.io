@@ -84,7 +84,7 @@
 				this.closeMenu()
 			},
 
-			
+
 			services() {
 				router.push({ name: 'services' })
 				this.closeMenu()
@@ -129,7 +129,7 @@
 
 		&:hover { background: #212529; }
 	}
-	
+
 	.isOpen { width: 75%; }
 
 	.backdrop {
